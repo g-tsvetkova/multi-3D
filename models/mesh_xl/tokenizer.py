@@ -113,15 +113,31 @@ class MeshTokenizer(nn.Module):
         self.coor_continuous_range = (-1.0, 1.0)
 
     @staticmethod
-    def normalize_vertices(vertices: Tensor) -> Tensor:
+    def normalize_vertices_scale(vertices: torch.Tensor) -> torch.Tensor:
+        """Scale vertices so that the long diagonal of the bounding box is one.
+
+        Args:
+            vertices: unscaled vertices of shape (batch_size, num_vertices, 3)
+        Returns:
+            scaled_vertices: scaled vertices of shape (batch_size, num_vertices, 3)
         """
-        Normalize vertices into a unit cube based on the longest axis.
-        """
-        min_coords = vertices.min(dim=0).values
-        max_coords = vertices.max(dim=0).values
-        center = (min_coords + max_coords) / 2
-        longest_axis = (max_coords - min_coords).max()
-        return (vertices - center) / longest_axis
+        # Compute min and max per batch along the vertex dimension
+        vert_min, _ = torch.min(
+            vertices, dim=1, keepdim=True
+        )  # Shape: (batch_size, 1, 3)
+        vert_max, _ = torch.max(
+            vertices, dim=1, keepdim=True
+        )  # Shape: (batch_size, 1, 3)
+
+        # Compute extents and scale
+        extents = vert_max - vert_min  # Shape: (batch_size, 1, 3)
+        scale = torch.sqrt(
+            torch.sum(extents**2, dim=-1, keepdim=True)
+        )  # Shape: (batch_size, 1, 1)
+
+        # Normalize vertices
+        scaled_vertices = vertices / scale  # Broadcasting scales appropriately
+        return scaled_vertices
 
     def tokenize(self, data_dict: dict) -> dict:
         """
@@ -134,7 +150,7 @@ class MeshTokenizer(nn.Module):
         print("Raw faces: ", faces)
 
         # Preprocessing: normalize, reorder vertices, and reorder faces
-        vertices = self.normalize_vertices(vertices)
+        vertices = self.normalize_vertices_scale(vertices)
         print("Normalized vertices: ", vertices)
 
         # Reorder vertices by (z, y, x) using lexicographical sorting
