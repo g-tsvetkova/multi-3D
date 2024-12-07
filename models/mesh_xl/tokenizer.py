@@ -30,7 +30,7 @@ def undiscretize(
     return t * (hi - lo) + lo
 
 
-def torch_lexical_sort(vertices: torch.Tensor) -> torch.Tensor:
+def torch_lexical_sort(vertices: torch.Tensor) -> tuple:
     """
     Sort vertices by z, y, x coordinates lexicographically using PyTorch.
 
@@ -38,22 +38,70 @@ def torch_lexical_sort(vertices: torch.Tensor) -> torch.Tensor:
         vertices: Tensor of shape (batch_size, nv, 3)
 
     Returns:
-        sorted_vertices: Tensor of shape (batch_size, nv, 3) with sorted vertices
+        tuple: (sorted_vertices, sorting_indices)
+            - sorted_vertices: Tensor of shape (batch_size, nv, 3) with sorted vertices
+            - sorting_indices: Tensor of shape (batch_size, nv) tracking original indices
     """
-    sorted_vertices = torch.empty_like(vertices)  # Placeholder for sorted vertices
+    # Create placeholder for sorted vertices and sorting indices
+    sorted_vertices = torch.empty_like(vertices)
+    sorting_indices = torch.empty(
+        vertices.shape[:2], dtype=torch.long, device=vertices.device
+    )
 
     for i, batch in enumerate(vertices):  # Process each batch independently
+        # Track sorting indices for this batch
+        current_indices = torch.arange(batch.shape[0], device=batch.device)
+
         # Sort by x first, then y, then z to achieve z > y > x lexicographical sort
-        sorted_indices = torch.argsort(batch[:, 0], stable=True)  # Sort by x
-        batch = batch[sorted_indices]
+        x_sorted_indices = torch.argsort(batch[:, 0], stable=True)
+        batch = batch[x_sorted_indices]
+        current_indices = current_indices[x_sorted_indices]
 
-        sorted_indices = torch.argsort(batch[:, 1], stable=True)  # Sort by y within x
-        batch = batch[sorted_indices]
+        y_sorted_indices = torch.argsort(batch[:, 1], stable=True)
+        batch = batch[y_sorted_indices]
+        current_indices = current_indices[y_sorted_indices]
 
-        sorted_indices = torch.argsort(batch[:, 2], stable=True)  # Sort by z within y
-        sorted_vertices[i] = batch[sorted_indices]  # Store the sorted batch
+        z_sorted_indices = torch.argsort(batch[:, 2], stable=True)
+        sorted_vertices[i] = batch[z_sorted_indices]
+        sorting_indices[i] = current_indices[z_sorted_indices]
 
-    return sorted_vertices
+    return sorted_vertices, sorting_indices
+
+
+def reindex_faces_after_sort(
+    faces: torch.Tensor, sorting_indices: torch.Tensor
+) -> torch.Tensor:
+    """
+    Reindex faces after sorting vertices to maintain correct triangle connections.
+
+    Args:
+        faces (torch.Tensor): Original faces tensor of shape (batch_size, nf, 3)
+        sorting_indices (torch.Tensor): Indices used to sort vertices of shape (batch_size, nv)
+
+    Returns:
+        torch.Tensor: Reindexed faces tensor with the same shape as input
+    """
+    # Validate input shapes
+    assert faces.shape[0] == sorting_indices.shape[0], "Batch sizes must match"
+
+    # Create an inverse mapping to track new indices
+    batch_size, num_vertices = sorting_indices.shape
+    reindexed_faces = torch.empty_like(faces)
+
+    # For each batch
+    for i in range(batch_size):
+        # Create inverse index mapping
+        # Create a tensor where index is the original vertex index and value is the new index
+        inverse_mapping = torch.empty(
+            num_vertices, dtype=torch.long, device=sorting_indices.device
+        )
+        inverse_mapping[sorting_indices[i]] = torch.arange(
+            num_vertices, device=sorting_indices.device
+        )
+        # Reindex the faces for this batch using the inverse mapping
+        reindexed_faces[i] = inverse_mapping[faces[i]]
+
+    return reindexed_faces
 
 
 class MeshTokenizer(nn.Module):
@@ -75,37 +123,6 @@ class MeshTokenizer(nn.Module):
         longest_axis = (max_coords - min_coords).max()
         return (vertices - center) / longest_axis
 
-    @staticmethod
-    def reorder_vertices(vertices: Tensor) -> Tensor:
-        """
-        Reorder vertices by z, y, x.
-        """
-        # Sort vertices by z, y, x
-        sorted_vertices = torch_lexical_sort(vertices)
-        return sorted_vertices
-
-    @staticmethod
-    def reorder_faces(vertices: Tensor, faces: Tensor) -> Tensor:
-        """
-        Cyclically permute face vertices by z, y, x and reorder faces.
-        """
-        # Gather face coordinates
-        face_coords = vertices[faces]
-
-        # Cyclically permute each face by z, y, x order
-        for i in range(face_coords.size(0)):
-            order = torch.lexsort(
-                (face_coords[i, :, 0], face_coords[i, :, 1], face_coords[i, :, 2])
-            )
-            faces[i] = faces[i][order]
-
-        # Sort faces globally based on the centroid (z, y, x)
-        face_centroids = face_coords.mean(dim=1)
-        face_order = torch.lexsort(
-            (face_centroids[:, 0], face_centroids[:, 1], face_centroids[:, 2])
-        )
-        return faces[face_order]
-
     def tokenize(self, data_dict: dict) -> dict:
         """
         Turn 3D meshes into sequential tokens: <bos> [<x>, <y>, <z>], ... <eos>.
@@ -113,18 +130,28 @@ class MeshTokenizer(nn.Module):
         # Extract vertices and faces
         vertices = data_dict["vertices"]  # shape: batch x nv x 3
         faces = data_dict["faces"]  # shape: batch x nf x 3
+        print("Raw vertices: ", vertices)
+        print("Raw faces: ", faces)
 
         # Preprocessing: normalize, reorder vertices, and reorder faces
         vertices = self.normalize_vertices(vertices)
+        print("Normalized vertices: ", vertices)
 
         # Reorder vertices by (z, y, x) using lexicographical sorting
-        vertices = self.reorder_vertices(vertices)
+        vertices, new_indices = torch_lexical_sort(vertices)
+        print("Sorted vertices: ", vertices)
+
+        # Reindex faces after sorting vertices
+        reindexed_faces = reindex_faces_after_sort(faces, new_indices)
+        print("Reindexed faces: ", reindexed_faces)
 
         # Reorder faces by (z, y, x) using lexicographical sorting
-        faces = self.reorder_faces(vertices, faces)
+        sorted_faces, _ = torch_lexical_sort(reindexed_faces)
+        print("Sorted faces: ", sorted_faces)
 
         # Generate face mask
         face_mask = reduce(faces != self.pad_id, "b nf c -> b nf", "all")
+        print("Face mask: ", face_mask)
 
         batch, num_vertices, num_coors = vertices.shape
         _, num_faces, _ = faces.shape
@@ -143,12 +170,14 @@ class MeshTokenizer(nn.Module):
             continuous_range=self.coor_continuous_range,
             num_discrete=self.num_discrete_coors,
         )
+        print("Discrete face coordinates: ", discrete_face_coords)
 
         # Pad invalid faces with pad_id
         discrete_padded_coords = discrete_face_coords.masked_fill(
             ~rearrange(face_mask, "b nf -> b nf 1 1"),
             self.pad_id,
         )
+        print("Discrete face coordinates: ", discrete_face_coords)
 
         # Convert mesh to sequence: batch x ntokens
         input_ids = discrete_padded_coords.reshape(batch, -1)

@@ -58,23 +58,3 @@ def serialize_data_dict(data_dict):
         key: value.tolist() if isinstance(value, torch.Tensor) else value
         for key, value in data_dict.items()
     }
-
-
-# Combine input, tokenized, and reconstructed data into one dictionary
-full_output = {
-    "input_data": serialize_data_dict(data_dict),
-    "tokenized_data": serialize_data_dict(tokenized_data),
-}
-
-# Save the combined data to a JSON file
-output_file = "full_pipeline_output.json"
-with open(output_file, "w") as f:
-    json.dump(full_output, f, indent=4)
-
-print(f"Full pipeline data saved to {output_file}")
-
-# (Optional) Print the saved data for verification
-with open(output_file, "r") as f:
-    saved_data = json.load(f)
-
-print(json.dumps(saved_data, indent=4))
