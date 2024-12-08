@@ -28,12 +28,6 @@ class Dataset:
         scene = trimesh.load(mesh_file, force="mesh")
         vertices, faces = scene.vertices, scene.faces
 
-        # Normalize vertices into a unit cube**
-        vertices = self.normalize_vertices(vertices)
-
-        # Re-order vertices by z, y, x**
-        vertices = self.reorder_vertices(vertices)
-
         # Pad vertices and faces**
         padded_vertices = np.zeros((self.max_vertices, 3), dtype=np.float32)
         padded_vertices[: vertices.shape[0]] = vertices
