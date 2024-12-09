@@ -9,30 +9,30 @@ from sklearn.model_selection import train_test_split
 
 class Dataset:
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, split_set, *args, **kwargs):
         """
         Initialize the dataset with mesh files and preprocessing parameters.
         """
         super().__init__()
         self.max_vertices = 256
-        self.max_faces = args.n_max_triangles
+        self.max_faces = 800 # args.n_max_triangles
         self.all_files = glob.glob(
             "/root/.objaverse/filtered_meshes/*/*.glb"
         )  # Mesh file paths
         # Split the dataset into train/test
         self.train_files, self.val_files = train_test_split(
-            self.mesh_files, test_size=0.2, random_state=42
+            self.all_files, test_size=0.2, random_state=42
         )
 
         # Set the split based on the argument passed (train or test)
-        if args.split_set == "train":
+        if split_set == "train":
             self.mesh_files = self.train_files
-        elif args.split_set == "test":
+        elif split_set == "test":
             self.mesh_files = self.val_files
         else:
             raise ValueError("split_set must be 'train' or 'test'")
 
-        print(f"Loading {args.split_set} data with {len(self.mesh_files)} files.")
+        print(f"Loading {split_set} data with {len(self.mesh_files)} files.")
 
     def __len__(self):
         return len(self.all_files)
@@ -81,6 +81,7 @@ class Dataset:
 
 
 if __name__ == "__main__":
+
     dataset = Dataset()
     sampler = torch.utils.data.RandomSampler(dataset)
     dataloader = torch.utils.data.DataLoader(

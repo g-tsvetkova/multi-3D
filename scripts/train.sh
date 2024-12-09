@@ -1,9 +1,9 @@
 export LLM_CONFIG='mesh-xl/mesh-xl-125m'
-export NSAMPLE_PER_GPU=2
+export NSAMPLE_PER_GPU=8
 export SAMPLE_ROUNDS=100
 export OUTPUT_DIR='./checkpoints'
 
-python main.py --model mesh_xl --dataset dummy_dataset \
+python /root/MeshXL/main.py --model mesh_xl --dataset objaverse \
     --checkpoint_dir ./checkpoints  \
     --n_max_triangles 800 \
     --n_discrete_size 128 \
