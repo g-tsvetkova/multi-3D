@@ -30,80 +30,6 @@ def undiscretize(
     return t * (hi - lo) + lo
 
 
-def torch_lexical_sort(vertices: torch.Tensor) -> tuple:
-    """
-    Sort vertices by z, y, x coordinates lexicographically using PyTorch.
-
-    Args:
-        vertices: Tensor of shape (batch_size, nv, 3)
-
-    Returns:
-        tuple: (sorted_vertices, sorting_indices)
-            - sorted_vertices: Tensor of shape (batch_size, nv, 3) with sorted vertices
-            - sorting_indices: Tensor of shape (batch_size, nv) tracking original indices
-    """
-    # Create placeholder for sorted vertices and sorting indices
-    sorted_vertices = torch.empty_like(vertices)
-    sorting_indices = torch.empty(
-        vertices.shape[:2], dtype=torch.long, device=vertices.device
-    )
-
-    for i, batch in enumerate(vertices):  # Process each batch independently
-        # Track sorting indices for this batch
-        current_indices = torch.arange(batch.shape[0], device=batch.device)
-
-        # Sort by x first, then y, then z to achieve z > y > x lexicographical sort
-        x_sorted_indices = torch.argsort(batch[:, 0], stable=True)
-        batch = batch[x_sorted_indices]
-        current_indices = current_indices[x_sorted_indices]
-
-        y_sorted_indices = torch.argsort(batch[:, 1], stable=True)
-        batch = batch[y_sorted_indices]
-        current_indices = current_indices[y_sorted_indices]
-
-        z_sorted_indices = torch.argsort(batch[:, 2], stable=True)
-        sorted_vertices[i] = batch[z_sorted_indices]
-        sorting_indices[i] = current_indices[z_sorted_indices]
-
-    return sorted_vertices, sorting_indices
-
-
-def reindex_faces_after_sort(
-    faces: torch.Tensor, sorting_indices: torch.Tensor
-) -> torch.Tensor:
-    """
-    Reindex faces after sorting vertices to maintain correct triangle connections.
-
-    Args:
-        faces (torch.Tensor): Original faces tensor of shape (batch_size, nf, 3)
-        sorting_indices (torch.Tensor): Indices used to sort vertices of shape (batch_size, nv)
-
-    Returns:
-        torch.Tensor: Reindexed faces tensor with the same shape as input
-    """
-    # Validate input shapes
-    assert faces.shape[0] == sorting_indices.shape[0], "Batch sizes must match"
-
-    # Create an inverse mapping to track new indices
-    batch_size, num_vertices = sorting_indices.shape
-    reindexed_faces = torch.empty_like(faces)
-
-    # For each batch
-    for i in range(batch_size):
-        # Create inverse index mapping
-        # Create a tensor where index is the original vertex index and value is the new index
-        inverse_mapping = torch.empty(
-            num_vertices, dtype=torch.long, device=sorting_indices.device
-        )
-        inverse_mapping[sorting_indices[i]] = torch.arange(
-            num_vertices, device=sorting_indices.device
-        )
-        # Reindex the faces for this batch using the inverse mapping
-        reindexed_faces[i] = inverse_mapping[faces[i]]
-
-    return reindexed_faces
-
-
 class MeshTokenizer(nn.Module):
     def __init__(self, args):
         super().__init__()
@@ -148,22 +74,6 @@ class MeshTokenizer(nn.Module):
         faces = data_dict["faces"]  # shape: batch x nf x 3
         print("Raw vertices: ", vertices)
         print("Raw faces: ", faces)
-
-        # Preprocessing: normalize, reorder vertices, and reorder faces
-        vertices = self.normalize_vertices_scale(vertices)
-        print("Normalized vertices: ", vertices)
-
-        # Reorder vertices by (z, y, x) using lexicographical sorting
-        vertices, new_indices = torch_lexical_sort(vertices)
-        print("Sorted vertices: ", vertices)
-
-        # Reindex faces after sorting vertices
-        reindexed_faces = reindex_faces_after_sort(faces, new_indices)
-        print("Reindexed faces: ", reindexed_faces)
-
-        # Reorder faces by (z, y, x) using lexicographical sorting
-        sorted_faces, _ = torch_lexical_sort(reindexed_faces)
-        print("Sorted faces: ", sorted_faces)
 
         # Generate face mask
         face_mask = reduce(faces != self.pad_id, "b nf c -> b nf", "all")
