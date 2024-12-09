@@ -1,0 +1,4 @@
+.pth
+./checkpoints
+./logs
+__pycache__
