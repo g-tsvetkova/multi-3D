@@ -78,3 +78,17 @@ class Dataset:
         # Sort vertices by z, y, x in ascending order
         sorted_indices = np.lexsort((vertices[:, 0], vertices[:, 1], vertices[:, 2]))
         return vertices[sorted_indices]
+
+
+if __name__ == "__main__":
+    dataset = Dataset()
+    sampler = torch.utils.data.RandomSampler(dataset)
+    dataloader = torch.utils.data.DataLoader(
+        dataset,
+        sampler=sampler,
+        batch_size=1,
+        num_workers=4,
+        # add for meshgpt
+        drop_last=True,
+    )
+    next(iter(dataloader))
