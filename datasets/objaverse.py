@@ -113,7 +113,7 @@ class Dataset:
         super().__init__()
         # self.max_vertices = 256
         # self.max_faces = args.n_max_triangles
-        self.all_files = glob.glob(
+        self.mesh_files = glob.glob(
             "/root/.objaverse/filtered_meshes/*/*.glb"
         )  # Mesh file paths
         # Split the dataset into train/test
@@ -132,11 +132,11 @@ class Dataset:
         print(f"Loading {split_set} data with {len(self.mesh_files)} files.")
 
     def __len__(self):
-        return len(self.all_files)
+        return len(self.mesh_files)
 
     def __getitem__(self, idx):
         # Load the mesh
-        mesh_file = self.all_files[idx]
+        mesh_file = self.mesh_files[idx]
         scene = trimesh.load(mesh_file, force="mesh")
         vertices, faces = scene.vertices, scene.faces
 
