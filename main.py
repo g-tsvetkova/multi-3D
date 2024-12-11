@@ -169,22 +169,17 @@ def build_dataloader_func(args, dataset, split):
 
 
 def build_dataset_func(args):
-
     datasets = {"train": [], "test": []}
 
     for dataset in args.dataset.split(","):
         dataset_module = importlib.import_module(f"datasets.{dataset}")
-        # datasets["train"].append(
-        #     dataset_module.Dataset(args, split_set="train", augment=args.augment)
-        # )
-        # datasets["test"].append(
-        #     dataset_module.Dataset(args, split_set="val", augment=False)
-        # )
+        
+        # Pass args as the first argument to Dataset
         datasets["train"].append(
-            dataset_module.Dataset(split_set="train", augment=args.augment)
+            dataset_module.Dataset(args, split_set="train", augment=args.augment)
         )
         datasets["test"].append(
-            dataset_module.Dataset(split_set="test", augment=False)
+            dataset_module.Dataset(args, split_set="test", augment=False)
         )
 
     datasets["train"] = torch.utils.data.ConcatDataset(datasets["train"])
@@ -203,6 +198,7 @@ def build_dataset_func(args):
         dataloaders["test"].append(test_loader)
 
     return datasets, dataloaders
+
 
 
 def build_model_func(args):

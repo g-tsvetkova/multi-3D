@@ -74,7 +74,6 @@ def torch_lexical_sort(vertices: torch.Tensor) -> tuple:
     return sorted_vertices, sorting_indices
 
 
-
 # def reindex_faces_after_sort(
 #     faces: torch.Tensor, sorting_indices: torch.Tensor
 # ) -> torch.Tensor:
@@ -171,7 +170,7 @@ def normalize_vertices_scale(vertices: torch.Tensor) -> torch.Tensor:
 
 class Dataset:
 
-    def __init__(self, *args, split_set="train", **kwargs):
+    def __init__(self, args, split_set="train", **kwargs):
         """
         Initialize the dataset with mesh files and preprocessing parameters.
         """
@@ -195,6 +194,12 @@ class Dataset:
             raise ValueError("split_set must be 'train' or 'test'")
 
         print(f"Loading {split_set} data with {len(self.mesh_files)} files.")
+        
+        # Define maximum dimensions for padding (adjust these as needed)
+        self.max_vertices = 1024
+        self.max_faces = args.n_max_triangles
+        self.face_pad_id = -1  # Use -1 to indicate padded faces
+
 
     def __len__(self):
         return len(self.mesh_files)
@@ -224,33 +229,25 @@ class Dataset:
         sorted_faces, _ = torch_lexical_sort(reindexed_faces)
         # print("Sorted faces: ", sorted_faces)
 
+        # Pad vertices
+        padded_vertices = torch.zeros((self.max_vertices, 3), dtype=vertices.dtype)
+        num_v = min(vertices.shape[0], self.max_vertices)
+        padded_vertices[:num_v, :] = vertices[:num_v]
+
+        # Pad faces
+        padded_faces = torch.full((self.max_faces, 3), fill_value=self.face_pad_id, dtype=faces.dtype)
+        num_f = min(reindexed_faces.shape[0], self.max_faces)
+        padded_faces[:num_f, :] = reindexed_faces[:num_f]
+
         data_dict = {
-            "vertices": vertices,
-            "faces": sorted_faces,
+            "vertices": padded_vertices,   # (max_vertices, 3)
+            "faces": padded_faces,         # (max_faces, 3), with padding
             "shape_idx": torch.tensor(idx, dtype=torch.int64),
+            "num_vertices": torch.tensor(num_v, dtype=torch.int64),
+            "num_faces": torch.tensor(num_f, dtype=torch.int64)
         }
-        return data_dicts
 
-    # def __getitem__(self, idx):
-    #     # Load the mesh
-    #     mesh_file = self.all_files[idx]
-    #     scene = trimesh.load(mesh_file, force="mesh")
-    #     vertices, faces = scene.vertices, scene.faces
-
-    #     # Pad vertices and faces**
-    #     padded_vertices = np.zeros((self.max_vertices, 3), dtype=np.float32)
-    #     padded_vertices[: vertices.shape[0]] = vertices
-
-    #     padded_faces = np.zeros((self.max_faces, 3), dtype=np.int64)
-    #     padded_faces[: faces.shape[0]] = faces
-
-    #     # Construct data dictionary
-    #     data_dict = {
-    #         "vertices": torch.tensor(padded_vertices, dtype=torch.float32),
-    #         "faces": torch.tensor(padded_faces, dtype=torch.long),
-    #     }
-    #     return data_dict
-
+        return data_dict
 
 if __name__ == "__main__":
     dataset = Dataset()
