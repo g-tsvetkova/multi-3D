@@ -61,6 +61,11 @@ class MeshTokenizer(nn.Module):
         # Collect vertex coordinates for each face: b x nf x nv x c
         faces_vertices = repeat(face_without_pad, "b nf nv -> b nf nv c", c=num_coors)
         vertices = repeat(vertices, "b nv c -> b nf nv c", nf=num_faces)
+        print(vertices.shape)
+        print(faces_vertices.shape)
+        print("max face index:", faces_vertices.max().item(), "num_vertices:", vertices.shape[1])
+        print("min face index:", faces_vertices.min().item())
+
         face_coords = vertices.gather(-2, faces_vertices.long())
 
         # Discretize face coordinates

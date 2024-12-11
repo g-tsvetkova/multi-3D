@@ -1,5 +1,5 @@
 export LLM_CONFIG='mesh-xl/mesh-xl-125m'
-export NSAMPLE_PER_GPU=8
+export NSAMPLE_PER_GPU=4
 export SAMPLE_ROUNDS=100
 export OUTPUT_DIR='./checkpoints'
 

@@ -305,5 +305,5 @@ if __name__ == "__main__":
     args = make_args_parser()
 
     os.environ["PYTHONWARNINGS"] = "ignore:semaphore_tracker:UserWarning"
-
+    os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
     main(args)

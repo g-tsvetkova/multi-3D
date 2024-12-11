@@ -196,7 +196,7 @@ class Dataset:
         print(f"Loading {split_set} data with {len(self.mesh_files)} files.")
         
         # Define maximum dimensions for padding (adjust these as needed)
-        self.max_vertices = 1024
+        self.max_vertices = 2000
         self.max_faces = args.n_max_triangles
         self.face_pad_id = -1  # Use -1 to indicate padded faces
 
@@ -226,7 +226,7 @@ class Dataset:
         # Reindex faces after sorting vertices
         reindexed_faces = reindex_faces_after_sort(faces, new_indices)
         # print("Reindexed faces: ", reindexed_faces)
-
+        # After sorting and reindexing:
         # Reorder faces by (z, y, x) using lexicographical sorting
         sorted_faces, _ = torch_lexical_sort(reindexed_faces)
         # print("Sorted faces: ", sorted_faces)
