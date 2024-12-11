@@ -208,7 +208,9 @@ class Dataset:
         # Load the mesh
         mesh_file = self.mesh_files[idx]
         scene = trimesh.load(mesh_file, force="mesh")
+        print(scene)
         vertices, faces = scene.vertices, scene.faces
+
         # convert to torch tensors
         vertices = torch.from_numpy(vertices).float()
         faces = torch.from_numpy(faces).long()
