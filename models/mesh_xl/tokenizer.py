@@ -45,12 +45,12 @@ class MeshTokenizer(nn.Module):
         # Extract vertices and faces
         vertices = data_dict["vertices"]  # shape: batch x nv x 3
         faces = data_dict["faces"]  # shape: batch x nf x 3
-        print("Raw vertices: ", vertices)
-        print("Raw faces: ", faces)
+        # print("Raw vertices: ", vertices)
+        # print("Raw faces: ", faces)
 
         # Generate face mask
         face_mask = reduce(faces != self.pad_id, "b nf c -> b nf", "all")
-        print("Face mask: ", face_mask)
+        # print("Face mask: ", face_mask)
 
         batch, num_vertices, num_coors = vertices.shape
         _, num_faces, _ = faces.shape

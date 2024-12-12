@@ -1,0 +1,362 @@
+Loading train data with 515 files.
+Loading test data with 129 files.
+	[train]	transformer.model.decoder.embed_tokens.weight:	torch.Size([131, 768])
+	[train]	transformer.model.decoder.embed_positions.weight:	torch.Size([5002, 768])
+	[train]	transformer.model.decoder.final_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.final_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.0.self_attn.k_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.0.self_attn.k_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.0.self_attn.v_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.0.self_attn.v_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.0.self_attn.q_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.0.self_attn.q_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.0.self_attn.out_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.0.self_attn.out_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.0.self_attn_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.0.self_attn_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.0.fc1.weight:	torch.Size([3072, 768])
+	[train]	transformer.model.decoder.layers.0.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.0.fc2.weight:	torch.Size([768, 3072])
+	[train]	transformer.model.decoder.layers.0.fc2.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.0.final_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.0.final_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.1.self_attn.k_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.1.self_attn.k_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.1.self_attn.v_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.1.self_attn.v_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.1.self_attn.q_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.1.self_attn.q_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.1.self_attn.out_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.1.self_attn.out_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.1.self_attn_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.1.self_attn_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.1.fc1.weight:	torch.Size([3072, 768])
+	[train]	transformer.model.decoder.layers.1.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.1.fc2.weight:	torch.Size([768, 3072])
+	[train]	transformer.model.decoder.layers.1.fc2.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.1.final_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.1.final_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.2.self_attn.k_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.2.self_attn.k_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.2.self_attn.v_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.2.self_attn.v_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.2.self_attn.q_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.2.self_attn.q_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.2.self_attn.out_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.2.self_attn.out_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.2.self_attn_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.2.self_attn_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.2.fc1.weight:	torch.Size([3072, 768])
+	[train]	transformer.model.decoder.layers.2.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.2.fc2.weight:	torch.Size([768, 3072])
+	[train]	transformer.model.decoder.layers.2.fc2.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.2.final_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.2.final_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.3.self_attn.k_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.3.self_attn.k_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.3.self_attn.v_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.3.self_attn.v_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.3.self_attn.q_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.3.self_attn.q_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.3.self_attn.out_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.3.self_attn.out_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.3.self_attn_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.3.self_attn_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.3.fc1.weight:	torch.Size([3072, 768])
+	[train]	transformer.model.decoder.layers.3.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.3.fc2.weight:	torch.Size([768, 3072])
+	[train]	transformer.model.decoder.layers.3.fc2.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.3.final_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.3.final_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.4.self_attn.k_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.4.self_attn.k_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.4.self_attn.v_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.4.self_attn.v_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.4.self_attn.q_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.4.self_attn.q_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.4.self_attn.out_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.4.self_attn.out_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.4.self_attn_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.4.self_attn_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.4.fc1.weight:	torch.Size([3072, 768])
+	[train]	transformer.model.decoder.layers.4.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.4.fc2.weight:	torch.Size([768, 3072])
+	[train]	transformer.model.decoder.layers.4.fc2.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.4.final_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.4.final_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.5.self_attn.k_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.5.self_attn.k_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.5.self_attn.v_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.5.self_attn.v_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.5.self_attn.q_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.5.self_attn.q_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.5.self_attn.out_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.5.self_attn.out_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.5.self_attn_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.5.self_attn_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.5.fc1.weight:	torch.Size([3072, 768])
+	[train]	transformer.model.decoder.layers.5.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.5.fc2.weight:	torch.Size([768, 3072])
+	[train]	transformer.model.decoder.layers.5.fc2.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.5.final_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.5.final_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.6.self_attn.k_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.6.self_attn.k_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.6.self_attn.v_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.6.self_attn.v_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.6.self_attn.q_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.6.self_attn.q_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.6.self_attn.out_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.6.self_attn.out_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.6.self_attn_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.6.self_attn_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.6.fc1.weight:	torch.Size([3072, 768])
+	[train]	transformer.model.decoder.layers.6.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.6.fc2.weight:	torch.Size([768, 3072])
+	[train]	transformer.model.decoder.layers.6.fc2.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.6.final_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.6.final_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.7.self_attn.k_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.7.self_attn.k_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.7.self_attn.v_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.7.self_attn.v_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.7.self_attn.q_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.7.self_attn.q_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.7.self_attn.out_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.7.self_attn.out_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.7.self_attn_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.7.self_attn_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.7.fc1.weight:	torch.Size([3072, 768])
+	[train]	transformer.model.decoder.layers.7.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.7.fc2.weight:	torch.Size([768, 3072])
+	[train]	transformer.model.decoder.layers.7.fc2.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.7.final_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.7.final_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.8.self_attn.k_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.8.self_attn.k_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.8.self_attn.v_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.8.self_attn.v_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.8.self_attn.q_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.8.self_attn.q_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.8.self_attn.out_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.8.self_attn.out_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.8.self_attn_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.8.self_attn_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.8.fc1.weight:	torch.Size([3072, 768])
+	[train]	transformer.model.decoder.layers.8.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.8.fc2.weight:	torch.Size([768, 3072])
+	[train]	transformer.model.decoder.layers.8.fc2.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.8.final_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.8.final_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.9.self_attn.k_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.9.self_attn.k_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.9.self_attn.v_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.9.self_attn.v_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.9.self_attn.q_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.9.self_attn.q_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.9.self_attn.out_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.9.self_attn.out_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.9.self_attn_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.9.self_attn_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.9.fc1.weight:	torch.Size([3072, 768])
+	[train]	transformer.model.decoder.layers.9.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.9.fc2.weight:	torch.Size([768, 3072])
+	[train]	transformer.model.decoder.layers.9.fc2.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.9.final_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.9.final_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.10.self_attn.k_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.10.self_attn.k_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.10.self_attn.v_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.10.self_attn.v_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.10.self_attn.q_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.10.self_attn.q_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.10.self_attn.out_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.10.self_attn.out_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.10.self_attn_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.10.self_attn_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.10.fc1.weight:	torch.Size([3072, 768])
+	[train]	transformer.model.decoder.layers.10.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.10.fc2.weight:	torch.Size([768, 3072])
+	[train]	transformer.model.decoder.layers.10.fc2.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.10.final_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.10.final_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.11.self_attn.k_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.11.self_attn.k_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.11.self_attn.v_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.11.self_attn.v_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.11.self_attn.q_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.11.self_attn.q_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.11.self_attn.out_proj.weight:	torch.Size([768, 768])
+	[train]	transformer.model.decoder.layers.11.self_attn.out_proj.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.11.self_attn_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.11.self_attn_layer_norm.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.11.fc1.weight:	torch.Size([3072, 768])
+	[train]	transformer.model.decoder.layers.11.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.11.fc2.weight:	torch.Size([768, 3072])
+	[train]	transformer.model.decoder.layers.11.fc2.bias:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.11.final_layer_norm.weight:	torch.Size([768])
+	[train]	transformer.model.decoder.layers.11.final_layer_norm.bias:	torch.Size([768])
+call with args: Namespace(base_lr=0.0001, final_lr=1e-06, weight_decay=0.1, clip_gradient=0.1, warm_lr=1e-06, warm_lr_iters=1000, pad_id=-1, dataset='objaverse', augment=False, n_discrete_size=128, n_max_triangles=800, model='mesh_xl', llm='mesh-xl/mesh-xl-125m', text_condition=None, image_condition=None, pretrained_weights=None, dataset_num_workers=0, batchsize_per_gpu=2, start_epoch=0, max_epoch=100, start_eval_after=-1, eval_every_iteration=4000, seed=0, test_only=False, sample_rounds=100, criterion=None, test_ckpt='', checkpoint_dir='./checkpoints', save_every=20000, log_every=10)
+FullyShardedDataParallel(
+  (_fsdp_wrapped_module): MeshXL(
+    (tokenizer): MeshTokenizer()
+    (transformer): OPTForCausalLM(
+      (model): OPTModel(
+        (decoder): OPTDecoder(
+          (embed_tokens): FullyShardedDataParallel(
+            (_fsdp_wrapped_module): Embedding(131, 768, padding_idx=130)
+          )
+          (embed_positions): FullyShardedDataParallel(
+            (_fsdp_wrapped_module): OPTLearnedPositionalEmbedding(5002, 768)
+          )
+          (final_layer_norm): FullyShardedDataParallel(
+            (_fsdp_wrapped_module): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          )
+          (layers): ModuleList(
+            (0-11): 12 x OPTDecoderLayer(
+              (self_attn): OPTAttention(
+                (k_proj): FullyShardedDataParallel(
+                  (_fsdp_wrapped_module): Linear(in_features=768, out_features=768, bias=True)
+                )
+                (v_proj): FullyShardedDataParallel(
+                  (_fsdp_wrapped_module): Linear(in_features=768, out_features=768, bias=True)
+                )
+                (q_proj): FullyShardedDataParallel(
+                  (_fsdp_wrapped_module): Linear(in_features=768, out_features=768, bias=True)
+                )
+                (out_proj): FullyShardedDataParallel(
+                  (_fsdp_wrapped_module): Linear(in_features=768, out_features=768, bias=True)
+                )
+              )
+              (activation_fn): ReLU()
+              (self_attn_layer_norm): FullyShardedDataParallel(
+                (_fsdp_wrapped_module): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              )
+              (fc1): FullyShardedDataParallel(
+                (_fsdp_wrapped_module): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (fc2): FullyShardedDataParallel(
+                (_fsdp_wrapped_module): Linear(in_features=3072, out_features=768, bias=True)
+              )
+              (final_layer_norm): FullyShardedDataParallel(
+                (_fsdp_wrapped_module): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              )
+            )
+          )
+        )
+      )
+      (lm_head): FullyShardedDataParallel(
+        (_fsdp_wrapped_module): Linear(in_features=768, out_features=131, bias=False)
+      )
+    )
+  )
+)
+<accelerate.data_loader.DataLoaderShard object at 0x7f8a25a795d0>
+torch.Size([2, 800, 2500, 3])
+torch.Size([2, 800, 3, 3])
+max face index: 1005 num_vertices: 800
+min face index: 0
+Discrete face coordinates:  tensor([[[[ 45, 116,  54],
+          [ 45, 104,  51],
+          [ 45, 104,  54]],
+
+         [[ 45, 116,  51],
+          [ 45, 104,  51],
+          [ 45, 116,  54]],
+
+         [[ 48, 104,  54],
+          [ 48,  98,  51],
+          [ 48,  98,  54]],
+
+         ...,
+
+         [[ 60,  64,  51],
+          [ 60,  64,  51],
+          [ 60,  64,  51]],
+
+         [[ 60,  64,  51],
+          [ 60,  64,  51],
+          [ 60,  64,  51]],
+
+         [[ 60,  64,  51],
+          [ 60,  64,  51],
+          [ 60,  64,  51]]],
+
+
+        [[[ 77,  73,  79],
+          [ 78,  73,  59],
+          [ 78,  65,  59]],
+
+         [[ 77,  73,  79],
+          [ 78,  65,  59],
+          [ 77,  65,  79]],
+
+         [[ 45,  72,  81],
+          [ 75,  72,  81],
+          [ 75,  65,  81]],
+
+         ...,
+
+         [[ 31,  64,  48],
+          [ 31,  64,  48],
+          [ 31,  64,  48]],
+
+         [[ 31,  64,  48],
+          [ 31,  64,  48],
+          [ 31,  64,  48]],
+
+         [[ 31,  64,  48],
+          [ 31,  64,  48],
+          [ 31,  64,  48]]]], device='cuda:0')
+Discrete face coordinates:  tensor([[[[ 45, 116,  54],
+          [ 45, 104,  51],
+          [ 45, 104,  54]],
+
+         [[ 45, 116,  51],
+          [ 45, 104,  51],
+          [ 45, 116,  54]],
+
+         [[ 48, 104,  54],
+          [ 48,  98,  51],
+          [ 48,  98,  54]],
+
+         ...,
+
+         [[ 60,  64,  51],
+          [ 60,  64,  51],
+          [ 60,  64,  51]],
+
+         [[ 60,  64,  51],
+          [ 60,  64,  51],
+          [ 60,  64,  51]],
+
+         [[ 60,  64,  51],
+          [ 60,  64,  51],
+          [ 60,  64,  51]]],
+
+
+        [[[ 77,  73,  79],
+          [ 78,  73,  59],
+          [ 78,  65,  59]],
+
+         [[ 77,  73,  79],
+          [ 78,  65,  59],
+          [ 77,  65,  79]],
+
+         [[ 45,  72,  81],
+          [ 75,  72,  81],
+          [ 75,  65,  81]],
+
+         ...,
+
+         [[ 31,  64,  48],
+          [ 31,  64,  48],
+          [ 31,  64,  48]],
+
+         [[ 31,  64,  48],
+          [ 31,  64,  48],
+          [ 31,  64,  48]],
+
+         [[ 31,  64,  48],
+          [ 31,  64,  48],
+          [ 31,  64,  48]]]], device='cuda:0')

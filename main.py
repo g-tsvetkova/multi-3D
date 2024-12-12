@@ -9,6 +9,8 @@ from utils.io import resume_if_possible
 from utils.misc import my_worker_init_fn
 from utils.logger import Logger
 
+# import torch.distributed.elastic.multiprocessing.errors as errors
+# errors.record()
 
 def make_args_parser():
 
@@ -222,7 +224,11 @@ def main(args):
         raise AssertionError("Either checkpoint_dir or test_ckpt should be presented!")
 
     os.makedirs(args.checkpoint_dir, exist_ok=True)
-    accelerator = Accelerator()
+    accelerator = Accelerator(log_with="wandb")
+    # Initialise your wandb run, passing wandb parameters and any config information
+    accelerator.init_trackers(
+        project_name="multi3D", 
+    )
     set_seed(args.seed)
 
     ### build datasets and dataloaders

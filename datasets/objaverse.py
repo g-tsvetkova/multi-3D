@@ -196,7 +196,7 @@ class Dataset:
         print(f"Loading {split_set} data with {len(self.mesh_files)} files.")
         
         # Define maximum dimensions for padding (adjust these as needed)
-        self.max_vertices = 2000
+        self.max_vertices = 2500
         self.max_faces = args.n_max_triangles
         self.face_pad_id = -1  # Use -1 to indicate padded faces
 
@@ -208,7 +208,6 @@ class Dataset:
         # Load the mesh
         mesh_file = self.mesh_files[idx]
         scene = trimesh.load(mesh_file, force="mesh")
-        print(scene)
         vertices, faces = scene.vertices, scene.faces
 
         # convert to torch tensors

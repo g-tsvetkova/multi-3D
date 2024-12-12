@@ -1,0 +1,11 @@
+{"time":"2024-12-12T04:06:09.166745588Z","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-12T04:06:09.166760777Z","level":"INFO","msg":"created symlink","path":"/root/MeshXL/wandb/run-20241212_040609-wd5mz07b/logs/debug-core.log"}
+{"time":"2024-12-12T04:06:09.270991601Z","level":"INFO","msg":"created new stream","id":"wd5mz07b"}
+{"time":"2024-12-12T04:06:09.271026977Z","level":"INFO","msg":"stream: started","id":"wd5mz07b"}
+{"time":"2024-12-12T04:06:09.271031956Z","level":"INFO","msg":"writer: Do: started","stream_id":"wd5mz07b"}
+{"time":"2024-12-12T04:06:09.271059968Z","level":"INFO","msg":"sender: started","stream_id":"wd5mz07b"}
+{"time":"2024-12-12T04:06:09.27106638Z","level":"INFO","msg":"handler: started","stream_id":"wd5mz07b"}
+{"time":"2024-12-12T04:06:09.580172532Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-12T04:06:13.166105203Z","level":"INFO","msg":"stream: closing","id":"wd5mz07b"}
+{"time":"2024-12-12T04:06:13.166195832Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-12T04:06:13.167066727Z","level":"INFO","msg":"Stopped system monitor"}

@@ -116,6 +116,9 @@ def do_train(
                         ]
                     )
                 )
+                # Log to wandb by calling `accelerator.log`, `step` is optional
+                accelerator.log({"train_loss": {k: v.avg for k, v in loss_break_down_avg.items()}})
+
                 train_loss_log = {k: v.avg for k, v in loss_break_down_avg.items()}
                 train_loss_log["learning_rate"] = curr_lr
                 logger.log_scalars(train_loss_log, prefix="train", step=curr_iter)
@@ -196,7 +199,9 @@ def do_train(
             best_val_metrics,
             filename="checkpoint.pth",
         )
-
+    # Make sure that the wandb tracker finishes correctly
+    accelerator.end_training()
+    
     # end of training
 
     return
