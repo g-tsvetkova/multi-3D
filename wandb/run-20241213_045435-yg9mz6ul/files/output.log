@@ -1,0 +1,1084 @@
+Loading train data with 515 files.
+Loading test data with 129 files.
+	[train]	transformer.model.decoder.embed_tokens.weight:	torch.Size([131, 256])
+	[train]	transformer.model.decoder.embed_positions.weight:	torch.Size([8194, 256])
+	[train]	transformer.model.decoder.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.0.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.0.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.0.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.0.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.0.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.0.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.0.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.1.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.1.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.1.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.1.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.1.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.1.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.1.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.2.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.2.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.2.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.2.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.2.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.2.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.2.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.3.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.3.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.3.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.3.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.3.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.3.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.3.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.4.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.4.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.4.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.4.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.4.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.4.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.4.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.5.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.5.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.5.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.5.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.5.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.5.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.5.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.6.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.6.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.6.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.6.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.6.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.6.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.6.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.7.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.7.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.7.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.7.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.7.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.7.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.7.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.final_layer_norm.bias:	torch.Size([256])
+call with args: Namespace(base_lr=0.0001, final_lr=1e-06, weight_decay=0.1, clip_gradient=0.1, warm_lr=1e-06, warm_lr_iters=1000, pad_id=-1, dataset='objaverse', augment=False, n_discrete_size=128, n_max_triangles=800, model='mesh_xl', llm='mesh-xl/mesh-xl-125m', text_condition=None, image_condition=None, pretrained_weights=None, dataset_num_workers=1, batchsize_per_gpu=1, start_epoch=0, max_epoch=100, start_eval_after=-1, eval_every_iteration=4000, seed=0, test_only=False, sample_rounds=100, criterion=None, test_ckpt='', checkpoint_dir='./checkpoints', save_every=20000, log_every=10)
+MeshXL(
+  (tokenizer): MeshTokenizer()
+  (transformer): OPTForCausalLM(
+    (model): OPTModel(
+      (decoder): OPTDecoder(
+        (embed_tokens): Embedding(131, 256, padding_idx=130)
+        (embed_positions): OPTLearnedPositionalEmbedding(8194, 256)
+        (final_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (layers): ModuleList(
+          (0-7): 8 x OPTDecoderLayer(
+            (self_attn): OPTAttention(
+              (k_proj): Linear(in_features=256, out_features=256, bias=True)
+              (v_proj): Linear(in_features=256, out_features=256, bias=True)
+              (q_proj): Linear(in_features=256, out_features=256, bias=True)
+              (out_proj): Linear(in_features=256, out_features=256, bias=True)
+            )
+            (activation_fn): ReLU()
+            (self_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            (fc1): Linear(in_features=256, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=256, bias=True)
+            (final_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (lm_head): Linear(in_features=256, out_features=131, bias=False)
+  )
+)
+Epoch [0/100]; Iter [0/51500]; loss 4.9151; gen_loss 4.9151; LR 1.00e-06; Iter time 0.69s; ETA 9:55:54; Mem 18644.09MB
+Epoch [0/100]; Iter [10/51500]; loss 4.8532; gen_loss 4.8532; LR 1.99e-06; Iter time 0.36s; ETA 5:10:29; Mem 18775.15MB
+Epoch [0/100]; Iter [20/51500]; loss 4.8543; gen_loss 4.8543; LR 2.98e-06; Iter time 0.36s; ETA 5:10:35; Mem 18775.15MB
+Epoch [0/100]; Iter [30/51500]; loss 4.7882; gen_loss 4.7882; LR 3.97e-06; Iter time 0.36s; ETA 5:09:07; Mem 18775.15MB
+Epoch [0/100]; Iter [40/51500]; loss 4.6464; gen_loss 4.6464; LR 4.96e-06; Iter time 0.36s; ETA 5:09:50; Mem 18775.15MB
+Epoch [0/100]; Iter [50/51500]; loss 4.7123; gen_loss 4.7123; LR 5.95e-06; Iter time 0.36s; ETA 5:10:17; Mem 18775.15MB
+Epoch [0/100]; Iter [60/51500]; loss 4.6051; gen_loss 4.6051; LR 6.94e-06; Iter time 0.36s; ETA 5:10:03; Mem 18775.15MB
+Epoch [0/100]; Iter [70/51500]; loss 4.5912; gen_loss 4.5912; LR 7.93e-06; Iter time 0.36s; ETA 5:10:04; Mem 18775.15MB
+Epoch [0/100]; Iter [80/51500]; loss 4.4588; gen_loss 4.4588; LR 8.92e-06; Iter time 0.36s; ETA 5:10:11; Mem 18775.15MB
+Epoch [0/100]; Iter [90/51500]; loss 4.5744; gen_loss 4.5744; LR 9.91e-06; Iter time 0.36s; ETA 5:10:19; Mem 18775.15MB
+Epoch [0/100]; Iter [100/51500]; loss 4.4691; gen_loss 4.4691; LR 1.09e-05; Iter time 0.36s; ETA 5:10:59; Mem 18775.15MB
+Epoch [0/100]; Iter [110/51500]; loss 4.4463; gen_loss 4.4463; LR 1.19e-05; Iter time 0.36s; ETA 5:10:37; Mem 18775.15MB
+Epoch [0/100]; Iter [120/51500]; loss 4.4859; gen_loss 4.4859; LR 1.29e-05; Iter time 0.36s; ETA 5:10:29; Mem 18775.15MB
+Epoch [0/100]; Iter [130/51500]; loss 4.4550; gen_loss 4.4550; LR 1.39e-05; Iter time 0.36s; ETA 5:10:48; Mem 18775.15MB
+Epoch [0/100]; Iter [140/51500]; loss 4.4793; gen_loss 4.4793; LR 1.49e-05; Iter time 0.36s; ETA 5:10:36; Mem 18775.15MB
+Epoch [0/100]; Iter [150/51500]; loss 4.5476; gen_loss 4.5476; LR 1.58e-05; Iter time 0.36s; ETA 5:10:33; Mem 18775.15MB
+Epoch [0/100]; Iter [160/51500]; loss 4.4452; gen_loss 4.4452; LR 1.68e-05; Iter time 0.37s; ETA 5:12:25; Mem 18775.15MB
+Epoch [0/100]; Iter [170/51500]; loss 4.4934; gen_loss 4.4934; LR 1.78e-05; Iter time 0.37s; ETA 5:12:51; Mem 18775.15MB
+Epoch [0/100]; Iter [180/51500]; loss 4.1482; gen_loss 4.1482; LR 1.88e-05; Iter time 0.37s; ETA 5:12:12; Mem 18775.15MB
+Epoch [0/100]; Iter [190/51500]; loss 4.3625; gen_loss 4.3625; LR 1.98e-05; Iter time 0.37s; ETA 5:12:17; Mem 18775.15MB
+Epoch [0/100]; Iter [200/51500]; loss 4.1690; gen_loss 4.1690; LR 2.08e-05; Iter time 0.37s; ETA 5:13:22; Mem 18775.15MB
+Epoch [0/100]; Iter [210/51500]; loss 4.1616; gen_loss 4.1616; LR 2.18e-05; Iter time 0.37s; ETA 5:13:40; Mem 18775.15MB
+Epoch [0/100]; Iter [220/51500]; loss 4.2771; gen_loss 4.2771; LR 2.28e-05; Iter time 0.37s; ETA 5:12:03; Mem 18775.15MB
+Epoch [0/100]; Iter [230/51500]; loss 4.2877; gen_loss 4.2877; LR 2.38e-05; Iter time 0.36s; ETA 5:11:02; Mem 18775.15MB
+Epoch [0/100]; Iter [240/51500]; loss 4.1518; gen_loss 4.1518; LR 2.48e-05; Iter time 0.36s; ETA 5:11:17; Mem 18775.15MB
+Epoch [0/100]; Iter [250/51500]; loss 3.7972; gen_loss 3.7972; LR 2.58e-05; Iter time 0.36s; ETA 5:11:22; Mem 18775.15MB
+Epoch [0/100]; Iter [260/51500]; loss 3.9198; gen_loss 3.9198; LR 2.67e-05; Iter time 0.37s; ETA 5:11:53; Mem 18775.15MB
+Epoch [0/100]; Iter [270/51500]; loss 4.1008; gen_loss 4.1008; LR 2.77e-05; Iter time 0.37s; ETA 5:13:18; Mem 18775.15MB
+Epoch [0/100]; Iter [280/51500]; loss 4.1833; gen_loss 4.1833; LR 2.87e-05; Iter time 0.37s; ETA 5:13:31; Mem 18775.15MB
+Epoch [0/100]; Iter [290/51500]; loss 4.1541; gen_loss 4.1541; LR 2.97e-05; Iter time 0.37s; ETA 5:13:14; Mem 18775.15MB
+Epoch [0/100]; Iter [300/51500]; loss 3.8777; gen_loss 3.8777; LR 3.07e-05; Iter time 0.37s; ETA 5:12:08; Mem 18775.15MB
+Epoch [0/100]; Iter [310/51500]; loss 4.2836; gen_loss 4.2836; LR 3.17e-05; Iter time 0.37s; ETA 5:13:06; Mem 18775.15MB
+Epoch [0/100]; Iter [320/51500]; loss 3.8243; gen_loss 3.8243; LR 3.27e-05; Iter time 0.37s; ETA 5:13:15; Mem 18775.15MB
+Epoch [0/100]; Iter [330/51500]; loss 4.0203; gen_loss 4.0203; LR 3.37e-05; Iter time 0.37s; ETA 5:13:40; Mem 18775.15MB
+Epoch [0/100]; Iter [340/51500]; loss 4.0517; gen_loss 4.0517; LR 3.47e-05; Iter time 0.37s; ETA 5:13:19; Mem 18775.15MB
+Epoch [0/100]; Iter [350/51500]; loss 4.2331; gen_loss 4.2331; LR 3.56e-05; Iter time 0.37s; ETA 5:14:03; Mem 18775.15MB
+Epoch [0/100]; Iter [360/51500]; loss 3.8927; gen_loss 3.8927; LR 3.66e-05; Iter time 0.37s; ETA 5:14:19; Mem 18775.15MB
+Epoch [0/100]; Iter [370/51500]; loss 3.9199; gen_loss 3.9199; LR 3.76e-05; Iter time 0.37s; ETA 5:13:37; Mem 18775.15MB
+Epoch [0/100]; Iter [380/51500]; loss 3.9629; gen_loss 3.9629; LR 3.86e-05; Iter time 0.37s; ETA 5:13:11; Mem 18775.15MB
+Epoch [0/100]; Iter [390/51500]; loss 4.2026; gen_loss 4.2026; LR 3.96e-05; Iter time 0.37s; ETA 5:12:38; Mem 18775.15MB
+Epoch [0/100]; Iter [400/51500]; loss 3.8451; gen_loss 3.8451; LR 4.06e-05; Iter time 0.37s; ETA 5:12:59; Mem 18775.15MB
+Epoch [0/100]; Iter [410/51500]; loss 3.7013; gen_loss 3.7013; LR 4.16e-05; Iter time 0.37s; ETA 5:13:04; Mem 18775.15MB
+Epoch [0/100]; Iter [420/51500]; loss 3.8508; gen_loss 3.8508; LR 4.26e-05; Iter time 0.37s; ETA 5:13:17; Mem 18775.15MB
+Epoch [0/100]; Iter [430/51500]; loss 3.9628; gen_loss 3.9628; LR 4.36e-05; Iter time 0.37s; ETA 5:14:04; Mem 18775.15MB
+Epoch [0/100]; Iter [440/51500]; loss 4.0925; gen_loss 4.0925; LR 4.46e-05; Iter time 0.37s; ETA 5:13:35; Mem 18775.15MB
+Epoch [0/100]; Iter [450/51500]; loss 4.0270; gen_loss 4.0270; LR 4.56e-05; Iter time 0.37s; ETA 5:13:43; Mem 18775.15MB
+Epoch [0/100]; Iter [460/51500]; loss 3.8754; gen_loss 3.8754; LR 4.65e-05; Iter time 0.37s; ETA 5:14:03; Mem 18775.15MB
+Epoch [0/100]; Iter [470/51500]; loss 3.8519; gen_loss 3.8519; LR 4.75e-05; Iter time 0.37s; ETA 5:13:35; Mem 18775.15MB
+Epoch [0/100]; Iter [480/51500]; loss 3.9265; gen_loss 3.9265; LR 4.85e-05; Iter time 0.37s; ETA 5:13:43; Mem 18775.15MB
+Epoch [0/100]; Iter [490/51500]; loss 3.9681; gen_loss 3.9681; LR 4.95e-05; Iter time 0.37s; ETA 5:14:41; Mem 18775.15MB
+Epoch [0/100]; Iter [500/51500]; loss 3.5899; gen_loss 3.5899; LR 5.05e-05; Iter time 0.37s; ETA 5:13:54; Mem 18775.15MB
+Epoch [0/100]; Iter [510/51500]; loss 3.7614; gen_loss 3.7614; LR 5.15e-05; Iter time 0.37s; ETA 5:13:50; Mem 18775.15MB
+Epoch [1/100]; Iter [520/51500]; loss 4.0397; gen_loss 4.0397; LR 5.25e-05; Iter time 0.37s; ETA 5:14:21; Mem 18775.15MB
+Epoch [1/100]; Iter [530/51500]; loss 4.0603; gen_loss 4.0603; LR 5.35e-05; Iter time 0.37s; ETA 5:14:55; Mem 18775.15MB
+Epoch [1/100]; Iter [540/51500]; loss 3.8520; gen_loss 3.8520; LR 5.45e-05; Iter time 0.37s; ETA 5:15:10; Mem 18775.15MB
+Epoch [1/100]; Iter [550/51500]; loss 3.9328; gen_loss 3.9328; LR 5.55e-05; Iter time 0.37s; ETA 5:15:10; Mem 18775.15MB
+Epoch [1/100]; Iter [560/51500]; loss 3.8083; gen_loss 3.8083; LR 5.64e-05; Iter time 0.37s; ETA 5:15:11; Mem 18775.15MB
+Epoch [1/100]; Iter [570/51500]; loss 4.0381; gen_loss 4.0381; LR 5.74e-05; Iter time 0.37s; ETA 5:14:53; Mem 18775.15MB
+Epoch [1/100]; Iter [580/51500]; loss 3.9602; gen_loss 3.9602; LR 5.84e-05; Iter time 0.37s; ETA 5:13:41; Mem 18775.15MB
+Epoch [1/100]; Iter [590/51500]; loss 3.9343; gen_loss 3.9343; LR 5.94e-05; Iter time 0.37s; ETA 5:13:54; Mem 18775.15MB
+Epoch [1/100]; Iter [600/51500]; loss 3.6795; gen_loss 3.6795; LR 6.04e-05; Iter time 0.37s; ETA 5:14:27; Mem 18775.15MB
+Epoch [1/100]; Iter [610/51500]; loss 3.7071; gen_loss 3.7071; LR 6.14e-05; Iter time 0.37s; ETA 5:14:52; Mem 18775.15MB
+Epoch [1/100]; Iter [620/51500]; loss 3.4252; gen_loss 3.4252; LR 6.24e-05; Iter time 0.37s; ETA 5:14:42; Mem 18775.15MB
+Epoch [1/100]; Iter [630/51500]; loss 3.4340; gen_loss 3.4340; LR 6.34e-05; Iter time 0.37s; ETA 5:14:18; Mem 18775.15MB
+Epoch [1/100]; Iter [640/51500]; loss 3.5009; gen_loss 3.5009; LR 6.44e-05; Iter time 0.37s; ETA 5:14:37; Mem 18775.15MB
+Epoch [1/100]; Iter [650/51500]; loss 3.8357; gen_loss 3.8357; LR 6.54e-05; Iter time 0.37s; ETA 5:14:36; Mem 18775.15MB
+Epoch [1/100]; Iter [660/51500]; loss 3.6977; gen_loss 3.6977; LR 6.63e-05; Iter time 0.37s; ETA 5:13:56; Mem 18775.15MB
+Epoch [1/100]; Iter [670/51500]; loss 3.7544; gen_loss 3.7544; LR 6.73e-05; Iter time 0.37s; ETA 5:14:18; Mem 18775.15MB
+Epoch [1/100]; Iter [680/51500]; loss 3.9555; gen_loss 3.9555; LR 6.83e-05; Iter time 0.37s; ETA 5:14:59; Mem 18775.15MB
+Epoch [1/100]; Iter [690/51500]; loss 3.6274; gen_loss 3.6274; LR 6.93e-05; Iter time 0.37s; ETA 5:14:29; Mem 18775.15MB
+Epoch [1/100]; Iter [700/51500]; loss 3.8757; gen_loss 3.8757; LR 7.03e-05; Iter time 0.37s; ETA 5:15:23; Mem 18775.15MB
+Epoch [1/100]; Iter [710/51500]; loss 4.0946; gen_loss 4.0946; LR 7.13e-05; Iter time 0.37s; ETA 5:14:13; Mem 18775.15MB
+Epoch [1/100]; Iter [720/51500]; loss 3.7205; gen_loss 3.7205; LR 7.23e-05; Iter time 0.37s; ETA 5:14:09; Mem 18775.15MB
+Epoch [1/100]; Iter [730/51500]; loss 3.7256; gen_loss 3.7256; LR 7.33e-05; Iter time 0.37s; ETA 5:13:18; Mem 18775.15MB
+Epoch [1/100]; Iter [740/51500]; loss 3.6979; gen_loss 3.6979; LR 7.43e-05; Iter time 0.37s; ETA 5:13:35; Mem 18775.15MB
+Epoch [1/100]; Iter [750/51500]; loss 3.5493; gen_loss 3.5493; LR 7.52e-05; Iter time 0.37s; ETA 5:13:34; Mem 18775.15MB
+Epoch [1/100]; Iter [760/51500]; loss 3.4243; gen_loss 3.4243; LR 7.62e-05; Iter time 0.37s; ETA 5:13:46; Mem 18775.15MB
+Epoch [1/100]; Iter [770/51500]; loss 3.7800; gen_loss 3.7800; LR 7.72e-05; Iter time 0.37s; ETA 5:13:22; Mem 18775.15MB
+Epoch [1/100]; Iter [780/51500]; loss 3.6840; gen_loss 3.6840; LR 7.82e-05; Iter time 0.37s; ETA 5:13:30; Mem 18775.15MB
+Epoch [1/100]; Iter [790/51500]; loss 3.6469; gen_loss 3.6469; LR 7.92e-05; Iter time 0.37s; ETA 5:13:26; Mem 18775.15MB
+Epoch [1/100]; Iter [800/51500]; loss 3.9020; gen_loss 3.9020; LR 8.02e-05; Iter time 0.37s; ETA 5:13:34; Mem 18775.15MB
+Epoch [1/100]; Iter [810/51500]; loss 3.4546; gen_loss 3.4546; LR 8.12e-05; Iter time 0.37s; ETA 5:13:14; Mem 18775.15MB
+Epoch [1/100]; Iter [820/51500]; loss 3.6144; gen_loss 3.6144; LR 8.22e-05; Iter time 0.37s; ETA 5:13:18; Mem 18775.15MB
+Epoch [1/100]; Iter [830/51500]; loss 3.7554; gen_loss 3.7554; LR 8.32e-05; Iter time 0.37s; ETA 5:13:17; Mem 18775.15MB
+Epoch [1/100]; Iter [840/51500]; loss 3.5647; gen_loss 3.5647; LR 8.42e-05; Iter time 0.37s; ETA 5:13:18; Mem 18775.15MB
+Epoch [1/100]; Iter [850/51500]; loss 3.6404; gen_loss 3.6404; LR 8.51e-05; Iter time 0.37s; ETA 5:13:24; Mem 18775.15MB
+Epoch [1/100]; Iter [860/51500]; loss 3.6602; gen_loss 3.6602; LR 8.61e-05; Iter time 0.37s; ETA 5:13:17; Mem 18775.15MB
+Epoch [1/100]; Iter [870/51500]; loss 3.7960; gen_loss 3.7960; LR 8.71e-05; Iter time 0.37s; ETA 5:13:02; Mem 18775.15MB
+Epoch [1/100]; Iter [880/51500]; loss 3.6411; gen_loss 3.6411; LR 8.81e-05; Iter time 0.37s; ETA 5:13:32; Mem 18775.15MB
+Epoch [1/100]; Iter [890/51500]; loss 3.6889; gen_loss 3.6889; LR 8.91e-05; Iter time 0.37s; ETA 5:13:33; Mem 18775.15MB
+Epoch [1/100]; Iter [900/51500]; loss 3.5914; gen_loss 3.5914; LR 9.01e-05; Iter time 0.37s; ETA 5:13:51; Mem 18775.15MB
+Epoch [1/100]; Iter [910/51500]; loss 3.8036; gen_loss 3.8036; LR 9.11e-05; Iter time 0.37s; ETA 5:13:27; Mem 18775.15MB
+Epoch [1/100]; Iter [920/51500]; loss 3.7475; gen_loss 3.7475; LR 9.21e-05; Iter time 0.37s; ETA 5:13:21; Mem 18775.15MB
+Epoch [1/100]; Iter [930/51500]; loss 3.7799; gen_loss 3.7799; LR 9.31e-05; Iter time 0.37s; ETA 5:13:19; Mem 18775.15MB
+Epoch [1/100]; Iter [940/51500]; loss 3.5987; gen_loss 3.5987; LR 9.41e-05; Iter time 0.37s; ETA 5:13:29; Mem 18775.15MB
+Epoch [1/100]; Iter [950/51500]; loss 3.8169; gen_loss 3.8169; LR 9.51e-05; Iter time 0.37s; ETA 5:12:34; Mem 18775.15MB
+Epoch [1/100]; Iter [960/51500]; loss 3.6082; gen_loss 3.6082; LR 9.60e-05; Iter time 0.37s; ETA 5:11:20; Mem 18775.15MB
+Epoch [1/100]; Iter [970/51500]; loss 3.9500; gen_loss 3.9500; LR 9.70e-05; Iter time 0.37s; ETA 5:11:16; Mem 18775.15MB
+Epoch [1/100]; Iter [980/51500]; loss 3.7487; gen_loss 3.7487; LR 9.80e-05; Iter time 0.37s; ETA 5:11:16; Mem 18775.15MB
+Epoch [1/100]; Iter [990/51500]; loss 3.7072; gen_loss 3.7072; LR 9.90e-05; Iter time 0.37s; ETA 5:12:06; Mem 18775.15MB
+Epoch [1/100]; Iter [1000/51500]; loss 3.3118; gen_loss 3.3118; LR 1.00e-04; Iter time 0.37s; ETA 5:12:49; Mem 18775.15MB
+Epoch [1/100]; Iter [1010/51500]; loss 3.8368; gen_loss 3.8368; LR 9.99e-05; Iter time 0.37s; ETA 5:12:52; Mem 18775.15MB
+Epoch [1/100]; Iter [1020/51500]; loss 3.1984; gen_loss 3.1984; LR 9.99e-05; Iter time 0.37s; ETA 5:12:59; Mem 18775.15MB
+Epoch [2/100]; Iter [1030/51500]; loss 3.9763; gen_loss 3.9763; LR 9.99e-05; Iter time 0.37s; ETA 5:12:16; Mem 18775.15MB
+Epoch [2/100]; Iter [1040/51500]; loss 3.7336; gen_loss 3.7336; LR 9.99e-05; Iter time 0.37s; ETA 5:11:58; Mem 18775.15MB
+Epoch [2/100]; Iter [1050/51500]; loss 3.7079; gen_loss 3.7079; LR 9.99e-05; Iter time 0.37s; ETA 5:11:54; Mem 18775.15MB
+Epoch [2/100]; Iter [1060/51500]; loss 3.5840; gen_loss 3.5840; LR 9.99e-05; Iter time 0.37s; ETA 5:12:25; Mem 18775.15MB
+Epoch [2/100]; Iter [1070/51500]; loss 3.3945; gen_loss 3.3945; LR 9.99e-05; Iter time 0.37s; ETA 5:11:42; Mem 18775.15MB
+Epoch [2/100]; Iter [1080/51500]; loss 3.7621; gen_loss 3.7621; LR 9.99e-05; Iter time 0.37s; ETA 5:12:50; Mem 18775.15MB
+Epoch [2/100]; Iter [1090/51500]; loss 3.4190; gen_loss 3.4190; LR 9.99e-05; Iter time 0.37s; ETA 5:11:54; Mem 18775.15MB
+Epoch [2/100]; Iter [1100/51500]; loss 3.3146; gen_loss 3.3146; LR 9.99e-05; Iter time 0.37s; ETA 5:12:21; Mem 18775.15MB
+Epoch [2/100]; Iter [1110/51500]; loss 3.4960; gen_loss 3.4960; LR 9.99e-05; Iter time 0.37s; ETA 5:12:07; Mem 18775.15MB
+Epoch [2/100]; Iter [1120/51500]; loss 3.1484; gen_loss 3.1484; LR 9.99e-05; Iter time 0.37s; ETA 5:12:23; Mem 18775.15MB
+Epoch [2/100]; Iter [1130/51500]; loss 3.2536; gen_loss 3.2536; LR 9.99e-05; Iter time 0.37s; ETA 5:11:40; Mem 18775.15MB
+Epoch [2/100]; Iter [1140/51500]; loss 3.3264; gen_loss 3.3264; LR 9.99e-05; Iter time 0.37s; ETA 5:12:25; Mem 18775.15MB
+Epoch [2/100]; Iter [1150/51500]; loss 3.6634; gen_loss 3.6634; LR 9.99e-05; Iter time 0.37s; ETA 5:11:59; Mem 18775.15MB
+Epoch [2/100]; Iter [1160/51500]; loss 3.1868; gen_loss 3.1868; LR 9.99e-05; Iter time 0.37s; ETA 5:12:16; Mem 18775.15MB
+Epoch [2/100]; Iter [1170/51500]; loss 3.2092; gen_loss 3.2092; LR 9.99e-05; Iter time 0.37s; ETA 5:11:41; Mem 18775.15MB
+Epoch [2/100]; Iter [1180/51500]; loss 3.7431; gen_loss 3.7431; LR 9.99e-05; Iter time 0.37s; ETA 5:11:28; Mem 18775.15MB
+Epoch [2/100]; Iter [1190/51500]; loss 3.7251; gen_loss 3.7251; LR 9.99e-05; Iter time 0.37s; ETA 5:11:33; Mem 18775.15MB
+Epoch [2/100]; Iter [1200/51500]; loss 3.3509; gen_loss 3.3509; LR 9.99e-05; Iter time 0.37s; ETA 5:11:27; Mem 18775.15MB
+Epoch [2/100]; Iter [1210/51500]; loss 3.6490; gen_loss 3.6490; LR 9.99e-05; Iter time 0.37s; ETA 5:11:32; Mem 18775.15MB
+Epoch [2/100]; Iter [1220/51500]; loss 3.1323; gen_loss 3.1323; LR 9.99e-05; Iter time 0.37s; ETA 5:10:05; Mem 18775.15MB
+Epoch [2/100]; Iter [1230/51500]; loss 3.6446; gen_loss 3.6446; LR 9.99e-05; Iter time 0.37s; ETA 5:09:41; Mem 18775.15MB
+Epoch [2/100]; Iter [1240/51500]; loss 3.6013; gen_loss 3.6013; LR 9.99e-05; Iter time 0.37s; ETA 5:09:59; Mem 18775.15MB
+Epoch [2/100]; Iter [1250/51500]; loss 3.2851; gen_loss 3.2851; LR 9.99e-05; Iter time 0.37s; ETA 5:09:46; Mem 18775.15MB
+Epoch [2/100]; Iter [1260/51500]; loss 3.6597; gen_loss 3.6597; LR 9.99e-05; Iter time 0.37s; ETA 5:10:46; Mem 18775.15MB
+Epoch [2/100]; Iter [1270/51500]; loss 3.2212; gen_loss 3.2212; LR 9.99e-05; Iter time 0.37s; ETA 5:11:05; Mem 18775.15MB
+Epoch [2/100]; Iter [1280/51500]; loss 3.2619; gen_loss 3.2619; LR 9.98e-05; Iter time 0.37s; ETA 5:09:12; Mem 18775.15MB
+Epoch [2/100]; Iter [1290/51500]; loss 3.2133; gen_loss 3.2133; LR 9.98e-05; Iter time 0.37s; ETA 5:09:17; Mem 18775.15MB
+Epoch [2/100]; Iter [1300/51500]; loss 3.2122; gen_loss 3.2122; LR 9.98e-05; Iter time 0.37s; ETA 5:08:40; Mem 18775.15MB
+Epoch [2/100]; Iter [1310/51500]; loss 3.4658; gen_loss 3.4658; LR 9.98e-05; Iter time 0.37s; ETA 5:08:52; Mem 18775.15MB
+Epoch [2/100]; Iter [1320/51500]; loss 3.1047; gen_loss 3.1047; LR 9.98e-05; Iter time 0.37s; ETA 5:09:06; Mem 18775.15MB
+Epoch [2/100]; Iter [1330/51500]; loss 3.3349; gen_loss 3.3349; LR 9.98e-05; Iter time 0.37s; ETA 5:08:50; Mem 18775.15MB
+Epoch [2/100]; Iter [1340/51500]; loss 2.9382; gen_loss 2.9382; LR 9.98e-05; Iter time 0.37s; ETA 5:08:39; Mem 18775.15MB
+Epoch [2/100]; Iter [1350/51500]; loss 3.1422; gen_loss 3.1422; LR 9.98e-05; Iter time 0.37s; ETA 5:08:58; Mem 18775.15MB
+Epoch [2/100]; Iter [1360/51500]; loss 3.0651; gen_loss 3.0651; LR 9.98e-05; Iter time 0.37s; ETA 5:08:49; Mem 18775.15MB
+Epoch [2/100]; Iter [1370/51500]; loss 3.3746; gen_loss 3.3746; LR 9.98e-05; Iter time 0.37s; ETA 5:08:40; Mem 18775.15MB
+Epoch [2/100]; Iter [1380/51500]; loss 3.0319; gen_loss 3.0319; LR 9.98e-05; Iter time 0.37s; ETA 5:08:26; Mem 18775.15MB
+Epoch [2/100]; Iter [1390/51500]; loss 2.9654; gen_loss 2.9654; LR 9.98e-05; Iter time 0.37s; ETA 5:08:28; Mem 18775.15MB
+Epoch [2/100]; Iter [1400/51500]; loss 3.3401; gen_loss 3.3401; LR 9.98e-05; Iter time 0.37s; ETA 5:08:22; Mem 18775.15MB
+Epoch [2/100]; Iter [1410/51500]; loss 2.9577; gen_loss 2.9577; LR 9.98e-05; Iter time 0.37s; ETA 5:08:05; Mem 18775.15MB
+Epoch [2/100]; Iter [1420/51500]; loss 2.8724; gen_loss 2.8724; LR 9.98e-05; Iter time 0.37s; ETA 5:08:13; Mem 18775.15MB
+Epoch [2/100]; Iter [1430/51500]; loss 2.9752; gen_loss 2.9752; LR 9.98e-05; Iter time 0.37s; ETA 5:08:04; Mem 18775.15MB
+Epoch [2/100]; Iter [1440/51500]; loss 2.8855; gen_loss 2.8855; LR 9.98e-05; Iter time 0.37s; ETA 5:08:15; Mem 18775.15MB
+Epoch [2/100]; Iter [1450/51500]; loss 3.2268; gen_loss 3.2268; LR 9.98e-05; Iter time 0.37s; ETA 5:08:09; Mem 18775.15MB
+Epoch [2/100]; Iter [1460/51500]; loss 3.4085; gen_loss 3.4085; LR 9.98e-05; Iter time 0.37s; ETA 5:07:57; Mem 18775.15MB
+Epoch [2/100]; Iter [1470/51500]; loss 3.0271; gen_loss 3.0271; LR 9.98e-05; Iter time 0.37s; ETA 5:07:47; Mem 18775.15MB
+Epoch [2/100]; Iter [1480/51500]; loss 3.1292; gen_loss 3.1292; LR 9.98e-05; Iter time 0.37s; ETA 5:08:04; Mem 18775.15MB
+Epoch [2/100]; Iter [1490/51500]; loss 3.1765; gen_loss 3.1765; LR 9.98e-05; Iter time 0.37s; ETA 5:07:51; Mem 18775.15MB
+Epoch [2/100]; Iter [1500/51500]; loss 3.1149; gen_loss 3.1149; LR 9.98e-05; Iter time 0.37s; ETA 5:08:34; Mem 18775.15MB
+Epoch [2/100]; Iter [1510/51500]; loss 3.0164; gen_loss 3.0164; LR 9.98e-05; Iter time 0.37s; ETA 5:09:24; Mem 18775.15MB
+Epoch [2/100]; Iter [1520/51500]; loss 2.8167; gen_loss 2.8167; LR 9.98e-05; Iter time 0.37s; ETA 5:08:18; Mem 18775.15MB
+Epoch [2/100]; Iter [1530/51500]; loss 2.4941; gen_loss 2.4941; LR 9.98e-05; Iter time 0.37s; ETA 5:07:36; Mem 18775.15MB
+Epoch [2/100]; Iter [1540/51500]; loss 3.0287; gen_loss 3.0287; LR 9.98e-05; Iter time 0.37s; ETA 5:06:21; Mem 18775.15MB
+Epoch [3/100]; Iter [1550/51500]; loss 3.0352; gen_loss 3.0352; LR 9.98e-05; Iter time 0.37s; ETA 5:07:13; Mem 18775.15MB
+Epoch [3/100]; Iter [1560/51500]; loss 2.4431; gen_loss 2.4431; LR 9.98e-05; Iter time 0.37s; ETA 5:06:21; Mem 18775.15MB
+Epoch [3/100]; Iter [1570/51500]; loss 2.7364; gen_loss 2.7364; LR 9.98e-05; Iter time 0.37s; ETA 5:06:24; Mem 18775.15MB
+Epoch [3/100]; Iter [1580/51500]; loss 2.7948; gen_loss 2.7948; LR 9.98e-05; Iter time 0.37s; ETA 5:07:43; Mem 18775.15MB
+Epoch [3/100]; Iter [1590/51500]; loss 2.3182; gen_loss 2.3182; LR 9.98e-05; Iter time 0.37s; ETA 5:08:03; Mem 18775.15MB
+Epoch [3/100]; Iter [1600/51500]; loss 2.8902; gen_loss 2.8902; LR 9.98e-05; Iter time 0.37s; ETA 5:08:08; Mem 18775.15MB
+Epoch [3/100]; Iter [1610/51500]; loss 3.0474; gen_loss 3.0474; LR 9.98e-05; Iter time 0.37s; ETA 5:08:07; Mem 18775.15MB
+Epoch [3/100]; Iter [1620/51500]; loss 2.8121; gen_loss 2.8121; LR 9.98e-05; Iter time 0.37s; ETA 5:07:54; Mem 18775.15MB
+Epoch [3/100]; Iter [1630/51500]; loss 2.9716; gen_loss 2.9716; LR 9.98e-05; Iter time 0.37s; ETA 5:07:58; Mem 18775.15MB
+Epoch [3/100]; Iter [1640/51500]; loss 2.7754; gen_loss 2.7754; LR 9.98e-05; Iter time 0.37s; ETA 5:08:06; Mem 18775.15MB
+Epoch [3/100]; Iter [1650/51500]; loss 3.1931; gen_loss 3.1931; LR 9.97e-05; Iter time 0.37s; ETA 5:07:54; Mem 18775.15MB
+Epoch [3/100]; Iter [1660/51500]; loss 3.0493; gen_loss 3.0493; LR 9.97e-05; Iter time 0.37s; ETA 5:08:05; Mem 18775.15MB
+Epoch [3/100]; Iter [1670/51500]; loss 2.7571; gen_loss 2.7571; LR 9.97e-05; Iter time 0.37s; ETA 5:07:23; Mem 18775.15MB
+Epoch [3/100]; Iter [1680/51500]; loss 3.1770; gen_loss 3.1770; LR 9.97e-05; Iter time 0.37s; ETA 5:08:28; Mem 18775.15MB
+Epoch [3/100]; Iter [1690/51500]; loss 2.7383; gen_loss 2.7383; LR 9.97e-05; Iter time 0.37s; ETA 5:07:37; Mem 18775.15MB
+Epoch [3/100]; Iter [1700/51500]; loss 3.1071; gen_loss 3.1071; LR 9.97e-05; Iter time 0.37s; ETA 5:08:19; Mem 18775.15MB
+Epoch [3/100]; Iter [1710/51500]; loss 2.5997; gen_loss 2.5997; LR 9.97e-05; Iter time 0.37s; ETA 5:08:52; Mem 18775.15MB
+Epoch [3/100]; Iter [1720/51500]; loss 2.9880; gen_loss 2.9880; LR 9.97e-05; Iter time 0.37s; ETA 5:07:44; Mem 18775.15MB
+Epoch [3/100]; Iter [1730/51500]; loss 3.0621; gen_loss 3.0621; LR 9.97e-05; Iter time 0.37s; ETA 5:07:35; Mem 18775.15MB
+Epoch [3/100]; Iter [1740/51500]; loss 2.6288; gen_loss 2.6288; LR 9.97e-05; Iter time 0.37s; ETA 5:07:55; Mem 18775.15MB
+Epoch [3/100]; Iter [1750/51500]; loss 2.8010; gen_loss 2.8010; LR 9.97e-05; Iter time 0.37s; ETA 5:07:32; Mem 18775.15MB
+Epoch [3/100]; Iter [1760/51500]; loss 2.5676; gen_loss 2.5676; LR 9.97e-05; Iter time 0.37s; ETA 5:07:46; Mem 18775.15MB
+Epoch [3/100]; Iter [1770/51500]; loss 2.8725; gen_loss 2.8725; LR 9.97e-05; Iter time 0.37s; ETA 5:07:31; Mem 18775.15MB
+Epoch [3/100]; Iter [1780/51500]; loss 2.8837; gen_loss 2.8837; LR 9.97e-05; Iter time 0.37s; ETA 5:07:25; Mem 18775.15MB
+Epoch [3/100]; Iter [1790/51500]; loss 2.4653; gen_loss 2.4653; LR 9.97e-05; Iter time 0.37s; ETA 5:07:03; Mem 18775.15MB
+Epoch [3/100]; Iter [1800/51500]; loss 2.4949; gen_loss 2.4949; LR 9.97e-05; Iter time 0.37s; ETA 5:07:14; Mem 18775.15MB
+Epoch [3/100]; Iter [1810/51500]; loss 2.3349; gen_loss 2.3349; LR 9.97e-05; Iter time 0.37s; ETA 5:07:25; Mem 18775.15MB
+Epoch [3/100]; Iter [1820/51500]; loss 2.8129; gen_loss 2.8129; LR 9.97e-05; Iter time 0.37s; ETA 5:07:16; Mem 18775.15MB
+Epoch [3/100]; Iter [1830/51500]; loss 3.1053; gen_loss 3.1053; LR 9.97e-05; Iter time 0.37s; ETA 5:07:33; Mem 18775.15MB
+Epoch [3/100]; Iter [1840/51500]; loss 2.7097; gen_loss 2.7097; LR 9.97e-05; Iter time 0.37s; ETA 5:07:08; Mem 18775.15MB
+Epoch [3/100]; Iter [1850/51500]; loss 2.6696; gen_loss 2.6696; LR 9.97e-05; Iter time 0.37s; ETA 5:06:45; Mem 18775.15MB
+Epoch [3/100]; Iter [1860/51500]; loss 2.8065; gen_loss 2.8065; LR 9.97e-05; Iter time 0.37s; ETA 5:06:50; Mem 18775.15MB
+Epoch [3/100]; Iter [1870/51500]; loss 2.9630; gen_loss 2.9630; LR 9.97e-05; Iter time 0.37s; ETA 5:07:04; Mem 18775.15MB
+Epoch [3/100]; Iter [1880/51500]; loss 2.8592; gen_loss 2.8592; LR 9.97e-05; Iter time 0.37s; ETA 5:06:52; Mem 18775.15MB
+Epoch [3/100]; Iter [1890/51500]; loss 2.8009; gen_loss 2.8009; LR 9.97e-05; Iter time 0.37s; ETA 5:06:59; Mem 18775.15MB
+Epoch [3/100]; Iter [1900/51500]; loss 3.1833; gen_loss 3.1833; LR 9.97e-05; Iter time 0.37s; ETA 5:06:41; Mem 18775.15MB
+Epoch [3/100]; Iter [1910/51500]; loss 2.5124; gen_loss 2.5124; LR 9.97e-05; Iter time 0.37s; ETA 5:07:13; Mem 18775.15MB
+Epoch [3/100]; Iter [1920/51500]; loss 2.8867; gen_loss 2.8867; LR 9.97e-05; Iter time 0.37s; ETA 5:06:43; Mem 18775.15MB
+Epoch [3/100]; Iter [1930/51500]; loss 2.9235; gen_loss 2.9235; LR 9.97e-05; Iter time 0.37s; ETA 5:07:06; Mem 18775.15MB
+Epoch [3/100]; Iter [1940/51500]; loss 2.8736; gen_loss 2.8736; LR 9.97e-05; Iter time 0.37s; ETA 5:06:06; Mem 18775.15MB
+Epoch [3/100]; Iter [1950/51500]; loss 2.9437; gen_loss 2.9437; LR 9.97e-05; Iter time 0.37s; ETA 5:05:49; Mem 18775.15MB
+Epoch [3/100]; Iter [1960/51500]; loss 2.4932; gen_loss 2.4932; LR 9.96e-05; Iter time 0.37s; ETA 5:06:11; Mem 18775.15MB
+Epoch [3/100]; Iter [1970/51500]; loss 2.6395; gen_loss 2.6395; LR 9.96e-05; Iter time 0.37s; ETA 5:03:54; Mem 18775.15MB
+Epoch [3/100]; Iter [1980/51500]; loss 2.7580; gen_loss 2.7580; LR 9.96e-05; Iter time 0.37s; ETA 5:03:43; Mem 18775.15MB
+Epoch [3/100]; Iter [1990/51500]; loss 2.3459; gen_loss 2.3459; LR 9.96e-05; Iter time 0.37s; ETA 5:03:56; Mem 18775.15MB
+Epoch [3/100]; Iter [2000/51500]; loss 2.8930; gen_loss 2.8930; LR 9.96e-05; Iter time 0.37s; ETA 5:03:48; Mem 18775.15MB
+Epoch [3/100]; Iter [2010/51500]; loss 2.6072; gen_loss 2.6072; LR 9.96e-05; Iter time 0.37s; ETA 5:04:49; Mem 18775.15MB
+Epoch [3/100]; Iter [2020/51500]; loss 2.9517; gen_loss 2.9517; LR 9.96e-05; Iter time 0.37s; ETA 5:04:50; Mem 18775.15MB
+Epoch [3/100]; Iter [2030/51500]; loss 3.0399; gen_loss 3.0399; LR 9.96e-05; Iter time 0.37s; ETA 5:05:00; Mem 18775.15MB
+Epoch [3/100]; Iter [2040/51500]; loss 2.7271; gen_loss 2.7271; LR 9.96e-05; Iter time 0.37s; ETA 5:05:14; Mem 18775.15MB
+Epoch [3/100]; Iter [2050/51500]; loss 2.7408; gen_loss 2.7408; LR 9.96e-05; Iter time 0.37s; ETA 5:05:34; Mem 18775.15MB
+Epoch [4/100]; Iter [2060/51500]; loss 2.1755; gen_loss 2.1755; LR 9.96e-05; Iter time 0.37s; ETA 5:05:04; Mem 18775.15MB
+Epoch [4/100]; Iter [2070/51500]; loss 2.6217; gen_loss 2.6217; LR 9.96e-05; Iter time 0.37s; ETA 5:03:53; Mem 18775.15MB
+Epoch [4/100]; Iter [2080/51500]; loss 2.2859; gen_loss 2.2859; LR 9.96e-05; Iter time 0.37s; ETA 5:04:42; Mem 18775.15MB
+Epoch [4/100]; Iter [2090/51500]; loss 2.9249; gen_loss 2.9249; LR 9.96e-05; Iter time 0.37s; ETA 5:03:47; Mem 18775.15MB
+Epoch [4/100]; Iter [2100/51500]; loss 1.9907; gen_loss 1.9907; LR 9.96e-05; Iter time 0.37s; ETA 5:03:58; Mem 18775.15MB
+Epoch [4/100]; Iter [2110/51500]; loss 2.5784; gen_loss 2.5784; LR 9.96e-05; Iter time 0.37s; ETA 5:04:14; Mem 18775.15MB
+Epoch [4/100]; Iter [2120/51500]; loss 2.6104; gen_loss 2.6104; LR 9.96e-05; Iter time 0.37s; ETA 5:04:04; Mem 18775.15MB
+Epoch [4/100]; Iter [2130/51500]; loss 2.4176; gen_loss 2.4176; LR 9.96e-05; Iter time 0.37s; ETA 5:04:25; Mem 18775.15MB
+Epoch [4/100]; Iter [2140/51500]; loss 2.5285; gen_loss 2.5285; LR 9.96e-05; Iter time 0.37s; ETA 5:04:00; Mem 18775.15MB
+Epoch [4/100]; Iter [2150/51500]; loss 2.8699; gen_loss 2.8699; LR 9.96e-05; Iter time 0.37s; ETA 5:03:49; Mem 18775.15MB
+Epoch [4/100]; Iter [2160/51500]; loss 2.3414; gen_loss 2.3414; LR 9.96e-05; Iter time 0.37s; ETA 5:04:10; Mem 18775.15MB
+Epoch [4/100]; Iter [2170/51500]; loss 2.1761; gen_loss 2.1761; LR 9.96e-05; Iter time 0.37s; ETA 5:04:06; Mem 18775.15MB
+Epoch [4/100]; Iter [2180/51500]; loss 2.6496; gen_loss 2.6496; LR 9.96e-05; Iter time 0.37s; ETA 5:03:30; Mem 18775.15MB
+Epoch [4/100]; Iter [2190/51500]; loss 2.5596; gen_loss 2.5596; LR 9.96e-05; Iter time 0.37s; ETA 5:04:52; Mem 18775.15MB
+Epoch [4/100]; Iter [2200/51500]; loss 2.4102; gen_loss 2.4102; LR 9.96e-05; Iter time 0.37s; ETA 5:04:26; Mem 18775.15MB
+Epoch [4/100]; Iter [2210/51500]; loss 2.8983; gen_loss 2.8983; LR 9.96e-05; Iter time 0.37s; ETA 5:03:18; Mem 18775.15MB
+Epoch [4/100]; Iter [2220/51500]; loss 2.3150; gen_loss 2.3150; LR 9.95e-05; Iter time 0.37s; ETA 5:03:34; Mem 18775.15MB
+Epoch [4/100]; Iter [2230/51500]; loss 2.6097; gen_loss 2.6097; LR 9.95e-05; Iter time 0.37s; ETA 5:03:25; Mem 18775.15MB
+Epoch [4/100]; Iter [2240/51500]; loss 2.5769; gen_loss 2.5769; LR 9.95e-05; Iter time 0.37s; ETA 5:03:13; Mem 18775.15MB
+Epoch [4/100]; Iter [2250/51500]; loss 2.4060; gen_loss 2.4060; LR 9.95e-05; Iter time 0.37s; ETA 5:04:06; Mem 18775.15MB
+Epoch [4/100]; Iter [2260/51500]; loss 2.5376; gen_loss 2.5376; LR 9.95e-05; Iter time 0.37s; ETA 5:04:50; Mem 18775.15MB
+Epoch [4/100]; Iter [2270/51500]; loss 2.1853; gen_loss 2.1853; LR 9.95e-05; Iter time 0.37s; ETA 5:02:58; Mem 18775.15MB
+Epoch [4/100]; Iter [2280/51500]; loss 2.3584; gen_loss 2.3584; LR 9.95e-05; Iter time 0.37s; ETA 5:03:24; Mem 18775.15MB
+Epoch [4/100]; Iter [2290/51500]; loss 2.6372; gen_loss 2.6372; LR 9.95e-05; Iter time 0.37s; ETA 5:03:53; Mem 18775.15MB
+Epoch [4/100]; Iter [2300/51500]; loss 2.8495; gen_loss 2.8495; LR 9.95e-05; Iter time 0.37s; ETA 5:03:47; Mem 18775.15MB
+Epoch [4/100]; Iter [2310/51500]; loss 2.7187; gen_loss 2.7187; LR 9.95e-05; Iter time 0.37s; ETA 5:03:37; Mem 18775.15MB
+Epoch [4/100]; Iter [2320/51500]; loss 2.5171; gen_loss 2.5171; LR 9.95e-05; Iter time 0.37s; ETA 5:03:53; Mem 18775.15MB
+Epoch [4/100]; Iter [2330/51500]; loss 2.8503; gen_loss 2.8503; LR 9.95e-05; Iter time 0.37s; ETA 5:04:05; Mem 18775.15MB
+Epoch [4/100]; Iter [2340/51500]; loss 2.4428; gen_loss 2.4428; LR 9.95e-05; Iter time 0.37s; ETA 5:04:53; Mem 18775.15MB
+Epoch [4/100]; Iter [2350/51500]; loss 1.9726; gen_loss 1.9726; LR 9.95e-05; Iter time 0.37s; ETA 5:04:22; Mem 18775.15MB
+Epoch [4/100]; Iter [2360/51500]; loss 2.6364; gen_loss 2.6364; LR 9.95e-05; Iter time 0.37s; ETA 5:04:36; Mem 18775.15MB
+Epoch [4/100]; Iter [2370/51500]; loss 2.5470; gen_loss 2.5470; LR 9.95e-05; Iter time 0.37s; ETA 5:04:25; Mem 18775.15MB
+Epoch [4/100]; Iter [2380/51500]; loss 2.3266; gen_loss 2.3266; LR 9.95e-05; Iter time 0.37s; ETA 5:03:20; Mem 18775.15MB
+Epoch [4/100]; Iter [2390/51500]; loss 2.9355; gen_loss 2.9355; LR 9.95e-05; Iter time 0.37s; ETA 5:03:04; Mem 18775.15MB
+Epoch [4/100]; Iter [2400/51500]; loss 2.8806; gen_loss 2.8806; LR 9.95e-05; Iter time 0.37s; ETA 5:03:04; Mem 18775.15MB
+Epoch [4/100]; Iter [2410/51500]; loss 2.5015; gen_loss 2.5015; LR 9.95e-05; Iter time 0.37s; ETA 5:03:49; Mem 18775.15MB
+Epoch [4/100]; Iter [2420/51500]; loss 2.5336; gen_loss 2.5336; LR 9.95e-05; Iter time 0.37s; ETA 5:03:34; Mem 18775.15MB
+Epoch [4/100]; Iter [2430/51500]; loss 2.2845; gen_loss 2.2845; LR 9.95e-05; Iter time 0.37s; ETA 5:04:14; Mem 18775.15MB
+Epoch [4/100]; Iter [2440/51500]; loss 2.6017; gen_loss 2.6017; LR 9.95e-05; Iter time 0.37s; ETA 5:04:19; Mem 18775.15MB
+Epoch [4/100]; Iter [2450/51500]; loss 2.2548; gen_loss 2.2548; LR 9.94e-05; Iter time 0.37s; ETA 5:03:45; Mem 18775.15MB
+Epoch [4/100]; Iter [2460/51500]; loss 2.2144; gen_loss 2.2144; LR 9.94e-05; Iter time 0.37s; ETA 5:04:09; Mem 18775.15MB
+Epoch [4/100]; Iter [2470/51500]; loss 2.3412; gen_loss 2.3412; LR 9.94e-05; Iter time 0.37s; ETA 5:04:28; Mem 18775.15MB
+Epoch [4/100]; Iter [2480/51500]; loss 2.3680; gen_loss 2.3680; LR 9.94e-05; Iter time 0.37s; ETA 5:03:40; Mem 18775.15MB
+Epoch [4/100]; Iter [2490/51500]; loss 2.7962; gen_loss 2.7962; LR 9.94e-05; Iter time 0.37s; ETA 5:03:17; Mem 18775.15MB
+Epoch [4/100]; Iter [2500/51500]; loss 2.3910; gen_loss 2.3910; LR 9.94e-05; Iter time 0.37s; ETA 5:02:49; Mem 18775.15MB
+Epoch [4/100]; Iter [2510/51500]; loss 2.8326; gen_loss 2.8326; LR 9.94e-05; Iter time 0.37s; ETA 5:03:19; Mem 18775.15MB
+Epoch [4/100]; Iter [2520/51500]; loss 2.4981; gen_loss 2.4981; LR 9.94e-05; Iter time 0.37s; ETA 5:03:09; Mem 18775.15MB
+Epoch [4/100]; Iter [2530/51500]; loss 2.7878; gen_loss 2.7878; LR 9.94e-05; Iter time 0.37s; ETA 5:03:25; Mem 18775.15MB
+Epoch [4/100]; Iter [2540/51500]; loss 2.7306; gen_loss 2.7306; LR 9.94e-05; Iter time 0.37s; ETA 5:03:20; Mem 18775.15MB
+Epoch [4/100]; Iter [2550/51500]; loss 2.2728; gen_loss 2.2728; LR 9.94e-05; Iter time 0.37s; ETA 5:02:48; Mem 18775.15MB
+Epoch [4/100]; Iter [2560/51500]; loss 2.3310; gen_loss 2.3310; LR 9.94e-05; Iter time 0.37s; ETA 5:02:38; Mem 18775.15MB
+Epoch [4/100]; Iter [2570/51500]; loss 2.3606; gen_loss 2.3606; LR 9.94e-05; Iter time 0.37s; ETA 5:02:14; Mem 18775.15MB
+Epoch [5/100]; Iter [2580/51500]; loss 2.5525; gen_loss 2.5525; LR 9.94e-05; Iter time 0.37s; ETA 5:02:21; Mem 18775.15MB
+Epoch [5/100]; Iter [2590/51500]; loss 2.6919; gen_loss 2.6919; LR 9.94e-05; Iter time 0.37s; ETA 5:02:33; Mem 18775.15MB
+Epoch [5/100]; Iter [2600/51500]; loss 2.3820; gen_loss 2.3820; LR 9.94e-05; Iter time 0.37s; ETA 5:02:27; Mem 18775.15MB
+Epoch [5/100]; Iter [2610/51500]; loss 2.4696; gen_loss 2.4696; LR 9.94e-05; Iter time 0.37s; ETA 5:02:15; Mem 18775.15MB
+Epoch [5/100]; Iter [2620/51500]; loss 2.3330; gen_loss 2.3330; LR 9.94e-05; Iter time 0.37s; ETA 5:02:43; Mem 18775.15MB
+Epoch [5/100]; Iter [2630/51500]; loss 2.6418; gen_loss 2.6418; LR 9.94e-05; Iter time 0.37s; ETA 5:02:32; Mem 18775.15MB
+Epoch [5/100]; Iter [2640/51500]; loss 2.1091; gen_loss 2.1091; LR 9.94e-05; Iter time 0.37s; ETA 5:02:18; Mem 18775.15MB
+Epoch [5/100]; Iter [2650/51500]; loss 2.1226; gen_loss 2.1226; LR 9.94e-05; Iter time 0.37s; ETA 5:02:48; Mem 18775.15MB
+Epoch [5/100]; Iter [2660/51500]; loss 2.3305; gen_loss 2.3305; LR 9.93e-05; Iter time 0.37s; ETA 5:03:07; Mem 18775.15MB
+Epoch [5/100]; Iter [2670/51500]; loss 2.1755; gen_loss 2.1755; LR 9.93e-05; Iter time 0.37s; ETA 5:02:42; Mem 18775.15MB
+Epoch [5/100]; Iter [2680/51500]; loss 2.1576; gen_loss 2.1576; LR 9.93e-05; Iter time 0.37s; ETA 5:02:39; Mem 18775.15MB
+Epoch [5/100]; Iter [2690/51500]; loss 2.4072; gen_loss 2.4072; LR 9.93e-05; Iter time 0.37s; ETA 5:01:03; Mem 18775.15MB
+Epoch [5/100]; Iter [2700/51500]; loss 2.3114; gen_loss 2.3114; LR 9.93e-05; Iter time 0.37s; ETA 5:00:00; Mem 18775.15MB
+Epoch [5/100]; Iter [2710/51500]; loss 2.2836; gen_loss 2.2836; LR 9.93e-05; Iter time 0.37s; ETA 5:00:51; Mem 18775.15MB
+Epoch [5/100]; Iter [2720/51500]; loss 2.4855; gen_loss 2.4855; LR 9.93e-05; Iter time 0.37s; ETA 5:01:08; Mem 18775.15MB
+Epoch [5/100]; Iter [2730/51500]; loss 2.2393; gen_loss 2.2393; LR 9.93e-05; Iter time 0.37s; ETA 5:01:42; Mem 18775.15MB
+Epoch [5/100]; Iter [2740/51500]; loss 2.1017; gen_loss 2.1017; LR 9.93e-05; Iter time 0.37s; ETA 5:01:31; Mem 18775.15MB
+Epoch [5/100]; Iter [2750/51500]; loss 2.1436; gen_loss 2.1436; LR 9.93e-05; Iter time 0.37s; ETA 5:01:31; Mem 18775.15MB
+Epoch [5/100]; Iter [2760/51500]; loss 2.1920; gen_loss 2.1920; LR 9.93e-05; Iter time 0.37s; ETA 5:01:26; Mem 18775.15MB
+Epoch [5/100]; Iter [2770/51500]; loss 1.9725; gen_loss 1.9725; LR 9.93e-05; Iter time 0.37s; ETA 5:00:53; Mem 18775.15MB
+Epoch [5/100]; Iter [2780/51500]; loss 1.9030; gen_loss 1.9030; LR 9.93e-05; Iter time 0.37s; ETA 5:00:59; Mem 18775.15MB
+Epoch [5/100]; Iter [2790/51500]; loss 2.0589; gen_loss 2.0589; LR 9.93e-05; Iter time 0.37s; ETA 5:01:37; Mem 18775.15MB
+Epoch [5/100]; Iter [2800/51500]; loss 1.9113; gen_loss 1.9113; LR 9.93e-05; Iter time 0.37s; ETA 5:01:05; Mem 18775.15MB
+Epoch [5/100]; Iter [2810/51500]; loss 2.4324; gen_loss 2.4324; LR 9.93e-05; Iter time 0.37s; ETA 5:01:19; Mem 18775.15MB
+Epoch [5/100]; Iter [2820/51500]; loss 2.4014; gen_loss 2.4014; LR 9.93e-05; Iter time 0.37s; ETA 5:00:28; Mem 18775.15MB
+Epoch [5/100]; Iter [2830/51500]; loss 2.3882; gen_loss 2.3882; LR 9.93e-05; Iter time 0.37s; ETA 4:59:54; Mem 18775.15MB
+Epoch [5/100]; Iter [2840/51500]; loss 2.1904; gen_loss 2.1904; LR 9.93e-05; Iter time 0.37s; ETA 5:00:04; Mem 18775.15MB
+Epoch [5/100]; Iter [2850/51500]; loss 2.3690; gen_loss 2.3690; LR 9.93e-05; Iter time 0.37s; ETA 4:59:32; Mem 18775.15MB
+Epoch [5/100]; Iter [2860/51500]; loss 2.4687; gen_loss 2.4687; LR 9.92e-05; Iter time 0.37s; ETA 4:59:17; Mem 18775.15MB
+Epoch [5/100]; Iter [2870/51500]; loss 2.1963; gen_loss 2.1963; LR 9.92e-05; Iter time 0.37s; ETA 4:59:54; Mem 18775.15MB
+Epoch [5/100]; Iter [2880/51500]; loss 1.5560; gen_loss 1.5560; LR 9.92e-05; Iter time 0.37s; ETA 4:59:45; Mem 18775.15MB
+Epoch [5/100]; Iter [2890/51500]; loss 2.5522; gen_loss 2.5522; LR 9.92e-05; Iter time 0.37s; ETA 4:59:48; Mem 18775.15MB
+Epoch [5/100]; Iter [2900/51500]; loss 2.2864; gen_loss 2.2864; LR 9.92e-05; Iter time 0.37s; ETA 4:59:27; Mem 18775.15MB
+Epoch [5/100]; Iter [2910/51500]; loss 2.3333; gen_loss 2.3333; LR 9.92e-05; Iter time 0.37s; ETA 4:59:22; Mem 18775.15MB
+Epoch [5/100]; Iter [2920/51500]; loss 2.4938; gen_loss 2.4938; LR 9.92e-05; Iter time 0.37s; ETA 4:59:31; Mem 18775.15MB
+Epoch [5/100]; Iter [2930/51500]; loss 1.9761; gen_loss 1.9761; LR 9.92e-05; Iter time 0.37s; ETA 4:59:46; Mem 18775.15MB
+Epoch [5/100]; Iter [2940/51500]; loss 1.8675; gen_loss 1.8675; LR 9.92e-05; Iter time 0.37s; ETA 4:59:35; Mem 18775.15MB
+Epoch [5/100]; Iter [2950/51500]; loss 2.6562; gen_loss 2.6562; LR 9.92e-05; Iter time 0.37s; ETA 4:59:42; Mem 18775.15MB
+Epoch [5/100]; Iter [2960/51500]; loss 2.3172; gen_loss 2.3172; LR 9.92e-05; Iter time 0.37s; ETA 4:59:31; Mem 18775.15MB
+Epoch [5/100]; Iter [2970/51500]; loss 2.1890; gen_loss 2.1890; LR 9.92e-05; Iter time 0.37s; ETA 4:59:38; Mem 18775.15MB
+Epoch [5/100]; Iter [2980/51500]; loss 2.1995; gen_loss 2.1995; LR 9.92e-05; Iter time 0.37s; ETA 4:59:16; Mem 18775.15MB
+Epoch [5/100]; Iter [2990/51500]; loss 2.4279; gen_loss 2.4279; LR 9.92e-05; Iter time 0.37s; ETA 4:59:11; Mem 18775.15MB
+Epoch [5/100]; Iter [3000/51500]; loss 2.3423; gen_loss 2.3423; LR 9.92e-05; Iter time 0.37s; ETA 4:59:22; Mem 18775.15MB
+Epoch [5/100]; Iter [3010/51500]; loss 2.1372; gen_loss 2.1372; LR 9.92e-05; Iter time 0.37s; ETA 4:59:45; Mem 18775.15MB
+Epoch [5/100]; Iter [3020/51500]; loss 2.0593; gen_loss 2.0593; LR 9.92e-05; Iter time 0.37s; ETA 4:58:56; Mem 18775.15MB
+Epoch [5/100]; Iter [3030/51500]; loss 2.1160; gen_loss 2.1160; LR 9.92e-05; Iter time 0.37s; ETA 4:59:15; Mem 18775.15MB
+Epoch [5/100]; Iter [3040/51500]; loss 2.4430; gen_loss 2.4430; LR 9.92e-05; Iter time 0.37s; ETA 4:58:56; Mem 18775.15MB
+Epoch [5/100]; Iter [3050/51500]; loss 2.3340; gen_loss 2.3340; LR 9.91e-05; Iter time 0.37s; ETA 4:59:18; Mem 18775.15MB
+Epoch [5/100]; Iter [3060/51500]; loss 2.3118; gen_loss 2.3118; LR 9.91e-05; Iter time 0.37s; ETA 4:59:23; Mem 18775.15MB
+Epoch [5/100]; Iter [3070/51500]; loss 2.1595; gen_loss 2.1595; LR 9.91e-05; Iter time 0.37s; ETA 4:59:34; Mem 18775.15MB
+Epoch [5/100]; Iter [3080/51500]; loss 1.8900; gen_loss 1.8900; LR 9.91e-05; Iter time 0.37s; ETA 4:59:12; Mem 18775.15MB
+Epoch [6/100]; Iter [3090/51500]; loss 2.2040; gen_loss 2.2040; LR 9.91e-05; Iter time 0.37s; ETA 4:58:37; Mem 18775.15MB
+Epoch [6/100]; Iter [3100/51500]; loss 2.1834; gen_loss 2.1834; LR 9.91e-05; Iter time 0.37s; ETA 4:57:58; Mem 18775.15MB
+Epoch [6/100]; Iter [3110/51500]; loss 2.1233; gen_loss 2.1233; LR 9.91e-05; Iter time 0.37s; ETA 4:57:54; Mem 18775.15MB
+Epoch [6/100]; Iter [3120/51500]; loss 1.9817; gen_loss 1.9817; LR 9.91e-05; Iter time 0.37s; ETA 4:58:00; Mem 18775.15MB
+Epoch [6/100]; Iter [3130/51500]; loss 2.2042; gen_loss 2.2042; LR 9.91e-05; Iter time 0.37s; ETA 4:58:01; Mem 18775.15MB
+Epoch [6/100]; Iter [3140/51500]; loss 1.9049; gen_loss 1.9049; LR 9.91e-05; Iter time 0.37s; ETA 4:57:58; Mem 18775.15MB
+Epoch [6/100]; Iter [3150/51500]; loss 2.0888; gen_loss 2.0888; LR 9.91e-05; Iter time 0.37s; ETA 4:57:58; Mem 18775.15MB
+Epoch [6/100]; Iter [3160/51500]; loss 2.3230; gen_loss 2.3230; LR 9.91e-05; Iter time 0.37s; ETA 4:57:48; Mem 18775.15MB
+Epoch [6/100]; Iter [3170/51500]; loss 2.3217; gen_loss 2.3217; LR 9.91e-05; Iter time 0.37s; ETA 4:57:50; Mem 18775.15MB
+Epoch [6/100]; Iter [3180/51500]; loss 2.1555; gen_loss 2.1555; LR 9.91e-05; Iter time 0.37s; ETA 4:57:02; Mem 18775.15MB
+Epoch [6/100]; Iter [3190/51500]; loss 1.9888; gen_loss 1.9888; LR 9.91e-05; Iter time 0.37s; ETA 4:57:10; Mem 18775.15MB
+Epoch [6/100]; Iter [3200/51500]; loss 2.0583; gen_loss 2.0583; LR 9.91e-05; Iter time 0.37s; ETA 4:57:32; Mem 18775.15MB
+Epoch [6/100]; Iter [3210/51500]; loss 2.0472; gen_loss 2.0472; LR 9.91e-05; Iter time 0.37s; ETA 4:58:35; Mem 18775.15MB
+Epoch [6/100]; Iter [3220/51500]; loss 1.7120; gen_loss 1.7120; LR 9.90e-05; Iter time 0.37s; ETA 4:57:52; Mem 18775.15MB
+Epoch [6/100]; Iter [3230/51500]; loss 2.0965; gen_loss 2.0965; LR 9.90e-05; Iter time 0.37s; ETA 4:57:58; Mem 18775.15MB
+Epoch [6/100]; Iter [3240/51500]; loss 2.2276; gen_loss 2.2276; LR 9.90e-05; Iter time 0.37s; ETA 4:56:58; Mem 18775.15MB
+Epoch [6/100]; Iter [3250/51500]; loss 2.0827; gen_loss 2.0827; LR 9.90e-05; Iter time 0.37s; ETA 4:57:34; Mem 18775.15MB
+Epoch [6/100]; Iter [3260/51500]; loss 2.0370; gen_loss 2.0370; LR 9.90e-05; Iter time 0.37s; ETA 4:58:00; Mem 18775.15MB
+Epoch [6/100]; Iter [3270/51500]; loss 1.9562; gen_loss 1.9562; LR 9.90e-05; Iter time 0.37s; ETA 4:57:49; Mem 18775.15MB
+Epoch [6/100]; Iter [3280/51500]; loss 2.1158; gen_loss 2.1158; LR 9.90e-05; Iter time 0.37s; ETA 4:57:43; Mem 18775.15MB
+Epoch [6/100]; Iter [3290/51500]; loss 2.0350; gen_loss 2.0350; LR 9.90e-05; Iter time 0.37s; ETA 4:58:01; Mem 18775.15MB
+Epoch [6/100]; Iter [3300/51500]; loss 1.9320; gen_loss 1.9320; LR 9.90e-05; Iter time 0.37s; ETA 4:57:51; Mem 18775.15MB
+Epoch [6/100]; Iter [3310/51500]; loss 2.5427; gen_loss 2.5427; LR 9.90e-05; Iter time 0.37s; ETA 4:58:13; Mem 18775.15MB
+Epoch [6/100]; Iter [3320/51500]; loss 2.3637; gen_loss 2.3637; LR 9.90e-05; Iter time 0.37s; ETA 4:57:55; Mem 18775.15MB
+Epoch [6/100]; Iter [3330/51500]; loss 1.9723; gen_loss 1.9723; LR 9.90e-05; Iter time 0.37s; ETA 4:56:54; Mem 18775.15MB
+Epoch [6/100]; Iter [3340/51500]; loss 1.7851; gen_loss 1.7851; LR 9.90e-05; Iter time 0.37s; ETA 4:56:10; Mem 18775.15MB
+Epoch [6/100]; Iter [3350/51500]; loss 2.3889; gen_loss 2.3889; LR 9.90e-05; Iter time 0.37s; ETA 4:56:52; Mem 18775.15MB
+Epoch [6/100]; Iter [3360/51500]; loss 2.1918; gen_loss 2.1918; LR 9.90e-05; Iter time 0.37s; ETA 4:56:05; Mem 18775.15MB
+Epoch [6/100]; Iter [3370/51500]; loss 2.1888; gen_loss 2.1888; LR 9.90e-05; Iter time 0.37s; ETA 4:56:21; Mem 18775.15MB
+Epoch [6/100]; Iter [3380/51500]; loss 2.1570; gen_loss 2.1570; LR 9.90e-05; Iter time 0.37s; ETA 4:56:26; Mem 18775.15MB
+Epoch [6/100]; Iter [3390/51500]; loss 2.0077; gen_loss 2.0077; LR 9.89e-05; Iter time 0.37s; ETA 4:56:32; Mem 18775.15MB
+Epoch [6/100]; Iter [3400/51500]; loss 2.2254; gen_loss 2.2254; LR 9.89e-05; Iter time 0.37s; ETA 4:56:05; Mem 18775.15MB
+Epoch [6/100]; Iter [3410/51500]; loss 1.9657; gen_loss 1.9657; LR 9.89e-05; Iter time 0.37s; ETA 4:55:54; Mem 18775.15MB
+Epoch [6/100]; Iter [3420/51500]; loss 2.1445; gen_loss 2.1445; LR 9.89e-05; Iter time 0.37s; ETA 4:56:20; Mem 18775.15MB
+Epoch [6/100]; Iter [3430/51500]; loss 2.2906; gen_loss 2.2906; LR 9.89e-05; Iter time 0.37s; ETA 4:55:55; Mem 18775.15MB
+Epoch [6/100]; Iter [3440/51500]; loss 2.1870; gen_loss 2.1870; LR 9.89e-05; Iter time 0.37s; ETA 4:55:49; Mem 18775.15MB
+Epoch [6/100]; Iter [3450/51500]; loss 2.1166; gen_loss 2.1166; LR 9.89e-05; Iter time 0.37s; ETA 4:55:51; Mem 18775.15MB
+Epoch [6/100]; Iter [3460/51500]; loss 2.1956; gen_loss 2.1956; LR 9.89e-05; Iter time 0.37s; ETA 4:55:58; Mem 18775.15MB
+Epoch [6/100]; Iter [3470/51500]; loss 1.9244; gen_loss 1.9244; LR 9.89e-05; Iter time 0.37s; ETA 4:55:44; Mem 18775.15MB
+Epoch [6/100]; Iter [3480/51500]; loss 1.7907; gen_loss 1.7907; LR 9.89e-05; Iter time 0.37s; ETA 4:55:45; Mem 18775.15MB
+Epoch [6/100]; Iter [3490/51500]; loss 1.9414; gen_loss 1.9414; LR 9.89e-05; Iter time 0.37s; ETA 4:55:46; Mem 18775.15MB
+Epoch [6/100]; Iter [3500/51500]; loss 2.0712; gen_loss 2.0712; LR 9.89e-05; Iter time 0.37s; ETA 4:55:12; Mem 18775.15MB
+Epoch [6/100]; Iter [3510/51500]; loss 2.0799; gen_loss 2.0799; LR 9.89e-05; Iter time 0.37s; ETA 4:55:49; Mem 18775.15MB
+Epoch [6/100]; Iter [3520/51500]; loss 1.9755; gen_loss 1.9755; LR 9.89e-05; Iter time 0.37s; ETA 4:55:38; Mem 18775.15MB
+Epoch [6/100]; Iter [3530/51500]; loss 1.6232; gen_loss 1.6232; LR 9.89e-05; Iter time 0.37s; ETA 4:55:18; Mem 18775.15MB
+Epoch [6/100]; Iter [3540/51500]; loss 1.9395; gen_loss 1.9395; LR 9.89e-05; Iter time 0.37s; ETA 4:55:14; Mem 18775.15MB
+Epoch [6/100]; Iter [3550/51500]; loss 1.7037; gen_loss 1.7037; LR 9.88e-05; Iter time 0.37s; ETA 4:54:33; Mem 18775.15MB
+Epoch [6/100]; Iter [3560/51500]; loss 1.6686; gen_loss 1.6686; LR 9.88e-05; Iter time 0.37s; ETA 4:54:02; Mem 18775.15MB
+Epoch [6/100]; Iter [3570/51500]; loss 1.8782; gen_loss 1.8782; LR 9.88e-05; Iter time 0.37s; ETA 4:54:35; Mem 18775.15MB
+Epoch [6/100]; Iter [3580/51500]; loss 2.0011; gen_loss 2.0011; LR 9.88e-05; Iter time 0.37s; ETA 4:54:35; Mem 18775.15MB
+Epoch [6/100]; Iter [3590/51500]; loss 2.0601; gen_loss 2.0601; LR 9.88e-05; Iter time 0.37s; ETA 4:54:28; Mem 18775.15MB
+Epoch [6/100]; Iter [3600/51500]; loss 1.8591; gen_loss 1.8591; LR 9.88e-05; Iter time 0.37s; ETA 4:54:29; Mem 18775.15MB
+Epoch [7/100]; Iter [3610/51500]; loss 2.1306; gen_loss 2.1306; LR 9.88e-05; Iter time 0.37s; ETA 4:54:56; Mem 18775.15MB
+Epoch [7/100]; Iter [3620/51500]; loss 1.6903; gen_loss 1.6903; LR 9.88e-05; Iter time 0.37s; ETA 4:55:51; Mem 18775.15MB
+Epoch [7/100]; Iter [3630/51500]; loss 1.9123; gen_loss 1.9123; LR 9.88e-05; Iter time 0.37s; ETA 4:55:58; Mem 18775.15MB
+Epoch [7/100]; Iter [3640/51500]; loss 2.0758; gen_loss 2.0758; LR 9.88e-05; Iter time 0.37s; ETA 4:55:47; Mem 18775.15MB
+Epoch [7/100]; Iter [3650/51500]; loss 2.0227; gen_loss 2.0227; LR 9.88e-05; Iter time 0.37s; ETA 4:56:02; Mem 18775.15MB
+Epoch [7/100]; Iter [3660/51500]; loss 1.5900; gen_loss 1.5900; LR 9.88e-05; Iter time 0.37s; ETA 4:55:59; Mem 18775.15MB
+Epoch [7/100]; Iter [3670/51500]; loss 1.8701; gen_loss 1.8701; LR 9.88e-05; Iter time 0.37s; ETA 4:55:45; Mem 18775.15MB
+Epoch [7/100]; Iter [3680/51500]; loss 2.0753; gen_loss 2.0753; LR 9.88e-05; Iter time 0.37s; ETA 4:54:31; Mem 18775.15MB
+Epoch [7/100]; Iter [3690/51500]; loss 2.1284; gen_loss 2.1284; LR 9.88e-05; Iter time 0.37s; ETA 4:54:47; Mem 18775.15MB
+Epoch [7/100]; Iter [3700/51500]; loss 1.9198; gen_loss 1.9198; LR 9.87e-05; Iter time 0.37s; ETA 4:55:26; Mem 18775.15MB
+Epoch [7/100]; Iter [3710/51500]; loss 1.4481; gen_loss 1.4481; LR 9.87e-05; Iter time 0.37s; ETA 4:55:23; Mem 18775.15MB
+Epoch [7/100]; Iter [3720/51500]; loss 1.8379; gen_loss 1.8379; LR 9.87e-05; Iter time 0.37s; ETA 4:55:15; Mem 18775.15MB
+Epoch [7/100]; Iter [3730/51500]; loss 1.7930; gen_loss 1.7930; LR 9.87e-05; Iter time 0.37s; ETA 4:55:39; Mem 18775.15MB
+Epoch [7/100]; Iter [3740/51500]; loss 2.0208; gen_loss 2.0208; LR 9.87e-05; Iter time 0.37s; ETA 4:55:11; Mem 18775.15MB
+Epoch [7/100]; Iter [3750/51500]; loss 2.0120; gen_loss 2.0120; LR 9.87e-05; Iter time 0.37s; ETA 4:55:03; Mem 18775.15MB
+Epoch [7/100]; Iter [3760/51500]; loss 1.6828; gen_loss 1.6828; LR 9.87e-05; Iter time 0.37s; ETA 4:54:59; Mem 18775.15MB
+Epoch [7/100]; Iter [3770/51500]; loss 1.9487; gen_loss 1.9487; LR 9.87e-05; Iter time 0.37s; ETA 4:55:00; Mem 18775.15MB
+Epoch [7/100]; Iter [3780/51500]; loss 1.7813; gen_loss 1.7813; LR 9.87e-05; Iter time 0.37s; ETA 4:55:12; Mem 18775.15MB
+Epoch [7/100]; Iter [3790/51500]; loss 1.6534; gen_loss 1.6534; LR 9.87e-05; Iter time 0.37s; ETA 4:55:00; Mem 18775.15MB
+Epoch [7/100]; Iter [3800/51500]; loss 1.7373; gen_loss 1.7373; LR 9.87e-05; Iter time 0.37s; ETA 4:54:41; Mem 18775.15MB
+Epoch [7/100]; Iter [3810/51500]; loss 2.3572; gen_loss 2.3572; LR 9.87e-05; Iter time 0.37s; ETA 4:54:42; Mem 18775.15MB
+Epoch [7/100]; Iter [3820/51500]; loss 1.9387; gen_loss 1.9387; LR 9.87e-05; Iter time 0.37s; ETA 4:54:37; Mem 18775.15MB
+Epoch [7/100]; Iter [3830/51500]; loss 1.9736; gen_loss 1.9736; LR 9.87e-05; Iter time 0.37s; ETA 4:54:50; Mem 18775.15MB
+Epoch [7/100]; Iter [3840/51500]; loss 2.0074; gen_loss 2.0074; LR 9.86e-05; Iter time 0.37s; ETA 4:54:49; Mem 18775.15MB
+Epoch [7/100]; Iter [3850/51500]; loss 1.5499; gen_loss 1.5499; LR 9.86e-05; Iter time 0.37s; ETA 4:54:26; Mem 18775.15MB
+Epoch [7/100]; Iter [3860/51500]; loss 2.0129; gen_loss 2.0129; LR 9.86e-05; Iter time 0.37s; ETA 4:54:31; Mem 18775.15MB
+Epoch [7/100]; Iter [3870/51500]; loss 2.2484; gen_loss 2.2484; LR 9.86e-05; Iter time 0.37s; ETA 4:54:18; Mem 18775.15MB
+Epoch [7/100]; Iter [3880/51500]; loss 1.9141; gen_loss 1.9141; LR 9.86e-05; Iter time 0.37s; ETA 4:54:23; Mem 18775.15MB
+Epoch [7/100]; Iter [3890/51500]; loss 1.9491; gen_loss 1.9491; LR 9.86e-05; Iter time 0.37s; ETA 4:54:16; Mem 18775.15MB
+Epoch [7/100]; Iter [3900/51500]; loss 1.8435; gen_loss 1.8435; LR 9.86e-05; Iter time 0.37s; ETA 4:54:08; Mem 18775.15MB
+Epoch [7/100]; Iter [3910/51500]; loss 2.1319; gen_loss 2.1319; LR 9.86e-05; Iter time 0.37s; ETA 4:53:48; Mem 18775.15MB
+Epoch [7/100]; Iter [3920/51500]; loss 2.1119; gen_loss 2.1119; LR 9.86e-05; Iter time 0.37s; ETA 4:53:51; Mem 18775.15MB
+Epoch [7/100]; Iter [3930/51500]; loss 1.7659; gen_loss 1.7659; LR 9.86e-05; Iter time 0.37s; ETA 4:54:10; Mem 18775.15MB
+Epoch [7/100]; Iter [3940/51500]; loss 2.1606; gen_loss 2.1606; LR 9.86e-05; Iter time 0.37s; ETA 4:54:16; Mem 18775.15MB
+Epoch [7/100]; Iter [3950/51500]; loss 1.9629; gen_loss 1.9629; LR 9.86e-05; Iter time 0.37s; ETA 4:53:34; Mem 18775.15MB
+Epoch [7/100]; Iter [3960/51500]; loss 2.2110; gen_loss 2.2110; LR 9.86e-05; Iter time 0.37s; ETA 4:53:46; Mem 18775.15MB
+Epoch [7/100]; Iter [3970/51500]; loss 1.9934; gen_loss 1.9934; LR 9.86e-05; Iter time 0.37s; ETA 4:54:01; Mem 18775.15MB
+Epoch [7/100]; Iter [3980/51500]; loss 1.6022; gen_loss 1.6022; LR 9.85e-05; Iter time 0.37s; ETA 4:53:52; Mem 18775.15MB
+Epoch [7/100]; Iter [3990/51500]; loss 1.8392; gen_loss 1.8392; LR 9.85e-05; Iter time 0.37s; ETA 4:53:23; Mem 18775.15MB
+Epoch [7/100]; Iter [4000/51500]; loss 1.9994; gen_loss 1.9994; LR 9.85e-05; Iter time 0.37s; ETA 4:53:48; Mem 18775.15MB
+Epoch [7/100]; Iter [4010/51500]; loss 1.8587; gen_loss 1.8587; LR 9.85e-05; Iter time 0.37s; ETA 4:53:26; Mem 18775.15MB
+Epoch [7/100]; Iter [4020/51500]; loss 1.8904; gen_loss 1.8904; LR 9.85e-05; Iter time 0.37s; ETA 4:53:17; Mem 18775.15MB
+Epoch [7/100]; Iter [4030/51500]; loss 1.6677; gen_loss 1.6677; LR 9.85e-05; Iter time 0.37s; ETA 4:53:18; Mem 18775.15MB
+Epoch [7/100]; Iter [4040/51500]; loss 2.1373; gen_loss 2.1373; LR 9.85e-05; Iter time 0.37s; ETA 4:52:39; Mem 18775.15MB
+Epoch [7/100]; Iter [4050/51500]; loss 1.9377; gen_loss 1.9377; LR 9.85e-05; Iter time 0.37s; ETA 4:52:47; Mem 18775.15MB
+Epoch [7/100]; Iter [4060/51500]; loss 2.1098; gen_loss 2.1098; LR 9.85e-05; Iter time 0.37s; ETA 4:52:42; Mem 18775.15MB
+Epoch [7/100]; Iter [4070/51500]; loss 2.2342; gen_loss 2.2342; LR 9.85e-05; Iter time 0.37s; ETA 4:52:39; Mem 18775.15MB
+Epoch [7/100]; Iter [4080/51500]; loss 1.7587; gen_loss 1.7587; LR 9.85e-05; Iter time 0.37s; ETA 4:52:25; Mem 18775.15MB
+Epoch [7/100]; Iter [4090/51500]; loss 1.8791; gen_loss 1.8791; LR 9.85e-05; Iter time 0.37s; ETA 4:52:29; Mem 18775.15MB
+Epoch [7/100]; Iter [4100/51500]; loss 1.6237; gen_loss 1.6237; LR 9.85e-05; Iter time 0.37s; ETA 4:52:58; Mem 18775.15MB
+Epoch [7/100]; Iter [4110/51500]; loss 2.1549; gen_loss 2.1549; LR 9.85e-05; Iter time 0.37s; ETA 4:52:35; Mem 18775.15MB
+Epoch [8/100]; Iter [4120/51500]; loss 1.8142; gen_loss 1.8142; LR 9.84e-05; Iter time 0.37s; ETA 4:53:07; Mem 18775.15MB
+Epoch [8/100]; Iter [4130/51500]; loss 1.6298; gen_loss 1.6298; LR 9.84e-05; Iter time 0.37s; ETA 4:51:36; Mem 18775.15MB
+Epoch [8/100]; Iter [4140/51500]; loss 1.1711; gen_loss 1.1711; LR 9.84e-05; Iter time 0.37s; ETA 4:52:10; Mem 18775.15MB
+Epoch [8/100]; Iter [4150/51500]; loss 1.9202; gen_loss 1.9202; LR 9.84e-05; Iter time 0.37s; ETA 4:52:27; Mem 18775.15MB
+Epoch [8/100]; Iter [4160/51500]; loss 1.7876; gen_loss 1.7876; LR 9.84e-05; Iter time 0.37s; ETA 4:52:19; Mem 18775.15MB
+Epoch [8/100]; Iter [4170/51500]; loss 1.8932; gen_loss 1.8932; LR 9.84e-05; Iter time 0.37s; ETA 4:52:23; Mem 18775.15MB
+Epoch [8/100]; Iter [4180/51500]; loss 1.6321; gen_loss 1.6321; LR 9.84e-05; Iter time 0.37s; ETA 4:52:24; Mem 18775.15MB
+Epoch [8/100]; Iter [4190/51500]; loss 1.8467; gen_loss 1.8467; LR 9.84e-05; Iter time 0.37s; ETA 4:52:20; Mem 18775.15MB
+Epoch [8/100]; Iter [4200/51500]; loss 1.6594; gen_loss 1.6594; LR 9.84e-05; Iter time 0.37s; ETA 4:52:09; Mem 18775.15MB
+Epoch [8/100]; Iter [4210/51500]; loss 1.6871; gen_loss 1.6871; LR 9.84e-05; Iter time 0.37s; ETA 4:51:07; Mem 18775.15MB
+Epoch [8/100]; Iter [4220/51500]; loss 1.9588; gen_loss 1.9588; LR 9.84e-05; Iter time 0.37s; ETA 4:51:51; Mem 18775.15MB
+Epoch [8/100]; Iter [4230/51500]; loss 1.8147; gen_loss 1.8147; LR 9.84e-05; Iter time 0.37s; ETA 4:51:31; Mem 18775.15MB
+Epoch [8/100]; Iter [4240/51500]; loss 1.8284; gen_loss 1.8284; LR 9.84e-05; Iter time 0.37s; ETA 4:51:50; Mem 18775.15MB
+Epoch [8/100]; Iter [4250/51500]; loss 1.8864; gen_loss 1.8864; LR 9.83e-05; Iter time 0.37s; ETA 4:51:33; Mem 18775.15MB
+Epoch [8/100]; Iter [4260/51500]; loss 1.6839; gen_loss 1.6839; LR 9.83e-05; Iter time 0.37s; ETA 4:51:49; Mem 18775.15MB
+Epoch [8/100]; Iter [4270/51500]; loss 2.0913; gen_loss 2.0913; LR 9.83e-05; Iter time 0.37s; ETA 4:51:18; Mem 18775.15MB
+Epoch [8/100]; Iter [4280/51500]; loss 1.6085; gen_loss 1.6085; LR 9.83e-05; Iter time 0.37s; ETA 4:51:37; Mem 18775.15MB
+Epoch [8/100]; Iter [4290/51500]; loss 1.9737; gen_loss 1.9737; LR 9.83e-05; Iter time 0.37s; ETA 4:51:30; Mem 18775.15MB
+Epoch [8/100]; Iter [4300/51500]; loss 1.9218; gen_loss 1.9218; LR 9.83e-05; Iter time 0.37s; ETA 4:51:39; Mem 18775.15MB
+Epoch [8/100]; Iter [4310/51500]; loss 2.1381; gen_loss 2.1381; LR 9.83e-05; Iter time 0.37s; ETA 4:51:42; Mem 18775.15MB
+Epoch [8/100]; Iter [4320/51500]; loss 1.9735; gen_loss 1.9735; LR 9.83e-05; Iter time 0.37s; ETA 4:51:19; Mem 18775.15MB
+Epoch [8/100]; Iter [4330/51500]; loss 1.6803; gen_loss 1.6803; LR 9.83e-05; Iter time 0.37s; ETA 4:51:05; Mem 18775.15MB
+Epoch [8/100]; Iter [4340/51500]; loss 1.9637; gen_loss 1.9637; LR 9.83e-05; Iter time 0.37s; ETA 4:51:12; Mem 18775.15MB
+Epoch [8/100]; Iter [4350/51500]; loss 1.8952; gen_loss 1.8952; LR 9.83e-05; Iter time 0.37s; ETA 4:51:10; Mem 18775.15MB
+Epoch [8/100]; Iter [4360/51500]; loss 1.9432; gen_loss 1.9432; LR 9.83e-05; Iter time 0.37s; ETA 4:51:18; Mem 18775.15MB
+Epoch [8/100]; Iter [4370/51500]; loss 2.0909; gen_loss 2.0909; LR 9.83e-05; Iter time 0.37s; ETA 4:51:06; Mem 18775.15MB
+Epoch [8/100]; Iter [4380/51500]; loss 1.9497; gen_loss 1.9497; LR 9.82e-05; Iter time 0.37s; ETA 4:51:22; Mem 18775.15MB
+Epoch [8/100]; Iter [4390/51500]; loss 1.9049; gen_loss 1.9049; LR 9.82e-05; Iter time 0.37s; ETA 4:51:15; Mem 18775.15MB
+Epoch [8/100]; Iter [4400/51500]; loss 1.7480; gen_loss 1.7480; LR 9.82e-05; Iter time 0.37s; ETA 4:51:27; Mem 18775.15MB
+Epoch [8/100]; Iter [4410/51500]; loss 1.5066; gen_loss 1.5066; LR 9.82e-05; Iter time 0.37s; ETA 4:50:31; Mem 18775.15MB
+Epoch [8/100]; Iter [4420/51500]; loss 1.6884; gen_loss 1.6884; LR 9.82e-05; Iter time 0.37s; ETA 4:51:03; Mem 18775.15MB
+Epoch [8/100]; Iter [4430/51500]; loss 1.7951; gen_loss 1.7951; LR 9.82e-05; Iter time 0.37s; ETA 4:50:59; Mem 18775.15MB
+Epoch [8/100]; Iter [4440/51500]; loss 1.6977; gen_loss 1.6977; LR 9.82e-05; Iter time 0.37s; ETA 4:50:43; Mem 18775.15MB
+Epoch [8/100]; Iter [4450/51500]; loss 1.7237; gen_loss 1.7237; LR 9.82e-05; Iter time 0.37s; ETA 4:50:34; Mem 18775.15MB
+Epoch [8/100]; Iter [4460/51500]; loss 1.9355; gen_loss 1.9355; LR 9.82e-05; Iter time 0.37s; ETA 4:50:39; Mem 18775.15MB
+Epoch [8/100]; Iter [4470/51500]; loss 1.9135; gen_loss 1.9135; LR 9.82e-05; Iter time 0.37s; ETA 4:50:48; Mem 18775.15MB
+Epoch [8/100]; Iter [4480/51500]; loss 1.2011; gen_loss 1.2011; LR 9.82e-05; Iter time 0.37s; ETA 4:50:52; Mem 18775.15MB
+Epoch [8/100]; Iter [4490/51500]; loss 1.8873; gen_loss 1.8873; LR 9.82e-05; Iter time 0.37s; ETA 4:50:46; Mem 18775.15MB
+Epoch [8/100]; Iter [4500/51500]; loss 1.6727; gen_loss 1.6727; LR 9.81e-05; Iter time 0.37s; ETA 4:50:35; Mem 18775.15MB
+Epoch [8/100]; Iter [4510/51500]; loss 1.9669; gen_loss 1.9669; LR 9.81e-05; Iter time 0.37s; ETA 4:50:26; Mem 18775.15MB
+Epoch [8/100]; Iter [4520/51500]; loss 1.6122; gen_loss 1.6122; LR 9.81e-05; Iter time 0.37s; ETA 4:50:45; Mem 18775.15MB
+Epoch [8/100]; Iter [4530/51500]; loss 2.0724; gen_loss 2.0724; LR 9.81e-05; Iter time 0.37s; ETA 4:50:28; Mem 18775.15MB
+Epoch [8/100]; Iter [4540/51500]; loss 2.1030; gen_loss 2.1030; LR 9.81e-05; Iter time 0.37s; ETA 4:49:03; Mem 18775.15MB
+Epoch [8/100]; Iter [4550/51500]; loss 1.6064; gen_loss 1.6064; LR 9.81e-05; Iter time 0.37s; ETA 4:49:39; Mem 18775.15MB
+Epoch [8/100]; Iter [4560/51500]; loss 1.8012; gen_loss 1.8012; LR 9.81e-05; Iter time 0.37s; ETA 4:49:54; Mem 18775.15MB
+Epoch [8/100]; Iter [4570/51500]; loss 2.0602; gen_loss 2.0602; LR 9.81e-05; Iter time 0.37s; ETA 4:49:44; Mem 18775.15MB
+Epoch [8/100]; Iter [4580/51500]; loss 1.7601; gen_loss 1.7601; LR 9.81e-05; Iter time 0.37s; ETA 4:49:45; Mem 18775.15MB
+Epoch [8/100]; Iter [4590/51500]; loss 2.1560; gen_loss 2.1560; LR 9.81e-05; Iter time 0.37s; ETA 4:49:51; Mem 18775.15MB
+Epoch [8/100]; Iter [4600/51500]; loss 1.6927; gen_loss 1.6927; LR 9.81e-05; Iter time 0.37s; ETA 4:49:29; Mem 18775.15MB
+Epoch [8/100]; Iter [4610/51500]; loss 2.2112; gen_loss 2.2112; LR 9.81e-05; Iter time 0.37s; ETA 4:48:25; Mem 18775.15MB
+Epoch [8/100]; Iter [4620/51500]; loss 1.9201; gen_loss 1.9201; LR 9.80e-05; Iter time 0.37s; ETA 4:48:20; Mem 18775.15MB
+Epoch [8/100]; Iter [4630/51500]; loss 2.0148; gen_loss 2.0148; LR 9.80e-05; Iter time 0.37s; ETA 4:48:15; Mem 18775.15MB
+Epoch [9/100]; Iter [4640/51500]; loss 1.6839; gen_loss 1.6839; LR 9.80e-05; Iter time 0.37s; ETA 4:48:39; Mem 18775.15MB
+Epoch [9/100]; Iter [4650/51500]; loss 1.6574; gen_loss 1.6574; LR 9.80e-05; Iter time 0.37s; ETA 4:49:32; Mem 18775.15MB
+Epoch [9/100]; Iter [4660/51500]; loss 1.6075; gen_loss 1.6075; LR 9.80e-05; Iter time 0.37s; ETA 4:49:34; Mem 18775.15MB
+Epoch [9/100]; Iter [4670/51500]; loss 1.6764; gen_loss 1.6764; LR 9.80e-05; Iter time 0.37s; ETA 4:49:38; Mem 18775.15MB
+Epoch [9/100]; Iter [4680/51500]; loss 2.2998; gen_loss 2.2998; LR 9.80e-05; Iter time 0.37s; ETA 4:49:41; Mem 18775.15MB
+Epoch [9/100]; Iter [4690/51500]; loss 2.0094; gen_loss 2.0094; LR 9.80e-05; Iter time 0.37s; ETA 4:49:40; Mem 18775.15MB
+Epoch [9/100]; Iter [4700/51500]; loss 1.8284; gen_loss 1.8284; LR 9.80e-05; Iter time 0.37s; ETA 4:49:22; Mem 18775.15MB
+Epoch [9/100]; Iter [4710/51500]; loss 1.6328; gen_loss 1.6328; LR 9.80e-05; Iter time 0.37s; ETA 4:49:35; Mem 18775.15MB
+Epoch [9/100]; Iter [4720/51500]; loss 1.6188; gen_loss 1.6188; LR 9.80e-05; Iter time 0.37s; ETA 4:49:43; Mem 18775.15MB
+Epoch [9/100]; Iter [4730/51500]; loss 1.6856; gen_loss 1.6856; LR 9.80e-05; Iter time 0.37s; ETA 4:49:45; Mem 18775.15MB
+Epoch [9/100]; Iter [4740/51500]; loss 1.7129; gen_loss 1.7129; LR 9.79e-05; Iter time 0.37s; ETA 4:49:35; Mem 18775.15MB
+Epoch [9/100]; Iter [4750/51500]; loss 1.7419; gen_loss 1.7419; LR 9.79e-05; Iter time 0.37s; ETA 4:49:45; Mem 18775.15MB
+Epoch [9/100]; Iter [4760/51500]; loss 1.7459; gen_loss 1.7459; LR 9.79e-05; Iter time 0.37s; ETA 4:49:41; Mem 18775.15MB
+Epoch [9/100]; Iter [4770/51500]; loss 2.1574; gen_loss 2.1574; LR 9.79e-05; Iter time 0.37s; ETA 4:48:58; Mem 18775.15MB
+Epoch [9/100]; Iter [4780/51500]; loss 2.3003; gen_loss 2.3003; LR 9.79e-05; Iter time 0.37s; ETA 4:48:43; Mem 18775.15MB
+Epoch [9/100]; Iter [4790/51500]; loss 1.7834; gen_loss 1.7834; LR 9.79e-05; Iter time 0.37s; ETA 4:48:10; Mem 18775.15MB
+Epoch [9/100]; Iter [4800/51500]; loss 2.0589; gen_loss 2.0589; LR 9.79e-05; Iter time 0.37s; ETA 4:47:40; Mem 18775.15MB
+Epoch [9/100]; Iter [4810/51500]; loss 1.7139; gen_loss 1.7139; LR 9.79e-05; Iter time 0.37s; ETA 4:47:50; Mem 18775.15MB
+Epoch [9/100]; Iter [4820/51500]; loss 1.8419; gen_loss 1.8419; LR 9.79e-05; Iter time 0.37s; ETA 4:47:33; Mem 18775.15MB
+Epoch [9/100]; Iter [4830/51500]; loss 1.5242; gen_loss 1.5242; LR 9.79e-05; Iter time 0.37s; ETA 4:47:27; Mem 18775.15MB
+Epoch [9/100]; Iter [4840/51500]; loss 1.8526; gen_loss 1.8526; LR 9.79e-05; Iter time 0.37s; ETA 4:47:45; Mem 18775.15MB
+Epoch [9/100]; Iter [4850/51500]; loss 1.7498; gen_loss 1.7498; LR 9.78e-05; Iter time 0.37s; ETA 4:47:43; Mem 18775.15MB
+Epoch [9/100]; Iter [4860/51500]; loss 1.7517; gen_loss 1.7517; LR 9.78e-05; Iter time 0.37s; ETA 4:47:23; Mem 18775.15MB
+Epoch [9/100]; Iter [4870/51500]; loss 1.6940; gen_loss 1.6940; LR 9.78e-05; Iter time 0.37s; ETA 4:47:21; Mem 18775.15MB
+Epoch [9/100]; Iter [4880/51500]; loss 1.1723; gen_loss 1.1723; LR 9.78e-05; Iter time 0.37s; ETA 4:47:25; Mem 18775.15MB
+Epoch [9/100]; Iter [4890/51500]; loss 1.7332; gen_loss 1.7332; LR 9.78e-05; Iter time 0.37s; ETA 4:47:25; Mem 18775.15MB
+Epoch [9/100]; Iter [4900/51500]; loss 1.2755; gen_loss 1.2755; LR 9.78e-05; Iter time 0.37s; ETA 4:47:16; Mem 18775.15MB
+Epoch [9/100]; Iter [4910/51500]; loss 1.7089; gen_loss 1.7089; LR 9.78e-05; Iter time 0.37s; ETA 4:47:04; Mem 18775.15MB
+Epoch [9/100]; Iter [4920/51500]; loss 1.8688; gen_loss 1.8688; LR 9.78e-05; Iter time 0.37s; ETA 4:47:27; Mem 18775.15MB
+Epoch [9/100]; Iter [4930/51500]; loss 2.2096; gen_loss 2.2096; LR 9.78e-05; Iter time 0.37s; ETA 4:47:12; Mem 18775.15MB
+Epoch [9/100]; Iter [4940/51500]; loss 2.0774; gen_loss 2.0774; LR 9.78e-05; Iter time 0.37s; ETA 4:47:16; Mem 18775.15MB
+Epoch [9/100]; Iter [4950/51500]; loss 1.7437; gen_loss 1.7437; LR 9.78e-05; Iter time 0.37s; ETA 4:47:14; Mem 18775.15MB
+Epoch [9/100]; Iter [4960/51500]; loss 1.7045; gen_loss 1.7045; LR 9.78e-05; Iter time 0.37s; ETA 4:46:56; Mem 18775.15MB
+Epoch [9/100]; Iter [4970/51500]; loss 1.5827; gen_loss 1.5827; LR 9.77e-05; Iter time 0.37s; ETA 4:46:59; Mem 18775.15MB
+Epoch [9/100]; Iter [4980/51500]; loss 1.7537; gen_loss 1.7537; LR 9.77e-05; Iter time 0.37s; ETA 4:47:23; Mem 18775.15MB
+Epoch [9/100]; Iter [4990/51500]; loss 1.6323; gen_loss 1.6323; LR 9.77e-05; Iter time 0.37s; ETA 4:47:19; Mem 18775.15MB
+Epoch [9/100]; Iter [5000/51500]; loss 1.6727; gen_loss 1.6727; LR 9.77e-05; Iter time 0.37s; ETA 4:46:52; Mem 18775.15MB
+Epoch [9/100]; Iter [5010/51500]; loss 1.6340; gen_loss 1.6340; LR 9.77e-05; Iter time 0.37s; ETA 4:46:58; Mem 18775.15MB
+Epoch [9/100]; Iter [5020/51500]; loss 2.0628; gen_loss 2.0628; LR 9.77e-05; Iter time 0.37s; ETA 4:46:48; Mem 18775.15MB
+Epoch [9/100]; Iter [5030/51500]; loss 1.7998; gen_loss 1.7998; LR 9.77e-05; Iter time 0.37s; ETA 4:46:53; Mem 18775.15MB
+Epoch [9/100]; Iter [5040/51500]; loss 1.8904; gen_loss 1.8904; LR 9.77e-05; Iter time 0.37s; ETA 4:47:01; Mem 18775.15MB
+Epoch [9/100]; Iter [5050/51500]; loss 1.5669; gen_loss 1.5669; LR 9.77e-05; Iter time 0.37s; ETA 4:46:34; Mem 18775.15MB
+Epoch [9/100]; Iter [5060/51500]; loss 1.7182; gen_loss 1.7182; LR 9.77e-05; Iter time 0.37s; ETA 4:47:02; Mem 18775.15MB
+Epoch [9/100]; Iter [5070/51500]; loss 1.1972; gen_loss 1.1972; LR 9.77e-05; Iter time 0.37s; ETA 4:47:01; Mem 18775.15MB
+Epoch [9/100]; Iter [5080/51500]; loss 1.8416; gen_loss 1.8416; LR 9.76e-05; Iter time 0.37s; ETA 4:47:10; Mem 18775.15MB
+Epoch [9/100]; Iter [5090/51500]; loss 1.9305; gen_loss 1.9305; LR 9.76e-05; Iter time 0.37s; ETA 4:47:30; Mem 18775.15MB
+Epoch [9/100]; Iter [5100/51500]; loss 1.8333; gen_loss 1.8333; LR 9.76e-05; Iter time 0.37s; ETA 4:47:33; Mem 18775.15MB
+Epoch [9/100]; Iter [5110/51500]; loss 2.0604; gen_loss 2.0604; LR 9.76e-05; Iter time 0.37s; ETA 4:47:57; Mem 18775.15MB
+Epoch [9/100]; Iter [5120/51500]; loss 1.7580; gen_loss 1.7580; LR 9.76e-05; Iter time 0.37s; ETA 4:47:34; Mem 18775.15MB
+Epoch [9/100]; Iter [5130/51500]; loss 1.6268; gen_loss 1.6268; LR 9.76e-05; Iter time 0.37s; ETA 4:47:40; Mem 18775.15MB
+Epoch [9/100]; Iter [5140/51500]; loss 1.9711; gen_loss 1.9711; LR 9.76e-05; Iter time 0.37s; ETA 4:47:36; Mem 18775.15MB
+Epoch [10/100]; Iter [5150/51500]; loss 1.7308; gen_loss 1.7308; LR 9.76e-05; Iter time 0.37s; ETA 4:47:39; Mem 18775.15MB
+Epoch [10/100]; Iter [5160/51500]; loss 1.8087; gen_loss 1.8087; LR 9.76e-05; Iter time 0.37s; ETA 4:47:05; Mem 18775.15MB
+Epoch [10/100]; Iter [5170/51500]; loss 1.5474; gen_loss 1.5474; LR 9.76e-05; Iter time 0.37s; ETA 4:47:13; Mem 18775.15MB
+Epoch [10/100]; Iter [5180/51500]; loss 1.9190; gen_loss 1.9190; LR 9.75e-05; Iter time 0.37s; ETA 4:47:13; Mem 18775.15MB
+Epoch [10/100]; Iter [5190/51500]; loss 2.0412; gen_loss 2.0412; LR 9.75e-05; Iter time 0.37s; ETA 4:47:22; Mem 18775.15MB
+Epoch [10/100]; Iter [5200/51500]; loss 1.8254; gen_loss 1.8254; LR 9.75e-05; Iter time 0.37s; ETA 4:47:35; Mem 18775.15MB
+Epoch [10/100]; Iter [5210/51500]; loss 1.6297; gen_loss 1.6297; LR 9.75e-05; Iter time 0.37s; ETA 4:47:01; Mem 18775.15MB
+Epoch [10/100]; Iter [5220/51500]; loss 1.7653; gen_loss 1.7653; LR 9.75e-05; Iter time 0.37s; ETA 4:47:18; Mem 18775.15MB
+Epoch [10/100]; Iter [5230/51500]; loss 1.5746; gen_loss 1.5746; LR 9.75e-05; Iter time 0.37s; ETA 4:46:47; Mem 18775.15MB
+Epoch [10/100]; Iter [5240/51500]; loss 2.1705; gen_loss 2.1705; LR 9.75e-05; Iter time 0.37s; ETA 4:47:07; Mem 18775.15MB
+Epoch [10/100]; Iter [5250/51500]; loss 1.7511; gen_loss 1.7511; LR 9.75e-05; Iter time 0.37s; ETA 4:47:01; Mem 18775.15MB
+Epoch [10/100]; Iter [5260/51500]; loss 1.9151; gen_loss 1.9151; LR 9.75e-05; Iter time 0.37s; ETA 4:46:49; Mem 18775.15MB
+Epoch [10/100]; Iter [5270/51500]; loss 1.6612; gen_loss 1.6612; LR 9.75e-05; Iter time 0.37s; ETA 4:46:24; Mem 18775.15MB
+Epoch [10/100]; Iter [5280/51500]; loss 1.9993; gen_loss 1.9993; LR 9.75e-05; Iter time 0.37s; ETA 4:46:36; Mem 18775.15MB
+Epoch [10/100]; Iter [5290/51500]; loss 1.6501; gen_loss 1.6501; LR 9.74e-05; Iter time 0.37s; ETA 4:46:33; Mem 18775.15MB
+Epoch [10/100]; Iter [5300/51500]; loss 1.7256; gen_loss 1.7256; LR 9.74e-05; Iter time 0.37s; ETA 4:46:24; Mem 18775.15MB
+Epoch [10/100]; Iter [5310/51500]; loss 1.7226; gen_loss 1.7226; LR 9.74e-05; Iter time 0.37s; ETA 4:46:42; Mem 18775.15MB
+Epoch [10/100]; Iter [5320/51500]; loss 2.3692; gen_loss 2.3692; LR 9.74e-05; Iter time 0.37s; ETA 4:46:43; Mem 18775.15MB
+Epoch [10/100]; Iter [5330/51500]; loss 1.7414; gen_loss 1.7414; LR 9.74e-05; Iter time 0.37s; ETA 4:46:29; Mem 18775.15MB
+Epoch [10/100]; Iter [5340/51500]; loss 1.6180; gen_loss 1.6180; LR 9.74e-05; Iter time 0.37s; ETA 4:46:16; Mem 18775.15MB
+Epoch [10/100]; Iter [5350/51500]; loss 1.6166; gen_loss 1.6166; LR 9.74e-05; Iter time 0.37s; ETA 4:46:30; Mem 18775.15MB
+Epoch [10/100]; Iter [5360/51500]; loss 1.5552; gen_loss 1.5552; LR 9.74e-05; Iter time 0.37s; ETA 4:46:38; Mem 18775.15MB
+Epoch [10/100]; Iter [5370/51500]; loss 1.9691; gen_loss 1.9691; LR 9.74e-05; Iter time 0.37s; ETA 4:46:30; Mem 18775.15MB
+Epoch [10/100]; Iter [5380/51500]; loss 1.5453; gen_loss 1.5453; LR 9.74e-05; Iter time 0.37s; ETA 4:45:22; Mem 18775.15MB
+Epoch [10/100]; Iter [5390/51500]; loss 1.8510; gen_loss 1.8510; LR 9.73e-05; Iter time 0.37s; ETA 4:45:33; Mem 18775.15MB
+Epoch [10/100]; Iter [5400/51500]; loss 1.4300; gen_loss 1.4300; LR 9.73e-05; Iter time 0.37s; ETA 4:45:45; Mem 18775.15MB
+Epoch [10/100]; Iter [5410/51500]; loss 1.4130; gen_loss 1.4130; LR 9.73e-05; Iter time 0.37s; ETA 4:45:33; Mem 18775.15MB
+Epoch [10/100]; Iter [5420/51500]; loss 1.7459; gen_loss 1.7459; LR 9.73e-05; Iter time 0.37s; ETA 4:45:54; Mem 18775.15MB
+Epoch [10/100]; Iter [5430/51500]; loss 1.7077; gen_loss 1.7077; LR 9.73e-05; Iter time 0.37s; ETA 4:45:47; Mem 18775.15MB
+Epoch [10/100]; Iter [5440/51500]; loss 1.3542; gen_loss 1.3542; LR 9.73e-05; Iter time 0.37s; ETA 4:45:36; Mem 18775.15MB
+Epoch [10/100]; Iter [5450/51500]; loss 1.6417; gen_loss 1.6417; LR 9.73e-05; Iter time 0.37s; ETA 4:45:18; Mem 18775.15MB
+Epoch [10/100]; Iter [5460/51500]; loss 1.9458; gen_loss 1.9458; LR 9.73e-05; Iter time 0.37s; ETA 4:44:20; Mem 18775.15MB
+Epoch [10/100]; Iter [5470/51500]; loss 1.4064; gen_loss 1.4064; LR 9.73e-05; Iter time 0.37s; ETA 4:44:17; Mem 18775.15MB
+Epoch [10/100]; Iter [5480/51500]; loss 1.7979; gen_loss 1.7979; LR 9.73e-05; Iter time 0.37s; ETA 4:44:31; Mem 18775.15MB
+Epoch [10/100]; Iter [5490/51500]; loss 1.5756; gen_loss 1.5756; LR 9.72e-05; Iter time 0.37s; ETA 4:44:15; Mem 18775.15MB
+Epoch [10/100]; Iter [5500/51500]; loss 1.8190; gen_loss 1.8190; LR 9.72e-05; Iter time 0.37s; ETA 4:44:17; Mem 18775.15MB
+Epoch [10/100]; Iter [5510/51500]; loss 1.8105; gen_loss 1.8105; LR 9.72e-05; Iter time 0.37s; ETA 4:44:10; Mem 18775.15MB
+Epoch [10/100]; Iter [5520/51500]; loss 1.6539; gen_loss 1.6539; LR 9.72e-05; Iter time 0.37s; ETA 4:44:12; Mem 18775.15MB
+Epoch [10/100]; Iter [5530/51500]; loss 1.5506; gen_loss 1.5506; LR 9.72e-05; Iter time 0.37s; ETA 4:43:49; Mem 18775.15MB
+Epoch [10/100]; Iter [5540/51500]; loss 1.5493; gen_loss 1.5493; LR 9.72e-05; Iter time 0.37s; ETA 4:43:59; Mem 18775.15MB
+Epoch [10/100]; Iter [5550/51500]; loss 1.7695; gen_loss 1.7695; LR 9.72e-05; Iter time 0.37s; ETA 4:44:00; Mem 18775.15MB
+Epoch [10/100]; Iter [5560/51500]; loss 1.8331; gen_loss 1.8331; LR 9.72e-05; Iter time 0.37s; ETA 4:44:07; Mem 18775.15MB
+Epoch [10/100]; Iter [5570/51500]; loss 1.5844; gen_loss 1.5844; LR 9.72e-05; Iter time 0.37s; ETA 4:43:49; Mem 18775.15MB
+Epoch [10/100]; Iter [5580/51500]; loss 1.7702; gen_loss 1.7702; LR 9.72e-05; Iter time 0.37s; ETA 4:43:31; Mem 18775.15MB
+Epoch [10/100]; Iter [5590/51500]; loss 1.4870; gen_loss 1.4870; LR 9.71e-05; Iter time 0.37s; ETA 4:43:40; Mem 18775.15MB
+Epoch [10/100]; Iter [5600/51500]; loss 1.7116; gen_loss 1.7116; LR 9.71e-05; Iter time 0.37s; ETA 4:44:38; Mem 18775.15MB
+Epoch [10/100]; Iter [5610/51500]; loss 1.6853; gen_loss 1.6853; LR 9.71e-05; Iter time 0.37s; ETA 4:44:41; Mem 18775.15MB
+Epoch [10/100]; Iter [5620/51500]; loss 1.6934; gen_loss 1.6934; LR 9.71e-05; Iter time 0.37s; ETA 4:44:22; Mem 18775.15MB
+Epoch [10/100]; Iter [5630/51500]; loss 1.7773; gen_loss 1.7773; LR 9.71e-05; Iter time 0.37s; ETA 4:44:20; Mem 18775.15MB
+Epoch [10/100]; Iter [5640/51500]; loss 1.5450; gen_loss 1.5450; LR 9.71e-05; Iter time 0.37s; ETA 4:44:07; Mem 18775.15MB
+Epoch [10/100]; Iter [5650/51500]; loss 1.6525; gen_loss 1.6525; LR 9.71e-05; Iter time 0.37s; ETA 4:44:21; Mem 18775.15MB
+Epoch [10/100]; Iter [5660/51500]; loss 1.7473; gen_loss 1.7473; LR 9.71e-05; Iter time 0.37s; ETA 4:44:14; Mem 18775.15MB
+Epoch [11/100]; Iter [5670/51500]; loss 1.6004; gen_loss 1.6004; LR 9.71e-05; Iter time 0.37s; ETA 4:43:49; Mem 18775.15MB
+Epoch [11/100]; Iter [5680/51500]; loss 1.7849; gen_loss 1.7849; LR 9.71e-05; Iter time 0.37s; ETA 4:43:06; Mem 18775.15MB
+Epoch [11/100]; Iter [5690/51500]; loss 1.4812; gen_loss 1.4812; LR 9.70e-05; Iter time 0.37s; ETA 4:42:46; Mem 18775.15MB
+Epoch [11/100]; Iter [5700/51500]; loss 1.4131; gen_loss 1.4131; LR 9.70e-05; Iter time 0.37s; ETA 4:42:44; Mem 18775.15MB
+Epoch [11/100]; Iter [5710/51500]; loss 1.5673; gen_loss 1.5673; LR 9.70e-05; Iter time 0.37s; ETA 4:42:41; Mem 18775.15MB
+Epoch [11/100]; Iter [5720/51500]; loss 1.6931; gen_loss 1.6931; LR 9.70e-05; Iter time 0.37s; ETA 4:42:53; Mem 18775.15MB
+Epoch [11/100]; Iter [5730/51500]; loss 1.1904; gen_loss 1.1904; LR 9.70e-05; Iter time 0.37s; ETA 4:42:42; Mem 18775.15MB
+Epoch [11/100]; Iter [5740/51500]; loss 1.7347; gen_loss 1.7347; LR 9.70e-05; Iter time 0.37s; ETA 4:42:42; Mem 18775.15MB
+Epoch [11/100]; Iter [5750/51500]; loss 1.7889; gen_loss 1.7889; LR 9.70e-05; Iter time 0.37s; ETA 4:42:47; Mem 18775.15MB
+Epoch [11/100]; Iter [5760/51500]; loss 1.3496; gen_loss 1.3496; LR 9.70e-05; Iter time 0.37s; ETA 4:42:36; Mem 18775.15MB
+Epoch [11/100]; Iter [5770/51500]; loss 1.8494; gen_loss 1.8494; LR 9.70e-05; Iter time 0.37s; ETA 4:43:03; Mem 18775.15MB
+Epoch [11/100]; Iter [5780/51500]; loss 1.2955; gen_loss 1.2955; LR 9.70e-05; Iter time 0.37s; ETA 4:43:25; Mem 18775.15MB
+Epoch [11/100]; Iter [5790/51500]; loss 1.4260; gen_loss 1.4260; LR 9.69e-05; Iter time 0.37s; ETA 4:43:36; Mem 18775.15MB
+Epoch [11/100]; Iter [5800/51500]; loss 1.7293; gen_loss 1.7293; LR 9.69e-05; Iter time 0.37s; ETA 4:42:02; Mem 18775.15MB
+Epoch [11/100]; Iter [5810/51500]; loss 1.6697; gen_loss 1.6697; LR 9.69e-05; Iter time 0.37s; ETA 4:42:09; Mem 18775.15MB
+Epoch [11/100]; Iter [5820/51500]; loss 1.6694; gen_loss 1.6694; LR 9.69e-05; Iter time 0.37s; ETA 4:42:14; Mem 18775.15MB
+Epoch [11/100]; Iter [5830/51500]; loss 1.6207; gen_loss 1.6207; LR 9.69e-05; Iter time 0.37s; ETA 4:41:54; Mem 18775.15MB
+Epoch [11/100]; Iter [5840/51500]; loss 1.9103; gen_loss 1.9103; LR 9.69e-05; Iter time 0.37s; ETA 4:41:37; Mem 18775.15MB
+Epoch [11/100]; Iter [5850/51500]; loss 1.6545; gen_loss 1.6545; LR 9.69e-05; Iter time 0.37s; ETA 4:42:05; Mem 18775.15MB
+Epoch [11/100]; Iter [5860/51500]; loss 1.8487; gen_loss 1.8487; LR 9.69e-05; Iter time 0.37s; ETA 4:41:51; Mem 18775.15MB
+Epoch [11/100]; Iter [5870/51500]; loss 1.8593; gen_loss 1.8593; LR 9.69e-05; Iter time 0.37s; ETA 4:41:50; Mem 18775.15MB
+Epoch [11/100]; Iter [5880/51500]; loss 1.4596; gen_loss 1.4596; LR 9.68e-05; Iter time 0.37s; ETA 4:41:24; Mem 18775.15MB
+Epoch [11/100]; Iter [5890/51500]; loss 1.4792; gen_loss 1.4792; LR 9.68e-05; Iter time 0.37s; ETA 4:41:44; Mem 18775.15MB
+Epoch [11/100]; Iter [5900/51500]; loss 2.0136; gen_loss 2.0136; LR 9.68e-05; Iter time 0.37s; ETA 4:41:42; Mem 18775.15MB
+Epoch [11/100]; Iter [5910/51500]; loss 1.8370; gen_loss 1.8370; LR 9.68e-05; Iter time 0.37s; ETA 4:41:38; Mem 18775.15MB
+Epoch [11/100]; Iter [5920/51500]; loss 1.7285; gen_loss 1.7285; LR 9.68e-05; Iter time 0.37s; ETA 4:40:46; Mem 18775.15MB
+Epoch [11/100]; Iter [5930/51500]; loss 1.6737; gen_loss 1.6737; LR 9.68e-05; Iter time 0.37s; ETA 4:40:40; Mem 18775.15MB
+Epoch [11/100]; Iter [5940/51500]; loss 1.7471; gen_loss 1.7471; LR 9.68e-05; Iter time 0.37s; ETA 4:41:00; Mem 18775.15MB
+Epoch [11/100]; Iter [5950/51500]; loss 2.0386; gen_loss 2.0386; LR 9.68e-05; Iter time 0.37s; ETA 4:40:49; Mem 18775.15MB
+Epoch [11/100]; Iter [5960/51500]; loss 1.5193; gen_loss 1.5193; LR 9.68e-05; Iter time 0.37s; ETA 4:41:02; Mem 18775.15MB
+Epoch [11/100]; Iter [5970/51500]; loss 1.5617; gen_loss 1.5617; LR 9.68e-05; Iter time 0.37s; ETA 4:40:58; Mem 18775.15MB
+Epoch [11/100]; Iter [5980/51500]; loss 1.3326; gen_loss 1.3326; LR 9.67e-05; Iter time 0.37s; ETA 4:40:38; Mem 18775.15MB
+Epoch [11/100]; Iter [5990/51500]; loss 1.4417; gen_loss 1.4417; LR 9.67e-05; Iter time 0.37s; ETA 4:40:48; Mem 18775.15MB
+Epoch [11/100]; Iter [6000/51500]; loss 1.7474; gen_loss 1.7474; LR 9.67e-05; Iter time 0.37s; ETA 4:40:53; Mem 18775.15MB
+Epoch [11/100]; Iter [6010/51500]; loss 1.8114; gen_loss 1.8114; LR 9.67e-05; Iter time 0.37s; ETA 4:40:52; Mem 18775.15MB
+Epoch [11/100]; Iter [6020/51500]; loss 1.7946; gen_loss 1.7946; LR 9.67e-05; Iter time 0.37s; ETA 4:40:57; Mem 18775.15MB
+Epoch [11/100]; Iter [6030/51500]; loss 1.7271; gen_loss 1.7271; LR 9.67e-05; Iter time 0.37s; ETA 4:40:46; Mem 18775.15MB
+Epoch [11/100]; Iter [6040/51500]; loss 1.7057; gen_loss 1.7057; LR 9.67e-05; Iter time 0.37s; ETA 4:40:30; Mem 18775.15MB
+Epoch [11/100]; Iter [6050/51500]; loss 1.6813; gen_loss 1.6813; LR 9.67e-05; Iter time 0.37s; ETA 4:40:18; Mem 18775.15MB
+Epoch [11/100]; Iter [6060/51500]; loss 1.4735; gen_loss 1.4735; LR 9.67e-05; Iter time 0.37s; ETA 4:40:43; Mem 18775.15MB
+Epoch [11/100]; Iter [6070/51500]; loss 1.8836; gen_loss 1.8836; LR 9.66e-05; Iter time 0.37s; ETA 4:40:09; Mem 18775.15MB
+Epoch [11/100]; Iter [6080/51500]; loss 1.7242; gen_loss 1.7242; LR 9.66e-05; Iter time 0.37s; ETA 4:40:25; Mem 18775.15MB
+Epoch [11/100]; Iter [6090/51500]; loss 1.7848; gen_loss 1.7848; LR 9.66e-05; Iter time 0.37s; ETA 4:40:00; Mem 18775.15MB
+Epoch [11/100]; Iter [6100/51500]; loss 1.3453; gen_loss 1.3453; LR 9.66e-05; Iter time 0.37s; ETA 4:41:22; Mem 18775.15MB
+Epoch [11/100]; Iter [6110/51500]; loss 1.6585; gen_loss 1.6585; LR 9.66e-05; Iter time 0.37s; ETA 4:41:38; Mem 18775.15MB
+Epoch [11/100]; Iter [6120/51500]; loss 1.7860; gen_loss 1.7860; LR 9.66e-05; Iter time 0.37s; ETA 4:41:28; Mem 18775.15MB
+Epoch [11/100]; Iter [6130/51500]; loss 1.7867; gen_loss 1.7867; LR 9.66e-05; Iter time 0.37s; ETA 4:39:45; Mem 18775.15MB
+Epoch [11/100]; Iter [6140/51500]; loss 1.7466; gen_loss 1.7466; LR 9.66e-05; Iter time 0.37s; ETA 4:39:56; Mem 18775.15MB
+Epoch [11/100]; Iter [6150/51500]; loss 1.5960; gen_loss 1.5960; LR 9.66e-05; Iter time 0.37s; ETA 4:40:10; Mem 18775.15MB
+Epoch [11/100]; Iter [6160/51500]; loss 2.1018; gen_loss 2.1018; LR 9.65e-05; Iter time 0.37s; ETA 4:40:33; Mem 18775.15MB
+Epoch [11/100]; Iter [6170/51500]; loss 1.5129; gen_loss 1.5129; LR 9.65e-05; Iter time 0.37s; ETA 4:40:07; Mem 18775.15MB
+Epoch [12/100]; Iter [6180/51500]; loss 1.8088; gen_loss 1.8088; LR 9.65e-05; Iter time 0.37s; ETA 4:40:17; Mem 18775.15MB
+Epoch [12/100]; Iter [6190/51500]; loss 1.5563; gen_loss 1.5563; LR 9.65e-05; Iter time 0.37s; ETA 4:39:46; Mem 18775.15MB
+Epoch [12/100]; Iter [6200/51500]; loss 2.1868; gen_loss 2.1868; LR 9.65e-05; Iter time 0.37s; ETA 4:39:59; Mem 18775.15MB
+Epoch [12/100]; Iter [6210/51500]; loss 1.5133; gen_loss 1.5133; LR 9.65e-05; Iter time 0.37s; ETA 4:40:07; Mem 18775.15MB
+Epoch [12/100]; Iter [6220/51500]; loss 1.3958; gen_loss 1.3958; LR 9.65e-05; Iter time 0.37s; ETA 4:40:15; Mem 18775.15MB
+Epoch [12/100]; Iter [6230/51500]; loss 1.6392; gen_loss 1.6392; LR 9.65e-05; Iter time 0.37s; ETA 4:40:02; Mem 18775.15MB
+Epoch [12/100]; Iter [6240/51500]; loss 1.5461; gen_loss 1.5461; LR 9.65e-05; Iter time 0.37s; ETA 4:40:07; Mem 18775.15MB
+Epoch [12/100]; Iter [6250/51500]; loss 1.6230; gen_loss 1.6230; LR 9.64e-05; Iter time 0.37s; ETA 4:40:08; Mem 18775.15MB
+Epoch [12/100]; Iter [6260/51500]; loss 1.4566; gen_loss 1.4566; LR 9.64e-05; Iter time 0.37s; ETA 4:39:55; Mem 18775.15MB
+Epoch [12/100]; Iter [6270/51500]; loss 1.7168; gen_loss 1.7168; LR 9.64e-05; Iter time 0.37s; ETA 4:39:46; Mem 18775.15MB
+Epoch [12/100]; Iter [6280/51500]; loss 1.7266; gen_loss 1.7266; LR 9.64e-05; Iter time 0.37s; ETA 4:40:06; Mem 18775.15MB
+Epoch [12/100]; Iter [6290/51500]; loss 1.6890; gen_loss 1.6890; LR 9.64e-05; Iter time 0.37s; ETA 4:39:24; Mem 18775.15MB
+Epoch [12/100]; Iter [6300/51500]; loss 1.6645; gen_loss 1.6645; LR 9.64e-05; Iter time 0.37s; ETA 4:40:10; Mem 18775.15MB
+Epoch [12/100]; Iter [6310/51500]; loss 1.7830; gen_loss 1.7830; LR 9.64e-05; Iter time 0.37s; ETA 4:39:25; Mem 18775.15MB
+Epoch [12/100]; Iter [6320/51500]; loss 1.6630; gen_loss 1.6630; LR 9.64e-05; Iter time 0.37s; ETA 4:39:30; Mem 18775.15MB
+Epoch [12/100]; Iter [6330/51500]; loss 1.2909; gen_loss 1.2909; LR 9.64e-05; Iter time 0.37s; ETA 4:39:26; Mem 18775.15MB
+Epoch [12/100]; Iter [6340/51500]; loss 1.5787; gen_loss 1.5787; LR 9.63e-05; Iter time 0.37s; ETA 4:39:10; Mem 18775.15MB
+Epoch [12/100]; Iter [6350/51500]; loss 1.5187; gen_loss 1.5187; LR 9.63e-05; Iter time 0.37s; ETA 4:39:15; Mem 18775.15MB
+Epoch [12/100]; Iter [6360/51500]; loss 1.5596; gen_loss 1.5596; LR 9.63e-05; Iter time 0.37s; ETA 4:39:22; Mem 18775.15MB
+Epoch [12/100]; Iter [6370/51500]; loss 1.3446; gen_loss 1.3446; LR 9.63e-05; Iter time 0.37s; ETA 4:39:35; Mem 18775.15MB
+Epoch [12/100]; Iter [6380/51500]; loss 1.5194; gen_loss 1.5194; LR 9.63e-05; Iter time 0.37s; ETA 4:39:12; Mem 18775.15MB
+Epoch [12/100]; Iter [6390/51500]; loss 1.9631; gen_loss 1.9631; LR 9.63e-05; Iter time 0.37s; ETA 4:39:36; Mem 18775.15MB
+Epoch [12/100]; Iter [6400/51500]; loss 1.6080; gen_loss 1.6080; LR 9.63e-05; Iter time 0.37s; ETA 4:38:24; Mem 18775.15MB
+Epoch [12/100]; Iter [6410/51500]; loss 1.7103; gen_loss 1.7103; LR 9.63e-05; Iter time 0.37s; ETA 4:39:09; Mem 18775.15MB
+Epoch [12/100]; Iter [6420/51500]; loss 1.3532; gen_loss 1.3532; LR 9.63e-05; Iter time 0.37s; ETA 4:38:59; Mem 18775.15MB
+Epoch [12/100]; Iter [6430/51500]; loss 1.6136; gen_loss 1.6136; LR 9.62e-05; Iter time 0.37s; ETA 4:38:37; Mem 18775.15MB
+Epoch [12/100]; Iter [6440/51500]; loss 1.7194; gen_loss 1.7194; LR 9.62e-05; Iter time 0.37s; ETA 4:38:50; Mem 18775.15MB
+Epoch [12/100]; Iter [6450/51500]; loss 2.0345; gen_loss 2.0345; LR 9.62e-05; Iter time 0.37s; ETA 4:38:24; Mem 18775.15MB
+Epoch [12/100]; Iter [6460/51500]; loss 2.1117; gen_loss 2.1117; LR 9.62e-05; Iter time 0.37s; ETA 4:38:32; Mem 18775.15MB
+Epoch [12/100]; Iter [6470/51500]; loss 1.4975; gen_loss 1.4975; LR 9.62e-05; Iter time 0.37s; ETA 4:38:37; Mem 18775.15MB
+Epoch [12/100]; Iter [6480/51500]; loss 1.4627; gen_loss 1.4627; LR 9.62e-05; Iter time 0.37s; ETA 4:38:53; Mem 18775.15MB
+Epoch [12/100]; Iter [6490/51500]; loss 1.7418; gen_loss 1.7418; LR 9.62e-05; Iter time 0.37s; ETA 4:38:25; Mem 18775.15MB
+Epoch [12/100]; Iter [6500/51500]; loss 1.5526; gen_loss 1.5526; LR 9.62e-05; Iter time 0.37s; ETA 4:38:34; Mem 18775.15MB
+Epoch [12/100]; Iter [6510/51500]; loss 1.5361; gen_loss 1.5361; LR 9.61e-05; Iter time 0.37s; ETA 4:38:37; Mem 18775.15MB
+Epoch [12/100]; Iter [6520/51500]; loss 1.7311; gen_loss 1.7311; LR 9.61e-05; Iter time 0.37s; ETA 4:38:41; Mem 18775.15MB
+Epoch [12/100]; Iter [6530/51500]; loss 1.8103; gen_loss 1.8103; LR 9.61e-05; Iter time 0.37s; ETA 4:38:21; Mem 18775.15MB
+Epoch [12/100]; Iter [6540/51500]; loss 1.6191; gen_loss 1.6191; LR 9.61e-05; Iter time 0.37s; ETA 4:38:18; Mem 18775.15MB
+Epoch [12/100]; Iter [6550/51500]; loss 1.3382; gen_loss 1.3382; LR 9.61e-05; Iter time 0.37s; ETA 4:38:28; Mem 18775.15MB
+Epoch [12/100]; Iter [6560/51500]; loss 1.8125; gen_loss 1.8125; LR 9.61e-05; Iter time 0.37s; ETA 4:38:10; Mem 18775.15MB
+Epoch [12/100]; Iter [6570/51500]; loss 1.6882; gen_loss 1.6882; LR 9.61e-05; Iter time 0.37s; ETA 4:38:23; Mem 18775.15MB
+Epoch [12/100]; Iter [6580/51500]; loss 1.6733; gen_loss 1.6733; LR 9.61e-05; Iter time 0.37s; ETA 4:38:14; Mem 18775.15MB
+Epoch [12/100]; Iter [6590/51500]; loss 1.5939; gen_loss 1.5939; LR 9.61e-05; Iter time 0.37s; ETA 4:38:19; Mem 18775.15MB
+Epoch [12/100]; Iter [6600/51500]; loss 1.5847; gen_loss 1.5847; LR 9.60e-05; Iter time 0.37s; ETA 4:37:10; Mem 18775.15MB
+Epoch [12/100]; Iter [6610/51500]; loss 1.5671; gen_loss 1.5671; LR 9.60e-05; Iter time 0.37s; ETA 4:36:17; Mem 18775.15MB
+Epoch [12/100]; Iter [6620/51500]; loss 1.8935; gen_loss 1.8935; LR 9.60e-05; Iter time 0.37s; ETA 4:36:13; Mem 18775.15MB
+Epoch [12/100]; Iter [6630/51500]; loss 1.5357; gen_loss 1.5357; LR 9.60e-05; Iter time 0.37s; ETA 4:36:33; Mem 18775.15MB
+Epoch [12/100]; Iter [6640/51500]; loss 1.4207; gen_loss 1.4207; LR 9.60e-05; Iter time 0.37s; ETA 4:36:23; Mem 18775.15MB
+Epoch [12/100]; Iter [6650/51500]; loss 1.8935; gen_loss 1.8935; LR 9.60e-05; Iter time 0.37s; ETA 4:36:18; Mem 18775.15MB
+Epoch [12/100]; Iter [6660/51500]; loss 1.6999; gen_loss 1.6999; LR 9.60e-05; Iter time 0.37s; ETA 4:36:12; Mem 18775.15MB
+Epoch [12/100]; Iter [6670/51500]; loss 1.5757; gen_loss 1.5757; LR 9.60e-05; Iter time 0.37s; ETA 4:36:18; Mem 18775.15MB
+Epoch [12/100]; Iter [6680/51500]; loss 1.5422; gen_loss 1.5422; LR 9.59e-05; Iter time 0.37s; ETA 4:36:40; Mem 18775.15MB
+Epoch [12/100]; Iter [6690/51500]; loss 1.5488; gen_loss 1.5488; LR 9.59e-05; Iter time 0.37s; ETA 4:36:24; Mem 18775.15MB
+Epoch [13/100]; Iter [6700/51500]; loss 1.5376; gen_loss 1.5376; LR 9.59e-05; Iter time 0.37s; ETA 4:36:16; Mem 18775.15MB
+Epoch [13/100]; Iter [6710/51500]; loss 1.9093; gen_loss 1.9093; LR 9.59e-05; Iter time 0.37s; ETA 4:36:52; Mem 18775.15MB
+Epoch [13/100]; Iter [6720/51500]; loss 1.4554; gen_loss 1.4554; LR 9.59e-05; Iter time 0.37s; ETA 4:37:00; Mem 18775.15MB
+Epoch [13/100]; Iter [6730/51500]; loss 1.4411; gen_loss 1.4411; LR 9.59e-05; Iter time 0.37s; ETA 4:37:05; Mem 18775.15MB
+Epoch [13/100]; Iter [6740/51500]; loss 1.6383; gen_loss 1.6383; LR 9.59e-05; Iter time 0.37s; ETA 4:36:55; Mem 18775.15MB
+Epoch [13/100]; Iter [6750/51500]; loss 1.5711; gen_loss 1.5711; LR 9.59e-05; Iter time 0.37s; ETA 4:37:25; Mem 18775.15MB
+Epoch [13/100]; Iter [6760/51500]; loss 1.5582; gen_loss 1.5582; LR 9.59e-05; Iter time 0.37s; ETA 4:36:48; Mem 18775.15MB
+Epoch [13/100]; Iter [6770/51500]; loss 1.4645; gen_loss 1.4645; LR 9.58e-05; Iter time 0.37s; ETA 4:37:05; Mem 18775.15MB
+Epoch [13/100]; Iter [6780/51500]; loss 1.6675; gen_loss 1.6675; LR 9.58e-05; Iter time 0.37s; ETA 4:37:02; Mem 18775.15MB
+Epoch [13/100]; Iter [6790/51500]; loss 1.5942; gen_loss 1.5942; LR 9.58e-05; Iter time 0.37s; ETA 4:36:54; Mem 18775.15MB
+Epoch [13/100]; Iter [6800/51500]; loss 1.6805; gen_loss 1.6805; LR 9.58e-05; Iter time 0.37s; ETA 4:36:56; Mem 18775.15MB
+Epoch [13/100]; Iter [6810/51500]; loss 1.8884; gen_loss 1.8884; LR 9.58e-05; Iter time 0.37s; ETA 4:37:04; Mem 18775.15MB
+Epoch [13/100]; Iter [6820/51500]; loss 1.9862; gen_loss 1.9862; LR 9.58e-05; Iter time 0.37s; ETA 4:36:50; Mem 18775.15MB
+Epoch [13/100]; Iter [6830/51500]; loss 1.6324; gen_loss 1.6324; LR 9.58e-05; Iter time 0.37s; ETA 4:36:47; Mem 18775.15MB
+Epoch [13/100]; Iter [6840/51500]; loss 1.4144; gen_loss 1.4144; LR 9.58e-05; Iter time 0.37s; ETA 4:35:22; Mem 18775.15MB
+Epoch [13/100]; Iter [6850/51500]; loss 1.8945; gen_loss 1.8945; LR 9.57e-05; Iter time 0.37s; ETA 4:34:58; Mem 18775.15MB
+Epoch [13/100]; Iter [6860/51500]; loss 1.4295; gen_loss 1.4295; LR 9.57e-05; Iter time 0.37s; ETA 4:35:25; Mem 18775.15MB
+Epoch [13/100]; Iter [6870/51500]; loss 1.6646; gen_loss 1.6646; LR 9.57e-05; Iter time 0.37s; ETA 4:34:11; Mem 18775.15MB
+Epoch [13/100]; Iter [6880/51500]; loss 1.5375; gen_loss 1.5375; LR 9.57e-05; Iter time 0.37s; ETA 4:34:33; Mem 18775.15MB
+Epoch [13/100]; Iter [6890/51500]; loss 1.6884; gen_loss 1.6884; LR 9.57e-05; Iter time 0.37s; ETA 4:34:51; Mem 18775.15MB
+Epoch [13/100]; Iter [6900/51500]; loss 1.7323; gen_loss 1.7323; LR 9.57e-05; Iter time 0.37s; ETA 4:34:38; Mem 18775.15MB
+Epoch [13/100]; Iter [6910/51500]; loss 1.6894; gen_loss 1.6894; LR 9.57e-05; Iter time 0.37s; ETA 4:34:38; Mem 18775.15MB
+Epoch [13/100]; Iter [6920/51500]; loss 1.2588; gen_loss 1.2588; LR 9.57e-05; Iter time 0.37s; ETA 4:34:27; Mem 18775.15MB
+Epoch [13/100]; Iter [6930/51500]; loss 1.3427; gen_loss 1.3427; LR 9.56e-05; Iter time 0.37s; ETA 4:34:34; Mem 18775.15MB
+Epoch [13/100]; Iter [6940/51500]; loss 1.4752; gen_loss 1.4752; LR 9.56e-05; Iter time 0.37s; ETA 4:34:26; Mem 18775.15MB
+Epoch [13/100]; Iter [6950/51500]; loss 1.2602; gen_loss 1.2602; LR 9.56e-05; Iter time 0.37s; ETA 4:34:25; Mem 18775.15MB
+Epoch [13/100]; Iter [6960/51500]; loss 1.6909; gen_loss 1.6909; LR 9.56e-05; Iter time 0.37s; ETA 4:34:30; Mem 18775.15MB
+Epoch [13/100]; Iter [6970/51500]; loss 1.5898; gen_loss 1.5898; LR 9.56e-05; Iter time 0.37s; ETA 4:34:21; Mem 18775.15MB
+Epoch [13/100]; Iter [6980/51500]; loss 1.6475; gen_loss 1.6475; LR 9.56e-05; Iter time 0.37s; ETA 4:34:37; Mem 18775.15MB
+Epoch [13/100]; Iter [6990/51500]; loss 1.6643; gen_loss 1.6643; LR 9.56e-05; Iter time 0.37s; ETA 4:35:13; Mem 18775.15MB
+Epoch [13/100]; Iter [7000/51500]; loss 1.6943; gen_loss 1.6943; LR 9.56e-05; Iter time 0.37s; ETA 4:34:47; Mem 18775.15MB
+Epoch [13/100]; Iter [7010/51500]; loss 1.3989; gen_loss 1.3989; LR 9.55e-05; Iter time 0.37s; ETA 4:35:11; Mem 18775.15MB
+Epoch [13/100]; Iter [7020/51500]; loss 1.7642; gen_loss 1.7642; LR 9.55e-05; Iter time 0.37s; ETA 4:34:44; Mem 18775.15MB
+Epoch [13/100]; Iter [7030/51500]; loss 1.6632; gen_loss 1.6632; LR 9.55e-05; Iter time 0.37s; ETA 4:35:01; Mem 18775.15MB
+Epoch [13/100]; Iter [7040/51500]; loss 1.4365; gen_loss 1.4365; LR 9.55e-05; Iter time 0.37s; ETA 4:33:55; Mem 18775.15MB
+Epoch [13/100]; Iter [7050/51500]; loss 1.7161; gen_loss 1.7161; LR 9.55e-05; Iter time 0.37s; ETA 4:32:27; Mem 18775.15MB
+Epoch [13/100]; Iter [7060/51500]; loss 1.5782; gen_loss 1.5782; LR 9.55e-05; Iter time 0.37s; ETA 4:32:48; Mem 18775.15MB
+Epoch [13/100]; Iter [7070/51500]; loss 1.4915; gen_loss 1.4915; LR 9.55e-05; Iter time 0.37s; ETA 4:32:49; Mem 18775.15MB
+Epoch [13/100]; Iter [7080/51500]; loss 1.3214; gen_loss 1.3214; LR 9.55e-05; Iter time 0.37s; ETA 4:32:46; Mem 18775.15MB
+Epoch [13/100]; Iter [7090/51500]; loss 1.7934; gen_loss 1.7934; LR 9.54e-05; Iter time 0.37s; ETA 4:32:53; Mem 18775.15MB
+Epoch [13/100]; Iter [7100/51500]; loss 1.6573; gen_loss 1.6573; LR 9.54e-05; Iter time 0.37s; ETA 4:32:48; Mem 18775.15MB
+Epoch [13/100]; Iter [7110/51500]; loss 1.6939; gen_loss 1.6939; LR 9.54e-05; Iter time 0.37s; ETA 4:32:43; Mem 18775.15MB
+Epoch [13/100]; Iter [7120/51500]; loss 1.6826; gen_loss 1.6826; LR 9.54e-05; Iter time 0.37s; ETA 4:32:50; Mem 18775.15MB
+Epoch [13/100]; Iter [7130/51500]; loss 1.4342; gen_loss 1.4342; LR 9.54e-05; Iter time 0.37s; ETA 4:32:42; Mem 18775.15MB
+Epoch [13/100]; Iter [7140/51500]; loss 1.6049; gen_loss 1.6049; LR 9.54e-05; Iter time 0.37s; ETA 4:32:41; Mem 18775.15MB
+Epoch [13/100]; Iter [7150/51500]; loss 1.3923; gen_loss 1.3923; LR 9.54e-05; Iter time 0.37s; ETA 4:33:08; Mem 18775.15MB
+Epoch [13/100]; Iter [7160/51500]; loss 1.6905; gen_loss 1.6905; LR 9.54e-05; Iter time 0.37s; ETA 4:33:26; Mem 18775.15MB
+Epoch [13/100]; Iter [7170/51500]; loss 1.4045; gen_loss 1.4045; LR 9.53e-05; Iter time 0.37s; ETA 4:33:11; Mem 18775.15MB
+Epoch [13/100]; Iter [7180/51500]; loss 1.9108; gen_loss 1.9108; LR 9.53e-05; Iter time 0.37s; ETA 4:32:58; Mem 18775.15MB
+Epoch [13/100]; Iter [7190/51500]; loss 1.4800; gen_loss 1.4800; LR 9.53e-05; Iter time 0.37s; ETA 4:33:07; Mem 18775.15MB
+Epoch [13/100]; Iter [7200/51500]; loss 1.6032; gen_loss 1.6032; LR 9.53e-05; Iter time 0.37s; ETA 4:32:56; Mem 18775.15MB
+Epoch [14/100]; Iter [7210/51500]; loss 1.5633; gen_loss 1.5633; LR 9.53e-05; Iter time 0.37s; ETA 4:32:54; Mem 18775.15MB
+Epoch [14/100]; Iter [7220/51500]; loss 1.3703; gen_loss 1.3703; LR 9.53e-05; Iter time 0.37s; ETA 4:34:10; Mem 18775.15MB
+Epoch [14/100]; Iter [7230/51500]; loss 1.4964; gen_loss 1.4964; LR 9.53e-05; Iter time 0.37s; ETA 4:33:37; Mem 18775.15MB
+Epoch [14/100]; Iter [7240/51500]; loss 2.0445; gen_loss 2.0445; LR 9.53e-05; Iter time 0.37s; ETA 4:32:25; Mem 18775.15MB
+Epoch [14/100]; Iter [7250/51500]; loss 1.4178; gen_loss 1.4178; LR 9.52e-05; Iter time 0.37s; ETA 4:32:35; Mem 18775.15MB
+Epoch [14/100]; Iter [7260/51500]; loss 1.2151; gen_loss 1.2151; LR 9.52e-05; Iter time 0.37s; ETA 4:32:31; Mem 18775.15MB
+Epoch [14/100]; Iter [7270/51500]; loss 1.5727; gen_loss 1.5727; LR 9.52e-05; Iter time 0.37s; ETA 4:32:46; Mem 18775.15MB
+Epoch [14/100]; Iter [7280/51500]; loss 1.6300; gen_loss 1.6300; LR 9.52e-05; Iter time 0.37s; ETA 4:32:36; Mem 18775.15MB
+Epoch [14/100]; Iter [7290/51500]; loss 1.7017; gen_loss 1.7017; LR 9.52e-05; Iter time 0.37s; ETA 4:32:10; Mem 18775.15MB
+Epoch [14/100]; Iter [7300/51500]; loss 1.4868; gen_loss 1.4868; LR 9.52e-05; Iter time 0.37s; ETA 4:32:22; Mem 18775.15MB
+Epoch [14/100]; Iter [7310/51500]; loss 1.7432; gen_loss 1.7432; LR 9.52e-05; Iter time 0.37s; ETA 4:32:08; Mem 18775.15MB
+Epoch [14/100]; Iter [7320/51500]; loss 1.3190; gen_loss 1.3190; LR 9.51e-05; Iter time 0.37s; ETA 4:32:57; Mem 18775.15MB
+Epoch [14/100]; Iter [7330/51500]; loss 1.3762; gen_loss 1.3762; LR 9.51e-05; Iter time 0.37s; ETA 4:32:44; Mem 18775.15MB
+Epoch [14/100]; Iter [7340/51500]; loss 1.8825; gen_loss 1.8825; LR 9.51e-05; Iter time 0.37s; ETA 4:32:38; Mem 18775.15MB
+Epoch [14/100]; Iter [7350/51500]; loss 1.6957; gen_loss 1.6957; LR 9.51e-05; Iter time 0.37s; ETA 4:32:51; Mem 18775.15MB
+Epoch [14/100]; Iter [7360/51500]; loss 1.5445; gen_loss 1.5445; LR 9.51e-05; Iter time 0.37s; ETA 4:32:58; Mem 18775.15MB
+Epoch [14/100]; Iter [7370/51500]; loss 1.4458; gen_loss 1.4458; LR 9.51e-05; Iter time 0.37s; ETA 4:32:43; Mem 18775.15MB
+Epoch [14/100]; Iter [7380/51500]; loss 1.7154; gen_loss 1.7154; LR 9.51e-05; Iter time 0.37s; ETA 4:32:36; Mem 18775.15MB
+Epoch [14/100]; Iter [7390/51500]; loss 1.2205; gen_loss 1.2205; LR 9.51e-05; Iter time 0.37s; ETA 4:32:51; Mem 18775.15MB
+Epoch [14/100]; Iter [7400/51500]; loss 1.0503; gen_loss 1.0503; LR 9.50e-05; Iter time 0.37s; ETA 4:33:12; Mem 18775.15MB
+Epoch [14/100]; Iter [7410/51500]; loss 2.0542; gen_loss 2.0542; LR 9.50e-05; Iter time 0.37s; ETA 4:32:38; Mem 18775.15MB
+Epoch [14/100]; Iter [7420/51500]; loss 1.3178; gen_loss 1.3178; LR 9.50e-05; Iter time 0.37s; ETA 4:32:39; Mem 18775.15MB
+Epoch [14/100]; Iter [7430/51500]; loss 1.7803; gen_loss 1.7803; LR 9.50e-05; Iter time 0.37s; ETA 4:32:37; Mem 18775.15MB
+Epoch [14/100]; Iter [7440/51500]; loss 1.6082; gen_loss 1.6082; LR 9.50e-05; Iter time 0.37s; ETA 4:32:14; Mem 18775.15MB
+Epoch [14/100]; Iter [7450/51500]; loss 1.7093; gen_loss 1.7093; LR 9.50e-05; Iter time 0.37s; ETA 4:32:01; Mem 18775.15MB
+Epoch [14/100]; Iter [7460/51500]; loss 1.5024; gen_loss 1.5024; LR 9.50e-05; Iter time 0.37s; ETA 4:31:49; Mem 18775.15MB
+Epoch [14/100]; Iter [7470/51500]; loss 1.4783; gen_loss 1.4783; LR 9.49e-05; Iter time 0.37s; ETA 4:31:47; Mem 18775.15MB
+Epoch [14/100]; Iter [7480/51500]; loss 1.8988; gen_loss 1.8988; LR 9.49e-05; Iter time 0.37s; ETA 4:31:57; Mem 18775.15MB
+Epoch [14/100]; Iter [7490/51500]; loss 1.5675; gen_loss 1.5675; LR 9.49e-05; Iter time 0.37s; ETA 4:30:49; Mem 18775.15MB
+Epoch [14/100]; Iter [7500/51500]; loss 1.6917; gen_loss 1.6917; LR 9.49e-05; Iter time 0.37s; ETA 4:31:13; Mem 18775.15MB
+Epoch [14/100]; Iter [7510/51500]; loss 1.6027; gen_loss 1.6027; LR 9.49e-05; Iter time 0.37s; ETA 4:31:16; Mem 18775.15MB
+Epoch [14/100]; Iter [7520/51500]; loss 1.8698; gen_loss 1.8698; LR 9.49e-05; Iter time 0.37s; ETA 4:31:20; Mem 18775.15MB
+Epoch [14/100]; Iter [7530/51500]; loss 1.4669; gen_loss 1.4669; LR 9.49e-05; Iter time 0.37s; ETA 4:31:48; Mem 18775.15MB
+Epoch [14/100]; Iter [7540/51500]; loss 1.7293; gen_loss 1.7293; LR 9.49e-05; Iter time 0.37s; ETA 4:32:04; Mem 18775.15MB
+Epoch [14/100]; Iter [7550/51500]; loss 1.6073; gen_loss 1.6073; LR 9.48e-05; Iter time 0.37s; ETA 4:31:19; Mem 18775.15MB
+Epoch [14/100]; Iter [7560/51500]; loss 1.3065; gen_loss 1.3065; LR 9.48e-05; Iter time 0.37s; ETA 4:30:10; Mem 18775.15MB
+Epoch [14/100]; Iter [7570/51500]; loss 1.2811; gen_loss 1.2811; LR 9.48e-05; Iter time 0.37s; ETA 4:30:28; Mem 18775.15MB
+Epoch [14/100]; Iter [7580/51500]; loss 1.7014; gen_loss 1.7014; LR 9.48e-05; Iter time 0.37s; ETA 4:30:16; Mem 18775.15MB
+Epoch [14/100]; Iter [7590/51500]; loss 1.7415; gen_loss 1.7415; LR 9.48e-05; Iter time 0.37s; ETA 4:30:24; Mem 18775.15MB
+Epoch [14/100]; Iter [7600/51500]; loss 1.3168; gen_loss 1.3168; LR 9.48e-05; Iter time 0.37s; ETA 4:30:11; Mem 18775.15MB
+Epoch [14/100]; Iter [7610/51500]; loss 1.6718; gen_loss 1.6718; LR 9.48e-05; Iter time 0.37s; ETA 4:30:01; Mem 18775.15MB
+Epoch [14/100]; Iter [7620/51500]; loss 1.4058; gen_loss 1.4058; LR 9.47e-05; Iter time 0.37s; ETA 4:29:46; Mem 18775.15MB
+Epoch [14/100]; Iter [7630/51500]; loss 1.2434; gen_loss 1.2434; LR 9.47e-05; Iter time 0.37s; ETA 4:30:04; Mem 18775.15MB
+Epoch [14/100]; Iter [7640/51500]; loss 1.6595; gen_loss 1.6595; LR 9.47e-05; Iter time 0.37s; ETA 4:30:40; Mem 18775.15MB
+Epoch [14/100]; Iter [7650/51500]; loss 1.5839; gen_loss 1.5839; LR 9.47e-05; Iter time 0.37s; ETA 4:30:54; Mem 18775.15MB
+Epoch [14/100]; Iter [7660/51500]; loss 1.6516; gen_loss 1.6516; LR 9.47e-05; Iter time 0.37s; ETA 4:30:34; Mem 18775.15MB
+Epoch [14/100]; Iter [7670/51500]; loss 1.4945; gen_loss 1.4945; LR 9.47e-05; Iter time 0.37s; ETA 4:30:40; Mem 18775.15MB
+Epoch [14/100]; Iter [7680/51500]; loss 1.8188; gen_loss 1.8188; LR 9.47e-05; Iter time 0.37s; ETA 4:31:05; Mem 18775.15MB
+Epoch [14/100]; Iter [7690/51500]; loss 1.2295; gen_loss 1.2295; LR 9.47e-05; Iter time 0.37s; ETA 4:30:38; Mem 18775.15MB
+Epoch [14/100]; Iter [7700/51500]; loss 1.6356; gen_loss 1.6356; LR 9.46e-05; Iter time 0.37s; ETA 4:30:38; Mem 18775.15MB
+Epoch [14/100]; Iter [7710/51500]; loss 1.5214; gen_loss 1.5214; LR 9.46e-05; Iter time 0.37s; ETA 4:30:48; Mem 18775.15MB
+Epoch [14/100]; Iter [7720/51500]; loss 1.5935; gen_loss 1.5935; LR 9.46e-05; Iter time 0.37s; ETA 4:30:19; Mem 18775.15MB
+Epoch [15/100]; Iter [7730/51500]; loss 1.8229; gen_loss 1.8229; LR 9.46e-05; Iter time 0.37s; ETA 4:30:23; Mem 18775.15MB
+Epoch [15/100]; Iter [7740/51500]; loss 1.6842; gen_loss 1.6842; LR 9.46e-05; Iter time 0.37s; ETA 4:29:56; Mem 18775.15MB
+Epoch [15/100]; Iter [7750/51500]; loss 1.5959; gen_loss 1.5959; LR 9.46e-05; Iter time 0.37s; ETA 4:29:53; Mem 18775.15MB
+Epoch [15/100]; Iter [7760/51500]; loss 1.9763; gen_loss 1.9763; LR 9.46e-05; Iter time 0.37s; ETA 4:29:46; Mem 18775.15MB
+Epoch [15/100]; Iter [7770/51500]; loss 1.5431; gen_loss 1.5431; LR 9.45e-05; Iter time 0.37s; ETA 4:30:02; Mem 18775.15MB
+Epoch [15/100]; Iter [7780/51500]; loss 1.5787; gen_loss 1.5787; LR 9.45e-05; Iter time 0.37s; ETA 4:30:00; Mem 18775.15MB
+Epoch [15/100]; Iter [7790/51500]; loss 1.6545; gen_loss 1.6545; LR 9.45e-05; Iter time 0.37s; ETA 4:29:47; Mem 18775.15MB
+Epoch [15/100]; Iter [7800/51500]; loss 1.5707; gen_loss 1.5707; LR 9.45e-05; Iter time 0.37s; ETA 4:29:58; Mem 18775.15MB
+Epoch [15/100]; Iter [7810/51500]; loss 1.7651; gen_loss 1.7651; LR 9.45e-05; Iter time 0.37s; ETA 4:29:51; Mem 18775.15MB
+Epoch [15/100]; Iter [7820/51500]; loss 1.2984; gen_loss 1.2984; LR 9.45e-05; Iter time 0.37s; ETA 4:29:44; Mem 18775.15MB
+Epoch [15/100]; Iter [7830/51500]; loss 1.6580; gen_loss 1.6580; LR 9.45e-05; Iter time 0.37s; ETA 4:30:02; Mem 18775.15MB
+Epoch [15/100]; Iter [7840/51500]; loss 1.2875; gen_loss 1.2875; LR 9.44e-05; Iter time 0.37s; ETA 4:29:46; Mem 18775.15MB
+Epoch [15/100]; Iter [7850/51500]; loss 1.1416; gen_loss 1.1416; LR 9.44e-05; Iter time 0.37s; ETA 4:29:45; Mem 18775.15MB
+Epoch [15/100]; Iter [7860/51500]; loss 1.3590; gen_loss 1.3590; LR 9.44e-05; Iter time 0.37s; ETA 4:29:33; Mem 18775.15MB
+Epoch [15/100]; Iter [7870/51500]; loss 1.2560; gen_loss 1.2560; LR 9.44e-05; Iter time 0.37s; ETA 4:29:49; Mem 18775.15MB
+Epoch [15/100]; Iter [7880/51500]; loss 1.4006; gen_loss 1.4006; LR 9.44e-05; Iter time 0.37s; ETA 4:29:09; Mem 18775.15MB
+Epoch [15/100]; Iter [7890/51500]; loss 1.5352; gen_loss 1.5352; LR 9.44e-05; Iter time 0.37s; ETA 4:29:46; Mem 18775.15MB
+Epoch [15/100]; Iter [7900/51500]; loss 1.6520; gen_loss 1.6520; LR 9.44e-05; Iter time 0.37s; ETA 4:29:48; Mem 18775.15MB
+Epoch [15/100]; Iter [7910/51500]; loss 1.4591; gen_loss 1.4591; LR 9.43e-05; Iter time 0.37s; ETA 4:29:34; Mem 18775.15MB
+Epoch [15/100]; Iter [7920/51500]; loss 1.4923; gen_loss 1.4923; LR 9.43e-05; Iter time 0.37s; ETA 4:29:52; Mem 18775.15MB
+Epoch [15/100]; Iter [7930/51500]; loss 1.6822; gen_loss 1.6822; LR 9.43e-05; Iter time 0.37s; ETA 4:29:40; Mem 18775.15MB
+Epoch [15/100]; Iter [7940/51500]; loss 1.6411; gen_loss 1.6411; LR 9.43e-05; Iter time 0.37s; ETA 4:29:30; Mem 18775.15MB
+Epoch [15/100]; Iter [7950/51500]; loss 1.5984; gen_loss 1.5984; LR 9.43e-05; Iter time 0.37s; ETA 4:29:40; Mem 18775.15MB
+Epoch [15/100]; Iter [7960/51500]; loss 1.6486; gen_loss 1.6486; LR 9.43e-05; Iter time 0.37s; ETA 4:29:33; Mem 18775.15MB
+Epoch [15/100]; Iter [7970/51500]; loss 1.3672; gen_loss 1.3672; LR 9.43e-05; Iter time 0.37s; ETA 4:29:04; Mem 18775.15MB
+Epoch [15/100]; Iter [7980/51500]; loss 1.7123; gen_loss 1.7123; LR 9.42e-05; Iter time 0.37s; ETA 4:29:15; Mem 18775.15MB
+Epoch [15/100]; Iter [7990/51500]; loss 1.5063; gen_loss 1.5063; LR 9.42e-05; Iter time 0.37s; ETA 4:29:20; Mem 18775.15MB
+Epoch [15/100]; Iter [8000/51500]; loss 1.5517; gen_loss 1.5517; LR 9.42e-05; Iter time 0.37s; ETA 4:28:54; Mem 18775.15MB
+Epoch [15/100]; Iter [8010/51500]; loss 1.5576; gen_loss 1.5576; LR 9.42e-05; Iter time 0.37s; ETA 4:29:13; Mem 18775.15MB
+Epoch [15/100]; Iter [8020/51500]; loss 1.4659; gen_loss 1.4659; LR 9.42e-05; Iter time 0.37s; ETA 4:28:54; Mem 18775.15MB
+Epoch [15/100]; Iter [8030/51500]; loss 1.4896; gen_loss 1.4896; LR 9.42e-05; Iter time 0.37s; ETA 4:27:34; Mem 18775.15MB
+Epoch [15/100]; Iter [8040/51500]; loss 1.7647; gen_loss 1.7647; LR 9.42e-05; Iter time 0.37s; ETA 4:27:58; Mem 18775.15MB
+Epoch [15/100]; Iter [8050/51500]; loss 1.6786; gen_loss 1.6786; LR 9.42e-05; Iter time 0.37s; ETA 4:28:24; Mem 18775.15MB
+Epoch [15/100]; Iter [8060/51500]; loss 1.3132; gen_loss 1.3132; LR 9.41e-05; Iter time 0.37s; ETA 4:27:58; Mem 18775.15MB
+Epoch [15/100]; Iter [8070/51500]; loss 1.1968; gen_loss 1.1968; LR 9.41e-05; Iter time 0.37s; ETA 4:28:04; Mem 18775.15MB
+Epoch [15/100]; Iter [8080/51500]; loss 1.5813; gen_loss 1.5813; LR 9.41e-05; Iter time 0.37s; ETA 4:27:30; Mem 18775.15MB
+Epoch [15/100]; Iter [8090/51500]; loss 1.8660; gen_loss 1.8660; LR 9.41e-05; Iter time 0.37s; ETA 4:27:03; Mem 18775.15MB
+Epoch [15/100]; Iter [8100/51500]; loss 1.2464; gen_loss 1.2464; LR 9.41e-05; Iter time 0.37s; ETA 4:26:52; Mem 18775.15MB
+Epoch [15/100]; Iter [8110/51500]; loss 1.4216; gen_loss 1.4216; LR 9.41e-05; Iter time 0.37s; ETA 4:27:06; Mem 18775.15MB
+Epoch [15/100]; Iter [8120/51500]; loss 1.4743; gen_loss 1.4743; LR 9.41e-05; Iter time 0.37s; ETA 4:26:44; Mem 18775.15MB
+Epoch [15/100]; Iter [8130/51500]; loss 1.3397; gen_loss 1.3397; LR 9.40e-05; Iter time 0.37s; ETA 4:26:32; Mem 18775.15MB
+Epoch [15/100]; Iter [8140/51500]; loss 1.8014; gen_loss 1.8014; LR 9.40e-05; Iter time 0.37s; ETA 4:26:40; Mem 18775.15MB
+Epoch [15/100]; Iter [8150/51500]; loss 1.8717; gen_loss 1.8717; LR 9.40e-05; Iter time 0.37s; ETA 4:26:40; Mem 18775.15MB
+Epoch [15/100]; Iter [8160/51500]; loss 1.7017; gen_loss 1.7017; LR 9.40e-05; Iter time 0.37s; ETA 4:26:45; Mem 18775.15MB
+Epoch [15/100]; Iter [8170/51500]; loss 1.2253; gen_loss 1.2253; LR 9.40e-05; Iter time 0.37s; ETA 4:26:34; Mem 18775.15MB
+Epoch [15/100]; Iter [8180/51500]; loss 1.2482; gen_loss 1.2482; LR 9.40e-05; Iter time 0.37s; ETA 4:26:23; Mem 18775.15MB
+Epoch [15/100]; Iter [8190/51500]; loss 1.7509; gen_loss 1.7509; LR 9.39e-05; Iter time 0.37s; ETA 4:26:49; Mem 18775.15MB
+Epoch [15/100]; Iter [8200/51500]; loss 1.5787; gen_loss 1.5787; LR 9.39e-05; Iter time 0.37s; ETA 4:26:24; Mem 18775.15MB
+Epoch [15/100]; Iter [8210/51500]; loss 1.6039; gen_loss 1.6039; LR 9.39e-05; Iter time 0.37s; ETA 4:26:32; Mem 18775.15MB
+Epoch [15/100]; Iter [8220/51500]; loss 1.2787; gen_loss 1.2787; LR 9.39e-05; Iter time 0.37s; ETA 4:26:29; Mem 18775.15MB
+Epoch [15/100]; Iter [8230/51500]; loss 1.4918; gen_loss 1.4918; LR 9.39e-05; Iter time 0.37s; ETA 4:26:25; Mem 18775.15MB
+Epoch [16/100]; Iter [8240/51500]; loss 1.6399; gen_loss 1.6399; LR 9.39e-05; Iter time 0.37s; ETA 4:26:22; Mem 18775.15MB
+Epoch [16/100]; Iter [8250/51500]; loss 1.5816; gen_loss 1.5816; LR 9.39e-05; Iter time 0.37s; ETA 4:27:06; Mem 18775.15MB
+Epoch [16/100]; Iter [8260/51500]; loss 1.8922; gen_loss 1.8922; LR 9.38e-05; Iter time 0.37s; ETA 4:26:50; Mem 18775.15MB
+Epoch [16/100]; Iter [8270/51500]; loss 1.1982; gen_loss 1.1982; LR 9.38e-05; Iter time 0.37s; ETA 4:26:29; Mem 18775.15MB
+Epoch [16/100]; Iter [8280/51500]; loss 1.6398; gen_loss 1.6398; LR 9.38e-05; Iter time 0.37s; ETA 4:26:42; Mem 18775.15MB
+Epoch [16/100]; Iter [8290/51500]; loss 1.5242; gen_loss 1.5242; LR 9.38e-05; Iter time 0.37s; ETA 4:26:37; Mem 18775.15MB
+Epoch [16/100]; Iter [8300/51500]; loss 1.4437; gen_loss 1.4437; LR 9.38e-05; Iter time 0.37s; ETA 4:26:19; Mem 18775.15MB
+Epoch [16/100]; Iter [8310/51500]; loss 1.3016; gen_loss 1.3016; LR 9.38e-05; Iter time 0.37s; ETA 4:26:50; Mem 18775.15MB
+Epoch [16/100]; Iter [8320/51500]; loss 1.4717; gen_loss 1.4717; LR 9.38e-05; Iter time 0.37s; ETA 4:26:28; Mem 18775.15MB
+Epoch [16/100]; Iter [8330/51500]; loss 1.2481; gen_loss 1.2481; LR 9.37e-05; Iter time 0.37s; ETA 4:26:29; Mem 18775.15MB
+Epoch [16/100]; Iter [8340/51500]; loss 1.6064; gen_loss 1.6064; LR 9.37e-05; Iter time 0.37s; ETA 4:26:21; Mem 18775.15MB
+Epoch [16/100]; Iter [8350/51500]; loss 1.4686; gen_loss 1.4686; LR 9.37e-05; Iter time 0.37s; ETA 4:26:31; Mem 18775.15MB
+Epoch [16/100]; Iter [8360/51500]; loss 1.7435; gen_loss 1.7435; LR 9.37e-05; Iter time 0.37s; ETA 4:26:32; Mem 18775.15MB
+Epoch [16/100]; Iter [8370/51500]; loss 1.4235; gen_loss 1.4235; LR 9.37e-05; Iter time 0.37s; ETA 4:26:08; Mem 18775.15MB
+Epoch [16/100]; Iter [8380/51500]; loss 1.6850; gen_loss 1.6850; LR 9.37e-05; Iter time 0.37s; ETA 4:26:23; Mem 18775.15MB
+Epoch [16/100]; Iter [8390/51500]; loss 1.4415; gen_loss 1.4415; LR 9.37e-05; Iter time 0.37s; ETA 4:26:23; Mem 18775.15MB
+Epoch [16/100]; Iter [8400/51500]; loss 1.3266; gen_loss 1.3266; LR 9.36e-05; Iter time 0.37s; ETA 4:25:52; Mem 18775.15MB
+Epoch [16/100]; Iter [8410/51500]; loss 1.5857; gen_loss 1.5857; LR 9.36e-05; Iter time 0.37s; ETA 4:25:46; Mem 18775.15MB
+Epoch [16/100]; Iter [8420/51500]; loss 1.4686; gen_loss 1.4686; LR 9.36e-05; Iter time 0.37s; ETA 4:25:00; Mem 18775.15MB
+Epoch [16/100]; Iter [8430/51500]; loss 1.5217; gen_loss 1.5217; LR 9.36e-05; Iter time 0.37s; ETA 4:25:27; Mem 18775.15MB
+Epoch [16/100]; Iter [8440/51500]; loss 1.4926; gen_loss 1.4926; LR 9.36e-05; Iter time 0.37s; ETA 4:25:25; Mem 18775.15MB
+Epoch [16/100]; Iter [8450/51500]; loss 1.3314; gen_loss 1.3314; LR 9.36e-05; Iter time 0.37s; ETA 4:25:03; Mem 18775.15MB
+Epoch [16/100]; Iter [8460/51500]; loss 1.4815; gen_loss 1.4815; LR 9.36e-05; Iter time 0.37s; ETA 4:25:04; Mem 18775.15MB
+Epoch [16/100]; Iter [8470/51500]; loss 1.3501; gen_loss 1.3501; LR 9.35e-05; Iter time 0.37s; ETA 4:25:18; Mem 18775.15MB
+Epoch [16/100]; Iter [8480/51500]; loss 1.6247; gen_loss 1.6247; LR 9.35e-05; Iter time 0.37s; ETA 4:25:18; Mem 18775.15MB
+Epoch [16/100]; Iter [8490/51500]; loss 1.6175; gen_loss 1.6175; LR 9.35e-05; Iter time 0.37s; ETA 4:25:10; Mem 18775.15MB
+Epoch [16/100]; Iter [8500/51500]; loss 1.4657; gen_loss 1.4657; LR 9.35e-05; Iter time 0.37s; ETA 4:25:24; Mem 18775.15MB
+Epoch [16/100]; Iter [8510/51500]; loss 1.4870; gen_loss 1.4870; LR 9.35e-05; Iter time 0.37s; ETA 4:25:10; Mem 18775.15MB
+Epoch [16/100]; Iter [8520/51500]; loss 1.8699; gen_loss 1.8699; LR 9.35e-05; Iter time 0.37s; ETA 4:25:06; Mem 18775.15MB
+Epoch [16/100]; Iter [8530/51500]; loss 1.4768; gen_loss 1.4768; LR 9.34e-05; Iter time 0.37s; ETA 4:24:54; Mem 18775.15MB
+Epoch [16/100]; Iter [8540/51500]; loss 1.6470; gen_loss 1.6470; LR 9.34e-05; Iter time 0.37s; ETA 4:25:10; Mem 18775.15MB
+Epoch [16/100]; Iter [8550/51500]; loss 1.5075; gen_loss 1.5075; LR 9.34e-05; Iter time 0.37s; ETA 4:25:03; Mem 18775.15MB
+Epoch [16/100]; Iter [8560/51500]; loss 1.6144; gen_loss 1.6144; LR 9.34e-05; Iter time 0.37s; ETA 4:25:16; Mem 18775.15MB
+Epoch [16/100]; Iter [8570/51500]; loss 1.3324; gen_loss 1.3324; LR 9.34e-05; Iter time 0.37s; ETA 4:24:40; Mem 18775.15MB
+Epoch [16/100]; Iter [8580/51500]; loss 1.5936; gen_loss 1.5936; LR 9.34e-05; Iter time 0.37s; ETA 4:24:29; Mem 18775.15MB
+Epoch [16/100]; Iter [8590/51500]; loss 1.5374; gen_loss 1.5374; LR 9.34e-05; Iter time 0.37s; ETA 4:24:38; Mem 18775.15MB
+Epoch [16/100]; Iter [8600/51500]; loss 1.5145; gen_loss 1.5145; LR 9.33e-05; Iter time 0.37s; ETA 4:24:28; Mem 18775.15MB
+Epoch [16/100]; Iter [8610/51500]; loss 1.7103; gen_loss 1.7103; LR 9.33e-05; Iter time 0.37s; ETA 4:24:39; Mem 18775.15MB
+Epoch [16/100]; Iter [8620/51500]; loss 1.5358; gen_loss 1.5358; LR 9.33e-05; Iter time 0.37s; ETA 4:23:21; Mem 18775.15MB
+Epoch [16/100]; Iter [8630/51500]; loss 1.4481; gen_loss 1.4481; LR 9.33e-05; Iter time 0.37s; ETA 4:22:49; Mem 18775.15MB
+Epoch [16/100]; Iter [8640/51500]; loss 1.1956; gen_loss 1.1956; LR 9.33e-05; Iter time 0.37s; ETA 4:23:05; Mem 18775.15MB
+Epoch [16/100]; Iter [8650/51500]; loss 1.5326; gen_loss 1.5326; LR 9.33e-05; Iter time 0.37s; ETA 4:22:44; Mem 18775.15MB
+Epoch [16/100]; Iter [8660/51500]; loss 1.5293; gen_loss 1.5293; LR 9.33e-05; Iter time 0.37s; ETA 4:22:51; Mem 18775.15MB
+Epoch [16/100]; Iter [8670/51500]; loss 1.6997; gen_loss 1.6997; LR 9.32e-05; Iter time 0.37s; ETA 4:21:36; Mem 18775.15MB
+Epoch [16/100]; Iter [8680/51500]; loss 1.3522; gen_loss 1.3522; LR 9.32e-05; Iter time 0.37s; ETA 4:22:26; Mem 18775.15MB
+Epoch [16/100]; Iter [8690/51500]; loss 1.4200; gen_loss 1.4200; LR 9.32e-05; Iter time 0.37s; ETA 4:23:23; Mem 18775.15MB
+Epoch [16/100]; Iter [8700/51500]; loss 1.9206; gen_loss 1.9206; LR 9.32e-05; Iter time 0.37s; ETA 4:22:37; Mem 18775.15MB
+Epoch [16/100]; Iter [8710/51500]; loss 1.6127; gen_loss 1.6127; LR 9.32e-05; Iter time 0.37s; ETA 4:22:21; Mem 18775.15MB
+Epoch [16/100]; Iter [8720/51500]; loss 1.3411; gen_loss 1.3411; LR 9.32e-05; Iter time 0.37s; ETA 4:22:23; Mem 18775.15MB
+Epoch [16/100]; Iter [8730/51500]; loss 1.4265; gen_loss 1.4265; LR 9.31e-05; Iter time 0.37s; ETA 4:22:36; Mem 18775.15MB
+Epoch [16/100]; Iter [8740/51500]; loss 1.3350; gen_loss 1.3350; LR 9.31e-05; Iter time 0.37s; ETA 4:22:07; Mem 18775.15MB
+Epoch [16/100]; Iter [8750/51500]; loss 1.7534; gen_loss 1.7534; LR 9.31e-05; Iter time 0.37s; ETA 4:22:27; Mem 18775.15MB
+Epoch [17/100]; Iter [8760/51500]; loss 1.2780; gen_loss 1.2780; LR 9.31e-05; Iter time 0.37s; ETA 4:22:25; Mem 18775.15MB
+Epoch [17/100]; Iter [8770/51500]; loss 1.3631; gen_loss 1.3631; LR 9.31e-05; Iter time 0.37s; ETA 4:23:17; Mem 18775.15MB
+Epoch [17/100]; Iter [8780/51500]; loss 1.4550; gen_loss 1.4550; LR 9.31e-05; Iter time 0.37s; ETA 4:23:31; Mem 18775.15MB
+Epoch [17/100]; Iter [8790/51500]; loss 1.5283; gen_loss 1.5283; LR 9.31e-05; Iter time 0.37s; ETA 4:23:07; Mem 18775.15MB
+Epoch [17/100]; Iter [8800/51500]; loss 1.0699; gen_loss 1.0699; LR 9.30e-05; Iter time 0.37s; ETA 4:22:45; Mem 18775.15MB
+Epoch [17/100]; Iter [8810/51500]; loss 1.5016; gen_loss 1.5016; LR 9.30e-05; Iter time 0.37s; ETA 4:22:56; Mem 18775.15MB
+Epoch [17/100]; Iter [8820/51500]; loss 1.2853; gen_loss 1.2853; LR 9.30e-05; Iter time 0.37s; ETA 4:22:53; Mem 18775.15MB
+Epoch [17/100]; Iter [8830/51500]; loss 1.2461; gen_loss 1.2461; LR 9.30e-05; Iter time 0.37s; ETA 4:22:13; Mem 18775.15MB
+Epoch [17/100]; Iter [8840/51500]; loss 1.5762; gen_loss 1.5762; LR 9.30e-05; Iter time 0.37s; ETA 4:22:25; Mem 18775.15MB
+Epoch [17/100]; Iter [8850/51500]; loss 1.4320; gen_loss 1.4320; LR 9.30e-05; Iter time 0.37s; ETA 4:22:33; Mem 18775.15MB
+Epoch [17/100]; Iter [8860/51500]; loss 1.1314; gen_loss 1.1314; LR 9.29e-05; Iter time 0.37s; ETA 4:22:28; Mem 18775.15MB
+Epoch [17/100]; Iter [8870/51500]; loss 1.2141; gen_loss 1.2141; LR 9.29e-05; Iter time 0.37s; ETA 4:23:06; Mem 18775.15MB
+Epoch [17/100]; Iter [8880/51500]; loss 1.7344; gen_loss 1.7344; LR 9.29e-05; Iter time 0.37s; ETA 4:22:43; Mem 18775.15MB
+Epoch [17/100]; Iter [8890/51500]; loss 1.3868; gen_loss 1.3868; LR 9.29e-05; Iter time 0.37s; ETA 4:22:42; Mem 18775.15MB
+Epoch [17/100]; Iter [8900/51500]; loss 1.7872; gen_loss 1.7872; LR 9.29e-05; Iter time 0.37s; ETA 4:23:00; Mem 18775.15MB
+Epoch [17/100]; Iter [8910/51500]; loss 1.6264; gen_loss 1.6264; LR 9.29e-05; Iter time 0.37s; ETA 4:22:46; Mem 18775.15MB
+Epoch [17/100]; Iter [8920/51500]; loss 1.6945; gen_loss 1.6945; LR 9.29e-05; Iter time 0.37s; ETA 4:22:35; Mem 18775.15MB
+Epoch [17/100]; Iter [8930/51500]; loss 2.0833; gen_loss 2.0833; LR 9.28e-05; Iter time 0.37s; ETA 4:22:34; Mem 18775.15MB
+Epoch [17/100]; Iter [8940/51500]; loss 1.4211; gen_loss 1.4211; LR 9.28e-05; Iter time 0.37s; ETA 4:22:38; Mem 18775.15MB
+Epoch [17/100]; Iter [8950/51500]; loss 1.8571; gen_loss 1.8571; LR 9.28e-05; Iter time 0.37s; ETA 4:22:26; Mem 18775.15MB
+Epoch [17/100]; Iter [8960/51500]; loss 1.7648; gen_loss 1.7648; LR 9.28e-05; Iter time 0.37s; ETA 4:22:17; Mem 18775.15MB
+Epoch [17/100]; Iter [8970/51500]; loss 1.6147; gen_loss 1.6147; LR 9.28e-05; Iter time 0.37s; ETA 4:22:18; Mem 18775.15MB
+Epoch [17/100]; Iter [8980/51500]; loss 1.0474; gen_loss 1.0474; LR 9.28e-05; Iter time 0.37s; ETA 4:22:13; Mem 18775.15MB
+Epoch [17/100]; Iter [8990/51500]; loss 1.4402; gen_loss 1.4402; LR 9.27e-05; Iter time 0.37s; ETA 4:22:15; Mem 18775.15MB
+Epoch [17/100]; Iter [9000/51500]; loss 1.6714; gen_loss 1.6714; LR 9.27e-05; Iter time 0.37s; ETA 4:22:15; Mem 18775.15MB
+Epoch [17/100]; Iter [9010/51500]; loss 1.4904; gen_loss 1.4904; LR 9.27e-05; Iter time 0.37s; ETA 4:22:19; Mem 18775.15MB
+Epoch [17/100]; Iter [9020/51500]; loss 1.1684; gen_loss 1.1684; LR 9.27e-05; Iter time 0.37s; ETA 4:22:11; Mem 18775.15MB
+Epoch [17/100]; Iter [9030/51500]; loss 1.3568; gen_loss 1.3568; LR 9.27e-05; Iter time 0.37s; ETA 4:22:13; Mem 18775.15MB
+Epoch [17/100]; Iter [9040/51500]; loss 1.7277; gen_loss 1.7277; LR 9.27e-05; Iter time 0.37s; ETA 4:21:46; Mem 18775.15MB
+Traceback (most recent call last):
+  File "/root/MeshXL/main.py", line 315, in <module>
+    main(args)
+  File "/root/MeshXL/main.py", line 305, in main
+    do_train(
+  File "/root/MeshXL/engine.py", line 74, in do_train
+    accelerator.backward(loss)
+  File "/root/.multi3d/lib/python3.10/site-packages/accelerate/accelerator.py", line 2244, in backward
+    self.scaler.scale(loss).backward(**kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

@@ -1,0 +1,16 @@
+{"time":"2024-12-13T06:52:07.985440938Z","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-13T06:52:07.985454293Z","level":"INFO","msg":"created symlink","path":"/root/MeshXL/wandb/run-20241213_065207-uioxy229/logs/debug-core.log"}
+{"time":"2024-12-13T06:52:08.092423926Z","level":"INFO","msg":"created new stream","id":"uioxy229"}
+{"time":"2024-12-13T06:52:08.092457709Z","level":"INFO","msg":"stream: started","id":"uioxy229"}
+{"time":"2024-12-13T06:52:08.092509376Z","level":"INFO","msg":"writer: Do: started","stream_id":"uioxy229"}
+{"time":"2024-12-13T06:52:08.092524093Z","level":"INFO","msg":"sender: started","stream_id":"uioxy229"}
+{"time":"2024-12-13T06:52:08.092558818Z","level":"INFO","msg":"handler: started","stream_id":"uioxy229"}
+{"time":"2024-12-13T06:52:08.436865053Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-13T06:52:10.876419009Z","level":"INFO","msg":"stream: closing","id":"uioxy229"}
+{"time":"2024-12-13T06:52:10.876465005Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-13T06:52:10.877018397Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-13T06:52:11.695679652Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-13T06:52:11.9880797Z","level":"INFO","msg":"handler: closed","stream_id":"uioxy229"}
+{"time":"2024-12-13T06:52:11.988114415Z","level":"INFO","msg":"writer: Close: closed","stream_id":"uioxy229"}
+{"time":"2024-12-13T06:52:11.988149109Z","level":"INFO","msg":"sender: closed","stream_id":"uioxy229"}
+{"time":"2024-12-13T06:52:11.989088612Z","level":"INFO","msg":"stream: closed","id":"uioxy229"}

@@ -1,0 +1,317 @@
+Loading train data with 515 files.
+Loading test data with 129 files.
+	[train]	transformer.model.decoder.embed_tokens.weight:	torch.Size([131, 256])
+	[train]	transformer.model.decoder.embed_positions.weight:	torch.Size([8194, 256])
+	[train]	transformer.model.decoder.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.0.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.0.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.0.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.0.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.0.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.0.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.0.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.1.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.1.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.1.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.1.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.1.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.1.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.1.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.2.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.2.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.2.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.2.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.2.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.2.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.2.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.3.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.3.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.3.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.3.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.3.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.3.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.3.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.4.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.4.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.4.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.4.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.4.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.4.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.4.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.5.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.5.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.5.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.5.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.5.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.5.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.5.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.6.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.6.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.6.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.6.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.6.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.6.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.6.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.7.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.7.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.7.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.7.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.fc1.weight:	torch.Size([3072, 256])
+	[train]	transformer.model.decoder.layers.7.fc1.bias:	torch.Size([3072])
+	[train]	transformer.model.decoder.layers.7.fc2.weight:	torch.Size([256, 3072])
+	[train]	transformer.model.decoder.layers.7.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.final_layer_norm.bias:	torch.Size([256])
+call with args: Namespace(base_lr=0.0001, final_lr=1e-06, weight_decay=0.1, clip_gradient=0.1, warm_lr=1e-06, warm_lr_iters=1000, pad_id=-1, dataset='objaverse', augment=False, n_discrete_size=128, n_max_triangles=800, model='mesh_xl', llm='mesh-xl/mesh-xl-125m', text_condition=None, image_condition=None, pretrained_weights=None, dataset_num_workers=1, batchsize_per_gpu=1, start_epoch=0, max_epoch=100, start_eval_after=-1, eval_every_iteration=4000, seed=0, test_only=False, sample_rounds=100, criterion=None, test_ckpt='', checkpoint_dir='./checkpoints', save_every=20000, log_every=10)
+MeshXL(
+  (tokenizer): MeshTokenizer()
+  (transformer): OPTForCausalLM(
+    (model): OPTModel(
+      (decoder): OPTDecoder(
+        (embed_tokens): Embedding(131, 256, padding_idx=130)
+        (embed_positions): OPTLearnedPositionalEmbedding(8194, 256)
+        (final_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (layers): ModuleList(
+          (0-7): 8 x OPTDecoderLayer(
+            (self_attn): OPTAttention(
+              (k_proj): Linear(in_features=256, out_features=256, bias=True)
+              (v_proj): Linear(in_features=256, out_features=256, bias=True)
+              (q_proj): Linear(in_features=256, out_features=256, bias=True)
+              (out_proj): Linear(in_features=256, out_features=256, bias=True)
+            )
+            (activation_fn): ReLU()
+            (self_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            (fc1): Linear(in_features=256, out_features=3072, bias=True)
+            (fc2): Linear(in_features=3072, out_features=256, bias=True)
+            (final_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (lm_head): Linear(in_features=256, out_features=131, bias=False)
+  )
+)
+Epoch [0/100]; Iter [0/51500]; loss 4.9151; gen_loss 4.9151; LR 1.00e-06; Iter time 0.70s; ETA 10:00:24; Mem 18644.09MB
+Epoch [0/100]; Iter [10/51500]; loss 4.8532; gen_loss 4.8532; LR 1.99e-06; Iter time 0.36s; ETA 5:11:09; Mem 18775.15MB
+Epoch [0/100]; Iter [20/51500]; loss 4.8543; gen_loss 4.8543; LR 2.98e-06; Iter time 0.36s; ETA 5:11:15; Mem 18775.15MB
+Epoch [0/100]; Iter [30/51500]; loss 4.7882; gen_loss 4.7882; LR 3.97e-06; Iter time 0.36s; ETA 5:11:19; Mem 18775.15MB
+Epoch [0/100]; Iter [40/51500]; loss 4.6464; gen_loss 4.6464; LR 4.96e-06; Iter time 0.36s; ETA 5:11:53; Mem 18775.15MB
+Epoch [0/100]; Iter [50/51500]; loss 4.7123; gen_loss 4.7123; LR 5.95e-06; Iter time 0.36s; ETA 5:12:37; Mem 18775.15MB
+Epoch [0/100]; Iter [60/51500]; loss 4.6051; gen_loss 4.6051; LR 6.94e-06; Iter time 0.36s; ETA 5:12:02; Mem 18775.15MB
+Epoch [0/100]; Iter [70/51500]; loss 4.5912; gen_loss 4.5912; LR 7.93e-06; Iter time 0.36s; ETA 5:12:15; Mem 18775.15MB
+Epoch [0/100]; Iter [80/51500]; loss 4.4588; gen_loss 4.4588; LR 8.92e-06; Iter time 0.36s; ETA 5:12:18; Mem 18775.15MB
+Epoch [0/100]; Iter [90/51500]; loss 4.5744; gen_loss 4.5744; LR 9.91e-06; Iter time 0.36s; ETA 5:12:09; Mem 18775.15MB
+Epoch [0/100]; Iter [100/51500]; loss 4.4691; gen_loss 4.4691; LR 1.09e-05; Iter time 0.36s; ETA 5:12:12; Mem 18775.15MB
+Epoch [0/100]; Iter [110/51500]; loss 4.4463; gen_loss 4.4463; LR 1.19e-05; Iter time 0.37s; ETA 5:12:37; Mem 18775.15MB
+Epoch [0/100]; Iter [120/51500]; loss 4.4859; gen_loss 4.4859; LR 1.29e-05; Iter time 0.37s; ETA 5:12:52; Mem 18775.15MB
+Epoch [0/100]; Iter [130/51500]; loss 4.4550; gen_loss 4.4550; LR 1.39e-05; Iter time 0.37s; ETA 5:12:35; Mem 18775.15MB
+Epoch [0/100]; Iter [140/51500]; loss 4.4793; gen_loss 4.4793; LR 1.49e-05; Iter time 0.37s; ETA 5:12:56; Mem 18775.15MB
+Epoch [0/100]; Iter [150/51500]; loss 4.5476; gen_loss 4.5476; LR 1.58e-05; Iter time 0.37s; ETA 5:13:18; Mem 18775.15MB
+Epoch [0/100]; Iter [160/51500]; loss 4.4452; gen_loss 4.4452; LR 1.68e-05; Iter time 0.37s; ETA 5:13:19; Mem 18775.15MB
+Epoch [0/100]; Iter [170/51500]; loss 4.4934; gen_loss 4.4934; LR 1.78e-05; Iter time 0.37s; ETA 5:13:05; Mem 18775.15MB
+Epoch [0/100]; Iter [180/51500]; loss 4.1482; gen_loss 4.1482; LR 1.88e-05; Iter time 0.37s; ETA 5:13:06; Mem 18775.15MB
+Epoch [0/100]; Iter [190/51500]; loss 4.3625; gen_loss 4.3625; LR 1.98e-05; Iter time 0.37s; ETA 5:13:14; Mem 18775.15MB
+Epoch [0/100]; Iter [200/51500]; loss 4.1690; gen_loss 4.1690; LR 2.08e-05; Iter time 0.37s; ETA 5:13:24; Mem 18775.15MB
+Epoch [0/100]; Iter [210/51500]; loss 4.1616; gen_loss 4.1616; LR 2.18e-05; Iter time 0.37s; ETA 5:13:37; Mem 18775.15MB
+Epoch [0/100]; Iter [220/51500]; loss 4.2771; gen_loss 4.2771; LR 2.28e-05; Iter time 0.37s; ETA 5:13:27; Mem 18775.15MB
+Epoch [0/100]; Iter [230/51500]; loss 4.2877; gen_loss 4.2877; LR 2.38e-05; Iter time 0.37s; ETA 5:13:27; Mem 18775.15MB
+Epoch [0/100]; Iter [240/51500]; loss 4.1518; gen_loss 4.1518; LR 2.48e-05; Iter time 0.37s; ETA 5:13:30; Mem 18775.15MB
+Epoch [0/100]; Iter [250/51500]; loss 3.7972; gen_loss 3.7972; LR 2.58e-05; Iter time 0.37s; ETA 5:13:26; Mem 18775.15MB
+Epoch [0/100]; Iter [260/51500]; loss 3.9198; gen_loss 3.9198; LR 2.67e-05; Iter time 0.37s; ETA 5:13:42; Mem 18775.15MB
+Epoch [0/100]; Iter [270/51500]; loss 4.1008; gen_loss 4.1008; LR 2.77e-05; Iter time 0.37s; ETA 5:13:13; Mem 18775.15MB
+Epoch [0/100]; Iter [280/51500]; loss 4.1833; gen_loss 4.1833; LR 2.87e-05; Iter time 0.37s; ETA 5:13:33; Mem 18775.15MB
+Epoch [0/100]; Iter [290/51500]; loss 4.1541; gen_loss 4.1541; LR 2.97e-05; Iter time 0.37s; ETA 5:13:26; Mem 18775.15MB
+Epoch [0/100]; Iter [300/51500]; loss 3.8777; gen_loss 3.8777; LR 3.07e-05; Iter time 0.37s; ETA 5:13:53; Mem 18775.15MB
+Epoch [0/100]; Iter [310/51500]; loss 4.2836; gen_loss 4.2836; LR 3.17e-05; Iter time 0.37s; ETA 5:13:47; Mem 18775.15MB
+Epoch [0/100]; Iter [320/51500]; loss 3.8243; gen_loss 3.8243; LR 3.27e-05; Iter time 0.37s; ETA 5:13:48; Mem 18775.15MB
+Epoch [0/100]; Iter [330/51500]; loss 4.0203; gen_loss 4.0203; LR 3.37e-05; Iter time 0.37s; ETA 5:13:59; Mem 18775.15MB
+Epoch [0/100]; Iter [340/51500]; loss 4.0517; gen_loss 4.0517; LR 3.47e-05; Iter time 0.37s; ETA 5:13:43; Mem 18775.15MB
+Epoch [0/100]; Iter [350/51500]; loss 4.2331; gen_loss 4.2331; LR 3.56e-05; Iter time 0.37s; ETA 5:13:49; Mem 18775.15MB
+Epoch [0/100]; Iter [360/51500]; loss 3.8927; gen_loss 3.8927; LR 3.66e-05; Iter time 0.37s; ETA 5:13:52; Mem 18775.15MB
+Epoch [0/100]; Iter [370/51500]; loss 3.9199; gen_loss 3.9199; LR 3.76e-05; Iter time 0.37s; ETA 5:13:54; Mem 18775.15MB
+Epoch [0/100]; Iter [380/51500]; loss 3.9629; gen_loss 3.9629; LR 3.86e-05; Iter time 0.37s; ETA 5:13:51; Mem 18775.15MB
+Epoch [0/100]; Iter [390/51500]; loss 4.2026; gen_loss 4.2026; LR 3.96e-05; Iter time 0.37s; ETA 5:13:49; Mem 18775.15MB
+Epoch [0/100]; Iter [400/51500]; loss 3.8451; gen_loss 3.8451; LR 4.06e-05; Iter time 0.37s; ETA 5:14:05; Mem 18775.15MB
+Epoch [0/100]; Iter [410/51500]; loss 3.7013; gen_loss 3.7013; LR 4.16e-05; Iter time 0.37s; ETA 5:13:56; Mem 18775.15MB
+Epoch [0/100]; Iter [420/51500]; loss 3.8508; gen_loss 3.8508; LR 4.26e-05; Iter time 0.37s; ETA 5:13:43; Mem 18775.15MB
+Epoch [0/100]; Iter [430/51500]; loss 3.9628; gen_loss 3.9628; LR 4.36e-05; Iter time 0.37s; ETA 5:13:47; Mem 18775.15MB
+Epoch [0/100]; Iter [440/51500]; loss 4.0925; gen_loss 4.0925; LR 4.46e-05; Iter time 0.37s; ETA 5:13:38; Mem 18775.15MB
+Epoch [0/100]; Iter [450/51500]; loss 4.0270; gen_loss 4.0270; LR 4.56e-05; Iter time 0.37s; ETA 5:12:45; Mem 18775.15MB
+Epoch [0/100]; Iter [460/51500]; loss 3.8754; gen_loss 3.8754; LR 4.65e-05; Iter time 0.37s; ETA 5:12:18; Mem 18775.15MB
+Epoch [0/100]; Iter [470/51500]; loss 3.8519; gen_loss 3.8519; LR 4.75e-05; Iter time 0.37s; ETA 5:12:31; Mem 18775.15MB
+Epoch [0/100]; Iter [480/51500]; loss 3.9265; gen_loss 3.9265; LR 4.85e-05; Iter time 0.37s; ETA 5:12:25; Mem 18775.15MB
+Epoch [0/100]; Iter [490/51500]; loss 3.9681; gen_loss 3.9681; LR 4.95e-05; Iter time 0.37s; ETA 5:13:11; Mem 18775.15MB
+Epoch [0/100]; Iter [500/51500]; loss 3.5899; gen_loss 3.5899; LR 5.05e-05; Iter time 0.37s; ETA 5:13:19; Mem 18775.15MB
+Epoch [0/100]; Iter [510/51500]; loss 3.7614; gen_loss 3.7614; LR 5.15e-05; Iter time 0.37s; ETA 5:13:13; Mem 18775.15MB
+Epoch [1/100]; Iter [520/51500]; loss 4.0397; gen_loss 4.0397; LR 5.25e-05; Iter time 0.37s; ETA 5:13:00; Mem 18775.15MB
+Epoch [1/100]; Iter [530/51500]; loss 4.0603; gen_loss 4.0603; LR 5.35e-05; Iter time 0.37s; ETA 5:13:38; Mem 18775.15MB
+Epoch [1/100]; Iter [540/51500]; loss 3.8520; gen_loss 3.8520; LR 5.45e-05; Iter time 0.37s; ETA 5:14:10; Mem 18775.15MB
+Epoch [1/100]; Iter [550/51500]; loss 3.9328; gen_loss 3.9328; LR 5.55e-05; Iter time 0.37s; ETA 5:13:39; Mem 18775.15MB
+Epoch [1/100]; Iter [560/51500]; loss 3.8083; gen_loss 3.8083; LR 5.64e-05; Iter time 0.37s; ETA 5:13:09; Mem 18775.15MB
+Epoch [1/100]; Iter [570/51500]; loss 4.0381; gen_loss 4.0381; LR 5.74e-05; Iter time 0.37s; ETA 5:13:01; Mem 18775.15MB
+Epoch [1/100]; Iter [580/51500]; loss 3.9602; gen_loss 3.9602; LR 5.84e-05; Iter time 0.37s; ETA 5:12:08; Mem 18775.15MB
+Epoch [1/100]; Iter [590/51500]; loss 3.9343; gen_loss 3.9343; LR 5.94e-05; Iter time 0.37s; ETA 5:12:09; Mem 18775.15MB
+Epoch [1/100]; Iter [600/51500]; loss 3.6795; gen_loss 3.6795; LR 6.04e-05; Iter time 0.37s; ETA 5:12:33; Mem 18775.15MB
+Epoch [1/100]; Iter [610/51500]; loss 3.7071; gen_loss 3.7071; LR 6.14e-05; Iter time 0.37s; ETA 5:12:43; Mem 18775.15MB
+Epoch [1/100]; Iter [620/51500]; loss 3.4252; gen_loss 3.4252; LR 6.24e-05; Iter time 0.37s; ETA 5:12:27; Mem 18775.15MB
+Epoch [1/100]; Iter [630/51500]; loss 3.4340; gen_loss 3.4340; LR 6.34e-05; Iter time 0.37s; ETA 5:12:38; Mem 18775.15MB
+Epoch [1/100]; Iter [640/51500]; loss 3.5009; gen_loss 3.5009; LR 6.44e-05; Iter time 0.37s; ETA 5:12:48; Mem 18775.15MB
+Epoch [1/100]; Iter [650/51500]; loss 3.8357; gen_loss 3.8357; LR 6.54e-05; Iter time 0.37s; ETA 5:12:30; Mem 18775.15MB
+Epoch [1/100]; Iter [660/51500]; loss 3.6977; gen_loss 3.6977; LR 6.63e-05; Iter time 0.37s; ETA 5:12:00; Mem 18775.15MB
+Epoch [1/100]; Iter [670/51500]; loss 3.7544; gen_loss 3.7544; LR 6.73e-05; Iter time 0.37s; ETA 5:12:31; Mem 18775.15MB
+Epoch [1/100]; Iter [680/51500]; loss 3.9555; gen_loss 3.9555; LR 6.83e-05; Iter time 0.37s; ETA 5:12:20; Mem 18775.15MB
+Epoch [1/100]; Iter [690/51500]; loss 3.6274; gen_loss 3.6274; LR 6.93e-05; Iter time 0.37s; ETA 5:12:44; Mem 18775.15MB
+Epoch [1/100]; Iter [700/51500]; loss 3.8757; gen_loss 3.8757; LR 7.03e-05; Iter time 0.37s; ETA 5:12:33; Mem 18775.15MB
+Epoch [1/100]; Iter [710/51500]; loss 4.0946; gen_loss 4.0946; LR 7.13e-05; Iter time 0.37s; ETA 5:12:19; Mem 18775.15MB
+Epoch [1/100]; Iter [720/51500]; loss 3.7205; gen_loss 3.7205; LR 7.23e-05; Iter time 0.37s; ETA 5:12:20; Mem 18775.15MB
+Epoch [1/100]; Iter [730/51500]; loss 3.7256; gen_loss 3.7256; LR 7.33e-05; Iter time 0.37s; ETA 5:12:13; Mem 18775.15MB
+Epoch [1/100]; Iter [740/51500]; loss 3.6979; gen_loss 3.6979; LR 7.43e-05; Iter time 0.37s; ETA 5:12:07; Mem 18775.15MB
+Epoch [1/100]; Iter [750/51500]; loss 3.5493; gen_loss 3.5493; LR 7.52e-05; Iter time 0.37s; ETA 5:12:19; Mem 18775.15MB
+Epoch [1/100]; Iter [760/51500]; loss 3.4243; gen_loss 3.4243; LR 7.62e-05; Iter time 0.37s; ETA 5:12:33; Mem 18775.15MB
+Epoch [1/100]; Iter [770/51500]; loss 3.7800; gen_loss 3.7800; LR 7.72e-05; Iter time 0.37s; ETA 5:12:02; Mem 18775.15MB
+Epoch [1/100]; Iter [780/51500]; loss 3.6840; gen_loss 3.6840; LR 7.82e-05; Iter time 0.37s; ETA 5:11:57; Mem 18775.15MB
+Epoch [1/100]; Iter [790/51500]; loss 3.6469; gen_loss 3.6469; LR 7.92e-05; Iter time 0.37s; ETA 5:12:18; Mem 18775.15MB
+Epoch [1/100]; Iter [800/51500]; loss 3.9020; gen_loss 3.9020; LR 8.02e-05; Iter time 0.37s; ETA 5:12:02; Mem 18775.15MB
+Epoch [1/100]; Iter [810/51500]; loss 3.4546; gen_loss 3.4546; LR 8.12e-05; Iter time 0.37s; ETA 5:11:37; Mem 18775.15MB
+Epoch [1/100]; Iter [820/51500]; loss 3.6144; gen_loss 3.6144; LR 8.22e-05; Iter time 0.37s; ETA 5:11:37; Mem 18775.15MB
+Epoch [1/100]; Iter [830/51500]; loss 3.7554; gen_loss 3.7554; LR 8.32e-05; Iter time 0.37s; ETA 5:11:53; Mem 18775.15MB
+Epoch [1/100]; Iter [840/51500]; loss 3.5647; gen_loss 3.5647; LR 8.42e-05; Iter time 0.37s; ETA 5:11:22; Mem 18775.15MB
+Epoch [1/100]; Iter [850/51500]; loss 3.6404; gen_loss 3.6404; LR 8.51e-05; Iter time 0.37s; ETA 5:11:34; Mem 18775.15MB
+Epoch [1/100]; Iter [860/51500]; loss 3.6602; gen_loss 3.6602; LR 8.61e-05; Iter time 0.37s; ETA 5:11:05; Mem 18775.15MB
+Epoch [1/100]; Iter [870/51500]; loss 3.7960; gen_loss 3.7960; LR 8.71e-05; Iter time 0.37s; ETA 5:11:16; Mem 18775.15MB
+Epoch [1/100]; Iter [880/51500]; loss 3.6411; gen_loss 3.6411; LR 8.81e-05; Iter time 0.37s; ETA 5:11:10; Mem 18775.15MB
+Epoch [1/100]; Iter [890/51500]; loss 3.6889; gen_loss 3.6889; LR 8.91e-05; Iter time 0.37s; ETA 5:11:08; Mem 18775.15MB
+Epoch [1/100]; Iter [900/51500]; loss 3.5914; gen_loss 3.5914; LR 9.01e-05; Iter time 0.37s; ETA 5:11:05; Mem 18775.15MB
+Epoch [1/100]; Iter [910/51500]; loss 3.8036; gen_loss 3.8036; LR 9.11e-05; Iter time 0.37s; ETA 5:11:34; Mem 18775.15MB
+Epoch [1/100]; Iter [920/51500]; loss 3.7475; gen_loss 3.7475; LR 9.21e-05; Iter time 0.37s; ETA 5:10:58; Mem 18775.15MB
+Epoch [1/100]; Iter [930/51500]; loss 3.7799; gen_loss 3.7799; LR 9.31e-05; Iter time 0.37s; ETA 5:10:51; Mem 18775.15MB
+Epoch [1/100]; Iter [940/51500]; loss 3.5987; gen_loss 3.5987; LR 9.41e-05; Iter time 0.37s; ETA 5:11:06; Mem 18775.15MB
+Epoch [1/100]; Iter [950/51500]; loss 3.8169; gen_loss 3.8169; LR 9.51e-05; Iter time 0.37s; ETA 5:10:42; Mem 18775.15MB
+Epoch [1/100]; Iter [960/51500]; loss 3.6082; gen_loss 3.6082; LR 9.60e-05; Iter time 0.37s; ETA 5:10:28; Mem 18775.15MB
+Epoch [1/100]; Iter [970/51500]; loss 3.9500; gen_loss 3.9500; LR 9.70e-05; Iter time 0.37s; ETA 5:10:31; Mem 18775.15MB
+Epoch [1/100]; Iter [980/51500]; loss 3.7487; gen_loss 3.7487; LR 9.80e-05; Iter time 0.37s; ETA 5:10:18; Mem 18775.15MB
+Epoch [1/100]; Iter [990/51500]; loss 3.7072; gen_loss 3.7072; LR 9.90e-05; Iter time 0.37s; ETA 5:10:14; Mem 18775.15MB
+Epoch [1/100]; Iter [1000/51500]; loss 3.3118; gen_loss 3.3118; LR 1.00e-04; Iter time 0.37s; ETA 5:09:59; Mem 18775.15MB
+Epoch [1/100]; Iter [1010/51500]; loss 3.8368; gen_loss 3.8368; LR 9.99e-05; Iter time 0.37s; ETA 5:10:08; Mem 18775.15MB
+Epoch [1/100]; Iter [1020/51500]; loss 3.1984; gen_loss 3.1984; LR 9.99e-05; Iter time 0.37s; ETA 5:09:54; Mem 18775.15MB
+Epoch [2/100]; Iter [1030/51500]; loss 3.9763; gen_loss 3.9763; LR 9.99e-05; Iter time 0.37s; ETA 5:10:21; Mem 18775.15MB
+Epoch [2/100]; Iter [1040/51500]; loss 3.7336; gen_loss 3.7336; LR 9.99e-05; Iter time 0.37s; ETA 5:08:18; Mem 18775.15MB
+Epoch [2/100]; Iter [1050/51500]; loss 3.7079; gen_loss 3.7079; LR 9.99e-05; Iter time 0.37s; ETA 5:08:44; Mem 18775.15MB
+Epoch [2/100]; Iter [1060/51500]; loss 3.5840; gen_loss 3.5840; LR 9.99e-05; Iter time 0.37s; ETA 5:10:03; Mem 18775.15MB
+Epoch [2/100]; Iter [1070/51500]; loss 3.3945; gen_loss 3.3945; LR 9.99e-05; Iter time 0.37s; ETA 5:09:38; Mem 18775.15MB
+Traceback (most recent call last):
+  File "/root/MeshXL/main.py", line 315, in <module>
+    main(args)
+  File "/root/MeshXL/main.py", line 305, in main
+    do_train(
+  File "/root/MeshXL/engine.py", line 63, in do_train
+    outputs = model(batch_data_label)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/root/MeshXL/models/mesh_xl/get_model.py", line 92, in forward
+    return self.train_one_step(data_dict)
+  File "/root/MeshXL/models/mesh_xl/get_model.py", line 135, in train_one_step
+    output = self.transformer(
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 1145, in forward
+    outputs = self.model.decoder(
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 911, in forward
+    layer_outputs = decoder_layer(
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 552, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 219, in forward
+    attn_weights = torch.bmm(query_states, key_states.transpose(1, 2))
+KeyboardInterrupt

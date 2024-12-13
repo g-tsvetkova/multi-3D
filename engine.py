@@ -146,17 +146,20 @@ def do_train(
                 model.eval()
                 with accelerator.autocast():
                     for test_loader in dataloaders["test"]:
-                        task_metrics, eval_loss_dict = test_loader.dataset.eval_func(
-                            args,
-                            curr_epoch,
-                            accelerator.unwrap_model(model),
-                            accelerator,
-                            test_loader,
-                            logger,
-                            curr_train_iter=curr_iter,
-                        )
-                        eval_metrics.update(task_metrics)
-                        logger.log_scalars(eval_loss_dict, prefix="val", step=curr_iter)
+                        try:
+                            task_metrics, eval_loss_dict = test_loader.dataset.eval_func(
+                                args,
+                                curr_epoch,
+                                accelerator.unwrap_model(model),
+                                accelerator,
+                                test_loader,
+                                logger,
+                                curr_train_iter=curr_iter,
+                            )
+                            eval_metrics.update(task_metrics)
+                            logger.log_scalars(eval_loss_dict, prefix="val", step=curr_iter)
+                        except:
+                            continue
                 model.train()
 
                 ### saving `checkpoint_best.pth` do nothing for unknown criterion
