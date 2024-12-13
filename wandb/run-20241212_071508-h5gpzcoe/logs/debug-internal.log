@@ -1,0 +1,11 @@
+{"time":"2024-12-12T07:15:08.523917764Z","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-12T07:15:08.523935567Z","level":"INFO","msg":"created symlink","path":"/root/MeshXL/wandb/run-20241212_071508-h5gpzcoe/logs/debug-core.log"}
+{"time":"2024-12-12T07:15:08.628423801Z","level":"INFO","msg":"created new stream","id":"h5gpzcoe"}
+{"time":"2024-12-12T07:15:08.628460941Z","level":"INFO","msg":"stream: started","id":"h5gpzcoe"}
+{"time":"2024-12-12T07:15:08.628491899Z","level":"INFO","msg":"writer: Do: started","stream_id":"h5gpzcoe"}
+{"time":"2024-12-12T07:15:08.628509081Z","level":"INFO","msg":"handler: started","stream_id":"h5gpzcoe"}
+{"time":"2024-12-12T07:15:08.628515152Z","level":"INFO","msg":"sender: started","stream_id":"h5gpzcoe"}
+{"time":"2024-12-12T07:15:09.216195631Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-12T07:15:23.070496685Z","level":"INFO","msg":"stream: closing","id":"h5gpzcoe"}
+{"time":"2024-12-12T07:15:23.070718108Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-12T07:15:23.071727952Z","level":"INFO","msg":"Stopped system monitor"}

@@ -1,0 +1,12 @@
+{"time":"2024-12-12T04:16:04.212089077Z","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-12T04:16:04.212108984Z","level":"INFO","msg":"created symlink","path":"/root/MeshXL/wandb/run-20241212_041604-vyepg58d/logs/debug-core.log"}
+{"time":"2024-12-12T04:16:04.315949781Z","level":"INFO","msg":"created new stream","id":"vyepg58d"}
+{"time":"2024-12-12T04:16:04.315978454Z","level":"INFO","msg":"stream: started","id":"vyepg58d"}
+{"time":"2024-12-12T04:16:04.316014802Z","level":"INFO","msg":"writer: Do: started","stream_id":"vyepg58d"}
+{"time":"2024-12-12T04:16:04.316028638Z","level":"INFO","msg":"sender: started","stream_id":"vyepg58d"}
+{"time":"2024-12-12T04:16:04.316024811Z","level":"INFO","msg":"handler: started","stream_id":"vyepg58d"}
+{"time":"2024-12-12T04:16:04.67542361Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-12T04:16:11.549640353Z","level":"INFO","msg":"stream: closing","id":"vyepg58d"}
+{"time":"2024-12-12T04:16:11.549684305Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-12T04:16:11.550344356Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-12T04:16:12.509919314Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

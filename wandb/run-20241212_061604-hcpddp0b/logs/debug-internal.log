@@ -1,0 +1,11 @@
+{"time":"2024-12-12T06:16:04.293885033Z","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-12T06:16:04.293896194Z","level":"INFO","msg":"created symlink","path":"/root/MeshXL/wandb/run-20241212_061604-hcpddp0b/logs/debug-core.log"}
+{"time":"2024-12-12T06:16:04.398104165Z","level":"INFO","msg":"created new stream","id":"hcpddp0b"}
+{"time":"2024-12-12T06:16:04.398126036Z","level":"INFO","msg":"stream: started","id":"hcpddp0b"}
+{"time":"2024-12-12T06:16:04.398147987Z","level":"INFO","msg":"writer: Do: started","stream_id":"hcpddp0b"}
+{"time":"2024-12-12T06:16:04.398162554Z","level":"INFO","msg":"sender: started","stream_id":"hcpddp0b"}
+{"time":"2024-12-12T06:16:04.398158536Z","level":"INFO","msg":"handler: started","stream_id":"hcpddp0b"}
+{"time":"2024-12-12T06:16:04.816934538Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-12T06:16:07.43002338Z","level":"INFO","msg":"stream: closing","id":"hcpddp0b"}
+{"time":"2024-12-12T06:16:07.43006134Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-12T06:16:07.430560642Z","level":"INFO","msg":"Stopped system monitor"}

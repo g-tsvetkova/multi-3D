@@ -1,0 +1,382 @@
+Loading train data with 515 files.
+Loading test data with 129 files.
+	[train]	transformer.model.decoder.embed_tokens.weight:	torch.Size([131, 512])
+	[train]	transformer.model.decoder.embed_positions.weight:	torch.Size([8194, 512])
+	[train]	transformer.model.decoder.final_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.final_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.0.self_attn.k_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.0.self_attn.k_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.0.self_attn.v_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.0.self_attn.v_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.0.self_attn.q_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.0.self_attn.q_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.0.self_attn.out_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.0.self_attn.out_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.0.self_attn_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.0.self_attn_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.0.fc1.weight:	torch.Size([2048, 512])
+	[train]	transformer.model.decoder.layers.0.fc1.bias:	torch.Size([2048])
+	[train]	transformer.model.decoder.layers.0.fc2.weight:	torch.Size([512, 2048])
+	[train]	transformer.model.decoder.layers.0.fc2.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.0.final_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.0.final_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.1.self_attn.k_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.1.self_attn.k_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.1.self_attn.v_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.1.self_attn.v_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.1.self_attn.q_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.1.self_attn.q_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.1.self_attn.out_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.1.self_attn.out_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.1.self_attn_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.1.self_attn_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.1.fc1.weight:	torch.Size([2048, 512])
+	[train]	transformer.model.decoder.layers.1.fc1.bias:	torch.Size([2048])
+	[train]	transformer.model.decoder.layers.1.fc2.weight:	torch.Size([512, 2048])
+	[train]	transformer.model.decoder.layers.1.fc2.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.1.final_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.1.final_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.2.self_attn.k_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.2.self_attn.k_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.2.self_attn.v_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.2.self_attn.v_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.2.self_attn.q_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.2.self_attn.q_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.2.self_attn.out_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.2.self_attn.out_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.2.self_attn_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.2.self_attn_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.2.fc1.weight:	torch.Size([2048, 512])
+	[train]	transformer.model.decoder.layers.2.fc1.bias:	torch.Size([2048])
+	[train]	transformer.model.decoder.layers.2.fc2.weight:	torch.Size([512, 2048])
+	[train]	transformer.model.decoder.layers.2.fc2.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.2.final_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.2.final_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.3.self_attn.k_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.3.self_attn.k_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.3.self_attn.v_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.3.self_attn.v_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.3.self_attn.q_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.3.self_attn.q_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.3.self_attn.out_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.3.self_attn.out_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.3.self_attn_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.3.self_attn_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.3.fc1.weight:	torch.Size([2048, 512])
+	[train]	transformer.model.decoder.layers.3.fc1.bias:	torch.Size([2048])
+	[train]	transformer.model.decoder.layers.3.fc2.weight:	torch.Size([512, 2048])
+	[train]	transformer.model.decoder.layers.3.fc2.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.3.final_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.3.final_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.4.self_attn.k_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.4.self_attn.k_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.4.self_attn.v_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.4.self_attn.v_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.4.self_attn.q_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.4.self_attn.q_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.4.self_attn.out_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.4.self_attn.out_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.4.self_attn_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.4.self_attn_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.4.fc1.weight:	torch.Size([2048, 512])
+	[train]	transformer.model.decoder.layers.4.fc1.bias:	torch.Size([2048])
+	[train]	transformer.model.decoder.layers.4.fc2.weight:	torch.Size([512, 2048])
+	[train]	transformer.model.decoder.layers.4.fc2.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.4.final_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.4.final_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.5.self_attn.k_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.5.self_attn.k_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.5.self_attn.v_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.5.self_attn.v_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.5.self_attn.q_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.5.self_attn.q_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.5.self_attn.out_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.5.self_attn.out_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.5.self_attn_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.5.self_attn_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.5.fc1.weight:	torch.Size([2048, 512])
+	[train]	transformer.model.decoder.layers.5.fc1.bias:	torch.Size([2048])
+	[train]	transformer.model.decoder.layers.5.fc2.weight:	torch.Size([512, 2048])
+	[train]	transformer.model.decoder.layers.5.fc2.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.5.final_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.5.final_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.6.self_attn.k_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.6.self_attn.k_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.6.self_attn.v_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.6.self_attn.v_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.6.self_attn.q_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.6.self_attn.q_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.6.self_attn.out_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.6.self_attn.out_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.6.self_attn_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.6.self_attn_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.6.fc1.weight:	torch.Size([2048, 512])
+	[train]	transformer.model.decoder.layers.6.fc1.bias:	torch.Size([2048])
+	[train]	transformer.model.decoder.layers.6.fc2.weight:	torch.Size([512, 2048])
+	[train]	transformer.model.decoder.layers.6.fc2.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.6.final_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.6.final_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.7.self_attn.k_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.7.self_attn.k_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.7.self_attn.v_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.7.self_attn.v_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.7.self_attn.q_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.7.self_attn.q_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.7.self_attn.out_proj.weight:	torch.Size([512, 512])
+	[train]	transformer.model.decoder.layers.7.self_attn.out_proj.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.7.self_attn_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.7.self_attn_layer_norm.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.7.fc1.weight:	torch.Size([2048, 512])
+	[train]	transformer.model.decoder.layers.7.fc1.bias:	torch.Size([2048])
+	[train]	transformer.model.decoder.layers.7.fc2.weight:	torch.Size([512, 2048])
+	[train]	transformer.model.decoder.layers.7.fc2.bias:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.7.final_layer_norm.weight:	torch.Size([512])
+	[train]	transformer.model.decoder.layers.7.final_layer_norm.bias:	torch.Size([512])
+call with args: Namespace(base_lr=0.0001, final_lr=1e-06, weight_decay=0.1, clip_gradient=0.1, warm_lr=1e-06, warm_lr_iters=1000, pad_id=-1, dataset='objaverse', augment=False, n_discrete_size=128, n_max_triangles=800, model='mesh_xl', llm='mesh-xl/mesh-xl-125m', text_condition=None, image_condition=None, pretrained_weights=None, dataset_num_workers=0, batchsize_per_gpu=2, start_epoch=0, max_epoch=100, start_eval_after=-1, eval_every_iteration=4000, seed=0, test_only=False, sample_rounds=100, criterion=None, test_ckpt='', checkpoint_dir='./checkpoints', save_every=20000, log_every=10)
+DistributedDataParallel(
+  (module): MeshXL(
+    (tokenizer): MeshTokenizer()
+    (transformer): OPTForCausalLM(
+      (model): OPTModel(
+        (decoder): OPTDecoder(
+          (embed_tokens): Embedding(131, 512, padding_idx=130)
+          (embed_positions): OPTLearnedPositionalEmbedding(8194, 512)
+          (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (layers): ModuleList(
+            (0-7): 8 x OPTDecoderLayer(
+              (self_attn): OPTAttention(
+                (k_proj): Linear(in_features=512, out_features=512, bias=True)
+                (v_proj): Linear(in_features=512, out_features=512, bias=True)
+                (q_proj): Linear(in_features=512, out_features=512, bias=True)
+                (out_proj): Linear(in_features=512, out_features=512, bias=True)
+              )
+              (activation_fn): ReLU()
+              (self_attn_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+              (fc1): Linear(in_features=512, out_features=2048, bias=True)
+              (fc2): Linear(in_features=2048, out_features=512, bias=True)
+              (final_layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+            )
+          )
+        )
+      )
+      (lm_head): Linear(in_features=512, out_features=131, bias=False)
+    )
+  )
+)
+<accelerate.data_loader.DataLoaderShard object at 0x7fada4de2fe0>
+torch.Size([2, 800, 2500, 3])
+torch.Size([2, 800, 3, 3])
+max face index: 1005 num_vertices: 800
+min face index: 0
+Discrete face coordinates:  tensor([[[[ 45, 116,  54],
+          [ 45, 104,  51],
+          [ 45, 104,  54]],
+
+         [[ 45, 116,  51],
+          [ 45, 104,  51],
+          [ 45, 116,  54]],
+
+         [[ 48, 104,  54],
+          [ 48,  98,  51],
+          [ 48,  98,  54]],
+
+         ...,
+
+         [[ 60,  64,  51],
+          [ 60,  64,  51],
+          [ 60,  64,  51]],
+
+         [[ 60,  64,  51],
+          [ 60,  64,  51],
+          [ 60,  64,  51]],
+
+         [[ 60,  64,  51],
+          [ 60,  64,  51],
+          [ 60,  64,  51]]],
+
+
+        [[[ 77,  73,  79],
+          [ 78,  73,  59],
+          [ 78,  65,  59]],
+
+         [[ 77,  73,  79],
+          [ 78,  65,  59],
+          [ 77,  65,  79]],
+
+         [[ 45,  72,  81],
+          [ 75,  72,  81],
+          [ 75,  65,  81]],
+
+         ...,
+
+         [[ 31,  64,  48],
+          [ 31,  64,  48],
+          [ 31,  64,  48]],
+
+         [[ 31,  64,  48],
+          [ 31,  64,  48],
+          [ 31,  64,  48]],
+
+         [[ 31,  64,  48],
+          [ 31,  64,  48],
+          [ 31,  64,  48]]]], device='cuda:0')
+Discrete face coordinates:  tensor([[[[ 45, 116,  54],
+          [ 45, 104,  51],
+          [ 45, 104,  54]],
+
+         [[ 45, 116,  51],
+          [ 45, 104,  51],
+          [ 45, 116,  54]],
+
+         [[ 48, 104,  54],
+          [ 48,  98,  51],
+          [ 48,  98,  54]],
+
+         ...,
+
+         [[ 60,  64,  51],
+          [ 60,  64,  51],
+          [ 60,  64,  51]],
+
+         [[ 60,  64,  51],
+          [ 60,  64,  51],
+          [ 60,  64,  51]],
+
+         [[ 60,  64,  51],
+          [ 60,  64,  51],
+          [ 60,  64,  51]]],
+
+
+        [[[ 77,  73,  79],
+          [ 78,  73,  59],
+          [ 78,  65,  59]],
+
+         [[ 77,  73,  79],
+          [ 78,  65,  59],
+          [ 77,  65,  79]],
+
+         [[ 45,  72,  81],
+          [ 75,  72,  81],
+          [ 75,  65,  81]],
+
+         ...,
+
+         [[ 31,  64,  48],
+          [ 31,  64,  48],
+          [ 31,  64,  48]],
+
+         [[ 31,  64,  48],
+          [ 31,  64,  48],
+          [ 31,  64,  48]],
+
+         [[ 31,  64,  48],
+          [ 31,  64,  48],
+          [ 31,  64,  48]]]], device='cuda:0')
+Traceback (most recent call last):
+  File "/root/MeshXL/main.py", line 315, in <module>
+    main(args)
+  File "/root/MeshXL/main.py", line 305, in main
+    do_train(
+  File "/root/MeshXL/engine.py", line 64, in do_train
+    outputs = model(batch_data_label)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1643, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1459, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/root/MeshXL/models/mesh_xl/get_model.py", line 272, in forward
+    return self.train_one_step(data_dict)
+  File "/root/MeshXL/models/mesh_xl/get_model.py", line 315, in train_one_step
+    output = self.transformer(
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 1145, in forward
+    outputs = self.model.decoder(
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 911, in forward
+    layer_outputs = decoder_layer(
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 552, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 233, in forward
+    attn_weights = torch.max(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.09 GiB. GPU 0 has a total capacity of 23.68 GiB of which 1.73 GiB is free. Process 3787402 has 21.95 GiB memory in use. Of the allocated memory 19.84 GiB is allocated by PyTorch, and 1.65 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/root/MeshXL/main.py", line 315, in <module>
+[rank0]:     main(args)
+[rank0]:   File "/root/MeshXL/main.py", line 305, in main
+[rank0]:     do_train(
+[rank0]:   File "/root/MeshXL/engine.py", line 64, in do_train
+[rank0]:     outputs = model(batch_data_label)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1643, in forward
+[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1459, in _run_ddp_forward
+[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/accelerate/utils/operations.py", line 823, in forward
+[rank0]:     return model_forward(*args, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/accelerate/utils/operations.py", line 811, in __call__
+[rank0]:     return convert_to_fp32(self.model_forward(*args, **kwargs))
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/root/MeshXL/models/mesh_xl/get_model.py", line 272, in forward
+[rank0]:     return self.train_one_step(data_dict)
+[rank0]:   File "/root/MeshXL/models/mesh_xl/get_model.py", line 315, in train_one_step
+[rank0]:     output = self.transformer(
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 1145, in forward
+[rank0]:     outputs = self.model.decoder(
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 911, in forward
+[rank0]:     layer_outputs = decoder_layer(
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 552, in forward
+[rank0]:     hidden_states, self_attn_weights, present_key_value = self.self_attn(
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/root/.multi3d/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 233, in forward
+[rank0]:     attn_weights = torch.max(
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.09 GiB. GPU 0 has a total capacity of 23.68 GiB of which 1.73 GiB is free. Process 3787402 has 21.95 GiB memory in use. Of the allocated memory 19.84 GiB is allocated by PyTorch, and 1.65 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
