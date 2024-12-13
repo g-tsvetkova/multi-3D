@@ -47,7 +47,6 @@ def do_train(
     accelerator.wait_for_everyone()
 
     for curr_epoch in range(args.start_epoch, args.max_epoch):
-        print(dataloaders["train"])
 
         for batch_idx, batch_data_label in enumerate(dataloaders["train"]):
 

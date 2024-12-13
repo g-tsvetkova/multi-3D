@@ -1,0 +1,1024 @@
+Loading train data with 515 files.
+Loading test data with 129 files.
+	[train]	transformer.model.decoder.embed_tokens.weight:	torch.Size([131, 256])
+	[train]	transformer.model.decoder.embed_positions.weight:	torch.Size([8194, 256])
+	[train]	transformer.model.decoder.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.0.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.0.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.0.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.0.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.fc1.weight:	torch.Size([1024, 256])
+	[train]	transformer.model.decoder.layers.0.fc1.bias:	torch.Size([1024])
+	[train]	transformer.model.decoder.layers.0.fc2.weight:	torch.Size([256, 1024])
+	[train]	transformer.model.decoder.layers.0.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.0.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.1.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.1.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.1.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.1.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.fc1.weight:	torch.Size([1024, 256])
+	[train]	transformer.model.decoder.layers.1.fc1.bias:	torch.Size([1024])
+	[train]	transformer.model.decoder.layers.1.fc2.weight:	torch.Size([256, 1024])
+	[train]	transformer.model.decoder.layers.1.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.1.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.2.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.2.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.2.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.2.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.fc1.weight:	torch.Size([1024, 256])
+	[train]	transformer.model.decoder.layers.2.fc1.bias:	torch.Size([1024])
+	[train]	transformer.model.decoder.layers.2.fc2.weight:	torch.Size([256, 1024])
+	[train]	transformer.model.decoder.layers.2.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.2.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.3.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.3.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.3.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.3.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.fc1.weight:	torch.Size([1024, 256])
+	[train]	transformer.model.decoder.layers.3.fc1.bias:	torch.Size([1024])
+	[train]	transformer.model.decoder.layers.3.fc2.weight:	torch.Size([256, 1024])
+	[train]	transformer.model.decoder.layers.3.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.3.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.4.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.4.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.4.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.4.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.fc1.weight:	torch.Size([1024, 256])
+	[train]	transformer.model.decoder.layers.4.fc1.bias:	torch.Size([1024])
+	[train]	transformer.model.decoder.layers.4.fc2.weight:	torch.Size([256, 1024])
+	[train]	transformer.model.decoder.layers.4.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.4.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.5.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.5.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.5.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.5.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.fc1.weight:	torch.Size([1024, 256])
+	[train]	transformer.model.decoder.layers.5.fc1.bias:	torch.Size([1024])
+	[train]	transformer.model.decoder.layers.5.fc2.weight:	torch.Size([256, 1024])
+	[train]	transformer.model.decoder.layers.5.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.5.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.6.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.6.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.6.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.6.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.fc1.weight:	torch.Size([1024, 256])
+	[train]	transformer.model.decoder.layers.6.fc1.bias:	torch.Size([1024])
+	[train]	transformer.model.decoder.layers.6.fc2.weight:	torch.Size([256, 1024])
+	[train]	transformer.model.decoder.layers.6.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.6.final_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn.k_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.7.self_attn.k_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn.v_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.7.self_attn.v_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn.q_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.7.self_attn.q_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn.out_proj.weight:	torch.Size([256, 256])
+	[train]	transformer.model.decoder.layers.7.self_attn.out_proj.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.self_attn_layer_norm.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.fc1.weight:	torch.Size([1024, 256])
+	[train]	transformer.model.decoder.layers.7.fc1.bias:	torch.Size([1024])
+	[train]	transformer.model.decoder.layers.7.fc2.weight:	torch.Size([256, 1024])
+	[train]	transformer.model.decoder.layers.7.fc2.bias:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.final_layer_norm.weight:	torch.Size([256])
+	[train]	transformer.model.decoder.layers.7.final_layer_norm.bias:	torch.Size([256])
+call with args: Namespace(base_lr=0.0001, final_lr=1e-06, weight_decay=0.1, clip_gradient=0.1, warm_lr=1e-06, warm_lr_iters=1000, pad_id=-1, dataset='objaverse', augment=False, n_discrete_size=128, n_max_triangles=800, model='mesh_xl', llm='mesh-xl/mesh-xl-125m', text_condition=None, image_condition=None, pretrained_weights=None, dataset_num_workers=8, batchsize_per_gpu=1, start_epoch=0, max_epoch=100, start_eval_after=-1, eval_every_iteration=4000, seed=0, test_only=False, sample_rounds=100, criterion=None, test_ckpt='', checkpoint_dir='./checkpoints', save_every=20000, log_every=10)
+FullyShardedDataParallel(
+  (_fsdp_wrapped_module): MeshXL(
+    (tokenizer): MeshTokenizer()
+    (transformer): OPTForCausalLM(
+      (model): OPTModel(
+        (decoder): OPTDecoder(
+          (embed_tokens): Embedding(131, 256, padding_idx=130)
+          (embed_positions): OPTLearnedPositionalEmbedding(8194, 256)
+          (final_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (layers): ModuleList(
+            (0-7): 8 x FullyShardedDataParallel(
+              (_fsdp_wrapped_module): CheckpointWrapper(
+                (_checkpoint_wrapped_module): OPTDecoderLayer(
+                  (self_attn): OPTAttention(
+                    (k_proj): Linear(in_features=256, out_features=256, bias=True)
+                    (v_proj): Linear(in_features=256, out_features=256, bias=True)
+                    (q_proj): Linear(in_features=256, out_features=256, bias=True)
+                    (out_proj): Linear(in_features=256, out_features=256, bias=True)
+                  )
+                  (activation_fn): ReLU()
+                  (self_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+                  (fc1): Linear(in_features=256, out_features=1024, bias=True)
+                  (fc2): Linear(in_features=1024, out_features=256, bias=True)
+                  (final_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+                )
+              )
+            )
+          )
+        )
+      )
+      (lm_head): Linear(in_features=256, out_features=131, bias=False)
+    )
+  )
+)
+Loss: 4.809508323669434
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0431, -0.0175],
+        [-0.0150,  0.0090, -0.0199,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Epoch [0/100]; Iter [0/12800]; loss 4.8095; gen_loss 4.8095; LR 1.00e-06; Iter time 1.40s; ETA 4:57:42; Mem 4290.41MB
+Loss: 4.932173728942871
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0090, -0.0199,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 5.031808376312256
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0090, -0.0199,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 4.920366287231445
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0090, -0.0199,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 4.816051483154297
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0090, -0.0199,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 4.988270282745361
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0090, -0.0199,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 4.905907154083252
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0090, -0.0199,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 4.963059425354004
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0090, -0.0199,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 4.88218355178833
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0090, -0.0199,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 4.874852657318115
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0090, -0.0199,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 4.932605266571045
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0089, -0.0199,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Epoch [0/100]; Iter [10/12800]; loss 4.9247; gen_loss 4.9247; LR 1.99e-06; Iter time 0.53s; ETA 1:52:47; Mem 4290.41MB
+Loss: 4.872658729553223
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 4.950222015380859
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 4.858727931976318
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 4.861661911010742
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 4.907061576843262
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0002],
+        [ 0.0366, -0.0110, -0.0104, -0.0309, -0.0196]], device='cuda:0')
+Loss: 4.899861812591553
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.8330397605896
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0175],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.829042911529541
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.857235431671143
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.758286476135254
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Epoch [0/100]; Iter [20/12800]; loss 4.8628; gen_loss 4.8628; LR 2.98e-06; Iter time 0.53s; ETA 1:52:39; Mem 4290.41MB
+Loss: 4.974184036254883
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0131,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.856851100921631
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0132,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.628574848175049
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0132,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.907247543334961
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0132,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.770282745361328
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0132,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.706572532653809
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0132,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.945944786071777
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0132,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.632603168487549
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0132,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.589450836181641
+First 5 weights of embed_tokens: tensor([[ 0.0292, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0132,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.865379810333252
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0132,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0308, -0.0197]], device='cuda:0')
+Epoch [0/100]; Iter [30/12800]; loss 4.7877; gen_loss 4.7877; LR 3.97e-06; Iter time 0.53s; ETA 1:52:26; Mem 4290.41MB
+Loss: 4.662661075592041
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0007,  0.0045,  0.0080, -0.0041],
+        [ 0.0277,  0.0322, -0.0017,  0.0012,  0.0487],
+        [ 0.0250, -0.0132,  0.0052, -0.0430, -0.0176],
+        [-0.0150,  0.0089, -0.0200,  0.0130,  0.0001],
+        [ 0.0366, -0.0111, -0.0104, -0.0308, -0.0197]], device='cuda:0')
+Loss: 4.77130126953125
+First 5 weights of embed_tokens: tensor([[ 2.9251e-02, -7.4758e-04,  4.4654e-03,  8.0053e-03, -4.0803e-03],
+        [ 2.7711e-02,  3.2159e-02, -1.7406e-03,  1.1985e-03,  4.8672e-02],
+        [ 2.4964e-02, -1.3185e-02,  5.1746e-03, -4.2978e-02, -1.7594e-02],
+        [-1.5033e-02,  8.8845e-03, -1.9999e-02,  1.3028e-02,  9.7891e-05],
+        [ 3.6577e-02, -1.1103e-02, -1.0439e-02, -3.0844e-02, -1.9701e-02]],
+       device='cuda:0')
+Loss: 4.73277473449707
+First 5 weights of embed_tokens: tensor([[ 2.9252e-02, -7.4944e-04,  4.4642e-03,  8.0035e-03, -4.0788e-03],
+        [ 2.7709e-02,  3.2155e-02, -1.7415e-03,  1.2009e-03,  4.8669e-02],
+        [ 2.4961e-02, -1.3189e-02,  5.1720e-03, -4.2975e-02, -1.7597e-02],
+        [-1.5036e-02,  8.8806e-03, -2.0001e-02,  1.3031e-02,  9.4280e-05],
+        [ 3.6577e-02, -1.1106e-02, -1.0442e-02, -3.0842e-02, -1.9704e-02]],
+       device='cuda:0')
+Loss: 4.594331741333008
+First 5 weights of embed_tokens: tensor([[ 2.9254e-02, -7.5120e-04,  4.4629e-03,  8.0015e-03, -4.0768e-03],
+        [ 2.7706e-02,  3.2151e-02, -1.7423e-03,  1.2033e-03,  4.8666e-02],
+        [ 2.4957e-02, -1.3192e-02,  5.1696e-03, -4.2972e-02, -1.7600e-02],
+        [-1.5039e-02,  8.8766e-03, -2.0002e-02,  1.3034e-02,  9.0649e-05],
+        [ 3.6576e-02, -1.1109e-02, -1.0444e-02, -3.0840e-02, -1.9707e-02]],
+       device='cuda:0')
+Loss: 4.583138465881348
+First 5 weights of embed_tokens: tensor([[ 2.9255e-02, -7.5300e-04,  4.4617e-03,  7.9998e-03, -4.0750e-03],
+        [ 2.7703e-02,  3.2148e-02, -1.7432e-03,  1.2057e-03,  4.8663e-02],
+        [ 2.4953e-02, -1.3196e-02,  5.1672e-03, -4.2969e-02, -1.7603e-02],
+        [-1.5043e-02,  8.8725e-03, -2.0004e-02,  1.3038e-02,  8.7065e-05],
+        [ 3.6574e-02, -1.1113e-02, -1.0447e-02, -3.0837e-02, -1.9710e-02]],
+       device='cuda:0')
+Loss: 4.525669574737549
+First 5 weights of embed_tokens: tensor([[ 2.9255e-02, -7.5487e-04,  4.4606e-03,  7.9983e-03, -4.0734e-03],
+        [ 2.7699e-02,  3.2144e-02, -1.7440e-03,  1.2082e-03,  4.8660e-02],
+        [ 2.4948e-02, -1.3200e-02,  5.1649e-03, -4.2966e-02, -1.7606e-02],
+        [-1.5047e-02,  8.8683e-03, -2.0006e-02,  1.3041e-02,  8.3400e-05],
+        [ 3.6572e-02, -1.1117e-02, -1.0449e-02, -3.0835e-02, -1.9712e-02]],
+       device='cuda:0')
+Loss: 4.662109375
+First 5 weights of embed_tokens: tensor([[ 2.9256e-02, -7.5688e-04,  4.4579e-03,  7.9956e-03, -4.0708e-03],
+        [ 2.7695e-02,  3.2140e-02, -1.7448e-03,  1.2106e-03,  4.8656e-02],
+        [ 2.4944e-02, -1.3204e-02,  5.1626e-03, -4.2963e-02, -1.7610e-02],
+        [-1.5051e-02,  8.8640e-03, -2.0007e-02,  1.3044e-02,  7.9695e-05],
+        [ 3.6570e-02, -1.1120e-02, -1.0451e-02, -3.0833e-02, -1.9715e-02]],
+       device='cuda:0')
+Loss: 4.734846591949463
+First 5 weights of embed_tokens: tensor([[ 2.9257e-02, -7.5892e-04,  4.4555e-03,  7.9932e-03, -4.0685e-03],
+        [ 2.7691e-02,  3.2135e-02, -1.7455e-03,  1.2132e-03,  4.8653e-02],
+        [ 2.4939e-02, -1.3209e-02,  5.1607e-03, -4.2961e-02, -1.7613e-02],
+        [-1.5055e-02,  8.8596e-03, -2.0008e-02,  1.3047e-02,  7.5888e-05],
+        [ 3.6567e-02, -1.1124e-02, -1.0453e-02, -3.0830e-02, -1.9718e-02]],
+       device='cuda:0')
+Loss: 4.701282978057861
+First 5 weights of embed_tokens: tensor([[ 2.9258e-02, -7.6114e-04,  4.4532e-03,  7.9911e-03, -4.0665e-03],
+        [ 2.7686e-02,  3.2131e-02, -1.7463e-03,  1.2158e-03,  4.8649e-02],
+        [ 2.4933e-02, -1.3213e-02,  5.1586e-03, -4.2957e-02, -1.7616e-02],
+        [-1.5060e-02,  8.8549e-03, -2.0010e-02,  1.3050e-02,  7.2075e-05],
+        [ 3.6564e-02, -1.1129e-02, -1.0455e-02, -3.0828e-02, -1.9721e-02]],
+       device='cuda:0')
+Loss: 4.735190391540527
+First 5 weights of embed_tokens: tensor([[ 2.9258e-02, -7.6342e-04,  4.4511e-03,  7.9893e-03, -4.0646e-03],
+        [ 2.7681e-02,  3.2126e-02, -1.7469e-03,  1.2184e-03,  4.8646e-02],
+        [ 2.4927e-02, -1.3218e-02,  5.1570e-03, -4.2954e-02, -1.7620e-02],
+        [-1.5066e-02,  8.8502e-03, -2.0011e-02,  1.3053e-02,  6.8424e-05],
+        [ 3.6560e-02, -1.1133e-02, -1.0457e-02, -3.0825e-02, -1.9724e-02]],
+       device='cuda:0')
+Epoch [0/100]; Iter [40/12800]; loss 4.6703; gen_loss 4.6703; LR 4.96e-06; Iter time 0.53s; ETA 1:51:50; Mem 4290.41MB
+Loss: 4.678443908691406
+First 5 weights of embed_tokens: tensor([[ 2.9259e-02, -7.6565e-04,  4.4493e-03,  7.9876e-03, -4.0629e-03],
+        [ 2.7675e-02,  3.2121e-02, -1.7472e-03,  1.2210e-03,  4.8643e-02],
+        [ 2.4921e-02, -1.3222e-02,  5.1559e-03, -4.2951e-02, -1.7623e-02],
+        [-1.5072e-02,  8.8454e-03, -2.0011e-02,  1.3056e-02,  6.4846e-05],
+        [ 3.6556e-02, -1.1138e-02, -1.0458e-02, -3.0823e-02, -1.9727e-02]],
+       device='cuda:0')
+Loss: 4.244754791259766
+First 5 weights of embed_tokens: tensor([[ 2.9258e-02, -7.6797e-04,  4.4478e-03,  7.9862e-03, -4.0614e-03],
+        [ 2.7669e-02,  3.2117e-02, -1.7473e-03,  1.2236e-03,  4.8639e-02],
+        [ 2.4915e-02, -1.3227e-02,  5.1553e-03, -4.2948e-02, -1.7626e-02],
+        [-1.5078e-02,  8.8405e-03, -2.0011e-02,  1.3059e-02,  6.1373e-05],
+        [ 3.6551e-02, -1.1142e-02, -1.0458e-02, -3.0820e-02, -1.9730e-02]],
+       device='cuda:0')
+Loss: 4.75648307800293
+First 5 weights of embed_tokens: tensor([[ 2.9258e-02, -7.7033e-04,  4.4464e-03,  7.9849e-03, -4.0601e-03],
+        [ 2.7663e-02,  3.2112e-02, -1.7474e-03,  1.2262e-03,  4.8636e-02],
+        [ 2.4908e-02, -1.3232e-02,  5.1544e-03, -4.2945e-02, -1.7629e-02],
+        [-1.5084e-02,  8.8356e-03, -2.0011e-02,  1.3063e-02,  5.8071e-05],
+        [ 3.6546e-02, -1.1147e-02, -1.0459e-02, -3.0817e-02, -1.9733e-02]],
+       device='cuda:0')
+Loss: 4.7476606369018555
+First 5 weights of embed_tokens: tensor([[ 2.9258e-02, -7.7274e-04,  4.4451e-03,  7.9838e-03, -4.0589e-03],
+        [ 2.7657e-02,  3.2107e-02, -1.7474e-03,  1.2288e-03,  4.8633e-02],
+        [ 2.4901e-02, -1.3237e-02,  5.1540e-03, -4.2942e-02, -1.7632e-02],
+        [-1.5090e-02,  8.8305e-03, -2.0011e-02,  1.3066e-02,  5.4647e-05],
+        [ 3.6541e-02, -1.1152e-02, -1.0459e-02, -3.0815e-02, -1.9735e-02]],
+       device='cuda:0')
+Loss: 4.663111686706543
+First 5 weights of embed_tokens: tensor([[ 2.9257e-02, -7.7509e-04,  4.4442e-03,  7.9829e-03, -4.0579e-03],
+        [ 2.7650e-02,  3.2102e-02, -1.7469e-03,  1.2314e-03,  4.8630e-02],
+        [ 2.4894e-02, -1.3242e-02,  5.1544e-03, -4.2939e-02, -1.7635e-02],
+        [-1.5097e-02,  8.8255e-03, -2.0009e-02,  1.3069e-02,  5.1275e-05],
+        [ 3.6535e-02, -1.1157e-02, -1.0459e-02, -3.0812e-02, -1.9738e-02]],
+       device='cuda:0')
+Loss: 4.5094828605651855
+First 5 weights of embed_tokens: tensor([[ 2.9256e-02, -7.7747e-04,  4.4436e-03,  7.9820e-03, -4.0571e-03],
+        [ 2.7643e-02,  3.2096e-02, -1.7461e-03,  1.2338e-03,  4.8627e-02],
+        [ 2.4887e-02, -1.3247e-02,  5.1554e-03, -4.2936e-02, -1.7639e-02],
+        [-1.5105e-02,  8.8205e-03, -2.0007e-02,  1.3072e-02,  4.7719e-05],
+        [ 3.6529e-02, -1.1162e-02, -1.0458e-02, -3.0809e-02, -1.9741e-02]],
+       device='cuda:0')
+Loss: 4.610309600830078
+First 5 weights of embed_tokens: tensor([[ 2.9255e-02, -7.7995e-04,  4.4429e-03,  7.9813e-03, -4.0564e-03],
+        [ 2.7636e-02,  3.2091e-02, -1.7454e-03,  1.2362e-03,  4.8624e-02],
+        [ 2.4880e-02, -1.3252e-02,  5.1562e-03, -4.2933e-02, -1.7642e-02],
+        [-1.5111e-02,  8.8154e-03, -2.0006e-02,  1.3074e-02,  4.4298e-05],
+        [ 3.6523e-02, -1.1167e-02, -1.0457e-02, -3.0807e-02, -1.9744e-02]],
+       device='cuda:0')
+Loss: 4.61173152923584
+First 5 weights of embed_tokens: tensor([[ 2.9254e-02, -7.8255e-04,  4.4423e-03,  7.9807e-03, -4.0557e-03],
+        [ 2.7629e-02,  3.2086e-02, -1.7450e-03,  1.2387e-03,  4.8621e-02],
+        [ 2.4873e-02, -1.3257e-02,  5.1565e-03, -4.2930e-02, -1.7645e-02],
+        [-1.5118e-02,  8.8100e-03, -2.0005e-02,  1.3077e-02,  4.1032e-05],
+        [ 3.6517e-02, -1.1172e-02, -1.0457e-02, -3.0804e-02, -1.9747e-02]],
+       device='cuda:0')
+Loss: 4.737344741821289
+First 5 weights of embed_tokens: tensor([[ 2.9253e-02, -7.8513e-04,  4.4418e-03,  7.9803e-03, -4.0552e-03],
+        [ 2.7623e-02,  3.2080e-02, -1.7443e-03,  1.2411e-03,  4.8618e-02],
+        [ 2.4866e-02, -1.3262e-02,  5.1572e-03, -4.2928e-02, -1.7648e-02],
+        [-1.5125e-02,  8.8047e-03, -2.0003e-02,  1.3080e-02,  3.7882e-05],
+        [ 3.6512e-02, -1.1177e-02, -1.0456e-02, -3.0802e-02, -1.9750e-02]],
+       device='cuda:0')
+Loss: 4.9607062339782715
+First 5 weights of embed_tokens: tensor([[ 2.9251e-02, -7.8787e-04,  4.4413e-03,  7.9798e-03, -4.0548e-03],
+        [ 2.7616e-02,  3.2075e-02, -1.7438e-03,  1.2433e-03,  4.8615e-02],
+        [ 2.4859e-02, -1.3268e-02,  5.1576e-03, -4.2925e-02, -1.7651e-02],
+        [-1.5132e-02,  8.7993e-03, -2.0002e-02,  1.3083e-02,  3.4849e-05],
+        [ 3.6505e-02, -1.1183e-02, -1.0456e-02, -3.0799e-02, -1.9753e-02]],
+       device='cuda:0')
+Epoch [0/100]; Iter [50/12800]; loss 4.6520; gen_loss 4.6520; LR 5.95e-06; Iter time 0.54s; ETA 1:54:49; Mem 4290.41MB
+Loss: 4.479537487030029
+First 5 weights of embed_tokens: tensor([[ 2.9250e-02, -7.9059e-04,  4.4409e-03,  7.9795e-03, -4.0544e-03],
+        [ 2.7609e-02,  3.2069e-02, -1.7432e-03,  1.2456e-03,  4.8612e-02],
+        [ 2.4851e-02, -1.3273e-02,  5.1584e-03, -4.2922e-02, -1.7654e-02],
+        [-1.5139e-02,  8.7938e-03, -2.0000e-02,  1.3085e-02,  3.1899e-05],
+        [ 3.6499e-02, -1.1188e-02, -1.0455e-02, -3.0797e-02, -1.9755e-02]],
+       device='cuda:0')
+Loss: 4.755331993103027
+First 5 weights of embed_tokens: tensor([[ 2.9249e-02, -7.9206e-04,  4.4377e-03,  7.9793e-03, -4.0537e-03],
+        [ 2.7601e-02,  3.2064e-02, -1.7423e-03,  1.2478e-03,  4.8609e-02],
+        [ 2.4844e-02, -1.3279e-02,  5.1596e-03, -4.2919e-02, -1.7657e-02],
+        [-1.5147e-02,  8.7883e-03, -1.9998e-02,  1.3088e-02,  2.8850e-05],
+        [ 3.6492e-02, -1.1193e-02, -1.0453e-02, -3.0795e-02, -1.9758e-02]],
+       device='cuda:0')
+Loss: 4.609934329986572
+First 5 weights of embed_tokens: tensor([[ 2.9248e-02, -7.9369e-04,  4.4349e-03,  7.9790e-03, -4.0532e-03],
+        [ 2.7593e-02,  3.2058e-02, -1.7410e-03,  1.2498e-03,  4.8606e-02],
+        [ 2.4836e-02, -1.3284e-02,  5.1614e-03, -4.2917e-02, -1.7660e-02],
+        [-1.5155e-02,  8.7827e-03, -1.9996e-02,  1.3090e-02,  2.5838e-05],
+        [ 3.6486e-02, -1.1199e-02, -1.0451e-02, -3.0792e-02, -1.9761e-02]],
+       device='cuda:0')
+Loss: 4.634098052978516
+First 5 weights of embed_tokens: tensor([[ 2.9247e-02, -7.9536e-04,  4.4324e-03,  7.9788e-03, -4.0526e-03],
+        [ 2.7585e-02,  3.2052e-02, -1.7397e-03,  1.2516e-03,  4.8604e-02],
+        [ 2.4828e-02, -1.3290e-02,  5.1632e-03, -4.2915e-02, -1.7662e-02],
+        [-1.5162e-02,  8.7771e-03, -1.9993e-02,  1.3092e-02,  2.2930e-05],
+        [ 3.6479e-02, -1.1204e-02, -1.0450e-02, -3.0790e-02, -1.9763e-02]],
+       device='cuda:0')
+Loss: 4.886036396026611
+First 5 weights of embed_tokens: tensor([[ 2.9246e-02, -7.9720e-04,  4.4302e-03,  7.9786e-03, -4.0523e-03],
+        [ 2.7578e-02,  3.2046e-02, -1.7380e-03,  1.2534e-03,  4.8601e-02],
+        [ 2.4820e-02, -1.3295e-02,  5.1655e-03, -4.2913e-02, -1.7665e-02],
+        [-1.5170e-02,  8.7715e-03, -1.9990e-02,  1.3094e-02,  1.9841e-05],
+        [ 3.6472e-02, -1.1210e-02, -1.0447e-02, -3.0788e-02, -1.9766e-02]],
+       device='cuda:0')
+Loss: 4.853899955749512
+First 5 weights of embed_tokens: tensor([[ 2.9244e-02, -7.9903e-04,  4.4283e-03,  7.9785e-03, -4.0521e-03],
+        [ 2.7570e-02,  3.2041e-02, -1.7365e-03,  1.2553e-03,  4.8598e-02],
+        [ 2.4812e-02, -1.3301e-02,  5.1677e-03, -4.2910e-02, -1.7668e-02],
+        [-1.5178e-02,  8.7660e-03, -1.9987e-02,  1.3096e-02,  1.6854e-05],
+        [ 3.6465e-02, -1.1215e-02, -1.0445e-02, -3.0787e-02, -1.9769e-02]],
+       device='cuda:0')
+Loss: 4.027937412261963
+First 5 weights of embed_tokens: tensor([[ 2.9243e-02, -8.0094e-04,  4.4267e-03,  7.9784e-03, -4.0519e-03],
+        [ 2.7562e-02,  3.2035e-02, -1.7347e-03,  1.2570e-03,  4.8595e-02],
+        [ 2.4803e-02, -1.3306e-02,  5.1703e-03, -4.2908e-02, -1.7671e-02],
+        [-1.5186e-02,  8.7606e-03, -1.9984e-02,  1.3098e-02,  1.3904e-05],
+        [ 3.6458e-02, -1.1220e-02, -1.0443e-02, -3.0785e-02, -1.9771e-02]],
+       device='cuda:0')
+Loss: 4.404093265533447
+First 5 weights of embed_tokens: tensor([[ 2.9241e-02, -8.0282e-04,  4.4252e-03,  7.9784e-03, -4.0518e-03],
+        [ 2.7554e-02,  3.2030e-02, -1.7328e-03,  1.2588e-03,  4.8592e-02],
+        [ 2.4795e-02, -1.3312e-02,  5.1731e-03, -4.2906e-02, -1.7674e-02],
+        [-1.5194e-02,  8.7553e-03, -1.9980e-02,  1.3100e-02,  1.0981e-05],
+        [ 3.6450e-02, -1.1225e-02, -1.0440e-02, -3.0783e-02, -1.9774e-02]],
+       device='cuda:0')
+Loss: 4.450676441192627
+First 5 weights of embed_tokens: tensor([[ 2.9239e-02, -8.0481e-04,  4.4241e-03,  7.9785e-03, -4.0518e-03],
+        [ 2.7546e-02,  3.2024e-02, -1.7305e-03,  1.2605e-03,  4.8589e-02],
+        [ 2.4787e-02, -1.3317e-02,  5.1764e-03, -4.2904e-02, -1.7677e-02],
+        [-1.5202e-02,  8.7500e-03, -1.9976e-02,  1.3102e-02,  8.1404e-06],
+        [ 3.6443e-02, -1.1231e-02, -1.0437e-02, -3.0781e-02, -1.9777e-02]],
+       device='cuda:0')
+Loss: 4.708479404449463
+First 5 weights of embed_tokens: tensor([[ 2.9237e-02, -8.0679e-04,  4.4233e-03,  7.9786e-03, -4.0519e-03],
+        [ 2.7537e-02,  3.2019e-02, -1.7280e-03,  1.2622e-03,  4.8586e-02],
+        [ 2.4778e-02, -1.3322e-02,  5.1802e-03, -4.2902e-02, -1.7680e-02],
+        [-1.5210e-02,  8.7447e-03, -1.9972e-02,  1.3104e-02,  5.3271e-06],
+        [ 3.6436e-02, -1.1236e-02, -1.0433e-02, -3.0779e-02, -1.9779e-02]],
+       device='cuda:0')
+Epoch [0/100]; Iter [60/12800]; loss 4.5810; gen_loss 4.5810; LR 6.94e-06; Iter time 0.54s; ETA 1:54:59; Mem 4290.41MB
+Loss: 4.811993598937988
+First 5 weights of embed_tokens: tensor([[ 2.9235e-02, -8.0903e-04,  4.4227e-03,  7.9787e-03, -4.0520e-03],
+        [ 2.7529e-02,  3.2013e-02, -1.7255e-03,  1.2639e-03,  4.8584e-02],
+        [ 2.4770e-02, -1.3328e-02,  5.1839e-03, -4.2900e-02, -1.7682e-02],
+        [-1.5218e-02,  8.7392e-03, -1.9968e-02,  1.3106e-02,  2.7013e-06],
+        [ 3.6428e-02, -1.1241e-02, -1.0430e-02, -3.0777e-02, -1.9782e-02]],
+       device='cuda:0')
+Loss: 4.774097919464111
+First 5 weights of embed_tokens: tensor([[ 2.9232e-02, -8.1127e-04,  4.4223e-03,  7.9788e-03, -4.0521e-03],
+        [ 2.7520e-02,  3.2007e-02, -1.7227e-03,  1.2654e-03,  4.8581e-02],
+        [ 2.4761e-02, -1.3334e-02,  5.1881e-03, -4.2898e-02, -1.7685e-02],
+        [-1.5226e-02,  8.7338e-03, -1.9963e-02,  1.3107e-02,  7.4846e-08],
+        [ 3.6421e-02, -1.1246e-02, -1.0426e-02, -3.0776e-02, -1.9784e-02]],
+       device='cuda:0')
+Loss: 4.670483112335205
+First 5 weights of embed_tokens: tensor([[ 2.9230e-02, -8.1360e-04,  4.4221e-03,  7.9788e-03, -4.0523e-03],
+        [ 2.7512e-02,  3.2001e-02, -1.7196e-03,  1.2667e-03,  4.8578e-02],
+        [ 2.4753e-02, -1.3340e-02,  5.1927e-03, -4.2896e-02, -1.7688e-02],
+        [-1.5235e-02,  8.7284e-03, -1.9958e-02,  1.3109e-02, -2.5536e-06],
+        [ 3.6413e-02, -1.1252e-02, -1.0422e-02, -3.0774e-02, -1.9787e-02]],
+       device='cuda:0')
+Loss: 4.573501110076904
+First 5 weights of embed_tokens: tensor([[ 2.9227e-02, -8.1596e-04,  4.4223e-03,  7.9788e-03, -4.0525e-03],
+        [ 2.7504e-02,  3.1996e-02, -1.7161e-03,  1.2677e-03,  4.8576e-02],
+        [ 2.4744e-02, -1.3345e-02,  5.1978e-03, -4.2895e-02, -1.7690e-02],
+        [-1.5243e-02,  8.7230e-03, -1.9952e-02,  1.3110e-02, -5.0191e-06],
+        [ 3.6406e-02, -1.1257e-02, -1.0417e-02, -3.0773e-02, -1.9789e-02]],
+       device='cuda:0')
+Loss: 4.464378356933594
+First 5 weights of embed_tokens: tensor([[ 2.9225e-02, -8.1838e-04,  4.4225e-03,  7.9788e-03, -4.0526e-03],
+        [ 2.7495e-02,  3.1990e-02, -1.7125e-03,  1.2686e-03,  4.8574e-02],
+        [ 2.4736e-02, -1.3351e-02,  5.2031e-03, -4.2894e-02, -1.7692e-02],
+        [-1.5251e-02,  8.7174e-03, -1.9946e-02,  1.3111e-02, -7.0700e-06],
+        [ 3.6398e-02, -1.1262e-02, -1.0412e-02, -3.0772e-02, -1.9791e-02]],
+       device='cuda:0')
+Loss: 4.4415507316589355
+First 5 weights of embed_tokens: tensor([[ 2.9222e-02, -8.2090e-04,  4.4229e-03,  7.9787e-03, -4.0527e-03],
+        [ 2.7486e-02,  3.1984e-02, -1.7089e-03,  1.2694e-03,  4.8572e-02],
+        [ 2.4727e-02, -1.3357e-02,  5.2083e-03, -4.2893e-02, -1.7694e-02],
+        [-1.5259e-02,  8.7118e-03, -1.9941e-02,  1.3111e-02, -8.9868e-06],
+        [ 3.6391e-02, -1.1268e-02, -1.0407e-02, -3.0771e-02, -1.9792e-02]],
+       device='cuda:0')
+Loss: 4.308470726013184
+First 5 weights of embed_tokens: tensor([[ 2.9219e-02, -8.2343e-04,  4.4236e-03,  7.9786e-03, -4.0528e-03],
+        [ 2.7477e-02,  3.1978e-02, -1.7050e-03,  1.2699e-03,  4.8570e-02],
+        [ 2.4718e-02, -1.3363e-02,  5.2141e-03, -4.2892e-02, -1.7696e-02],
+        [-1.5268e-02,  8.7063e-03, -1.9934e-02,  1.3112e-02, -1.0747e-05],
+        [ 3.6383e-02, -1.1273e-02, -1.0402e-02, -3.0770e-02, -1.9794e-02]],
+       device='cuda:0')
+Loss: 4.52618932723999
+First 5 weights of embed_tokens: tensor([[ 2.9216e-02, -8.2579e-04,  4.4245e-03,  7.9783e-03, -4.0529e-03],
+        [ 2.7468e-02,  3.1972e-02, -1.7007e-03,  1.2701e-03,  4.8568e-02],
+        [ 2.4709e-02, -1.3368e-02,  5.2204e-03, -4.2892e-02, -1.7697e-02],
+        [-1.5276e-02,  8.7012e-03, -1.9927e-02,  1.3112e-02, -1.2208e-05],
+        [ 3.6375e-02, -1.1278e-02, -1.0396e-02, -3.0770e-02, -1.9795e-02]],
+       device='cuda:0')
+Loss: 4.589853286743164
+First 5 weights of embed_tokens: tensor([[ 2.9213e-02, -8.2788e-04,  4.4256e-03,  7.9779e-03, -4.0529e-03],
+        [ 2.7459e-02,  3.1967e-02, -1.6961e-03,  1.2699e-03,  4.8567e-02],
+        [ 2.4700e-02, -1.3373e-02,  5.2271e-03, -4.2892e-02, -1.7698e-02],
+        [-1.5285e-02,  8.6966e-03, -1.9920e-02,  1.3112e-02, -1.3531e-05],
+        [ 3.6367e-02, -1.1283e-02, -1.0390e-02, -3.0770e-02, -1.9796e-02]],
+       device='cuda:0')
+Loss: 4.554042339324951
+First 5 weights of embed_tokens: tensor([[ 2.9210e-02, -8.2987e-04,  4.4268e-03,  7.9774e-03, -4.0529e-03],
+        [ 2.7450e-02,  3.1962e-02, -1.6913e-03,  1.2693e-03,  4.8566e-02],
+        [ 2.4690e-02, -1.3378e-02,  5.2341e-03, -4.2892e-02, -1.7699e-02],
+        [-1.5294e-02,  8.6923e-03, -1.9913e-02,  1.3111e-02, -1.4536e-05],
+        [ 3.6359e-02, -1.1287e-02, -1.0384e-02, -3.0770e-02, -1.9797e-02]],
+       device='cuda:0')
+Epoch [0/100]; Iter [70/12800]; loss 4.5715; gen_loss 4.5715; LR 7.93e-06; Iter time 0.54s; ETA 1:54:30; Mem 4290.41MB
+Loss: 4.5142645835876465
+First 5 weights of embed_tokens: tensor([[ 2.9207e-02, -8.3182e-04,  4.4283e-03,  7.9767e-03, -4.0528e-03],
+        [ 2.7440e-02,  3.1957e-02, -1.6861e-03,  1.2682e-03,  4.8566e-02],
+        [ 2.4681e-02, -1.3382e-02,  5.2415e-03, -4.2893e-02, -1.7700e-02],
+        [-1.5303e-02,  8.6881e-03, -1.9905e-02,  1.3110e-02, -1.5242e-05],
+        [ 3.6350e-02, -1.1291e-02, -1.0377e-02, -3.0771e-02, -1.9798e-02]],
+       device='cuda:0')
+Loss: 4.621968746185303
+First 5 weights of embed_tokens: tensor([[ 2.9203e-02, -8.3381e-04,  4.4301e-03,  7.9758e-03, -4.0527e-03],
+        [ 2.7430e-02,  3.1952e-02, -1.6802e-03,  1.2667e-03,  4.8565e-02],
+        [ 2.4671e-02, -1.3387e-02,  5.2496e-03, -4.2894e-02, -1.7700e-02],
+        [-1.5313e-02,  8.6839e-03, -1.9896e-02,  1.3109e-02, -1.5804e-05],
+        [ 3.6341e-02, -1.1295e-02, -1.0369e-02, -3.0772e-02, -1.9798e-02]],
+       device='cuda:0')
+Loss: 4.251902103424072
+First 5 weights of embed_tokens: tensor([[ 2.9199e-02, -8.3582e-04,  4.4318e-03,  7.9749e-03, -4.0525e-03],
+        [ 2.7420e-02,  3.1948e-02, -1.6748e-03,  1.2650e-03,  4.8565e-02],
+        [ 2.4661e-02, -1.3391e-02,  5.2571e-03, -4.2896e-02, -1.7700e-02],
+        [-1.5322e-02,  8.6797e-03, -1.9888e-02,  1.3107e-02, -1.6150e-05],
+        [ 3.6332e-02, -1.1299e-02, -1.0362e-02, -3.0774e-02, -1.9798e-02]],
+       device='cuda:0')
+Loss: 4.484422206878662
+First 5 weights of embed_tokens: tensor([[ 2.9196e-02, -8.3798e-04,  4.4335e-03,  7.9739e-03, -4.0523e-03],
+        [ 2.7410e-02,  3.1942e-02, -1.6693e-03,  1.2632e-03,  4.8565e-02],
+        [ 2.4651e-02, -1.3396e-02,  5.2647e-03, -4.2897e-02, -1.7700e-02],
+        [-1.5332e-02,  8.6753e-03, -1.9880e-02,  1.3105e-02, -1.6216e-05],
+        [ 3.6323e-02, -1.1304e-02, -1.0355e-02, -3.0775e-02, -1.9798e-02]],
+       device='cuda:0')
+Loss: 4.396798133850098
+First 5 weights of embed_tokens: tensor([[ 2.9192e-02, -8.4030e-04,  4.4352e-03,  7.9730e-03, -4.0520e-03],
+        [ 2.7399e-02,  3.1937e-02, -1.6643e-03,  1.2613e-03,  4.8565e-02],
+        [ 2.4640e-02, -1.3401e-02,  5.2717e-03, -4.2899e-02, -1.7699e-02],
+        [-1.5342e-02,  8.6707e-03, -1.9873e-02,  1.3103e-02, -1.5997e-05],
+        [ 3.6314e-02, -1.1308e-02, -1.0349e-02, -3.0777e-02, -1.9798e-02]],
+       device='cuda:0')
+Loss: 4.528974533081055
+First 5 weights of embed_tokens: tensor([[ 2.9188e-02, -8.4255e-04,  4.4369e-03,  7.9719e-03, -4.0517e-03],
+        [ 2.7388e-02,  3.1932e-02, -1.6590e-03,  1.2591e-03,  4.8566e-02],
+        [ 2.4630e-02, -1.3406e-02,  5.2790e-03, -4.2901e-02, -1.7699e-02],
+        [-1.5352e-02,  8.6663e-03, -1.9865e-02,  1.3101e-02, -1.5687e-05],
+        [ 3.6305e-02, -1.1313e-02, -1.0342e-02, -3.0778e-02, -1.9797e-02]],
+       device='cuda:0')
+Loss: 4.5632171630859375
+First 5 weights of embed_tokens: tensor([[ 2.9184e-02, -8.4476e-04,  4.4385e-03,  7.9709e-03, -4.0514e-03],
+        [ 2.7378e-02,  3.1927e-02, -1.6544e-03,  1.2570e-03,  4.8566e-02],
+        [ 2.4620e-02, -1.3411e-02,  5.2854e-03, -4.2903e-02, -1.7698e-02],
+        [-1.5362e-02,  8.6619e-03, -1.9858e-02,  1.3099e-02, -1.5240e-05],
+        [ 3.6296e-02, -1.1317e-02, -1.0336e-02, -3.0780e-02, -1.9797e-02]],
+       device='cuda:0')
+Loss: 4.440563201904297
+First 5 weights of embed_tokens: tensor([[ 2.9180e-02, -8.4708e-04,  4.4400e-03,  7.9697e-03, -4.0509e-03],
+        [ 2.7367e-02,  3.1921e-02, -1.6499e-03,  1.2545e-03,  4.8567e-02],
+        [ 2.4609e-02, -1.3416e-02,  5.2915e-03, -4.2906e-02, -1.7696e-02],
+        [-1.5371e-02,  8.6574e-03, -1.9852e-02,  1.3097e-02, -1.4457e-05],
+        [ 3.6287e-02, -1.1322e-02, -1.0330e-02, -3.0782e-02, -1.9796e-02]],
+       device='cuda:0')
+Loss: 4.479154109954834
+First 5 weights of embed_tokens: tensor([[ 2.9175e-02, -8.4928e-04,  4.4417e-03,  7.9685e-03, -4.0504e-03],
+        [ 2.7357e-02,  3.1916e-02, -1.6451e-03,  1.2517e-03,  4.8569e-02],
+        [ 2.4599e-02, -1.3421e-02,  5.2980e-03, -4.2908e-02, -1.7695e-02],
+        [-1.5381e-02,  8.6531e-03, -1.9845e-02,  1.3094e-02, -1.3395e-05],
+        [ 3.6277e-02, -1.1326e-02, -1.0324e-02, -3.0785e-02, -1.9795e-02]],
+       device='cuda:0')
+Loss: 4.723275184631348
+First 5 weights of embed_tokens: tensor([[ 2.9171e-02, -8.5161e-04,  4.4436e-03,  7.9670e-03, -4.0499e-03],
+        [ 2.7346e-02,  3.1910e-02, -1.6398e-03,  1.2484e-03,  4.8570e-02],
+        [ 2.4588e-02, -1.3426e-02,  5.3051e-03, -4.2911e-02, -1.7693e-02],
+        [-1.5391e-02,  8.6486e-03, -1.9837e-02,  1.3091e-02, -1.2311e-05],
+        [ 3.6267e-02, -1.1331e-02, -1.0317e-02, -3.0787e-02, -1.9793e-02]],
+       device='cuda:0')
+Epoch [0/100]; Iter [80/12800]; loss 4.5005; gen_loss 4.5005; LR 8.92e-06; Iter time 0.55s; ETA 1:55:33; Mem 4290.41MB
+Loss: 4.618912220001221
+First 5 weights of embed_tokens: tensor([[ 2.9170e-02, -8.5190e-04,  4.4429e-03,  7.9649e-03, -4.0498e-03],
+        [ 2.7335e-02,  3.1905e-02, -1.6343e-03,  1.2450e-03,  4.8572e-02],
+        [ 2.4578e-02, -1.3431e-02,  5.3123e-03, -4.2915e-02, -1.7691e-02],
+        [-1.5401e-02,  8.6442e-03, -1.9830e-02,  1.3088e-02, -1.1036e-05],
+        [ 3.6258e-02, -1.1335e-02, -1.0310e-02, -3.0790e-02, -1.9792e-02]],
+       device='cuda:0')
+Loss: 4.451137542724609
+First 5 weights of embed_tokens: tensor([[ 2.9174e-02, -8.5186e-04,  4.4373e-03,  7.9632e-03, -4.0519e-03],
+        [ 2.7324e-02,  3.1899e-02, -1.6289e-03,  1.2415e-03,  4.8574e-02],
+        [ 2.4567e-02, -1.3437e-02,  5.3197e-03, -4.2918e-02, -1.7689e-02],
+        [-1.5411e-02,  8.6396e-03, -1.9822e-02,  1.3085e-02, -9.5841e-06],
+        [ 3.6248e-02, -1.1340e-02, -1.0303e-02, -3.0793e-02, -1.9790e-02]],
+       device='cuda:0')
+Loss: 4.706991195678711
+First 5 weights of embed_tokens: tensor([[ 2.9177e-02, -8.5216e-04,  4.4322e-03,  7.9612e-03, -4.0536e-03],
+        [ 2.7313e-02,  3.1894e-02, -1.6238e-03,  1.2375e-03,  4.8576e-02],
+        [ 2.4557e-02, -1.3442e-02,  5.3264e-03, -4.2922e-02, -1.7686e-02],
+        [-1.5420e-02,  8.6348e-03, -1.9816e-02,  1.3081e-02, -7.5796e-06],
+        [ 3.6239e-02, -1.1345e-02, -1.0297e-02, -3.0797e-02, -1.9788e-02]],
+       device='cuda:0')
+Loss: 4.476479530334473
+First 5 weights of embed_tokens: tensor([[ 2.9179e-02, -8.5264e-04,  4.4276e-03,  7.9592e-03, -4.0551e-03],
+        [ 2.7302e-02,  3.1888e-02, -1.6189e-03,  1.2333e-03,  4.8579e-02],
+        [ 2.4546e-02, -1.3448e-02,  5.3330e-03, -4.2926e-02, -1.7683e-02],
+        [-1.5430e-02,  8.6301e-03, -1.9809e-02,  1.3077e-02, -5.4262e-06],
+        [ 3.6229e-02, -1.1350e-02, -1.0290e-02, -3.0801e-02, -1.9786e-02]],
+       device='cuda:0')
+Loss: 4.57928991317749
+First 5 weights of embed_tokens: tensor([[ 2.9187e-02, -8.4919e-04,  4.4186e-03,  7.9609e-03, -4.0556e-03],
+        [ 2.7292e-02,  3.1882e-02, -1.6141e-03,  1.2293e-03,  4.8581e-02],
+        [ 2.4536e-02, -1.3453e-02,  5.3393e-03, -4.2930e-02, -1.7680e-02],
+        [-1.5440e-02,  8.6257e-03, -1.9802e-02,  1.3074e-02, -3.4249e-06],
+        [ 3.6220e-02, -1.1355e-02, -1.0284e-02, -3.0804e-02, -1.9783e-02]],
+       device='cuda:0')
+Loss: 4.7425665855407715
+First 5 weights of embed_tokens: tensor([[ 2.9193e-02, -8.4627e-04,  4.4106e-03,  7.9621e-03, -4.0560e-03],
+        [ 2.7281e-02,  3.1877e-02, -1.6090e-03,  1.2248e-03,  4.8584e-02],
+        [ 2.4525e-02, -1.3458e-02,  5.3462e-03, -4.2935e-02, -1.7677e-02],
+        [-1.5449e-02,  8.6211e-03, -1.9795e-02,  1.3069e-02, -1.1705e-06],
+        [ 3.6210e-02, -1.1359e-02, -1.0278e-02, -3.0808e-02, -1.9781e-02]],
+       device='cuda:0')
+Loss: 4.536958694458008
+First 5 weights of embed_tokens: tensor([[ 2.9199e-02, -8.4394e-04,  4.4033e-03,  7.9630e-03, -4.0562e-03],
+        [ 2.7271e-02,  3.1871e-02, -1.6038e-03,  1.2203e-03,  4.8587e-02],
+        [ 2.4515e-02, -1.3464e-02,  5.3532e-03, -4.2939e-02, -1.7674e-02],
+        [-1.5459e-02,  8.6164e-03, -1.9788e-02,  1.3065e-02,  1.3163e-06],
+        [ 3.6200e-02, -1.1365e-02, -1.0271e-02, -3.0812e-02, -1.9778e-02]],
+       device='cuda:0')
+Loss: 4.7037763595581055
+First 5 weights of embed_tokens: tensor([[ 2.9206e-02, -8.3997e-04,  4.3949e-03,  7.9635e-03, -4.0544e-03],
+        [ 2.7263e-02,  3.1866e-02, -1.6047e-03,  1.2155e-03,  4.8593e-02],
+        [ 2.4504e-02, -1.3469e-02,  5.3606e-03, -4.2944e-02, -1.7670e-02],
+        [-1.5458e-02,  8.6125e-03, -1.9793e-02,  1.3062e-02,  9.6470e-06],
+        [ 3.6191e-02, -1.1370e-02, -1.0264e-02, -3.0816e-02, -1.9775e-02]],
+       device='cuda:0')
+Loss: 4.863546371459961
+First 5 weights of embed_tokens: tensor([[ 2.9212e-02, -8.3650e-04,  4.3874e-03,  7.9637e-03, -4.0525e-03],
+        [ 2.7255e-02,  3.1862e-02, -1.6049e-03,  1.2101e-03,  4.8599e-02],
+        [ 2.4493e-02, -1.3475e-02,  5.3680e-03, -4.2950e-02, -1.7667e-02],
+        [-1.5458e-02,  8.6086e-03, -1.9798e-02,  1.3058e-02,  1.7610e-05],
+        [ 3.6180e-02, -1.1375e-02, -1.0257e-02, -3.0821e-02, -1.9772e-02]],
+       device='cuda:0')
+Loss: 4.040024280548096
+First 5 weights of embed_tokens: tensor([[ 2.9219e-02, -8.3404e-04,  4.3782e-03,  7.9661e-03, -4.0510e-03],
+        [ 2.7247e-02,  3.1858e-02, -1.6050e-03,  1.2049e-03,  4.8606e-02],
+        [ 2.4483e-02, -1.3480e-02,  5.3739e-03, -4.2955e-02, -1.7662e-02],
+        [-1.5458e-02,  8.6050e-03, -1.9802e-02,  1.3055e-02,  2.5020e-05],
+        [ 3.6171e-02, -1.1379e-02, -1.0250e-02, -3.0826e-02, -1.9768e-02]],
+       device='cuda:0')
+Epoch [0/100]; Iter [90/12800]; loss 4.5720; gen_loss 4.5720; LR 9.91e-06; Iter time 0.56s; ETA 1:58:24; Mem 4290.41MB
+Loss: 4.622303009033203
+First 5 weights of embed_tokens: tensor([[ 2.9226e-02, -8.3182e-04,  4.3700e-03,  7.9682e-03, -4.0497e-03],
+        [ 2.7239e-02,  3.1854e-02, -1.6046e-03,  1.1999e-03,  4.8611e-02],
+        [ 2.4473e-02, -1.3485e-02,  5.3801e-03, -4.2960e-02, -1.7659e-02],
+        [-1.5459e-02,  8.6015e-03, -1.9806e-02,  1.3051e-02,  3.1834e-05],
+        [ 3.6161e-02, -1.1384e-02, -1.0243e-02, -3.0830e-02, -1.9765e-02]],
+       device='cuda:0')
+Loss: 4.248353004455566
+First 5 weights of embed_tokens: tensor([[ 2.9232e-02, -8.3002e-04,  4.3626e-03,  7.9697e-03, -4.0481e-03],
+        [ 2.7229e-02,  3.1850e-02, -1.6036e-03,  1.1940e-03,  4.8617e-02],
+        [ 2.4463e-02, -1.3490e-02,  5.3868e-03, -4.2966e-02, -1.7654e-02],
+        [-1.5461e-02,  8.5979e-03, -1.9809e-02,  1.3047e-02,  3.8629e-05],
+        [ 3.6150e-02, -1.1388e-02, -1.0236e-02, -3.0835e-02, -1.9762e-02]],
+       device='cuda:0')
+Loss: 4.11556339263916
+First 5 weights of embed_tokens: tensor([[ 2.9241e-02, -8.2973e-04,  4.3518e-03,  7.9764e-03, -4.0515e-03],
+        [ 2.7220e-02,  3.1845e-02, -1.6022e-03,  1.1879e-03,  4.8624e-02],
+        [ 2.4452e-02, -1.3495e-02,  5.3934e-03, -4.2972e-02, -1.7649e-02],
+        [-1.5463e-02,  8.5945e-03, -1.9811e-02,  1.3043e-02,  4.5077e-05],
+        [ 3.6140e-02, -1.1392e-02, -1.0228e-02, -3.0841e-02, -1.9758e-02]],
+       device='cuda:0')
+Loss: 4.48667573928833
+First 5 weights of embed_tokens: tensor([[ 2.9249e-02, -8.2968e-04,  4.3420e-03,  7.9824e-03, -4.0544e-03],
+        [ 2.7210e-02,  3.1841e-02, -1.6007e-03,  1.1818e-03,  4.8630e-02],
+        [ 2.4442e-02, -1.3500e-02,  5.3999e-03, -4.2978e-02, -1.7644e-02],
+        [-1.5466e-02,  8.5909e-03, -1.9813e-02,  1.3038e-02,  5.1250e-05],
+        [ 3.6130e-02, -1.1397e-02, -1.0221e-02, -3.0846e-02, -1.9754e-02]],
+       device='cuda:0')
+Loss: 4.061042308807373
+First 5 weights of embed_tokens: tensor([[ 2.9257e-02, -8.2985e-04,  4.3331e-03,  7.9877e-03, -4.0570e-03],
+        [ 2.7201e-02,  3.1836e-02, -1.5989e-03,  1.1760e-03,  4.8635e-02],
+        [ 2.4431e-02, -1.3505e-02,  5.4065e-03, -4.2984e-02, -1.7639e-02],
+        [-1.5469e-02,  8.5874e-03, -1.9815e-02,  1.3034e-02,  5.6939e-05],
+        [ 3.6120e-02, -1.1401e-02, -1.0214e-02, -3.0851e-02, -1.9750e-02]],
+       device='cuda:0')
+Loss: 4.497866153717041
+First 5 weights of embed_tokens: tensor([[ 2.9264e-02, -8.3013e-04,  4.3251e-03,  7.9923e-03, -4.0593e-03],
+        [ 2.7191e-02,  3.1832e-02, -1.5965e-03,  1.1699e-03,  4.8641e-02],
+        [ 2.4421e-02, -1.3510e-02,  5.4136e-03, -4.2990e-02, -1.7634e-02],
+        [-1.5472e-02,  8.5839e-03, -1.9816e-02,  1.3029e-02,  6.2381e-05],
+        [ 3.6110e-02, -1.1405e-02, -1.0207e-02, -3.0856e-02, -1.9746e-02]],
+       device='cuda:0')
+Loss: 4.2429280281066895
+First 5 weights of embed_tokens: tensor([[ 2.9269e-02, -8.3059e-04,  4.3180e-03,  7.9961e-03, -4.0611e-03],
+        [ 2.7181e-02,  3.1827e-02, -1.5938e-03,  1.1629e-03,  4.8647e-02],
+        [ 2.4410e-02, -1.3515e-02,  5.4209e-03, -4.2996e-02, -1.7629e-02],
+        [-1.5476e-02,  8.5803e-03, -1.9816e-02,  1.3024e-02,  6.7916e-05],
+        [ 3.6099e-02, -1.1409e-02, -1.0200e-02, -3.0862e-02, -1.9742e-02]],
+       device='cuda:0')
+Loss: 4.403474807739258
+First 5 weights of embed_tokens: tensor([[ 2.9274e-02, -8.3132e-04,  4.3115e-03,  7.9990e-03, -4.0622e-03],
+        [ 2.7169e-02,  3.1822e-02, -1.5908e-03,  1.1550e-03,  4.8655e-02],
+        [ 2.4398e-02, -1.3520e-02,  5.4282e-03, -4.3004e-02, -1.7622e-02],
+        [-1.5480e-02,  8.5766e-03, -1.9817e-02,  1.3017e-02,  7.3718e-05],
+        [ 3.6088e-02, -1.1414e-02, -1.0192e-02, -3.0869e-02, -1.9736e-02]],
+       device='cuda:0')
+Loss: 4.228670120239258
+First 5 weights of embed_tokens: tensor([[ 2.9278e-02, -8.3249e-04,  4.3058e-03,  8.0012e-03, -4.0630e-03],
+        [ 2.7157e-02,  3.1816e-02, -1.5876e-03,  1.1466e-03,  4.8662e-02],
+        [ 2.4386e-02, -1.3525e-02,  5.4357e-03, -4.3012e-02, -1.7615e-02],
+        [-1.5486e-02,  8.5724e-03, -1.9817e-02,  1.3011e-02,  7.9446e-05],
+        [ 3.6077e-02, -1.1418e-02, -1.0185e-02, -3.0876e-02, -1.9731e-02]],
+       device='cuda:0')
+Loss: 4.376423358917236
+First 5 weights of embed_tokens: tensor([[ 2.9281e-02, -8.3386e-04,  4.3008e-03,  8.0030e-03, -4.0636e-03],
+        [ 2.7144e-02,  3.1811e-02, -1.5835e-03,  1.1381e-03,  4.8669e-02],
+        [ 2.4374e-02, -1.3531e-02,  5.4441e-03, -4.3020e-02, -1.7609e-02],
+        [-1.5491e-02,  8.5681e-03, -1.9816e-02,  1.3004e-02,  8.4801e-05],
+        [ 3.6065e-02, -1.1423e-02, -1.0177e-02, -3.0883e-02, -1.9725e-02]],
+       device='cuda:0')
+Epoch [0/100]; Iter [100/12800]; loss 4.3283; gen_loss 4.3283; LR 1.09e-05; Iter time 0.56s; ETA 1:58:17; Mem 4290.41MB
+Loss: 4.398118495941162
+First 5 weights of embed_tokens: tensor([[ 2.9284e-02, -8.3535e-04,  4.2964e-03,  8.0043e-03, -4.0640e-03],
+        [ 2.7132e-02,  3.1805e-02, -1.5789e-03,  1.1296e-03,  4.8676e-02],
+        [ 2.4362e-02, -1.3536e-02,  5.4530e-03, -4.3029e-02, -1.7602e-02],
+        [-1.5496e-02,  8.5640e-03, -1.9815e-02,  1.2998e-02,  8.9982e-05],
+        [ 3.6054e-02, -1.1428e-02, -1.0168e-02, -3.0890e-02, -1.9720e-02]],
+       device='cuda:0')
+Loss: 4.319310188293457
+First 5 weights of embed_tokens: tensor([[ 2.9286e-02, -8.3706e-04,  4.2928e-03,  8.0047e-03, -4.0642e-03],
+        [ 2.7119e-02,  3.1799e-02, -1.5734e-03,  1.1201e-03,  4.8683e-02],
+        [ 2.4349e-02, -1.3542e-02,  5.4629e-03, -4.3038e-02, -1.7595e-02],
+        [-1.5503e-02,  8.5596e-03, -1.9814e-02,  1.2990e-02,  9.4986e-05],
+        [ 3.6042e-02, -1.1433e-02, -1.0159e-02, -3.0898e-02, -1.9714e-02]],
+       device='cuda:0')
+Loss: 4.5844855308532715
+First 5 weights of embed_tokens: tensor([[ 2.9287e-02, -8.3848e-04,  4.2897e-03,  8.0047e-03, -4.0642e-03],
+        [ 2.7106e-02,  3.1794e-02, -1.5675e-03,  1.1105e-03,  4.8690e-02],
+        [ 2.4336e-02, -1.3546e-02,  5.4733e-03, -4.3047e-02, -1.7589e-02],
+        [-1.5509e-02,  8.5559e-03, -1.9812e-02,  1.2983e-02,  9.9821e-05],
+        [ 3.6031e-02, -1.1437e-02, -1.0149e-02, -3.0906e-02, -1.9709e-02]],
+       device='cuda:0')
+Loss: 4.2854228019714355
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0043,  0.0080, -0.0041],
+        [ 0.0271,  0.0318, -0.0016,  0.0011,  0.0487],
+        [ 0.0243, -0.0136,  0.0055, -0.0431, -0.0176],
+        [-0.0155,  0.0086, -0.0198,  0.0130,  0.0001],
+        [ 0.0360, -0.0114, -0.0101, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.413478374481201
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0043,  0.0080, -0.0041],
+        [ 0.0271,  0.0318, -0.0016,  0.0011,  0.0487],
+        [ 0.0243, -0.0136,  0.0055, -0.0431, -0.0176],
+        [-0.0155,  0.0085, -0.0198,  0.0130,  0.0001],
+        [ 0.0360, -0.0114, -0.0101, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.84382438659668
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0043,  0.0080, -0.0041],
+        [ 0.0271,  0.0318, -0.0015,  0.0011,  0.0487],
+        [ 0.0243, -0.0136,  0.0055, -0.0431, -0.0176],
+        [-0.0155,  0.0085, -0.0198,  0.0130,  0.0001],
+        [ 0.0360, -0.0114, -0.0101, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.5181803703308105
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0043,  0.0080, -0.0041],
+        [ 0.0271,  0.0318, -0.0015,  0.0011,  0.0487],
+        [ 0.0243, -0.0136,  0.0055, -0.0431, -0.0176],
+        [-0.0155,  0.0085, -0.0198,  0.0130,  0.0001],
+        [ 0.0360, -0.0114, -0.0101, -0.0309, -0.0197]], device='cuda:0')
+Loss: 3.9351754188537598
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0043,  0.0080, -0.0041],
+        [ 0.0270,  0.0318, -0.0015,  0.0011,  0.0487],
+        [ 0.0243, -0.0136,  0.0055, -0.0431, -0.0176],
+        [-0.0155,  0.0085, -0.0198,  0.0129,  0.0001],
+        [ 0.0360, -0.0115, -0.0101, -0.0309, -0.0197]], device='cuda:0')
+Loss: 4.18546199798584
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0043,  0.0080, -0.0041],
+        [ 0.0270,  0.0318, -0.0015,  0.0011,  0.0487],
+        [ 0.0243, -0.0136,  0.0055, -0.0431, -0.0176],
+        [-0.0155,  0.0085, -0.0198,  0.0129,  0.0001],
+        [ 0.0360, -0.0115, -0.0101, -0.0310, -0.0197]], device='cuda:0')
+Loss: 4.634328365325928
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0043,  0.0080, -0.0041],
+        [ 0.0270,  0.0318, -0.0015,  0.0010,  0.0487],
+        [ 0.0242, -0.0136,  0.0056, -0.0431, -0.0176],
+        [-0.0156,  0.0085, -0.0198,  0.0129,  0.0001],
+        [ 0.0360, -0.0115, -0.0101, -0.0310, -0.0197]], device='cuda:0')
+Epoch [0/100]; Iter [110/12800]; loss 4.4118; gen_loss 4.4118; LR 1.19e-05; Iter time 0.55s; ETA 1:56:32; Mem 4290.41MB
+Loss: 4.50601053237915
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0043,  0.0080, -0.0040],
+        [ 0.0270,  0.0318, -0.0015,  0.0010,  0.0487],
+        [ 0.0242, -0.0136,  0.0056, -0.0431, -0.0175],
+        [-0.0156,  0.0085, -0.0198,  0.0129,  0.0001],
+        [ 0.0359, -0.0115, -0.0101, -0.0310, -0.0197]], device='cuda:0')
+Loss: 4.857205867767334
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0043,  0.0080, -0.0040],
+        [ 0.0270,  0.0318, -0.0015,  0.0010,  0.0487],
+        [ 0.0242, -0.0136,  0.0056, -0.0431, -0.0175],
+        [-0.0156,  0.0085, -0.0198,  0.0129,  0.0001],
+        [ 0.0359, -0.0115, -0.0100, -0.0310, -0.0197]], device='cuda:0')
+Loss: 4.171087265014648
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0043,  0.0080, -0.0040],
+        [ 0.0270,  0.0318, -0.0015,  0.0010,  0.0487],
+        [ 0.0242, -0.0136,  0.0056, -0.0432, -0.0175],
+        [-0.0156,  0.0085, -0.0198,  0.0129,  0.0001],
+        [ 0.0359, -0.0115, -0.0100, -0.0310, -0.0197]], device='cuda:0')
+Loss: 4.0149993896484375
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0043,  0.0080, -0.0040],
+        [ 0.0270,  0.0318, -0.0015,  0.0010,  0.0487],
+        [ 0.0242, -0.0136,  0.0056, -0.0432, -0.0175],
+        [-0.0156,  0.0085, -0.0198,  0.0129,  0.0001],
+        [ 0.0359, -0.0115, -0.0100, -0.0310, -0.0197]], device='cuda:0')
+Loss: 3.304713487625122
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0043,  0.0080, -0.0040],
+        [ 0.0269,  0.0318, -0.0015,  0.0010,  0.0487],
+        [ 0.0242, -0.0136,  0.0056, -0.0432, -0.0175],
+        [-0.0156,  0.0085, -0.0198,  0.0129,  0.0001],
+        [ 0.0359, -0.0115, -0.0100, -0.0310, -0.0197]], device='cuda:0')
+Loss: 4.431110858917236
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0042,  0.0080, -0.0040],
+        [ 0.0269,  0.0318, -0.0015,  0.0010,  0.0488],
+        [ 0.0242, -0.0136,  0.0056, -0.0432, -0.0175],
+        [-0.0156,  0.0085, -0.0198,  0.0129,  0.0001],
+        [ 0.0359, -0.0115, -0.0100, -0.0310, -0.0197]], device='cuda:0')
+Loss: 4.318885326385498
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0042,  0.0080, -0.0040],
+        [ 0.0269,  0.0318, -0.0014,  0.0010,  0.0488],
+        [ 0.0242, -0.0136,  0.0057, -0.0432, -0.0175],
+        [-0.0156,  0.0085, -0.0198,  0.0129,  0.0001],
+        [ 0.0359, -0.0114, -0.0100, -0.0310, -0.0197]], device='cuda:0')
+Loss: 4.509345531463623
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0042,  0.0080, -0.0040],
+        [ 0.0269,  0.0318, -0.0014,  0.0009,  0.0488],
+        [ 0.0241, -0.0136,  0.0057, -0.0432, -0.0175],
+        [-0.0156,  0.0085, -0.0198,  0.0128,  0.0001],
+        [ 0.0359, -0.0114, -0.0100, -0.0310, -0.0197]], device='cuda:0')
+Loss: 4.378864765167236
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0042,  0.0080, -0.0040],
+        [ 0.0269,  0.0318, -0.0014,  0.0009,  0.0488],
+        [ 0.0241, -0.0136,  0.0057, -0.0432, -0.0175],
+        [-0.0156,  0.0085, -0.0197,  0.0128,  0.0002],
+        [ 0.0359, -0.0114, -0.0099, -0.0310, -0.0197]], device='cuda:0')
+Loss: 4.248401165008545
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0042,  0.0080, -0.0040],
+        [ 0.0269,  0.0317, -0.0014,  0.0009,  0.0488],
+        [ 0.0241, -0.0136,  0.0057, -0.0432, -0.0175],
+        [-0.0156,  0.0085, -0.0197,  0.0128,  0.0002],
+        [ 0.0358, -0.0114, -0.0099, -0.0310, -0.0197]], device='cuda:0')
+Epoch [0/100]; Iter [120/12800]; loss 4.2741; gen_loss 4.2741; LR 1.29e-05; Iter time 0.55s; ETA 1:55:49; Mem 4290.41MB
+Loss: 4.404296875
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0042,  0.0080, -0.0040],
+        [ 0.0269,  0.0317, -0.0014,  0.0009,  0.0488],
+        [ 0.0241, -0.0136,  0.0057, -0.0433, -0.0175],
+        [-0.0156,  0.0085, -0.0197,  0.0128,  0.0002],
+        [ 0.0358, -0.0114, -0.0099, -0.0310, -0.0197]], device='cuda:0')
+Loss: 4.76627254486084
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0042,  0.0080, -0.0040],
+        [ 0.0269,  0.0317, -0.0014,  0.0009,  0.0488],
+        [ 0.0241, -0.0136,  0.0057, -0.0433, -0.0175],
+        [-0.0156,  0.0085, -0.0197,  0.0128,  0.0002],
+        [ 0.0358, -0.0114, -0.0099, -0.0311, -0.0197]], device='cuda:0')
+Loss: 4.582767486572266
+First 5 weights of embed_tokens: tensor([[ 0.0293, -0.0008,  0.0042,  0.0080, -0.0040],
+        [ 0.0268,  0.0317, -0.0014,  0.0009,  0.0488],
+        [ 0.0241, -0.0136,  0.0057, -0.0433, -0.0175],
+        [-0.0157,  0.0085, -0.0197,  0.0128,  0.0002],
+        [ 0.0358, -0.0114, -0.0099, -0.0311, -0.0197]], device='cuda:0')
+Loss: 3.684192419052124
+First 5 weights of embed_tokens: tensor([[ 0.0294, -0.0008,  0.0042,  0.0080, -0.0040],
+        [ 0.0268,  0.0317, -0.0014,  0.0009,  0.0488],
+        [ 0.0241, -0.0136,  0.0057, -0.0433, -0.0175],
+        [-0.0157,  0.0085, -0.0197,  0.0128,  0.0002],
+        [ 0.0358, -0.0114, -0.0099, -0.0311, -0.0197]], device='cuda:0')
+Loss: 4.547059535980225
+First 5 weights of embed_tokens: tensor([[ 0.0294, -0.0008,  0.0042,  0.0080, -0.0039],
+        [ 0.0268,  0.0317, -0.0014,  0.0008,  0.0488],
+        [ 0.0241, -0.0136,  0.0058, -0.0433, -0.0175],
+        [-0.0157,  0.0085, -0.0197,  0.0128,  0.0002],
+        [ 0.0358, -0.0114, -0.0099, -0.0311, -0.0197]], device='cuda:0')
+Loss: 4.361110210418701
+First 5 weights of embed_tokens: tensor([[ 0.0294, -0.0008,  0.0042,  0.0080, -0.0039],
+        [ 0.0268,  0.0317, -0.0014,  0.0008,  0.0488],
+        [ 0.0240, -0.0136,  0.0058, -0.0433, -0.0175],
+        [-0.0157,  0.0085, -0.0197,  0.0128,  0.0002],
+        [ 0.0358, -0.0114, -0.0099, -0.0311, -0.0197]], device='cuda:0')
+Loss: 4.035233020782471
+First 5 weights of embed_tokens: tensor([[ 0.0294, -0.0008,  0.0041,  0.0080, -0.0039],
+        [ 0.0268,  0.0317, -0.0014,  0.0008,  0.0488],
+        [ 0.0240, -0.0136,  0.0058, -0.0433, -0.0175],
+        [-0.0157,  0.0085, -0.0197,  0.0127,  0.0002],
+        [ 0.0358, -0.0114, -0.0099, -0.0311, -0.0197]], device='cuda:0')
+[2024-12-13 00:33:28,579] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /root/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.

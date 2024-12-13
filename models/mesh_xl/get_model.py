@@ -227,7 +227,7 @@ class MeshXL(nn.Module):
         config = AutoConfig.from_pretrained(
             args.llm, 
             n_positions=8192,
-            max_position_embeddings=8192
+            max_position_embeddings=8192,
             vocab_size=self.vocab_size,
             bos_token_id=self.bos_token_id,
             eos_token_id=self.eos_token_id,
@@ -243,11 +243,11 @@ class MeshXL(nn.Module):
     
     def _init_weights(self, module):
         if isinstance(module, nn.Linear):
-            module.weight.data.normal_(mean=0.0, std=0.02)
+            module.weight.data.normal_(mean=0.0, std=0.5)
             if module.bias is not None:
                 module.bias.data.zero_()
         elif isinstance(module, nn.Embedding):
-            module.weight.data.normal_(mean=0.0, std=0.02)
+            module.weight.data.normal_(mean=0.0, std=5)
             if hasattr(module, 'padding_idx'):
                 module.weight.data[module.padding_idx].zero_()
         elif isinstance(module, nn.LayerNorm):
@@ -327,6 +327,11 @@ class MeshXL(nn.Module):
         
         data_dict['loss'] = self.loss_wrapper(final_loss)
         data_dict['gen_loss'] = final_loss
+        
+        # # Print loss and some weights for verification
+        # if torch.distributed.get_rank() == 0:
+        #     print(f"Loss: {final_loss.item()}")
+        #     print(f"First 5 weights of embed_tokens: {self.transformer.model.decoder.embed_tokens.weight.data[:5, :5]}")
         
         return data_dict
     

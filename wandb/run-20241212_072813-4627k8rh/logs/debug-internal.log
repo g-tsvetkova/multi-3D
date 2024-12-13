@@ -1,0 +1,8 @@
+{"time":"2024-12-12T07:28:13.781189484Z","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-12T07:28:13.781202278Z","level":"INFO","msg":"created symlink","path":"/root/MeshXL/wandb/run-20241212_072813-4627k8rh/logs/debug-core.log"}
+{"time":"2024-12-12T07:28:13.885886167Z","level":"INFO","msg":"created new stream","id":"4627k8rh"}
+{"time":"2024-12-12T07:28:13.885918728Z","level":"INFO","msg":"stream: started","id":"4627k8rh"}
+{"time":"2024-12-12T07:28:13.885944135Z","level":"INFO","msg":"writer: Do: started","stream_id":"4627k8rh"}
+{"time":"2024-12-12T07:28:13.885949766Z","level":"INFO","msg":"sender: started","stream_id":"4627k8rh"}
+{"time":"2024-12-12T07:28:13.885969172Z","level":"INFO","msg":"handler: started","stream_id":"4627k8rh"}
+{"time":"2024-12-12T07:28:14.180074481Z","level":"INFO","msg":"Starting system monitor"}

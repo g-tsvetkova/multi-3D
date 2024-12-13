@@ -61,10 +61,10 @@ class MeshTokenizer(nn.Module):
         # Collect vertex coordinates for each face: b x nf x nv x c
         faces_vertices = repeat(face_without_pad, "b nf nv -> b nf nv c", c=num_coors)
         vertices = repeat(vertices, "b nv c -> b nf nv c", nf=num_faces)
-        print(vertices.shape)
-        print(faces_vertices.shape)
-        print("max face index:", faces_vertices.max().item(), "num_vertices:", vertices.shape[1])
-        print("min face index:", faces_vertices.min().item())
+        # print(vertices.shape)
+        # print(faces_vertices.shape)
+        # print("max face index:", faces_vertices.max().item(), "num_vertices:", vertices.shape[1])
+        # print("min face index:", faces_vertices.min().item())
 
         face_coords = vertices.gather(-2, faces_vertices.long())
 
@@ -74,14 +74,14 @@ class MeshTokenizer(nn.Module):
             continuous_range=self.coor_continuous_range,
             num_discrete=self.num_discrete_coors,
         )
-        print("Discrete face coordinates: ", discrete_face_coords)
+        # print("Discrete face coordinates: ", discrete_face_coords)
 
         # Pad invalid faces with pad_id
         discrete_padded_coords = discrete_face_coords.masked_fill(
             ~rearrange(face_mask, "b nf -> b nf 1 1"),
             self.pad_id,
         )
-        print("Discrete face coordinates: ", discrete_face_coords)
+        #print("Discrete face coordinates: ", discrete_face_coords)
 
         # Convert mesh to sequence: batch x ntokens
         input_ids = discrete_padded_coords.reshape(batch, -1)

@@ -1,0 +1,16 @@
+{"time":"2024-12-13T03:22:26.962920507Z","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-13T03:22:26.962934403Z","level":"INFO","msg":"created symlink","path":"/root/MeshXL/wandb/run-20241213_032226-mu9sp2fx/logs/debug-core.log"}
+{"time":"2024-12-13T03:22:27.069300821Z","level":"INFO","msg":"created new stream","id":"mu9sp2fx"}
+{"time":"2024-12-13T03:22:27.069340364Z","level":"INFO","msg":"stream: started","id":"mu9sp2fx"}
+{"time":"2024-12-13T03:22:27.069377293Z","level":"INFO","msg":"writer: Do: started","stream_id":"mu9sp2fx"}
+{"time":"2024-12-13T03:22:27.069390879Z","level":"INFO","msg":"handler: started","stream_id":"mu9sp2fx"}
+{"time":"2024-12-13T03:22:27.069457242Z","level":"INFO","msg":"sender: started","stream_id":"mu9sp2fx"}
+{"time":"2024-12-13T03:22:27.479316411Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-13T03:22:30.343974644Z","level":"INFO","msg":"stream: closing","id":"mu9sp2fx"}
+{"time":"2024-12-13T03:22:30.34401537Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-13T03:22:30.344527165Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-13T03:22:31.595733076Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-13T03:22:31.848265234Z","level":"INFO","msg":"handler: closed","stream_id":"mu9sp2fx"}
+{"time":"2024-12-13T03:22:31.848308755Z","level":"INFO","msg":"sender: closed","stream_id":"mu9sp2fx"}
+{"time":"2024-12-13T03:22:31.848293777Z","level":"INFO","msg":"writer: Close: closed","stream_id":"mu9sp2fx"}
+{"time":"2024-12-13T03:22:31.851035602Z","level":"INFO","msg":"stream: closed","id":"mu9sp2fx"}
