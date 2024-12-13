@@ -222,6 +222,8 @@ class MeshXL(nn.Module):
         decoder_output = self.tokenizer.detokenize(input_ids=output_ids)
         
         return decoder_output
+    
+    
 
 def get_model(args):
     model = MeshXL(args)
