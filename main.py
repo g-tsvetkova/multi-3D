@@ -206,13 +206,13 @@ def build_dataset_func(args):
 def build_model_func(args):
     model_module = importlib.import_module(f"models.{args.model}.get_model")
     model = model_module.get_model(args)
+    print(model)
     return model
 
 
 def main(args):
 
-    np.random.seed(args.seed)
-    torch.cuda.manual_seed_all(args.seed)
+    # torch.cuda.manual_seed_all(args.seed)
 
     if args.checkpoint_dir is not None:
         pass
@@ -247,7 +247,7 @@ def main(args):
             model.load_state_dict(checkpoint["model"], strict=False)
         except:
             print("test the model from scratch...")
-
+        print("Loaded model")
         model, dataloaders["train"], *dataloaders["test"] = accelerator.prepare(
             model, dataloaders["train"], *dataloaders["test"]
         )
@@ -294,6 +294,7 @@ def main(args):
         loaded_epoch, best_val_metrics = resume_if_possible(
             args.checkpoint_dir, model, optimizer
         )
+        print("Training resumed:", loaded_epoch)
         args.start_epoch = loaded_epoch + 1
 
         model, optimizer, dataloaders["train"], *dataloaders["test"] = (

@@ -99,6 +99,39 @@ class MeshTokenizer(nn.Module):
         data_dict["discrete_face_coords"] = discrete_face_coords
 
         return data_dict
+    
+    def detokenize(self, input_ids: Tensor) -> dict:
+        '''
+        Turn sequential tokens: <bos> [<x>, <y>, <z>], ... <eos> into 3D meshes
+        '''
+        # input_ids: b (n q) or b n q, without <bos> or <eos>
+        input_ids = input_ids.reshape(input_ids.shape[0], -1)
+        # batch x nface
+        face_mask = reduce(
+            input_ids != self.pad_id, 'b (nf c) -> b nf', 'all', c = 9
+        )
+        
+        # batch x (nface x 9) -> batch x nface x 3 x 3
+        pred_face_coords = input_ids.reshape(input_ids.shape[0], -1, 9)
+        pred_face_coords = rearrange(
+            pred_face_coords, '... (v c) -> ... v c', v = 3
+        )
+        
+        # back to continuous space
+        continuous_coors = undiscretize(
+            pred_face_coords,
+            num_discrete = self.num_discrete_coors,
+            continuous_range = self.coor_continuous_range
+        )
+        # mask padding coordinates out with nan
+        continuous_coors = continuous_coors.masked_fill(
+            ~rearrange(face_mask, 'b nf -> b nf 1 1'), 
+            float('nan')
+        )
+        output_dict = {}
+        output_dict['recon_faces'] = continuous_coors
+        
+        return output_dict
 
     def forward(self, data_dict: dict) -> dict:
 

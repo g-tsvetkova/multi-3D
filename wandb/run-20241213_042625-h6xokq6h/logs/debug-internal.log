@@ -1,0 +1,16 @@
+{"time":"2024-12-13T04:26:25.17571855Z","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-13T04:26:25.175740851Z","level":"INFO","msg":"created symlink","path":"/root/MeshXL/wandb/run-20241213_042625-h6xokq6h/logs/debug-core.log"}
+{"time":"2024-12-13T04:26:25.282319285Z","level":"INFO","msg":"created new stream","id":"h6xokq6h"}
+{"time":"2024-12-13T04:26:25.282360752Z","level":"INFO","msg":"stream: started","id":"h6xokq6h"}
+{"time":"2024-12-13T04:26:25.282404113Z","level":"INFO","msg":"writer: Do: started","stream_id":"h6xokq6h"}
+{"time":"2024-12-13T04:26:25.282432366Z","level":"INFO","msg":"sender: started","stream_id":"h6xokq6h"}
+{"time":"2024-12-13T04:26:25.282463113Z","level":"INFO","msg":"handler: started","stream_id":"h6xokq6h"}
+{"time":"2024-12-13T04:26:25.624003068Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-13T04:26:28.051977493Z","level":"INFO","msg":"stream: closing","id":"h6xokq6h"}
+{"time":"2024-12-13T04:26:28.05201317Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-13T04:26:28.052602529Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-13T04:26:29.692329414Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-13T04:26:29.974824646Z","level":"INFO","msg":"handler: closed","stream_id":"h6xokq6h"}
+{"time":"2024-12-13T04:26:29.974878546Z","level":"INFO","msg":"sender: closed","stream_id":"h6xokq6h"}
+{"time":"2024-12-13T04:26:29.974866363Z","level":"INFO","msg":"writer: Close: closed","stream_id":"h6xokq6h"}
+{"time":"2024-12-13T04:26:29.97729813Z","level":"INFO","msg":"stream: closed","id":"h6xokq6h"}

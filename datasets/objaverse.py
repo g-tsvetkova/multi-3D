@@ -5,44 +5,8 @@ from torch.utils.data import Dataset
 import trimesh
 import glob
 from sklearn.model_selection import train_test_split
+from eval_utils.sample_generation import evaluate
 
-
-# def torch_lexical_sort(vertices: torch.Tensor) -> tuple:
-#     """
-#     Sort vertices by z, y, x coordinates lexicographically using PyTorch.
-
-#     Args:
-#         vertices: Tensor of shape (batch_size, nv, 3)
-
-#     Returns:
-#         tuple: (sorted_vertices, sorting_indices)
-#             - sorted_vertices: Tensor of shape (batch_size, nv, 3) with sorted vertices
-#             - sorting_indices: Tensor of shape (batch_size, nv) tracking original indices
-#     """
-#     # Create placeholder for sorted vertices and sorting indices
-#     sorted_vertices = torch.empty_like(vertices)
-#     sorting_indices = torch.empty(
-#         vertices.shape[:2], dtype=torch.long, device=vertices.device
-#     )
-
-#     for i, batch in enumerate(vertices):  # Process each batch independently
-#         # Track sorting indices for this batch
-#         current_indices = torch.arange(batch.shape[0], device=batch.device)
-
-#         # Sort by x first, then y, then z to achieve z > y > x lexicographical sort
-#         x_sorted_indices = torch.argsort(batch[:, 0], stable=True)
-#         batch = batch[x_sorted_indices]
-#         current_indices = current_indices[x_sorted_indices]
-
-#         y_sorted_indices = torch.argsort(batch[:, 1], stable=True)
-#         batch = batch[y_sorted_indices]
-#         current_indices = current_indices[y_sorted_indices]
-
-#         z_sorted_indices = torch.argsort(batch[:, 2], stable=True)
-#         sorted_vertices[i] = batch[z_sorted_indices]
-#         sorting_indices[i] = current_indices[z_sorted_indices]
-
-#     return sorted_vertices, sorting_indices
 
 def torch_lexical_sort(vertices: torch.Tensor) -> tuple:
     """
@@ -200,6 +164,7 @@ class Dataset:
         self.max_faces = args.n_max_triangles
         self.face_pad_id = -1  # Use -1 to indicate padded faces
 
+        self.eval_func = evaluate
 
     def __len__(self):
         return len(self.mesh_files)

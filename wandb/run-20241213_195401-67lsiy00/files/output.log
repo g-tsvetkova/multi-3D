@@ -1,0 +1,64 @@
+Loading train data with 515 files.
+Loading test data with 129 files.
+131
+MeshXL(
+  (tokenizer): MeshTokenizer()
+  (transformer): OPTForCausalLM(
+    (model): OPTModel(
+      (decoder): OPTDecoder(
+        (embed_tokens): Embedding(131, 256, padding_idx=130)
+        (embed_positions): OPTLearnedPositionalEmbedding(8194, 256)
+        (final_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (layers): ModuleList(
+          (0-5): 6 x OPTDecoderLayer(
+            (self_attn): OPTAttention(
+              (k_proj): Linear(in_features=256, out_features=256, bias=True)
+              (v_proj): Linear(in_features=256, out_features=256, bias=True)
+              (q_proj): Linear(in_features=256, out_features=256, bias=True)
+              (out_proj): Linear(in_features=256, out_features=256, bias=True)
+            )
+            (activation_fn): ReLU()
+            (self_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            (fc1): Linear(in_features=256, out_features=1024, bias=True)
+            (fc2): Linear(in_features=1024, out_features=256, bias=True)
+            (final_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (lm_head): Linear(in_features=256, out_features=131, bias=False)
+  )
+)
+/root/MeshXL/main.py:246: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(args.test_ckpt, map_location=torch.device("cpu"))
+test the model from scratch...
+Loaded model
+  0%|                                                                        | 0/100 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/root/MeshXL/main.py", line 316, in <module>
+    main(args)
+  File "/root/MeshXL/main.py", line 256, in main
+    test_loader.dataset.eval_func(args, -1, model, accelerator, test_loader)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/MeshXL/eval_utils/sample_generation.py", line 57, in evaluate
+    outputs = model(None, num_return_sequences=args.batchsize_per_gpu, is_eval=True, is_generate=True)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/accelerate/utils/operations.py", line 823, in forward
+    return model_forward(*args, **kwargs)
+  File "/root/.multi3d/lib/python3.10/site-packages/accelerate/utils/operations.py", line 811, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/root/MeshXL/models/mesh_xl/get_model.py", line 100, in forward
+    return self.generate(
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/MeshXL/models/mesh_xl/get_model.py", line 222, in generate
+    decoder_output = self.tokenizer.detokenize(input_ids=output_ids)
+  File "/root/.multi3d/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1931, in __getattr__
+    raise AttributeError(
+AttributeError: 'MeshTokenizer' object has no attribute 'detokenize'

@@ -1,0 +1,15 @@
+Loading train data with 515 files.
+Loading test data with 129 files.
+131
+Traceback (most recent call last):
+  File "/root/MeshXL/main.py", line 315, in <module>
+    main(args)
+  File "/root/MeshXL/main.py", line 238, in main
+    model = build_model_func(args)
+  File "/root/MeshXL/main.py", line 208, in build_model_func
+    model = model_module.get_model(args)
+  File "/root/MeshXL/models/mesh_xl/get_model.py", line 429, in get_model
+    model = MeshXL(args)
+  File "/root/MeshXL/models/mesh_xl/get_model.py", line 239, in __init__
+    config = OPTConfig(
+NameError: name 'OPTConfig' is not defined

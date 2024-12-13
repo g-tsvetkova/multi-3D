@@ -8,12 +8,12 @@ accelerate launch \
     --num_processes 8 \
     --mixed_precision bf16 \
     main.py \
-    --dataset dummy_dataset \
+    --dataset objaverse \
     --n_max_triangles 800 \
     --n_discrete_size 128 \
     --llm $LLM_CONFIG \
     --model mesh_xl \
-    --checkpoint_dir $OUTPUT_DIR \
+    --checkpoint_dir /root/MeshXL/checkpoints \
     --batchsize_per_gpu $NSAMPLE_PER_GPU \
     --sample_rounds $SAMPLE_ROUNDS \
     --dataset_num_workers 0 \

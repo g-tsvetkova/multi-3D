@@ -23,6 +23,6 @@
   "torch_dtype": "float16",
   "transformers_version": "4.21.0.dev0",
   "use_cache": true,
-  "vocab_size": 50272,
+  "vocab_size": 131,
   "word_embed_proj_dim": 256
 }
