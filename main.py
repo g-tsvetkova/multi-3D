@@ -8,6 +8,8 @@ from accelerate.utils import set_seed
 from utils.io import resume_if_possible
 from utils.misc import my_worker_init_fn
 from utils.logger import Logger
+import logging
+
 
 # import torch.distributed.elastic.multiprocessing.errors as errors
 # errors.record()
@@ -204,8 +206,10 @@ def build_dataset_func(args):
 
 
 def build_model_func(args):
+    print(args.model)
     model_module = importlib.import_module(f"models.{args.model}.get_model")
     print(model_module)
+    print(args)
     model = model_module.get_model(args)
     print(model)
     return model

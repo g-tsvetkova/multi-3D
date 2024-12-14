@@ -68,7 +68,8 @@ class MeshXL(nn.Module):
         generation_config: Dict = None
     ) -> dict:
         # Expanded forward method to handle speculative decoding
-        if is_generate:
+        if is_eval and is_generate:
+            print("DATA_DICT", data_dict)
             # Use an enhanced generation method
             return self.speculative_generate(
                 data_dict, 
@@ -76,8 +77,9 @@ class MeshXL(nn.Module):
                 generation_config or {}
             )
         
-        # Existing forward logic for training and evaluation
-        return super().forward(data_dict, is_eval, is_generate)
+        print("NOT EVAL")
+        raise NotImplementedError('training status undefined!')
+        return 
 
     def train_one_step(self, data_dict: dict) -> dict:
         # Modified training step to support multi-token prediction
@@ -187,9 +189,10 @@ class MeshXL(nn.Module):
         device = next(self.parameters()).device
         max_length = generation_config.get('max_length', 8192)
         
+        print("DATA_DICT", data_dict)
         # Initial input preparation
         input_ids = data_dict.get('input_ids', 
-            torch.full((num_return_sequences, 1), self.bos_token_id, device=device)
+            torch.full((num_return_sequences, 1), self.bos_token_id)
         )
         
         while input_ids.size(1) < max_length:
@@ -368,3 +371,7 @@ class MeshXL(nn.Module):
         output_ids = input_ids[:, 1:]
         output_ids[output_ids == self.eos_token_id] = self.tokenizer.pad_id
         return output_ids[:, :8191]  # Ensure max length
+
+def get_model(args):
+    model = MeshXL(args)
+    return model
