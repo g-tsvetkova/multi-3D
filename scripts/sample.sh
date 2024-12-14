@@ -7,10 +7,11 @@ accelerate launch main.py \
     --n_max_triangles 800 \
     --n_discrete_size 128 \
     --llm mesh-xl/mesh-xl-125m \
-    --model mesh_xl \
+    --model mesh_xl_mtp \
     --checkpoint_dir ./outputs \
     --batchsize_per_gpu 1 \
     --test_ckpt $TEST_CKPT \
     --sample_rounds 100 \
     --dataset_num_workers 0 \
     --test_only
+   

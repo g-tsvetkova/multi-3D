@@ -205,6 +205,7 @@ def build_dataset_func(args):
 
 def build_model_func(args):
     model_module = importlib.import_module(f"models.{args.model}.get_model")
+    print(model_module)
     model = model_module.get_model(args)
     print(model)
     return model
