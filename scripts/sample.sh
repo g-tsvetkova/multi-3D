@@ -3,7 +3,7 @@ export LLM_CONFIG='mesh-xl/mesh-xl-125m'
 export TEST_CKPT='/MeshXL/checkpoints/checkpoint.pth'
 
 
-accelerate launch main.py \
+accelerate launch /root/MeshXL/main.py \
     --dataset objaverse \
     --n_max_triangles 800 \
     --n_discrete_size 128 \

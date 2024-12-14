@@ -1,0 +1,41 @@
+Loading train data with 515 files.
+Loading test data with 129 files.
+mesh_xl_mtp
+<module 'models.mesh_xl_mtp.get_model' from '/root/MeshXL/models/mesh_xl_mtp/get_model.py'>
+Namespace(base_lr=0.0001, final_lr=1e-06, weight_decay=0.1, clip_gradient=0.1, warm_lr=1e-06, warm_lr_iters=1000, pad_id=-1, dataset='objaverse', augment=False, n_discrete_size=128, n_max_triangles=800, model='mesh_xl_mtp', llm='mesh-xl/mesh-xl-125m', text_condition=None, image_condition=None, pretrained_weights=None, dataset_num_workers=1, batchsize_per_gpu=8, start_epoch=-1, max_epoch=16, start_eval_after=-1, eval_every_iteration=4000, seed=0, test_only=True, sample_rounds=100, criterion=None, test_ckpt='', checkpoint_dir='./outputs', save_every=20000, log_every=10)
+MeshXL(
+  (tokenizer): MeshTokenizer()
+  (transformer): OPTForCausalLM(
+    (model): OPTModel(
+      (decoder): OPTDecoder(
+        (embed_tokens): Embedding(131, 256, padding_idx=130)
+        (embed_positions): OPTLearnedPositionalEmbedding(8194, 256)
+        (final_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (layers): ModuleList(
+          (0-5): 6 x OPTDecoderLayer(
+            (self_attn): OPTAttention(
+              (k_proj): Linear(in_features=256, out_features=256, bias=True)
+              (v_proj): Linear(in_features=256, out_features=256, bias=True)
+              (q_proj): Linear(in_features=256, out_features=256, bias=True)
+              (out_proj): Linear(in_features=256, out_features=256, bias=True)
+            )
+            (activation_fn): ReLU()
+            (self_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            (fc1): Linear(in_features=256, out_features=1024, bias=True)
+            (fc2): Linear(in_features=1024, out_features=256, bias=True)
+            (final_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (lm_head): Linear(in_features=256, out_features=131, bias=False)
+  )
+  (speculative_head): Linear(in_features=256, out_features=393, bias=True)
+)
+/root/MeshXL/main.py:252: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(args.test_ckpt, map_location=torch.device("cpu"))
+test the model from scratch...
+Loaded model
+Starting inference...
+100%|█████████████████████████████████████████████████████████████████████████████████| 100/100 [05:29<00:00,  3.30s/it]
+Inference Time: 329.6740 seconds

@@ -1,3 +1,4 @@
+import time 
 import os, argparse, importlib
 import numpy as np
 import torch
@@ -257,8 +258,14 @@ def main(args):
             model, dataloaders["train"], *dataloaders["test"]
         )
 
+
         for test_loader in dataloaders["test"]:
+            print("Starting inference...")
+            start_time = time.time()  # Start timing
             test_loader.dataset.eval_func(args, -1, model, accelerator, test_loader)
+            end_time = time.time()  # End timing
+            inference_time = end_time - start_time  # Calculate elapsed time
+            print(f"Inference Time: {inference_time:.4f} seconds")  # Print the inference times
 
     # training phase
     else:

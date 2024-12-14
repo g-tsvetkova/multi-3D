@@ -1,0 +1,8 @@
+{"time":"2024-12-14T02:50:08.682852134Z","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-14T02:50:08.682866571Z","level":"INFO","msg":"created symlink","path":"/root/MeshXL/scripts/wandb/run-20241214_025008-ifxvpbog/logs/debug-core.log"}
+{"time":"2024-12-14T02:50:08.78756292Z","level":"INFO","msg":"created new stream","id":"ifxvpbog"}
+{"time":"2024-12-14T02:50:08.787597635Z","level":"INFO","msg":"stream: started","id":"ifxvpbog"}
+{"time":"2024-12-14T02:50:08.787641878Z","level":"INFO","msg":"writer: Do: started","stream_id":"ifxvpbog"}
+{"time":"2024-12-14T02:50:08.787654642Z","level":"INFO","msg":"handler: started","stream_id":"ifxvpbog"}
+{"time":"2024-12-14T02:50:08.787699276Z","level":"INFO","msg":"sender: started","stream_id":"ifxvpbog"}
+{"time":"2024-12-14T02:50:09.096854657Z","level":"INFO","msg":"Starting system monitor"}

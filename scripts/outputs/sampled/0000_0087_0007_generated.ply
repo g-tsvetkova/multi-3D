@@ -1,0 +1,24 @@
+ply
+format ascii 1.0
+element vertex 9
+property float x
+property float y
+property float z
+property uchar red
+property uchar green
+property uchar blue
+element face 3
+property list uchar uint vertex_indices
+end_header
+-0.085938 -0.164062 0.414062 0 0 0
+-0.742188 -0.726562 -0.617188 0 0 0
+-0.210938 -0.632812 0.382812 0 0 0
+-0.492188 -0.460938 0.804688 0 0 0
+0.945312 -0.085938 -0.210938 0 0 0
+0.617188 0.054688 0.601562 0 0 0
+-0.132812 -0.992188 0.523438 0 0 0
+0.601562 0.710938 -0.226562 0 0 0
+0.742188 0.742188 0.507812 0 0 0
+3 0 1 2
+3 3 4 5
+3 6 7 8
