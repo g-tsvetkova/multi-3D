@@ -8,7 +8,7 @@ accelerate launch main.py \
     --n_max_triangles 800 \
     --n_discrete_size 128 \
     --llm $LLM_CONFIG \
-    --model mesh_xl \
+    --model mesh_xl_mtp \
     --checkpoint_dir ./outputs \
     --dataset_num_workers 1 \
     --test_only
