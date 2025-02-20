@@ -109,6 +109,12 @@ def make_args_parser():
         help="do evaluate the model every xxx iterations",
     )
     parser.add_argument("--seed", default=0, type=int, help="random seed")
+    parser.add_argument(
+        "--train_from_scratch",
+        default=False,
+        action="store_true",
+        help="ignore existing checkpoints and train from scratch",
+    )
 
     ##### Testing #####
     parser.add_argument("--test_only", default=False, action="store_true")
@@ -207,13 +213,18 @@ def build_dataset_func(args):
 
 
 def build_model_func(args):
-    print(args.model)
-    model_module = importlib.import_module(f"models.{args.model}.get_model")
-    print(model_module)
-    print(args)
-    model = model_module.get_model(args)
-    print(model)
-    return model
+    print("Building model with args.model =", args.model)
+    try:
+        model_path = f"models.{args.model}.get_model"
+        print("Attempting to import:", model_path)
+        model_module = importlib.import_module(model_path)
+        print("Successfully imported module:", model_module)
+        model = model_module.get_model(args)
+        print("Model type:", type(model).__name__)
+        return model
+    except Exception as e:
+        print("Error building model:", str(e))
+        raise
 
 
 def main(args):
@@ -303,17 +314,31 @@ def main(args):
             weight_decay=args.weight_decay,
         )
 
-        loaded_epoch, best_val_metrics = resume_if_possible(
-            args.checkpoint_dir, model, optimizer
-        )
-        print("Training resumed:", loaded_epoch)
-        args.start_epoch = loaded_epoch + 1
-
+        # First prepare the model and optimizer with accelerator
         model, optimizer, dataloaders["train"], *dataloaders["test"] = (
             accelerator.prepare(
                 model, optimizer, dataloaders["train"], *dataloaders["test"]
             )
         )
+
+        # Initialize training state
+        if args.train_from_scratch:
+            loaded_epoch = -1
+            best_val_metrics = None
+            print("Training from scratch - ignoring existing checkpoints")
+        else:
+            try:
+                loaded_epoch, best_val_metrics = resume_if_possible(
+                    args.checkpoint_dir, model, optimizer
+                )
+                print("Training resumed from epoch:", loaded_epoch)
+            except Exception as e:
+                print(f"Failed to load checkpoint: {e}")
+                loaded_epoch = -1
+                best_val_metrics = None
+                print("Starting fresh training")
+            
+        args.start_epoch = loaded_epoch + 1
 
         do_train(
             args, model, accelerator, optimizer, dataloaders, best_val_metrics, logger

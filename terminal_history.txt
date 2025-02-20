@@ -1,0 +1,814 @@
+    1  ls /data
+    2  cat IMG_162.PNG
+    3  cd ..
+    4  conda env list
+    5  rm -rf $HOME/.vscode-server
+    6  ls
+    7  vim
+    8  ls
+    9  cd oxl_api
+   10  ls
+   11  cat objaverse_to_s3.py 
+   12  cd ..
+   13  ls
+   14  cd exports/
+   15  l
+   16  ls
+   17  cd ..
+   18  ls
+   19  cd outputs/
+   20  ls
+   21  cd ..
+   22  ls
+   23  cd ox
+   24  cd oxl_api/
+   25  ls
+   26  vim objaverse_to_s3.py 
+   27  ls
+   28  cd ..
+   29  ls
+   30  mkdir data-prep
+   31  mkdir data
+   32  du -sch .[!.]* * |sort -h
+   33  rm -rf .fashion/
+   34  ls
+   35  mkdir data-prep
+   36  ls
+   37  cd data-prep/
+   38  ls
+   39  ls -a
+   40  cd .objaverse/
+   41  ls
+   42  cd hf-objaverse-v1/
+   43  ls
+   44  cd glbs
+   45  ls
+   46  cd 000-080
+   47  ls
+   48  cd ..
+   49  ls
+   50  pwd
+   51  ls
+   52  conda env list
+   53  conda list
+   54  cd ~
+   55  conda env create -n multi3d
+   56  python3 -m virtualenv ~/.multi3d
+   57  source ~/.multi3d/bin/activate
+   58  ls
+   59  pip install trimesh
+   60  pip install multiprocessing
+   61  which python
+   62  ls
+   63  cd data-prep/
+   64  ls
+   65  python filtering.py 
+   66  pip install tqdm
+   67  python filtering.py 
+   68  ls
+   69  cd ..
+   70  ls
+   71  pip install torch
+   72  sudo apt install conda
+   73  sudo apt update
+   74  sudoo apt install conda
+   75  ls
+   76  cd isc-demos
+   77  ls
+   78  cd ..
+   79  ls
+   80  cd ..
+   81  ls
+   82  pip install torch
+   83  ls
+   84  ls -a
+   85  cd home
+   86  s
+   87  ls
+   88  cd ..
+   89  cd data/
+   90  ls
+   91  cd ..
+   92  cd tmp
+   93  l
+   94  cd ..
+   95  ls
+   96  cd usr/
+   97  l
+   98  cd ..
+   99  ls
+  100  cd ~
+  101  ls
+  102  ls -
+  103  ls -a
+  104  cd .objaverse/
+  105  l
+  106  rm -rf hf-objaverse-v1/
+  107  ls
+  108  cd ..
+  109  pip install torch
+  110  python
+  111  ls
+  112  pip lst
+  113  pip list
+  114  ls
+  115  cd isc-demos/
+  116  ls
+  117  cd llam2
+  118  l
+  119  cat pyproject.toml 
+  120  cd ..
+  121  ls
+  122  mkdir multi3d
+  123  cd multi3d/
+  124  ls
+  125  touch multi3d.py
+  126  clear
+  127  touch multi3d.isc
+  128  ls
+  129  cd ..
+  130  ls
+  131  cd outputs/
+  132  ls
+  133  rm -rf fashion_mnist/
+  134  ls
+  135  cd ..
+  136  ls
+  137  clear
+  138  ls
+  139  cd multi3d/
+  140  ls
+  141  cd ..
+  142  git clone git@github.com:g-tsvetkova/MeshXL.git
+  143  cd ~
+  144  ls
+  145  cd root
+  146  git clone https://github.com/g-tsvetkova/MeshXL.git
+  147  cd MeshXL/
+  148  ls
+  149  git branch
+  150  git pill
+  151  git pull
+  152  git checkout dataset
+  153  ls
+  154  cd ..
+  155  ls
+  156  cd MeshXL/
+  157  ls
+  158  cd datasets/
+  159  ls
+  160  git status
+  161  ls
+  162  cd ..
+  163  ls
+  164  cd ..
+  165  ls
+  166  ls -a
+  167  cd .objaverse/
+  168  ls
+  169  cd filtered_meshes/
+  170  ls
+  171  pwd
+  172  cd 000-003
+  173  ls
+  174  pwd
+  175  ls
+  176  cd ..
+  177  ls
+  178  cd ..
+  179  ls
+  180  cd MeshXL/
+  181  ls
+  182  git pull
+  183  cd datasets/
+  184  ls
+  185  cat objaverse.py 
+  186  python objaverse.py 
+  187  pip uninstall torch
+  188  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+  189  ls
+  190  cd multi3d/
+  191  ls
+  192  cp multi3d.isc /root/MeshXL/
+  193  cd ...
+  194  cd ..
+  195  ls
+  196  cd MeshXL/
+  197  ls
+  198  pip install requirement.txt 
+  199  pip install -r requirement.txt
+  200  pip install deepspeed
+  201  python -c "iport deepspeed"
+  202  python
+  203  source cd ~
+  204  python3 -m virtualenv ~/.multi3d/
+  205  source ~/.multi3d/bin/activate
+  206  python
+  207  pip install deepspeed
+  208  pip list
+  209  pip install -r requirement.txt 
+  210  isc ping
+  211  isc train mesh
+  212  isc train meshxl.isc 
+  213  isc ping
+  214  isc train meshxl.isc 
+  215  cd ..
+  216  ls
+  217  cd isc-demos/
+  218  ls
+  219  cd fashion_mnist/
+  220  ls
+  221  isc train fashion_mnist.isc 
+  222  ls
+  223  cd ..
+  224  ls
+  225  cd ..
+  226  ls
+  227  cd MeshXL/
+  228  ls
+  229  cd scripts/
+  230  l
+  231  bash train.sh 
+  232  pip install sklearn
+  233  pip install scikit-learn
+  234  bash train.sh 
+  235  clear
+  236  ls
+  237  cd ,,
+  238  cd ..
+  239  ls
+  240  cd datasets/
+  241  ls
+  242  python objaverse.py 
+  243  cd ..
+  244  ls
+  245  cd scripts/
+  246  ls
+  247  bash train.sh 
+  248  ls
+  249  cd .objaverse/
+  250  ls
+  251  cd filtered_meshes/
+  252  cd ..
+  253  ls
+  254  cd ..
+  255  clear
+  256  isc ping
+  257  isc train ./MeshXL/meshxl.isc 
+  258  cd MeshXL/
+  259  ls
+  260  cd scripts/
+  261  ls
+  262  lspci | grep -i nvidia
+  263  nvidia-smi --query-gpu=name --format=csv
+  264  Hardinfo
+  265  NVIDIA X Server Settings
+  266  ndvidia-smi
+  267  nvidia-smi  
+  268  ls
+  269  bash train.sh 
+  270  source ~/.multi3d/bin/activate
+  271  bash train.sh 
+  272  git status
+  273  bash train.sh 
+  274  git add .
+  275  git status
+  276  git commit -m "fixed train test split logic"
+  277  cd ..
+  278  git
+  279  git add .
+  280  git commit -m "fixed train test split"
+  281  git config user.email "gabriela@uni.minerva.edu"
+  282  git config user.name "g-tsvetkova"
+  283  git config --global --list
+  284  git config -l
+  285  git commit -m "fixed train test split"
+  286  git branhc
+  287  git branch
+  288  git push fork datasets/
+  289  git push fork dataset
+  290  git push origin dataset
+  291  ls
+  292  cd scripts/
+  293  ls
+  294  bash train.sh 
+  295  cd ..
+  296  ls
+  297  bash scripts/train.sh
+  298  git add .
+  299  git commit -m "moved preprocessing logic to objaverse.py"
+  300  git push origin dataset
+  301  ls
+  302  python datasets/objaverse.py 
+  303  ls
+  304  source ~/.multi3d/bin/activate
+  305  ls
+  306  cd data-prep/
+  307  ls
+  308  cp filtering.py ../MeshXL/
+  309  ls
+  310  cd ..
+  311  cd MeshXL/
+  312  ls
+  313  git add .
+  314  git commit -m "added data filtering"
+  315  git push origin datasets/
+  316  git push origin dataset
+  317  ls
+  318  export PYTHONPATH="${PYTHONPATH}:/Users/zorin/MeshXL" 
+  319  bash scripts/train.sh 
+  320  git add .
+  321  git commit -m "fixed preprocessing for one batch"
+  322  git push origin dataset
+  323  clear
+  324  ls
+  325  mkdir data_prep
+  326  mv filtering.py ./data_prep/
+  327  cd data_prep/
+  328  ls
+  329  touch stats.py
+  330  clear
+  331  pip install matplotlib
+  332  cd ..
+  333  python stats.py --dataset_dir ~/.objaverse/filtered_meshes/
+  334  python data-prep/stats.py --dataset_dir ~/.objaverse/filtered_meshes/
+  335  python data_prep/stats.py --dataset_dir ~/.objaverse/filtered_meshes/
+  336  ls
+  337  cd data
+  338  cd data_prep
+  339  mkdir plots
+  340  cd ..
+  341  mv face_distribution.png vertex_distribution.png ./plots
+  342  mv face_distribution.png vertex_distribution.png .data_prep//plots
+  343  mv face_distribution.png vertex_distribution.png .data_prep/plots
+  344  mv face_distribution.png vertex_distribution.png ./data_prep/plots
+  345  ls
+  346  cd data_prep/
+  347  ls
+  348  cd plots/
+  349  l
+  350  git add .
+  351  git commit -m "added descriptive stats and padding"
+  352  git push origin dataset
+  353  git log
+  354  clear
+  355  ls
+  356  cd ..
+  357  ls
+  358  cd ..
+  359  bash scripts/train.sh 
+  360  git add .
+  361  git commit -m "fixed padding"
+  362  git push origin dataset
+  363  bash scripts/train.sh 
+  364  cd data_prep/
+  365  l
+  366  ls
+  367  touch filter_non_meshes.py
+  368  cd .
+  369  cd ..
+  370  python data_prep/filter_non_meshes.py 
+  371  ls
+  372  cp -r ~/.objaverse/filtered_meshes/non_meshes/ ~/
+  373  ls
+  374  cd ~
+  375  ls
+  376  cd non_meshes/
+  377  ls
+  378  cd 000-003
+  379  ls
+  380  cd ..
+  381  ls
+  382  cd ~/.objaverse/
+  383  ls
+  384  cd filtered_meshes/
+  385  ls
+  386  rm -rf non_meshes/
+  387  ls
+  388  cd ..
+  389  cd MeshXL/
+  390  ls
+  391  git add .
+  392  git commit -m "non-meshes filtering out applied"
+  393  git push origin dataset
+  394  history | grep "python stats.py"
+  395  python data_prep/stats.py --dataset_dir ~/.objaverse/filtered_meshes/
+  396  bash scripts/train.sh 
+  397  export CUDA_LAUNCH_BLOCKING=1
+  398  bash scripts/train.sh 
+  399  nvidia smi
+  400  nvidia-smi
+  401  bash scripts/train.sh 
+  402  cd MeshXL/
+  403  bash scripts/train.sh 
+  404  source ~/.multi3d/bin/activate
+  405  bash scripts/train.sh 
+  406  CUDA_LAUNCH_BLOCKING=1 bash scripts/train.sh 
+  407  TORCH_USE_CUDA_DSA bash scripts/train.sh 
+  408  export CUDA_LAUNCH_BLOCKING=1
+  409  bash scripts/train.sh 
+  410  export TORCH_USE_CUDA_DSA
+  411  bash scripts/train.sh 
+  412  git add .
+  413  git commit -m "fixed preprocessing"
+  414  git push origin dataset
+  415  ls
+  416  cd MeshXL/
+  417  source ~/.multi3d/bin/activate
+  418  ls
+  419  cd tests/
+  420  touch check_gpus.py
+  421  python
+  422  python check_gpus.py 
+  423  accelerate launch python check_gpus.py
+  424  export CUDA_VISIBLE_DEVICES=0,1,2,3
+  425  python check_gpus.py
+  426  export CUDA_VISIBLE_DEVICES=0,1,2,3
+  427  accelerate launch python check_gpus.py
+  428  accelerate launch --num_processes 4 check_gpus.py
+  429  accelerate launch check_gpus.py
+  430  clear
+  431  cd ..
+  432  ls
+  433  bash scripts/train.sh 
+  434  accelerate config
+  435  cat /root/.cache/huggingface/accelerate/default_config.yaml                                             
+  436  bash scripts/train.sh 
+  437  cat /root/.cache/huggingface/accelerate/default_config.yaml                                             
+  438  nano /root/.cache/huggingface/accelerate/default_config.yaml 
+  439  bash scripts/train.sh 
+  440  nano /root/.cache/huggingface/accelerate/default_config.yaml 
+  441  bash scripts/train.sh 
+  442  nano /root/.cache/huggingface/accelerate/default_config.yaml 
+  443  bash scripts/train.sh 
+  444  ls
+  445  accelerate configure
+  446  accelerate config
+  447  bash scripts/train.sh 
+  448  accelerate config
+  449  bash scripts/train.sh 
+  450  nvidia-smi
+  451  nividia-smi
+  452  nvidia-smi
+  453  ls
+  454  source ~/.multi3d/bin/activate
+  455  ls
+  456  bash scripts/train.sh 
+  457  cd MeshXL/
+  458  bash scripts/train.sh 
+  459  git add .
+  460  git commit -m "fsdp training"
+  461  git push origin dataset
+  462  history | grep "nan"
+  463  nano /root/.cache/huggingface/accelerate/default_config.yaml
+  464  bash scripts/train.sh 
+  465  history | grep "config"
+  466  cat /root/.cache/huggingface/accelerate/default_config.yaml
+  467  nano /root/.cache/huggingface/accelerate/default_config.yaml
+  468  bash scripts/train.sh 
+  469  accelerate config
+  470  bash scripts/train.sh 
+  471  accelerate config
+  472  bash scripts/train.sh 
+  473  python
+  474  bash scripts/train.sh 
+  475  accelerate config
+  476  bash scripts/train.sh 
+  477  nvidia-smi
+  478  kill <pid>
+  479  kill
+  480  bash scripts/train.sh 
+  481  export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+  482  bash scripts/train.sh 
+  483  export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+  484  bash scripts/train.sh 
+  485  export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+  486  bash scripts/train.sh 
+  487  bash scripts/train.sh
+  488  ls
+  489  source ~/.multi3d/bin/activate
+  490  ls
+  491  cd MeshXL
+  492  ls
+  493  bash scripts/train.sh 
+  494  pip uninstall deepspeed
+  495  deactivate
+  496  history | grep "activate"
+  497  source ~/.multi3d/bin/activate
+  498  bash scripts/train.sh 
+  499  nvidia-si
+  500  nvidia-smi
+  501  ls
+  502  bash scripts/train.sh 
+  503  source ~/.multi3d/bin/activate
+  504  cd MeshXL/
+  505  ls
+  506  bash scripts/train.sh 
+  507  history
+  508  source ~/.multi3d/bin/activate
+  509  accelerate config
+  510  cd MeshXL/
+  511  ls
+  512  bash scripts/train.sh
+  513  ls
+  514  source ~/.multi3d/bin/activate
+  515  ls
+  516  bash scripts/train.sh 
+  517  ls
+  518  cd checkpoints/
+  519  ls
+  520  rm -rf *
+  521  ls
+  522  cd ..
+  523  bash scripts/train.sh 
+  524  git log
+  525  git reset --hard
+  526  ls
+  527  cd checkpoints/
+  528  ls
+  529  rm -rf *
+  530  s
+  531  ls
+  532  cd ..
+  533  bash scripts/train.sh 
+  534  ls
+  535  cd mesh
+  536  l
+  537  cd mesh-xl/
+  538  ls
+  539  cd mesh-xl-125m/
+  540  ls
+  541  rm -rf pytorch.bin
+  542  rm -rf pytorch_model.bin 
+  543  cd ..
+  544  ls
+  545  bash scripts/train.sh 
+  546  cd 
+  547  cd MeshXL/
+  548  ls
+  549  cd checkpoints/
+  550  ls
+  551  rm -rf *
+  552  ls
+  553  cd ..
+  554  bash scripts/train.sh 
+  555  ls
+  556  cd checkpoints/
+  557  ls
+  558  rm -rf *
+  559  ls
+  560  cd ..
+  561  bash scripts/train.sh 
+  562  cd checkpoints/
+  563  ls
+  564  rm -rf *
+  565  ls
+  566  cd ..
+  567  ls
+  568  bash scripts/train.sh 
+  569  cd checkpoints/
+  570  ls
+  571  rm -rf *
+  572  ls
+  573  cd ..
+  574  ls
+  575  bash scripts/train.sh 
+  576  ls
+  577  cd checkpoints/
+  578  ls
+  579  rm -rf *
+  580  cd ..
+  581  ls
+  582  bash scripts/train.sh 
+  583  l
+  584  ls
+  585  cd checkpoints/
+  586  ls
+  587  rm -rf *
+  588  cd ..
+  589  ls
+  590  bash scripts/train.sh 
+  591  watch -n 1 nvidia-smi
+  592  nvidia-smi
+  593  git add .
+  594  cd MeshXL/
+  595  l
+  596  git add .
+  597  git commit -m "weights initialization"
+  598  git push origin dataset
+  599  nvidia-smi --gpu-reset -h
+  600  nvidia-smi --help
+  601  sudo nvidia-smi --gpu-reset -i 0
+  602  sudo nvidia-smi --gpu-reset
+  603  sudo
+  604  ls
+  605  clear
+  606  bash scripts/train.sh 
+  607  source ~/.multi3d/bin/activate
+  608  ls
+  609  bash scripts/train.sh 
+  610  ls
+  611  cd checkpoints/
+  612  ls
+  613  rm -rf *
+  614  cd ..
+  615  ls
+  616  bash scripts/train.sh 
+  617  ls
+  618  cd checkpoints/
+  619  ls
+  620  rm -rf *
+  621  cd ..
+  622  bash scripts/train.sh 
+  623  ls
+  624  cd checkpoints/
+  625  ls
+  626  rm -rf *
+  627  ls
+  628  cd ..
+  629  bash scripts/train.sh 
+  630  source ~/.multi3d/bin/activate
+  631  cd MeshXL/
+  632  ls
+  633  bash scripts/train.sh 
+  634  cd MeshXL/
+  635  ls
+  636  git add .
+  637  git statu
+  638  git status
+  639  git add .
+  640  git commit -m "sampling from objaverse"
+  641  git push origin dataset
+  642  clear
+  643  git merge origin main
+  644  git branch
+  645  git merge data
+  646  git merge dataset
+  647  git checkout main
+  648  git merge data
+  649  git merge dataset
+  650  git checkout master
+  651  git checkout
+  652  git checout origin
+  653  git checkout origin
+  654  git branch
+  655  git add .
+  656  git status
+  657  git restore
+  658  git add .
+  659  git status
+  660  git commit -m "get model fixed"
+  661  git checkout main
+  662  git merge dataset
+  663  git branch
+  664  git branch -b speculative-decoding
+  665  git branch -n speculative decoding
+  666  git checkout -b speculative-decoding
+  667  git branch
+  668  ls
+  669  bash scripts/train.sh 
+  670  bash scripts/sample.sh 
+  671  source ~/.multi3d/bin/activate
+  672  bash scripts/sample.sh 
+  673  clear
+  674  bash scripts/sample
+  675  bash scripts/sample.sh 
+  676  git status
+  677  git add 
+  678  git add .
+  679  git commit -m "model updated"
+  680  git push origin speculative-decoding
+  681  cd models/
+  682  l
+  683  cd mesh_xl
+  684  l
+  685  ls
+  686  cd ..
+  687  cd mesh_xl_mtp/
+  688  ls
+  689  cd ..
+  690  ls
+  691  cd ..
+  692  bash scripts/sample
+  693  bash scripts/sample.sh 
+  694  ls
+  695  cd models/
+  696  l
+  697  cd mesh_xl
+  698  ls
+  699  touch __init__.py
+  700  cd ..
+  701  cd mesh_xl_mtp/
+  702  l
+  703  touch __init__.py
+  704  cd ..
+  705  bash scripts/sample
+  706  bash scripts/sample.sh 
+  707  cd models/
+  708  l
+  709  cd mesh_xl
+  710  ls
+  711  cd ..
+  712  cd mesh_xl_mtp/
+  713  ls
+  714  bash scripts/sample.sh 
+  715  cd ..
+  716  bash scripts/sample.sh 
+  717  clear
+  718  bash scripts/sample.sh 
+  719  tree
+  720  sudo apt install tree
+  721  tree
+  722  cd models/
+  723  tree
+  724  clear
+  725  tree
+  726  cd ..
+  727  ls
+  728  bash scripts/sample.sh 
+  729  git add .
+  730  git commit -m "speculative decoding improved"
+  731  git push origin speculative-deco
+  732  git psuh origin speculative-decoding
+  733  git push origin speculative-decoding
+  734  bash scripts/sample.sh 
+  735  ls
+  736  touch compare_inference_times.py
+  737  ls
+  738  cd scripts/
+  739  ls
+  740  touch inference_results.sh
+  741  clear
+  742  pip install pandas matplotlib seaborn
+  743  chmod +x run_inference_experiments.sh
+  744  git commit -m "fixed speculative decoding"
+  745  git add .
+  746  git status
+  747  git add .
+  748  git status
+  749  git --reset
+  750  cd ..
+  751  git rm cached
+  752  git rm --cached ./output
+  753  git rm --cached ./outputs
+  754  git rm -r --cached ./outputs
+  755  git status
+  756  git commit -m "working speculative decoding"
+  757  clear
+  758  cs scripts/
+  759  ./run_inference_experiments.sh
+  760  cd scripts/
+  761  ls
+  762  ./inference_experiments.sh
+  763  bash inference_experiments.sh
+  764  bash inference_results.sh 
+  765  bash sample.sh
+  766  bash inference_results.sh 
+  767  cd ..
+  768  ls
+  769  git add .
+  770  git status
+  771  git commit -m "added inference time test"
+  772  git push origin speculative-decoding
+  773  ls
+  774  cd plots
+  775  ls
+  776  mkdir results
+  777  cd results/
+  778  ls
+  779  cd ..
+  780  mv -r outputs ./results/
+  781  cp -r outputs ./results/
+  782  ls
+  783  cd results/
+  784  ls
+  785  cd outputs/
+  786  l
+  787  cd ..
+  788  l
+  789  ls
+  790  cd ..
+  791  ls
+  792  cd eval_utils/
+  793  ls
+  794  cd ..
+  795  ls
+  796  touch plot_inference
+  797  rm -rf plot_inference 
+  798  touch plot_inference.py
+  799  ls
+  800  python plot_inference_times.py --csv /root/MeshXL/scripts/inference_times.csv --output_dir /root/MeshXL/data_prep/plots
+  801  ls
+  802  python plot_inference.py --csv /root/MeshXL/scripts/inference_times.csv --output_dir /root/MeshXL/data_prep/plots
+  803  git log
+  804  git add .
+  805  git status
+  806  git commit -m "inference comparison plot python script added"
+  807  git push origin speculative-decoding
+  808  nvidia-smi
+  809  git pull
+  810  ls
+  811  cd MeshXL/
+  812  ls
+  813  history
+  814  history > terminal_history.txt

@@ -1,6 +1,7 @@
 export LLM_CONFIG='mesh-xl/mesh-xl-125m'
 # the checkpoint mush align with the $LLM_CONFIG
 export TEST_CKPT='/MeshXL/checkpoints/checkpoint.pth'
+export MODEL = model
 
 
 accelerate launch /root/MeshXL/main.py \

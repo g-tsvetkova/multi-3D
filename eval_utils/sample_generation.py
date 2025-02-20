@@ -55,7 +55,7 @@ def evaluate(
     for sample_round in tqdm.tqdm(range(args.sample_rounds)):
 
         outputs = model(None, num_return_sequences=args.batchsize_per_gpu, is_eval=True, is_generate=True)
-
+        
         batch_size = outputs['recon_faces'].shape[0]
         generated_faces = outputs["recon_faces"]
     

@@ -223,7 +223,6 @@ class MeshXL(nn.Module):
         
         return decoder_output
     
-    
 
 def get_model(args):
     model = MeshXL(args)
