@@ -2,7 +2,7 @@ import os
 import numpy as np
 from tqdm import tqdm
 from copy import deepcopy
-# from eval_utils.perplexity import evaluate
+from eval_utils.perplexity import evaluate
 
 BASE_DIR = os.path.join('..', 'data')
 

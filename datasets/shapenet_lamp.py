@@ -1,8 +1,8 @@
 import os
 import numpy as np
 from tqdm import tqdm
-#from eval_utils.perplexity import evaluate
-from base_dataset import BaseDataset, BASE_DIR
+from eval_utils.perplexity import evaluate
+from datasets.base_dataset import BaseDataset, BASE_DIR
 
 DATASET_DIR = os.path.join(BASE_DIR, 'MeshXL-shapenet-data')
 
@@ -16,7 +16,7 @@ class Dataset(BaseDataset):
         # base dataset config
         self.dataset_name = 'shapenet_lamp'
         self.category_id = '03636649'
-        #self.eval_func = evaluate
+        self.eval_func = evaluate
         self.augment = augment and (split_set == 'train')
         self.num_repeat = 1
         self.pad_id = -1

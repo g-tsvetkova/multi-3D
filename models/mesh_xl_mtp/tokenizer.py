@@ -33,7 +33,7 @@ def undiscretize(
 class MeshTokenizer(nn.Module):
     def __init__(self, args):
         super().__init__()
-        self.pad_id = -1
+        self.pad_id = self.codebook_size +2    #-1
         self.num_discrete_coors = args.n_discrete_size  # default: 128
         self.codebook_size = args.n_discrete_size  # default: 128
         self.coor_continuous_range = (-1.0, 1.0)

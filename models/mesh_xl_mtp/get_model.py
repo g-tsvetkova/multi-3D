@@ -22,9 +22,9 @@ class MTPMeshXL(nn.Module):
         self.config = OPTConfig(
             vocab_size=self.vocab_size,
             hidden_size=256,
-            num_hidden_layers=6,
-            num_attention_heads=8,
-            max_position_embeddings=8192,
+            num_hidden_layers=4,
+            num_attention_heads=4,
+            max_position_embeddings=8000,
             ffn_dim=1024,
             activation_function="relu",
             dropout=0.1,
@@ -43,7 +43,7 @@ class MTPMeshXL(nn.Module):
         # Initialize prediction heads
         self.heads = nn.ModuleList([
             nn.Sequential(
-                nn.TransformerDecoderLayer(
+                nn.TransformerEncoderLayer(
                     d_model=self.config.hidden_size,
                     nhead=self.config.num_attention_heads,
                     dim_feedforward=self.config.ffn_dim,
@@ -52,7 +52,7 @@ class MTPMeshXL(nn.Module):
                     batch_first=True
                 ),
                 nn.LayerNorm(self.config.hidden_size),
-                nn.Linear(self.config.hidden_size, self.vocab_size)
+                nn.Linear(self.config.hidden_size, self.config.vocab_size)
             )
             for _ in range(self.n_future_tokens)
         ])
@@ -126,49 +126,48 @@ class MTPMeshXL(nn.Module):
         )
         trunk_features = trunk_outputs.last_hidden_state
 
-        def train_one_step(self, data_dict: dict) -> dict:
-            # Multi-token prediction
-            total_loss = 0
-            seq_length = trunk_features.size(1)
+        # Multi-token prediction
+        total_loss = 0
+        seq_length = trunk_features.size(1)
+        
+        for head_idx, head in enumerate(self.heads):
+            offset = head_idx + 1
             
-            for head_idx, head in enumerate(self.heads):
-                offset = head_idx + 1
-                
-                # Add guard condition for sequence length
-                if offset >= seq_length:
-                    continue  # Skip heads that would cause empty tensors
-                
-                # Add offset embedding
-                offset_emb = self.offset_embeddings(
-                    torch.tensor(head_idx, device=trunk_features.device, dtype=torch.long)  # Explicit dtype
-                )
-                features = trunk_features + offset_emb[None, None, :]
-                
-                # Get predictions for valid sequence positions
-                logits = head(features[:, :seq_length-offset])  # Only process valid positions
-                
-                # Get targets with proper bounds checking
-                targets = input_ids[:, offset:offset+seq_length-offset]
-                target_mask = attention_mask[:, offset:offset+seq_length-offset]
-                
-                # Calculate loss only if there are valid targets
-                if targets.numel() == 0:
-                    continue
+            # Add guard condition for sequence length
+            if offset >= seq_length:
+                continue  # Skip heads that would cause empty tensors
+            
+            # Add offset embedding
+            offset_emb = self.offset_embeddings(
+                torch.tensor(head_idx, device=trunk_features.device, dtype=torch.long)  # Explicit dtype
+            )
+            features = trunk_features + offset_emb[None, None, :]
+            
+            # Get predictions for valid sequence positions
+            logits = head(features[:, :seq_length-offset])  # Only process valid positions
+            
+            # Get targets with proper bounds checking
+            targets = input_ids[:, offset:offset+seq_length-offset]
+            target_mask = attention_mask[:, offset:offset+seq_length-offset]
+            
+            # Calculate loss only if there are valid targets
+            if targets.numel() == 0:
+                continue
 
-                loss = nnf.cross_entropy(
-                    logits.reshape(-1, self.vocab_size),
-                    targets.reshape(-1),
-                    ignore_index=self.pad_token_id,
-                    reduction='none'
-                )
-                
-                # Apply mask and average only if there are valid elements
-                if target_mask.sum().item() > 0:
-                    loss = (loss.view_as(targets) * target_mask).sum() / target_mask.sum()
-                    total_loss += loss
+            loss = nnf.cross_entropy(
+                logits.reshape(-1, self.vocab_size),
+                targets.reshape(-1),
+                ignore_index=self.pad_token_id,
+                reduction='none'
+            )
+            
+            # Apply mask and average only if there are valid elements
+            if target_mask.sum().item() > 0:
+                loss = (loss.view_as(targets) * target_mask).sum() / target_mask.sum()
+                total_loss += loss
 
-            data_dict["loss"] = total_loss / max(1, self.n_future_tokens)  # Prevent division by zero
-            return data_dict
+        data_dict["loss"] = total_loss / max(1, self.n_future_tokens)  # Prevent division by zero
+        return data_dict
 
 
     @torch.no_grad()

@@ -232,15 +232,18 @@ def main(args):
     # torch.cuda.manual_seed_all(args.seed)
 
     if args.checkpoint_dir is not None:
-        pass
+        if not os.path.exists(args.checkpoint_dir):
+            os.makedirs(args.checkpoint_dir)
+            print(f"Created checkpoint directory: {args.checkpoint_dir}")
+        else:
+            print(f"Using existing checkpoint directory: {args.checkpoint_dir}")
     elif args.test_ckpt is not None:
         # if not define the checkpoint-dir, set to the test checkpoint folder as default
         args.checkpoint_dir = os.path.dirname(args.test_ckpt)
-        print(f"testing directory: {args.checkpoint_dir}")
+        print(f"Testing directory: {args.checkpoint_dir}")
     else:
         raise AssertionError("Either checkpoint_dir or test_ckpt should be presented!")
 
-    os.makedirs(args.checkpoint_dir, exist_ok=True)
     accelerator = Accelerator(log_with="wandb")
     # Initialise your wandb run, passing wandb parameters and any config information
     accelerator.init_trackers(
@@ -250,15 +253,16 @@ def main(args):
 
     ### build datasets and dataloaders
     datasets, dataloaders = build_dataset_func(args)
-
+    print(dataloaders)
     ### build models
     model = build_model_func(args)
     ### set default checkpoint
     checkpoint = None
+    # Initialize logger here, before both test and train branches
+    logger = Logger(args.checkpoint_dir, accelerator)
 
     # testing phase
     if args.test_only:
-
         try:
             checkpoint = torch.load(args.test_ckpt, map_location=torch.device("cpu"))
             model.load_state_dict(checkpoint["model"], strict=False)
@@ -269,14 +273,14 @@ def main(args):
             model, dataloaders["train"], *dataloaders["test"]
         )
 
-
+        # Now logger is defined for testing phase
         for test_loader in dataloaders["test"]:
             print("Starting inference...")
-            start_time = time.time()  # Start timing
-            test_loader.dataset.eval_func(args, -1, model, accelerator, test_loader)
-            end_time = time.time()  # End timing
-            inference_time = end_time - start_time  # Calculate elapsed time
-            print(f"Inference Time: {inference_time:.4f} seconds")  # Print the inference times
+            start_time = time.time()
+            test_loader.dataset.eval_func(args, -1, model, accelerator, test_loader, logger)
+            end_time = time.time()
+            inference_time = end_time - start_time
+            print(f"Inference Time: {inference_time:.4f} seconds")
 
     # training phase
     else:
