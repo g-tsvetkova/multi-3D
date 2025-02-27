@@ -1,8 +1,0 @@
-{"time":"2024-12-12T04:07:56.504196502Z","level":"INFO","msg":"using version","core version":"0.19.0"}
-{"time":"2024-12-12T04:07:56.504209266Z","level":"INFO","msg":"created symlink","path":"/root/MeshXL/wandb/run-20241212_040756-dg86ee3n/logs/debug-core.log"}
-{"time":"2024-12-12T04:07:56.609171314Z","level":"INFO","msg":"created new stream","id":"dg86ee3n"}
-{"time":"2024-12-12T04:07:56.609199326Z","level":"INFO","msg":"stream: started","id":"dg86ee3n"}
-{"time":"2024-12-12T04:07:56.60922273Z","level":"INFO","msg":"writer: Do: started","stream_id":"dg86ee3n"}
-{"time":"2024-12-12T04:07:56.609247426Z","level":"INFO","msg":"sender: started","stream_id":"dg86ee3n"}
-{"time":"2024-12-12T04:07:56.609285306Z","level":"INFO","msg":"handler: started","stream_id":"dg86ee3n"}
-{"time":"2024-12-12T04:07:56.951395334Z","level":"INFO","msg":"Starting system monitor"}

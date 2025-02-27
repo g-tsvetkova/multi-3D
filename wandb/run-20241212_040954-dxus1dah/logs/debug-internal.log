@@ -1,8 +1,0 @@
-{"time":"2024-12-12T04:09:54.222893281Z","level":"INFO","msg":"using version","core version":"0.19.0"}
-{"time":"2024-12-12T04:09:54.222911255Z","level":"INFO","msg":"created symlink","path":"/root/MeshXL/wandb/run-20241212_040954-dxus1dah/logs/debug-core.log"}
-{"time":"2024-12-12T04:09:54.327169029Z","level":"INFO","msg":"created new stream","id":"dxus1dah"}
-{"time":"2024-12-12T04:09:54.32719641Z","level":"INFO","msg":"stream: started","id":"dxus1dah"}
-{"time":"2024-12-12T04:09:54.327224022Z","level":"INFO","msg":"writer: Do: started","stream_id":"dxus1dah"}
-{"time":"2024-12-12T04:09:54.327235774Z","level":"INFO","msg":"handler: started","stream_id":"dxus1dah"}
-{"time":"2024-12-12T04:09:54.327280367Z","level":"INFO","msg":"sender: started","stream_id":"dxus1dah"}
-{"time":"2024-12-12T04:09:54.687242737Z","level":"INFO","msg":"Starting system monitor"}
