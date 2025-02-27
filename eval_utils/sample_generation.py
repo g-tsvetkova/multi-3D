@@ -34,7 +34,7 @@ def evaluate(
     logout=print,
     curr_train_iter=-1,
 ):
-
+    print("GENERATION")
     net_device = next(model.parameters()).device
     num_batches = len(dataset_loader)
 

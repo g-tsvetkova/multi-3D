@@ -12,6 +12,7 @@ from utils.logger import Logger
 import logging
 
 
+
 # import torch.distributed.elastic.multiprocessing.errors as errors
 # errors.record()
 
@@ -190,8 +191,9 @@ def build_dataset_func(args):
             dataset_module.Dataset(args, split_set="train", augment=args.augment)
         )
         datasets["test"].append(
-            dataset_module.Dataset(args, split_set="test", augment=False)
+            dataset_module.Dataset(args, split_set="val", augment=False)
         )
+        print(datasets["test"])
 
     datasets["train"] = torch.utils.data.ConcatDataset(datasets["train"])
 
@@ -243,7 +245,8 @@ def main(args):
         print(f"Testing directory: {args.checkpoint_dir}")
     else:
         raise AssertionError("Either checkpoint_dir or test_ckpt should be presented!")
-
+    
+    os.makedirs(args.checkpoint_dir, exist_ok=True)
     accelerator = Accelerator(log_with="wandb")
     # Initialise your wandb run, passing wandb parameters and any config information
     accelerator.init_trackers(
@@ -263,8 +266,10 @@ def main(args):
 
     # testing phase
     if args.test_only:
+        logger = Logger(args.checkpoint_dir, accelerator)
         try:
-            checkpoint = torch.load(args.test_ckpt, map_location=torch.device("cpu"))
+            # checkpoint = torch.load(args.test_ckpt, map_location=torch.device("cpu"))
+            checkpoint = torch.load("/root/MeshXL/checkpoints/checkpoint_40k.pth")
             model.load_state_dict(checkpoint["model"], strict=False)
         except:
             print("test the model from scratch...")
@@ -272,7 +277,7 @@ def main(args):
         model, dataloaders["train"], *dataloaders["test"] = accelerator.prepare(
             model, dataloaders["train"], *dataloaders["test"]
         )
-
+        print("Data loaders:", dataloaders["test"])
         # Now logger is defined for testing phase
         for test_loader in dataloaders["test"]:
             print("Starting inference...")

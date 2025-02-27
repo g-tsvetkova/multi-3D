@@ -1,6 +1,7 @@
 import os
 import numpy as np
 from tqdm import tqdm
+#from eval_utils.sample_generation import evaluate
 from eval_utils.perplexity import evaluate
 from datasets.base_dataset import BaseDataset, BASE_DIR
 
@@ -41,21 +42,34 @@ class Dataset(BaseDataset):
         
         print(f"[MeshDataset] Created from {len(self.data)} shapes for {self.dataset_name} {split_set}")
 
+
+import torch
+from models.mesh_xl.tokenizer import MeshTokenizer
+
 if __name__ == "__main__":
-    # Create a simple args object with required attributes
+
     class Args:
         def __init__(self):
+            self.n_discrete_size = 128
             self.n_max_triangles = 1000
-
-    # Create dataset instance
-    args = Args()
-    dataset = Dataset(args, split_set="train")
+            # plus any other needed args
     
-    # Print some basic information
-    print(f"\nDataset Test Information:")
-    print(f"Number of samples: {len(dataset.data)}")
-    if len(dataset.data) > 0:
-        print(f"First sample type: {type(dataset.data[0])}")
-        print(f"First sample keys: {dataset.data[0].keys() if isinstance(dataset.data[0], dict) else 'Not a dictionary'}")
+    # Initialize dataset
+    args = Args()
+    dataset = Dataset(args, split_set="train")  # your dataset
+    tokenizer = MeshTokenizer(args)  # or MeshTokenizer(args) if needed
 
-# 
+    token_lengths = []
+    for i, sample in enumerate(dataset.data):
+        data_dict = {
+            # Convert each NumPy array to a Torch Tensor, then unsqueeze(0)
+            "vertices": torch.from_numpy(sample["vertices"]).unsqueeze(0),  # shape (1, nf, 3)
+            "faces":    torch.from_numpy(sample["faces"]).unsqueeze(0),     # shape (1, nf, 3)
+        }
+        out_dict = tokenizer.tokenize(data_dict)
+        length = out_dict["input_ids"].shape[1]
+        token_lengths.append(length)
+
+    print("Max token length across dataset:", max(token_lengths))
+    print("Min token length across dataset:", min(token_lengths))
+    print(f"Average token length: {sum(token_lengths)/len(token_lengths):.2f}")

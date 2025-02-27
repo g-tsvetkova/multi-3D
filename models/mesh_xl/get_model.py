@@ -18,11 +18,17 @@ class MeshXL(nn.Module):
         self.tokenizer = MeshTokenizer(args)
         
         # causal LM model initialization
-        self.vocab_size = self.tokenizer.codebook_size + 3
-        self.bos_token_id = self.tokenizer.codebook_size
-        self.eos_token_id = self.tokenizer.codebook_size + 1
-        self.pad_token_id = self.tokenizer.codebook_size + 2
+        # self.vocab_size = self.tokenizer.codebook_size + 3
+        # self.bos_token_id = self.tokenizer.codebook_size
+        # self.eos_token_id = self.tokenizer.codebook_size + 1
+        # self.pad_token_id = self.tokenizer.codebook_size + 2
         
+        self.vocab_size = 50272
+        self.bos_token_id = 2
+        self.eos_token_id = 2
+        self.pad_token_id = 1
+
+
         # config = AutoConfig.from_pretrained(
         #     args.llm, 
         #     n_positions=8192,
@@ -36,10 +42,10 @@ class MeshXL(nn.Module):
         # Create a custom OPT configuration
         config = OPTConfig(
             vocab_size=self.vocab_size,
-            hidden_size=256,
+            hidden_size=512,
             num_hidden_layers=6,
-            num_attention_heads=2,
-            max_position_embeddings=8192,
+            num_attention_heads=4,
+            max_position_embeddings=7300,
             bos_token_id=self.bos_token_id,
             eos_token_id=self.eos_token_id,
             pad_token_id=self.pad_token_id,
@@ -51,7 +57,7 @@ class MeshXL(nn.Module):
             layerdrop=0.0,
             use_cache=True,
             torch_dtype=torch.float16,
-            ffn_dim = 1024
+            ffn_dim = 2048
         )
         print(self.vocab_size)
 

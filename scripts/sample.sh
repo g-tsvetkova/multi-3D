@@ -9,7 +9,7 @@ accelerate launch /root/MeshXL/main.py \
     --n_max_triangles 800 \
     --n_discrete_size 128 \
     --llm $LLM_CONFIG \
-    --model mesh_xl_mtp \
+    --model mesh_xl \
     --checkpoint_dir $TEST_CKPT \
     --dataset_num_workers 1 \
     --sample_rounds 1 \

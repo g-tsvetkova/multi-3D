@@ -6,3 +6,4 @@ __pycache__
 /wandb
 ../outputs
 /outputs
+events.out.tfevents.*

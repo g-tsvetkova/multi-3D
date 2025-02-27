@@ -8,7 +8,7 @@ accelerate launch \
     --num_processes 8 \
     --mixed_precision bf16 \
     main.py \
-    --dataset objaverse \
+    --dataset shapenet_lamp \
     --n_max_triangles 800 \
     --n_discrete_size 128 \
     --llm $LLM_CONFIG \
