@@ -7,3 +7,9 @@ __pycache__
 ../outputs
 /outputs
 events.out.tfevents.*
+
+# Add specific checkpoint files
+checkpoints/checkpoint.pth
+checkpoints/checkpoint_20k.pth
+checkpoints/checkpoint_40k.pth
+checkpoints/checkpoint_60k.pth
