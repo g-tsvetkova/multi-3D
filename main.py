@@ -335,9 +335,9 @@ def main(args):
         )
         args.start_epoch = loaded_epoch + 1
         
-        model, optimizer, dataloaders['train'], *dataloaders['test'] = accelerator.prepare(
-            model, optimizer, dataloaders['train'], *dataloaders['test']
-        )
+        # model, optimizer, dataloaders['train'], *dataloaders['test'] = accelerator.prepare(
+        #     model, optimizer, dataloaders['train'], *dataloaders['test']
+        # )
         
         do_train(
             args,
