@@ -10,31 +10,32 @@ class MTPMeshXL(nn.Module):
     def __init__(self, args):
         super().__init__()
         self.tokenizer = MeshTokenizer(args)
-        self.n_future_tokens = 2  # Predict next 2 tokens
+        self.n_future_tokens = 3  # Predict next 3 tokens
 
-        # Token config
-        self.vocab_size = self.tokenizer.codebook_size + 3
-        self.bos_token_id = self.tokenizer.codebook_size
-        self.eos_token_id = self.tokenizer.codebook_size + 1
-        self.pad_token_id = self.tokenizer.codebook_size + 2
-
+        self.vocab_size = 50272
+        self.bos_token_id = 2
+        self.eos_token_id = 2
+        self.pad_token_id = 1
         # Create model config
+         # Create a custom OPT configuration
         self.config = OPTConfig(
             vocab_size=self.vocab_size,
-            hidden_size=256,
+            hidden_size=512,
             num_hidden_layers=4,
             num_attention_heads=4,
-            max_position_embeddings=8000,
-            ffn_dim=1024,
+            max_position_embeddings=7300,
+            bos_token_id=self.bos_token_id,
+            eos_token_id=self.eos_token_id,
+            pad_token_id=self.pad_token_id,
             activation_function="relu",
             dropout=0.1,
             attention_dropout=0.0,
             activation_dropout=0.0,
+            init_std=0.02,
             layerdrop=0.0,
             use_cache=True,
-            bos_token_id=self.bos_token_id,
-            eos_token_id=self.eos_token_id,
-            pad_token_id=self.pad_token_id,
+            torch_dtype=torch.float16,
+            ffn_dim = 2048
         )
         
         # Initialize trunk
@@ -209,34 +210,76 @@ class MTPMeshXL(nn.Module):
         data_dict["perplexity"] = torch.exp(loss)
         return data_dict
 
+    # @torch.no_grad()
+    # def generate(self, data_dict: dict, **kwargs) -> dict:
+    #     # Autoregressive generation with first head
+    #     net_device = next(self.parameters()).device
+    #     input_ids = data_dict["input_ids"].to(net_device)
+    #     max_length = kwargs.get("max_length", 512)
+
+    #     for _ in range(max_length):
+    #         # Trunk processing
+    #         trunk_out = self.trunk(input_ids).last_hidden_state
+
+    #         # First head prediction
+    #         causal_mask = torch.triu(
+    #             torch.ones(input_ids.size(1), input_ids.size(1), device=net_device)
+    #             * float("-inf"),
+    #             diagonal=1,
+    #         )
+    #         head_out = self.heads[0][0](trunk_out, trunk_out, tgt_mask=causal_mask)
+    #         logits = self.heads[0][1](head_out[:, -1:])
+
+    #         # Sampling
+    #         probs = nnf.softmax(logits / kwargs.get("temperature", 1.0), dim=-1)
+    #         next_tokens = torch.multinomial(probs.squeeze(1), num_samples=1)
+    #         input_ids = torch.cat([input_ids, next_tokens], dim=1)
+
+    #     # Post-processing
+    #     input_ids[input_ids == self.eos_token_id] = self.tokenizer.pad_id
+    #     return self.tokenizer.detokenize(input_ids)
+
     @torch.no_grad()
-    def generate(self, data_dict: dict, **kwargs) -> dict:
-        # Autoregressive generation with first head
+    def generate(self, data_dict: dict=None, num_return_sequences: int=8, generation_config: dict=dict()) -> dict:
         net_device = next(self.parameters()).device
-        input_ids = data_dict["input_ids"].to(net_device)
-        max_length = kwargs.get("max_length", 512)
-
-        for _ in range(max_length):
-            # Trunk processing
-            trunk_out = self.trunk(input_ids).last_hidden_state
-
-            # First head prediction
-            causal_mask = torch.triu(
-                torch.ones(input_ids.size(1), input_ids.size(1), device=net_device)
-                * float("-inf"),
-                diagonal=1,
-            )
-            head_out = self.heads[0][0](trunk_out, trunk_out, tgt_mask=causal_mask)
-            logits = self.heads[0][1](head_out[:, -1:])
-
-            # Sampling
-            probs = nnf.softmax(logits / kwargs.get("temperature", 1.0), dim=-1)
-            next_tokens = torch.multinomial(probs.squeeze(1), num_samples=1)
-            input_ids = torch.cat([input_ids, next_tokens], dim=1)
-
-        # Post-processing
-        input_ids[input_ids == self.eos_token_id] = self.tokenizer.pad_id
-        return self.tokenizer.detokenize(input_ids)
+        
+        # Ensure sequence length is divisible by 9
+        # Find largest multiple of 9 that fits within max_position_embeddings
+        face_token_size = 9  # 3 vertices × 3 coordinates per face
+        max_length = (7300 // face_token_size) * face_token_size  # 7299 (divisible by 9)
+        
+        output_ids = torch.ones(num_return_sequences, max_length).long().to(net_device) * self.eos_token_id
+        
+        # batch x ntokens
+        results = self.transformer.generate(
+            max_new_tokens=max_length-1,
+            num_return_sequences=num_return_sequences,
+            bos_token_id=self.bos_token_id,
+            eos_token_id=self.eos_token_id,
+            pad_token_id=self.eos_token_id,
+            **generation_config
+        )
+        
+        # Ensure we don't exceed our max_length
+        seq_len = min(results.shape[1], max_length)
+        # Adjust seq_len to be divisible by 9
+        seq_len = seq_len - (seq_len % face_token_size)
+        
+        output_ids[:, :seq_len] = results[:, :seq_len]
+        
+        # discard <bos> and <eos> tokens to pad tokens
+        output_ids = output_ids[:, 1: -1]
+        output_ids[output_ids == self.eos_token_id] = self.tokenizer.pad_id
+        
+        # Final safety check to ensure divisibility by 9
+        seq_len = output_ids.shape[1]
+        adjusted_len = seq_len - (seq_len % face_token_size)
+        if adjusted_len != seq_len:
+            output_ids = output_ids[:, :adjusted_len]
+        
+        decoder_output = self.tokenizer.detokenize(input_ids=output_ids)
+        
+        return decoder_output
 
     def loss_wrapper(self, loss: Tensor) -> Tensor:
         # Original regularization (keep unchanged)
