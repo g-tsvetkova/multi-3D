@@ -259,8 +259,7 @@ def main(args):
     ### build models
     model = build_model_func(args)
     ### set default checkpoint
-    # checkpoint = None
-    checkpoint=torch.load("/root/MeshXL/checkpoints/checkpoint_120k.pth")
+    checkpoint = None
     # Initialize logger here, before both test and train branches
     logger = Logger(args.checkpoint_dir, accelerator)
 
