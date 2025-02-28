@@ -56,7 +56,7 @@ if __name__ == "__main__":
     
     # Initialize dataset
     args = Args()
-    dataset = Dataset(args, split_set="train")  # your dataset
+    dataset = Dataset(args, split_set="val")  # your dataset
     tokenizer = MeshTokenizer(args)  # or MeshTokenizer(args) if needed
 
     token_lengths = []

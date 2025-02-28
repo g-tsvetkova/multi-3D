@@ -1,6 +1,6 @@
 export LLM_CONFIG='mesh-xl/mesh-xl-125m'
-export NSAMPLE_PER_GPU=2
-export SAMPLE_ROUNDS=100
+export NSAMPLE_PER_GPU=1
+export SAMPLE_ROUNDS=10
 export OUTPUT_DIR='./output-samples-125m'
 
 accelerate launch \

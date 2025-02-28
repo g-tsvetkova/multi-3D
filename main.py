@@ -12,7 +12,6 @@ from utils.logger import Logger
 import logging
 
 
-
 # import torch.distributed.elastic.multiprocessing.errors as errors
 # errors.record()
 
@@ -260,7 +259,8 @@ def main(args):
     ### build models
     model = build_model_func(args)
     ### set default checkpoint
-    checkpoint = None
+    # checkpoint = None
+    checkpoint=torch.load("/root/MeshXL/checkpoints/checkpoint_120k.pth")
     # Initialize logger here, before both test and train branches
     logger = Logger(args.checkpoint_dir, accelerator)
 
@@ -269,7 +269,7 @@ def main(args):
         logger = Logger(args.checkpoint_dir, accelerator)
         try:
             # checkpoint = torch.load(args.test_ckpt, map_location=torch.device("cpu"))
-            checkpoint = torch.load("/root/MeshXL/checkpoints/checkpoint_40k.pth")
+            checkpoint = torch.load("/root/MeshXL/checkpoints/checkpoint_120k.pth")
             model.load_state_dict(checkpoint["model"], strict=False)
         except:
             print("test the model from scratch...")
@@ -330,28 +330,51 @@ def main(args):
             )
         )
 
-        # Initialize training state
-        if args.train_from_scratch:
-            loaded_epoch = -1
-            best_val_metrics = None
-            print("Training from scratch - ignoring existing checkpoints")
-        else:
-            try:
-                loaded_epoch, best_val_metrics = resume_if_possible(
-                    args.checkpoint_dir, model, optimizer
-                )
-                print("Training resumed from epoch:", loaded_epoch)
-            except Exception as e:
-                print(f"Failed to load checkpoint: {e}")
-                loaded_epoch = -1
-                best_val_metrics = None
-                print("Starting fresh training")
-            
-        args.start_epoch = loaded_epoch + 1
-
-        do_train(
-            args, model, accelerator, optimizer, dataloaders, best_val_metrics, logger
+          
+        loaded_epoch, best_val_metrics = resume_if_possible(
+            args.checkpoint_dir, model, optimizer
         )
+        args.start_epoch = loaded_epoch + 1
+        
+        model, optimizer, dataloaders['train'], *dataloaders['test'] = accelerator.prepare(
+            model, optimizer, dataloaders['train'], *dataloaders['test']
+        )
+        
+        do_train(
+            args,
+            model,
+            accelerator,
+            optimizer,
+            dataloaders,
+            best_val_metrics,
+            logger
+        )
+
+        # # Initialize training state
+        # if args.train_from_scratch:
+        #     loaded_epoch = -1
+        #     best_val_metrics = None
+        #     print("Training from scratch - ignoring existing checkpoints")
+        # else:
+        #     try:
+        #         # loaded_epoch, best_val_metrics = resume_if_possible(
+        #         #     args.checkpoint_dir, model, optimizer
+        #         # )
+        #         loaded_epoch, best_val_metrics = resume_if_possible(
+        #             "/root/MeshXL/checkpoints/checkpoint_60k.pth", model, optimizer
+        #         )
+        #         print("Training resumed from epoch:", loaded_epoch)
+        #     except Exception as e:
+        #         print(f"Failed to load checkpoint: {e}")
+        #         loaded_epoch = -1
+        #         best_val_metrics = None
+        #         print("Starting fresh training")
+            
+        # args.start_epoch = loaded_epoch + 1
+
+        # do_train(
+        #     args, model, accelerator, optimizer, dataloaders, best_val_metrics, logger
+        # )
 
 
 if __name__ == "__main__":

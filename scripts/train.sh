@@ -20,5 +20,5 @@ accelerate launch \
        --eval_every_iteration 10000 \
     --save_every 20000 \
     --max_epoch 1024 \
-    --train_from_scratch
+   #  --train_from_scratch
     

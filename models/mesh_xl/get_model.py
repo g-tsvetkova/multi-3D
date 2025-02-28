@@ -203,11 +203,41 @@ class MeshXL(nn.Module):
         data_dict['neg_log_likelihood'] = neg_log_likelihood    # batch,
         return data_dict
     
+    # @torch.no_grad()
+    # def generate(self, data_dict: dict=None, num_return_sequences: int=8, generation_config: dict=dict()) -> dict:
+
+    #     net_device = next(self.parameters()).device
+    #     max_length = 7300
+    #     output_ids = torch.ones(num_return_sequences, max_length).long().to(net_device) * self.eos_token_id
+        
+    #     # batch x ntokens
+    #     results = self.transformer.generate(
+    #         max_new_tokens=max_length-1,
+    #         num_return_sequences=num_return_sequences,
+    #         bos_token_id=self.bos_token_id,
+    #         eos_token_id=self.eos_token_id,
+    #         pad_token_id=self.eos_token_id,
+    #         **generation_config
+    #     )
+    #     output_ids[:, :results.shape[1]] = results
+        
+    #     # discard <bos> and <eos> tokens to pad tokens
+    #     output_ids = output_ids[:, 1: -1]
+    #     output_ids[output_ids == self.eos_token_id] = self.tokenizer.pad_id
+        
+    #     decoder_output = self.tokenizer.detokenize(input_ids=output_ids)
+        
+    #     return decoder_output
+
     @torch.no_grad()
     def generate(self, data_dict: dict=None, num_return_sequences: int=8, generation_config: dict=dict()) -> dict:
-
         net_device = next(self.parameters()).device
-        max_length = 8192
+        
+        # Ensure sequence length is divisible by 9
+        # Find largest multiple of 9 that fits within max_position_embeddings
+        face_token_size = 9  # 3 vertices × 3 coordinates per face
+        max_length = (7300 // face_token_size) * face_token_size  # 7299 (divisible by 9)
+        
         output_ids = torch.ones(num_return_sequences, max_length).long().to(net_device) * self.eos_token_id
         
         # batch x ntokens
@@ -219,16 +249,28 @@ class MeshXL(nn.Module):
             pad_token_id=self.eos_token_id,
             **generation_config
         )
-        output_ids[:, :results.shape[1]] = results
+        
+        # Ensure we don't exceed our max_length
+        seq_len = min(results.shape[1], max_length)
+        # Adjust seq_len to be divisible by 9
+        seq_len = seq_len - (seq_len % face_token_size)
+        
+        output_ids[:, :seq_len] = results[:, :seq_len]
         
         # discard <bos> and <eos> tokens to pad tokens
         output_ids = output_ids[:, 1: -1]
         output_ids[output_ids == self.eos_token_id] = self.tokenizer.pad_id
         
+        # Final safety check to ensure divisibility by 9
+        seq_len = output_ids.shape[1]
+        adjusted_len = seq_len - (seq_len % face_token_size)
+        if adjusted_len != seq_len:
+            output_ids = output_ids[:, :adjusted_len]
+        
         decoder_output = self.tokenizer.detokenize(input_ids=output_ids)
         
         return decoder_output
-    
+        
 
 def get_model(args):
     model = MeshXL(args)
