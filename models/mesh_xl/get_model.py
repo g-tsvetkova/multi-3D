@@ -145,51 +145,93 @@ class MeshXL(nn.Module):
             loss += 0 * torch.sum(param ** 2)
         return loss
     
+    # def train_one_step(self, data_dict: dict) -> dict:
+    #     # Add memory cleanup at start
+    #     torch.cuda.empty_cache()
+        
+    #     data_dict = self.tokenizer.tokenize(data_dict)
+        
+    #     input_ids = data_dict['input_ids']              # batch x ntoken
+    #     attention_mask = data_dict['attention_mask']    # batch x ntoken
+        
+    #     # parse input with <bos> and <eos> tokens
+    #     input_ids[input_ids == self.tokenizer.pad_id] = self.pad_token_id   # <pad> xxx <pad> <pad>
+    #     input_ids[:, 0] = self.bos_token_id                                 # <bos> xxx <pad> <pad>
+    #     eos_pos_id = attention_mask.sum(1, keepdim=True) - 1
+    #     input_ids = torch.scatter(                                          # <bos> xxx <eos> <pad>
+    #         input_ids, 
+    #         1, 
+    #         eos_pos_id.long(), 
+    #         torch.ones_like(input_ids) * self.eos_token_id
+    #     )
+        
+    #     target = input_ids.clone()
+    #     target[attention_mask == 0] = -100              # not loss for the padding tokens
+        
+    #     # Forward pass, calling causal llm
+    #     output = self.transformer(
+    #         input_ids = input_ids.long(),
+    #     )
+        
+    #     # compute loss with shift one-token right
+    #     logit = output.logits[:, :-1]   # batch x ntoken x vocab
+    #     label = target[:, 1:]           # batch x ntoken
+        
+    #     final_loss = nnf.cross_entropy(
+    #         logit.permute(0, 2, 1),         # batch x vocab x ntoken
+    #         label,
+    #     )   # batch x ntoken
+        
+    #     data_dict['loss'] = self.loss_wrapper(final_loss)
+    #     data_dict['gen_loss'] = final_loss
+        
+    #     # # Print loss and some weights for verification
+    #     # if torch.distributed.get_rank() == 0:
+    #     #     print(f"Loss: {final_loss.item()}")
+    #     #     print(f"First 5 weights of embed_tokens: {self.transformer.model.decoder.embed_tokens.weight.data[:5, :5]}")
+        
+    #     return data_dict
+
     def train_one_step(self, data_dict: dict) -> dict:
         # Add memory cleanup at start
         torch.cuda.empty_cache()
-        
         data_dict = self.tokenizer.tokenize(data_dict)
-        
         input_ids = data_dict['input_ids']              # batch x ntoken
         attention_mask = data_dict['attention_mask']    # batch x ntoken
-        
-        # parse input with <bos> and <eos> tokens
-        input_ids[input_ids == self.tokenizer.pad_id] = self.pad_token_id   # <pad> xxx <pad> <pad>
-        input_ids[:, 0] = self.bos_token_id                                 # <bos> xxx <pad> <pad>
+        # [Existing token processing code remains unchanged]
+        input_ids[input_ids == self.tokenizer.pad_id] = self.pad_token_id
+        input_ids[:, 0] = self.bos_token_id
         eos_pos_id = attention_mask.sum(1, keepdim=True) - 1
-        input_ids = torch.scatter(                                          # <bos> xxx <eos> <pad>
-            input_ids, 
-            1, 
-            eos_pos_id.long(), 
+        input_ids = torch.scatter(
+            input_ids,
+            1,
+            eos_pos_id.long(),
             torch.ones_like(input_ids) * self.eos_token_id
         )
-        
         target = input_ids.clone()
-        target[attention_mask == 0] = -100              # not loss for the padding tokens
-        
-        # Forward pass, calling causal llm
-        output = self.transformer(
-            input_ids = input_ids.long(),
-        )
-        
-        # compute loss with shift one-token right
-        logit = output.logits[:, :-1]   # batch x ntoken x vocab
-        label = target[:, 1:]           # batch x ntoken
-        
+        target[attention_mask == 0] = -100
+        # ===== MODIFIED FORWARD PASS =====
+        # Frozen layers forward (NO ACTIVATION STORAGE)
+        with torch.no_grad():  # <--- CRITICAL MEMORY SAVING
+            hidden_states = self.transformer.model(
+                input_ids=input_ids.long()
+            ).last_hidden_state
+        # Only compute gradients for the LM head
+        logits = self.transformer.lm_head(hidden_states)  # Track gradients here
+        # ===== END MODIFICATIONS =====
+        # Compute loss with shift (original code adapted)
+        logit = logits[:, :-1]   # batch x ntoken x vocab  <--- Now using our logits
+        label = target[:, 1:]     # batch x ntoken
         final_loss = nnf.cross_entropy(
-            logit.permute(0, 2, 1),         # batch x vocab x ntoken
+            logit.permute(0, 2, 1),  # batch x vocab x ntoken
             label,
-        )   # batch x ntoken
-        
+        )
+        # [Remaining code stays the same]
         data_dict['loss'] = self.loss_wrapper(final_loss)
         data_dict['gen_loss'] = final_loss
-        
-        # # Print loss and some weights for verification
-        # if torch.distributed.get_rank() == 0:
-        #     print(f"Loss: {final_loss.item()}")
-        #     print(f"First 5 weights of embed_tokens: {self.transformer.model.decoder.embed_tokens.weight.data[:5, :5]}")
-        
+        # Add memory monitoring
+        print(f"[MEM] Allocated: {torch.cuda.memory_allocated()/1024**2:.1f}MB")
+        print(f"[MEM] Peak: {torch.cuda.max_memory_allocated()/1024**2:.1f}MB")
         return data_dict
     
     @torch.no_grad()
@@ -303,5 +345,6 @@ class MeshXL(nn.Module):
 
 def get_model(args):
     model = MeshXL(args)
+    model.freeze_layers()
     return model
 
