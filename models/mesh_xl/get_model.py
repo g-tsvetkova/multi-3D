@@ -1,7 +1,7 @@
 import torch
 import torch.nn.functional as nnf
 from torch import nn, Tensor
-from transformers import OPTConfig, OPTForCausalLM
+from transformers import OPTConfig, OPTForCausalLM, AutoConfig, AutoModelForCausalLM
 from models.mesh_xl.tokenizer import MeshTokenizer
 from typing import Dict
 
@@ -17,70 +17,96 @@ class MeshXL(nn.Module):
         
         self.tokenizer = MeshTokenizer(args)
         
-        # causal LM model initialization
-        # self.vocab_size = self.tokenizer.codebook_size + 3
-        # self.bos_token_id = self.tokenizer.codebook_size
-        # self.eos_token_id = self.tokenizer.codebook_size + 1
-        # self.pad_token_id = self.tokenizer.codebook_size + 2
-        
-        self.vocab_size = 50272
+        self.vocab_size = 131 #50272
         self.bos_token_id = 2
         self.eos_token_id = 2
         self.pad_token_id = 1
 
-
-        # config = AutoConfig.from_pretrained(
-        #     args.llm, 
-        #     n_positions=8192,
-        #     max_position_embeddings=8192,
-        #     vocab_size=self.vocab_size,
-        #     bos_token_id=self.bos_token_id,
-        #     eos_token_id=self.eos_token_id,
-        #     pad_token_id=self.pad_token_id
-        # )
-
-        # Create a custom OPT configuration
-        config = OPTConfig(
+        if args.pretrained_weights:
+            config = AutoConfig.from_pretrained(
+            args.llm, 
+            n_positions=8192,
+            max_position_embeddings=8192,
             vocab_size=self.vocab_size,
-            hidden_size=512,
-            num_hidden_layers=6,
-            num_attention_heads=4,
-            max_position_embeddings=7300,
             bos_token_id=self.bos_token_id,
             eos_token_id=self.eos_token_id,
-            pad_token_id=self.pad_token_id,
-            activation_function="relu",
-            dropout=0.1,
-            attention_dropout=0.0,
-            activation_dropout=0.0,
-            init_std=0.02,
-            layerdrop=0.0,
-            use_cache=True,
-            torch_dtype=torch.float16,
-            ffn_dim = 2048
+            pad_token_id=self.pad_token_id
+            )
+            self.transformer = AutoModelForCausalLM.from_pretrained(
+            args.llm, 
+            config=config,
+            ignore_mismatched_sizes=True
         )
-        print(self.vocab_size)
+
+
+        
+        else:
+            # Create a custom OPT configuration for training from scratch
+            config = OPTConfig(
+                vocab_size=self.vocab_size,
+                hidden_size=512,
+                num_hidden_layers=6,
+                num_attention_heads=4,
+                max_position_embeddings=7300,
+                bos_token_id=self.bos_token_id,
+                eos_token_id=self.eos_token_id,
+                pad_token_id=self.pad_token_id,
+                activation_function="relu",
+                dropout=0.1,
+                attention_dropout=0.0,
+                activation_dropout=0.0,
+                init_std=0.02,
+                layerdrop=0.0,
+                use_cache=True,
+                torch_dtype=torch.float16,
+                ffn_dim = 2048
+            )
+        
+            self.transformer = OPTForCausalLM(config)
+        
+        print("Vocab size:", self.vocab_size)
+        print("Parameters:", self.transformer.num_parameters())
 
         config.word_embed_proj_dim = config.hidden_size
         # self.transformer = AutoModelForCausalLM.from_config(config)
-        self.transformer = OPTForCausalLM(config)
+        
         # self._init_weights(self.transformer)
         
         # setting status for all parameters
         self.train()
     
-    def _init_weights(self, module):
-        if isinstance(module, nn.Linear):
-            module.weight.data.normal_(mean=0.0, std=1000)
-            if module.bias is not None:
-                module.bias.data.zero_()
-        elif isinstance(module, nn.Embedding):
-            module.weight.data.normal_(mean=0.0, std=1000)
-            if hasattr(module, 'padding_idx'):
-                module.weight.data[module.padding_idx].zero_()
-        elif isinstance(module, nn.LayerNorm):
-            module.bias.data.zero_()
-            module.weight.data.fill_(1.0)
+    # def _init_weights(self, module):
+    #     if isinstance(module, nn.Linear):
+    #         module.weight.data.normal_(mean=0.0, std=1000)
+    #         if module.bias is not None:
+    #             module.bias.data.zero_()
+    #     elif isinstance(module, nn.Embedding):
+    #         module.weight.data.normal_(mean=0.0, std=1000)
+    #         if hasattr(module, 'padding_idx'):
+    #             module.weight.data[module.padding_idx].zero_()
+    #     elif isinstance(module, nn.LayerNorm):
+    #         module.bias.data.zero_()
+    #         module.weight.data.fill_(1.0)
+
+    def freeze_layers(self):
+        for param in self.transformer.parameters():
+            param.requires_grad = False
+        for param in self.transformer.lm_head.parameters():
+            param.requires_grad = True
+        # Count trainable parameters after freezing
+        trainable_params = sum(p.numel() for p in self.parameters() if p.requires_grad)
+        
+        # Print parameter counts left
+        print(f"Trainable Parameters: {trainable_params:,}")
+        
+
+    def count_parameters(self):
+        """Print and return the number of parameters in the model."""
+        total_params = sum(p.numel() for p in self.parameters())
+        trainable_params = sum(p.numel() for p in self.parameters() if p.requires_grad)
+        print(f'Total Parameters: {total_params:,}')
+        print(f'Trainable Parameters: {trainable_params:,}')
+        return total_params, trainable_params
     
     def forward(
             self, 
