@@ -5,6 +5,10 @@ from transformers import OPTConfig, OPTForCausalLM, AutoConfig, AutoModelForCaus
 from models.mesh_xl.tokenizer import MeshTokenizer
 from typing import Dict
 
+torch.backends.cuda.cufft_plan_cache.clear()
+torch.cuda.set_per_process_memory_fraction(0.95)  # Leave 5% headroom
+torch.cuda.empty_cache()
+
 
 class MeshXL(nn.Module):
     
@@ -142,6 +146,8 @@ class MeshXL(nn.Module):
         return loss
     
     def train_one_step(self, data_dict: dict) -> dict:
+        # Add memory cleanup at start
+        torch.cuda.empty_cache()
         
         data_dict = self.tokenizer.tokenize(data_dict)
         
