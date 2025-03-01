@@ -1,0 +1,16 @@
+{"time":"2024-12-14T02:57:43.182501975Z","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-14T02:57:43.182524106Z","level":"INFO","msg":"created symlink","path":"/root/MeshXL/scripts/wandb/run-20241214_025743-bktu54wb/logs/debug-core.log"}
+{"time":"2024-12-14T02:57:43.289216313Z","level":"INFO","msg":"created new stream","id":"bktu54wb"}
+{"time":"2024-12-14T02:57:43.289251939Z","level":"INFO","msg":"stream: started","id":"bktu54wb"}
+{"time":"2024-12-14T02:57:43.289295681Z","level":"INFO","msg":"writer: Do: started","stream_id":"bktu54wb"}
+{"time":"2024-12-14T02:57:43.289297375Z","level":"INFO","msg":"sender: started","stream_id":"bktu54wb"}
+{"time":"2024-12-14T02:57:43.289333532Z","level":"INFO","msg":"handler: started","stream_id":"bktu54wb"}
+{"time":"2024-12-14T02:57:43.600515599Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-14T03:03:15.648712348Z","level":"INFO","msg":"stream: closing","id":"bktu54wb"}
+{"time":"2024-12-14T03:03:15.648757393Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-14T03:03:15.649363507Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-14T03:03:16.568668181Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-14T03:03:16.814475793Z","level":"INFO","msg":"handler: closed","stream_id":"bktu54wb"}
+{"time":"2024-12-14T03:03:16.814507673Z","level":"INFO","msg":"sender: closed","stream_id":"bktu54wb"}
+{"time":"2024-12-14T03:03:16.814501441Z","level":"INFO","msg":"writer: Close: closed","stream_id":"bktu54wb"}
+{"time":"2024-12-14T03:03:16.816082511Z","level":"INFO","msg":"stream: closed","id":"bktu54wb"}

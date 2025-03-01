@@ -1,0 +1,16 @@
+# .pth
+./checkpoints
+./logs
+__pycache__
+.vscodecheckpoints/checkpoint.pth
+/wandb
+../outputs
+/outputs
+events.out.tfevents.*
+
+# Add specific checkpoint files
+# checkpoints/
+# checkpoints/checkpoint*.pth
+
+# Checkpoints
+checkpoints/*.pth
