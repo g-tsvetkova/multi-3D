@@ -74,6 +74,7 @@ def evaluate(
                 generated_faces[batch_id],
                 os.path.join(storage_dir, f'{sample_id}_generated.ply')
             )
+            print("COMPLETED GENERATING MESH")
     
     # Memory intensive as it gathers point cloud GT tensor across all ranks
     time_delta.update(time.time() - curr_time)

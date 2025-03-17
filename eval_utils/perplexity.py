@@ -12,6 +12,7 @@ from accelerate.utils import set_seed
 
 def perplexity(neg_log_likelihood: list) -> Tensor:
     # gather per-sequence log likelihood for perplexity
+    print("Perplexity")
     nll_chunk = torch.cat(neg_log_likelihood, dim=0)
     return torch.exp(nll_chunk.mean())
 
@@ -73,6 +74,7 @@ def evaluate(
         
         # forward pass to calculate per-sequence negative log likelihood
         with accelerator.autocast():    
+            print("OUTPUTS")
             outputs = model(batch_data_label, is_eval=True)
         # [(batch,), (batch,), ...]
         neg_log_likelihood.append(outputs['neg_log_likelihood'])

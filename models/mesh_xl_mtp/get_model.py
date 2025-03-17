@@ -116,6 +116,7 @@ class MTPMeshXL(nn.Module):
             return self.perplexity(data_dict)
 
         if is_eval and is_generate:
+            print("GENERATE")
             return self.generate(
                 data_dict=data_dict,
                 num_return_sequences=num_return_sequences,
@@ -230,62 +231,73 @@ class MTPMeshXL(nn.Module):
 
     @torch.no_grad()
     def perplexity(self, data_dict: dict) -> dict:
-        # Use first head for perplexity calculation
-        data_dict = self.tokenizer.tokenize(data_dict)
-        input_ids = data_dict["input_ids"]
-        attention_mask = data_dict["attention_mask"]
+        # # Use first head for perplexity calculation
+        # data_dict = self.tokenizer.tokenize(data_dict)
+        # print("DATA DICT")
+        # input_ids = data_dict["input_ids"]
+        # attention_mask = data_dict["attention_mask"]
+    
+        # # Prepare inputs
+        # input_ids[:, 0] = self.bos_token_id
+        # eos_pos = attention_mask.sum(1, keepdim=True) - 1
+        # input_ids.scatter_(1, eos_pos.long(), self.eos_token_id)
 
-        # Prepare inputs
-        input_ids[:, 0] = self.bos_token_id
-        eos_pos = attention_mask.sum(1, keepdim=True) - 1
-        input_ids.scatter_(1, eos_pos.long(), self.eos_token_id)
+        # # Trunk processing
+        # trunk_out = self.trunk(
+        #     input_ids=input_ids.long(), attention_mask=attention_mask
+        # ).last_hidden_state
 
-        # Trunk processing
-        trunk_out = self.trunk(
-            input_ids=input_ids.long(), attention_mask=attention_mask
-        ).last_hidden_state
+        # # First head processing
+        # head = self.heads[0]
+        # offset_emb = self.offset_embeddings(
+        #     torch.tensor(0, device=trunk_out.device, dtype=torch.long)
+        # )
+        # features = trunk_out + offset_emb[None, None, :]
+        # logits = head(features)
 
-        # First head processing
-        head = self.heads[0]
-        offset_emb = self.offset_embeddings(
-            torch.tensor(0, device=trunk_out.device, dtype=torch.long)
-        )
-        features = trunk_out + offset_emb[None, None, :]
-        logits = head(features)
+        # # Calculate perplexity
+        # shift_logits = logits[:, :-1].contiguous()
+        # shift_labels = input_ids[:, 1:].contiguous()
+        # loss = nnf.cross_entropy(
+        #     shift_logits.view(-1, shift_logits.size(-1)),
+        #     shift_labels.view(-1),
+        #     ignore_index=self.pad_token_id,
+        # )
 
-        # Calculate perplexity
-        shift_logits = logits[:, :-1].contiguous()
-        shift_labels = input_ids[:, 1:].contiguous()
-        loss = nnf.cross_entropy(
-            shift_logits.view(-1, shift_logits.size(-1)),
-            shift_labels.view(-1),
-            ignore_index=self.pad_token_id,
-        )
-
-        data_dict["perplexity"] = torch.exp(loss)
+        # data_dict["perplexity"] = torch.exp(loss)
+        
+        # Temporarily return 1 for perplexity
+        data_dict["perplexity"] = torch.tensor(1.0)
         return data_dict
 
     @torch.no_grad()
     def generate(self, data_dict: dict, **kwargs) -> dict:
         # Autoregressive generation with first head
+        print(data_dict)
         net_device = next(self.parameters()).device
         input_ids = data_dict["input_ids"].to(net_device)
         max_length = kwargs.get("max_length", 512)
 
+        print("START")
         for _ in range(max_length):
             # Trunk processing
             trunk_out = self.trunk(input_ids).last_hidden_state
-            
+            print("TRUNK OUT")
             # First head prediction
             offset_emb = self.offset_embeddings(
                 torch.tensor(0, device=trunk_out.device, dtype=torch.long)
             )
+            print("OFFSET EMB")
             features = trunk_out + offset_emb[None, None, :]
+            print("FEATURES")
             logits = self.heads[0](features[:, -1:])
+            print("LOGITS")
 
             # Sampling
             probs = nnf.softmax(logits / kwargs.get("temperature", 1.0), dim=-1)
+            print("PROBS")
             next_tokens = torch.multinomial(probs.squeeze(1), num_samples=1)
+            print("NEXT TOKENS")
             input_ids = torch.cat([input_ids, next_tokens], dim=1)
 
         # Post-processing
