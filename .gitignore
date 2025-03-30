@@ -8,9 +8,19 @@ __pycache__
 /outputs
 events.out.tfevents.*
 
+
 # Add specific checkpoint files
 # checkpoints/
 # checkpoints/checkpoint*.pth
 
 # Checkpoints
 checkpoints/*.pth
+
+# remove the output folder with the generated point clouds
+output-finetune-mesh-xl/
+output-finetune-mesh-xl-mtp/
+output-samples-125m/
+
+/mesh-xl-125m 
+
+./venv/
