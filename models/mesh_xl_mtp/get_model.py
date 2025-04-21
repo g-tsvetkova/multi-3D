@@ -303,7 +303,89 @@ class MTPMeshXL(nn.Module):
         # Post-processing
         input_ids[input_ids == self.eos_token_id] = self.tokenizer.pad_id
         return self.tokenizer.detokenize(input_ids)
+    
+    @torch.no_grad()
+    def generate(self, data_dict: dict = None, num_return_sequences: int = 1, generation_config: dict = dict()) -> dict:
+        net_device = next(self.parameters()).device
+        face_token_size = 9
+        max_length = 7300
+        n_heads = len(self.heads)  # should be 2 in this case
 
+        # Initialize with BOS token
+        input_ids = torch.full(
+            (num_return_sequences, 1),
+            self.bos_token_id,
+            device=net_device,
+            dtype=torch.long
+        )
+        finished = torch.zeros(num_return_sequences, dtype=torch.bool, device=net_device)
+
+        while input_ids.shape[1] < max_length and not finished.all():
+            # Obtain last hidden state from the trunk with caching enabled
+            trunk_outputs = self.trunk(
+                input_ids=input_ids,
+                return_dict=True,
+                use_cache=True
+            )
+            last_hidden = trunk_outputs.last_hidden_state[:, -1:, :]  # (B, 1, D)
+            B, _, D = last_hidden.size()
+
+            # --- Vectorized Draft Step for 2 Heads ---
+            # Get all offset embeddings at once: shape (2, D)
+            offsets = self.offset_embeddings.weight  # assuming shape (2, D)
+            # Expand last_hidden to shape (B, 2, D)
+            expanded_hidden = last_hidden.expand(B, n_heads, D)
+            # Add offsets to get head-specific hidden states: (B, 2, D)
+            hidden_with_offset = expanded_hidden + offsets.unsqueeze(0)
+            # Now, process each head in parallel:
+            # Apply each head separately (we have 2 heads so we split along head dim)
+            logits_head0 = self.heads[0](hidden_with_offset[:, 0:1, :])  # (B, 1, V)
+            logits_head1 = self.heads[1](hidden_with_offset[:, 1:2, :])  # (B, 1, V)
+
+            temperature = max(generation_config.get('temperature', 0.5), 0.01)
+            probs0 = nnf.softmax(logits_head0 / temperature, dim=-1)
+            probs1 = nnf.softmax(logits_head1 / temperature, dim=-1)
+            # Sample tokens from each head
+            next_token0 = torch.multinomial(probs0.squeeze(1), num_samples=1).view(B, 1)
+            next_token1 = torch.multinomial(probs1.squeeze(1), num_samples=1).view(B, 1)
+            # These are our draft tokens from the two heads
+            draft_tokens = [next_token0, next_token1]
+
+            # --- Verification Step ---
+            # The token from head 0 is automatically accepted
+            accepted_tokens = [draft_tokens[0]]
+            # Verify head 1's token using head 0 as verifier:
+            # Extend input with accepted tokens so far
+            extended_input = torch.cat([input_ids, accepted_tokens[0]], dim=1)
+            trunk_out = self.trunk(
+                input_ids=extended_input,
+                return_dict=True
+            )
+            hidden = trunk_out.last_hidden_state[:, -1:, :]  # (B, 1, D)
+            offset0 = self.offset_embeddings(torch.tensor(0, device=net_device))
+            verified_logits = self.heads[0](hidden + offset0)
+            verified_token = verified_logits.argmax(dim=-1).view(B, 1)
+            # Compare draft token from head 1 with verified token
+            matches = (verified_token.squeeze(1) == next_token1.squeeze(1))  # (B,)
+            accepted_token1 = torch.where(matches.unsqueeze(1), next_token1, verified_token)
+            accepted_tokens.append(accepted_token1)
+
+            # Concatenate accepted tokens (shape becomes (B, 2))
+            new_tokens = torch.cat(accepted_tokens, dim=1)
+            input_ids = torch.cat([input_ids, new_tokens], dim=1)
+
+            finished |= (new_tokens == self.eos_token_id).any(dim=1)
+
+        # Post-processing: Remove BOS, replace EOS with pad, and truncate sequence to be divisible by face_token_size
+        output_ids = input_ids[:, 1:]
+        output_ids[output_ids == self.eos_token_id] = self.tokenizer.pad_id
+        seq_len = output_ids.shape[1]
+        adjusted_len = seq_len - (seq_len % face_token_size)
+        output_ids = output_ids[:, :adjusted_len]
+
+        return self.tokenizer.detokenize(output_ids)  
+
+ 
     def loss_wrapper(self, loss: Tensor) -> Tensor:
         # Original regularization (keep unchanged)
         for param in self.parameters():
